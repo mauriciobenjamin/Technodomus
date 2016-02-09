@@ -50,10 +50,13 @@ Se integrara además en una estrategía dígital con el uso de campañas de **em
   + Validación
 
 ### Referentes
-[Carestream](http://www.carestream.com)
-[Getinge Infection Control](http://www.getinge.com/es/)
-[Laoken Sterilization Supplier](http://en.laoken.com)
-[GKE Cleaning and Sterilization Monitoring](http://www.gke.eu/en/)
+[Carestream](http://www.carestream.com)  
+
+[Getinge Infection Control](http://www.getinge.com/es/)  
+
+[Laoken Sterilization Supplier](http://en.laoken.com)  
+
+[GKE Cleaning and Sterilization Monitoring](http://www.gke.eu/en/)  
 
 ### Competencia
 #### [TAQ Sistemas Médicos](http://taq.com.mx)
@@ -63,24 +66,27 @@ Se integrara además en una estrategía dígital con el uso de campañas de **em
 + Redes sociales, facebook, twiter, google y youtube
 + Tienen junto imagenología con sistemas de nutrición y control corporal, educación y veterinaria
 + > ¿Convendría hacer un sitio separado?
-+ 
+ 
+
 #### [Medica Siller](http://www.medicasiller.com)
 + Sitio no responsivo
 + Navegación por categorias de productos que incluyen *Laboratorio Clinico*
 + Información básica de cada equipo con PDFs de información
-+ 
-#### [Imagens del Potosí](http://www.imagenesdelpotosi.com)
+
+ 
+#### [Imágenes del Potosí](http://www.imagenesdelpotosi.com)
 + Sitio responsivo
 + Navegación por categorias y busquedas internas
 + Información básica sin opción a encontrar más datos
-+ 
+
+ 
 #### [Reliable](http://reliable.com.mx)
 + Su página no aparece de incio en google, sino su página de facebook
 + Contenido desordenado
-+ 
+
+ 
 #### [Hova Live Technology](http://www.hovanetworks.com)
 + La página solo tienen información general y los links te envian a páginas que no cargan
-+ 
 
 
 ## Consideraciones iniciales
