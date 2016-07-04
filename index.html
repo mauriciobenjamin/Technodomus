@@ -10,6 +10,9 @@
 <!--Crea un panel simple con titulo 3-->
 <!-- Incerta una imagen responsiva y sus texto alt-->
 <!--Genera un bloque de migajas de pan-->
+<!--Botones expansivos        -->
+<!--Cabecera jumbotron-->
+<!--Encabezado para paginas de productos individuales-->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -42,9 +45,9 @@
               </ul>
             </li>
             <li><a href="./cotiza">Cotiza</a></li>
-            <li><a href="#">Noticias</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#">Clientes</a></li>
+            <li><a href="./noticias">Noticias</a></li>
+            <li><a href="./nosotros">Contacto</a></li>
+            <li><a href="./clientes">Clientes</a></li>
           </ul>
           <form role="search" class="navbar-form navbar-right">
             <div class="form-group">
@@ -57,12 +60,12 @@
       <div id="bs-example-navbar-collapse-1" class="sidenav navbar collapse navbar-collapse">
         <ul class="sidenav">
           <li class="active"> <a href="./"> <span aria-hidden="true" class="icon fa fa-home fa-2x"></span><span class="opcion">Inicio</span><span class="sr-only">(actual)   </span></a></li>
-          <li><a href="./esterilizacion"> <span aria-hidden="true" class="icon fa fa-stethoscope fa-2x"></span><span class="opcion">Esterilización</span></a></li>
-          <li><a href="./imagenologia"> <span aria-hidden="true" class="icon fa fa-picture-o fa-2x"></span><span class="opcion">Imagenología</span></a></li>
+          <li><a href="./esterilizacion"> <img src="./images/logo-esterilizacion.svg" alt="esterilizacion" height="27px" aria-hidden="true" class="logo"><span class="opcion">Esterilización</span></a></li>
+          <li><a href="./imagenologia"> <img src="./images/logo-imagenologia.svg" alt="imagenologia" height="32px" aria-hidden="true" class="logo"><span class="opcion">Imagenología</span></a></li>
           <li><a href="./veterinaria"> <span aria-hidden="true" class="icon fa fa-paw fa-2x"></span><span class="opcion">Veterinaria</span></a></li>
           <li><a href="./cotiza"> <span aria-hidden="true" class="icon fa fa-file-text fa-2x"></span><span class="opcion">Cotizaciones</span></a></li>
           <li><a href="./noticias"> <span aria-hidden="true" class="icon fa fa-newspaper-o fa-2x"></span><span class="opcion">Noticias</span></a></li>
-          <li><a href="./nosotros"> <span aria-hidden="true" class="icon fa fa-heartbeat fa-2x"></span><span class="opcion">La empresa</span></a></li>
+          <li><a href="./nosotros"> <img src="./images/logo-blanco.svg" alt="technodomus" height="37px" aria-hidden="true" class="logo"><span class="opcion">La empresa</span></a></li>
           <li><a href="./clientes"> <span aria-hidden="true" class="icon fa fa-user-md fa-2x"></span><span class="opcion">Clientes</span></a></li>
           <li><a href="https://twitter"> <span aria-hidden="true" class="icon fa fa-twitter fa-2x"></span><span class="opcion">twitter        </span></a></li>
           <li><a href="https://www.facebook.com/Technodomus/"> <span aria-hidden="true" class="icon fa fa-facebook fa-2x"></span><span class="opcion">Facebook</span></a></li>
@@ -84,28 +87,28 @@
             <div class="item active"><img src="./images/CarruselLaokenEscritorioPlasma.jpeg" alt="esterilizador de escritorio">
               <div class="carousel-caption">
                 <h2>Esterilización más eficiente y sencilla</h2>
-                <p>Los nuevos equipos de plasma de peroxido ofrecen grandes ventajas en el manejo de su equipo y comodidad en su uso diario. <a href="#">más información...</a></p>
+                <p>Los nuevos equipos de plasma de peróxido ofrecen grandes ventajas. Una esterilización más eficiente y facilidad de uso. <a href="./esterilizacion/">más información...</a></p>
               </div>
             </div>
             <div class="item"><img src="./images/carrouselCarestream.jpg" alt="impresora DryView">
               <div class="carousel-caption">
                 <h2>Soluciones de salida a la medida</h2>
-                <p>La generación de salidas físicas de sus equipos digitales se puede adaptar a sus volumenes de trabajo a través de nuestras soluciones.<a href="#">más información...</a></p>
+                <p>La generación de salidas físicas de sus equipos digitales se puede adaptar a sus volumenes de trabajo a través de nuestras soluciones. <a href="./imagenologia/">más información...</a></p>
               </div>
             </div>
             <div class="item"><img src="./images/CarrouselVeterinariaCRVita.jpg" alt="VitaFlex veterinario">
               <div class="carousel-caption">
-                <h2>Mejore su atención</h2>
-                <p>La incoporación de equipos dígitales a la consulta veterinaria no tienen que ser un gasto excesivo con nuestras soluciones<a href="#">más información...           </a></p>
+                <h2>Mejore la calidad de su diagnóstico</h2>
+                <p>La incoporación de equipos dígitales a la consulta veterinaria no tienen que ser un gasto excesivo con nuestras soluciones. <a href="./veterinaria/">más información...           </a></p>
               </div>
             </div>
           </div><a href="#productos" data-slide="next" class="right carousel-control"><span class="glyphicon glyphicon-chevron-right"></span></a><a href="#productos" data-slide="prev" class="left carousel-control"><span class="glyphicon glyphicon-chevron-left"></span>
             <!-- Final del carousel--></a>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="grid">
           <div id="esterilizacion" class="panel panel-primary">
             <div class="panel-heading">
-              <h1>esterilización</h1>
+              <h1>Esterilización</h1>
             </div>
             <div class="panel-body"><img src="./images/esterilizadora.jpeg" alt="esterilización" class="img-responsive">
               <h4>Las mejores soluciones para procesar instrumental e insumos estériles con la más alta tecnología para garantizar la seguridad del paciente.</h4>
@@ -113,11 +116,9 @@
               <p>Nuestro compromiso es brindar toda la seguridad para el tratamiento de sus pacientes y de su personal.</p><a href="./esterilizacion/index.html">Conoce más de nuestros productos</a>
             </div>
           </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
           <div id="imagenologia" class="panel panel-primary">
             <div class="panel-heading">
-              <h1>imagenología</h1>
+              <h1>Imagenología</h1>
             </div>
             <div class="panel-body"><img src="./images/imagenologia.png" alt="PARCS" class="img-responsive">
               <h4>Los sistemas más actuales para obtener, procesar, almacenar, visualizar y administrar imágenes diagnósticas de alta calidad para ayudar en su proceso de diagnóstico.</h4>
@@ -125,11 +126,9 @@
               <p>La distribución de las imágenes es más facil que nunca, haciendo más ágil el diagnostico y reduciendo la exposición del paciente a la radiación evitando el duplicado de imágenes.</p><a href="./imagenologia/index.html">Conoce más de nuestros productos</a>
             </div>
           </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4"> 
           <div id="veterinaria" class="panel panel-primary">
             <div class="panel-heading">
-              <h1>veterinaria</h1>
+              <h1>Veterinaria</h1>
             </div>
             <div class="panel-body"><img src="./images/equiposVeterinaria.jpg" alt="medidor hemoglobina" class="img-responsive">
               <h4>Radiología digital y las técnologías más recientes para consulta veterinaria</h4>
@@ -140,55 +139,63 @@
         </div>
       </div>
       <section id="contacto">
-        <div class="text-center col-xs-12 col-sm-6 col-md-4">
+        <div class="grid">
           <div class="panel panel-success">
             <div class="panel-heading">
-              <h1>Contacta y cotiza</h1>
+              <h2>Contacta y cotiza</h2>
             </div>
             <div class="panel-body">
               <ul class="contacto text-center">
                         <li> 
                           <div class="botones">
-                            <div class="boton boton-tel"><a href="tel:5553363212"><i class="fa fa-2x fa-phone">   </i></a></div>
+                            <div class="boton boton-tel"><a href="tel:5553363212"><i class="fa fa-2x fa-phone"></i></a></div>
                           </div>
                         </li>
                 <li><strong>(55)53363212 | 01800 874 9522</strong></li>
                         <li> 
                           <div class="botones">
-                            <div class="boton boton-mail"><a href="mailto:info@technodomus.com?cc=servicioaclientes@technodomus.com"><i class="fa fa-2x fa-envelope">   </i></a></div>
+                            <div class="boton boton-mail"><a href="mailto:info@technodomus.com?cc=servicioaclientes@technodomus.com"><i class="fa fa-2x fa-envelope"></i></a></div>
                           </div>
                         </li>
                 <li><strong><a href="mailto:info@technodomus.com?cc=servicioaclientes@technodomus.com">Servicio a Clientes</a></strong></li>
                         <li> 
                           <div class="botones">
-                            <div class="boton boton-tw"><a href="twitter.com"><i class="fa fa-2x fa-twitter">   </i></a></div>
+                            <div class="boton boton-tw"><a href="twitter.com"><i class="fa fa-2x fa-twitter"></i></a></div>
                           </div>
                         </li>
                         <li> 
                           <div class="botones">
-                            <div class="boton boton-fb"><a href="facebook.com/technodomus"><i class="fa fa-2x fa-facebook">   </i></a></div>
+                            <div class="boton boton-fb"><a href="facebook.com/technodomus"><i class="fa fa-2x fa-facebook"></i></a></div>
                           </div>
                         </li>
                         <li> 
                           <div class="botones">
-                            <div class="boton boton-go"><a href="https://plus.google.com/109633024373291114640"><i class="fa fa-2x fa-google">   </i></a></div>
+                            <div class="boton boton-go"><a href="https://plus.google.com/109633024373291114640"><i class="fa fa-2x fa-google"></i></a></div>
                           </div>
                         </li>
               </ul>
             </div>
           </div>
-        </div>
-        <div class="text-center col-xs-12 col-sm-6 col-md-4">
-          <div class="panel">
-            <h2>Localizanos</h2>
-            <div class="map-responsive"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.492137092907!2d-99.14841905015103!3d19.347831986868414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffd2da6664df%3A0x1f577e2c3371be51!2sTechnodomus%2C+S.A.+De+C.V.!5e0!3m2!1ses-419!2smx!4v1464816928299" width="250" height="400" frameborder="0" style="border:0" allowfullscreen></iframe></div>
-          </div>
-        </div>
-        <div class="text-center col-xs-12 col-sm-6 col-md-4">
-          <div class="panel">
-            <h2>Actualizate</h2><a class="twitter-timeline" href="https://twitter.com/technodomus" data-widget-id="738134280732180481">Tweets de @technodomus.</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-          </div>
+                  <div class="text-center">
+                    <div class="panel">
+                      <h2>Localizanos</h2>
+                      <div class="map-responsive"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.492137092907!2d-99.14841905015103!3d19.347831986868414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffd2da6664df%3A0x1f577e2c3371be51!2sTechnodomus%2C+S.A.+De+C.V.!5e0!3m2!1ses-419!2smx!4v1464816928299" width="300" height="400" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <div class="panel">
+                      <h2>twitter</h2>
+                      <a class="twitter-timeline" href="https://twitter.com/technodomus" data-widget-id="738134280732180481">Tweets de @technodomus.</a>
+                      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <div class="panel">
+                      <h2>facebook</h2>
+                           
+                      <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTechnodomus&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId=1707855296152585" width="250" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+                    </div>
+                  </div>
         </div>
       </section>
     </div>
@@ -196,8 +203,9 @@
   <!-- footer-->
   <footer id="footer">
     <div class="section caja-contenido text-center">
-      <p>Technodomus SA de CV<br>Escocia 24 Planta | Parque San Andrés, Coyoacan | Ciudad de México, 04040 <br>T. 55533-63212 y 01800-8749522 | info@technodomus <br><a href="https://privacidad.org">Aviso de privacidad</a></p>
+      <p>Technodomus SA de CV<br>Escocia 24 Planta | Parque San Andrés, Coyoacan | Ciudad de México, 04040 <br>T. 55533-63212 y 01800-8749522 | info@technodomus <br><a href="./aviso-privacidad.html">Aviso de privacidad</a></p>
     </div>
   </footer>
   <script src="./scripts/main.js"></script>
+  <script src="./scripts/packery.js"></script>
 </body></html>

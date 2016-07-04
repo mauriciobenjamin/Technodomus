@@ -10,6 +10,9 @@
 <!--Crea un panel simple con titulo 3-->
 <!-- Incerta una imagen responsiva y sus texto alt-->
 <!--Genera un bloque de migajas de pan-->
+<!--Botones expansivos        -->
+<!--Cabecera jumbotron-->
+<!--Encabezado para paginas de productos individuales-->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -42,9 +45,9 @@
               </ul>
             </li>
             <li><a href="./../../cotiza">Cotiza</a></li>
-            <li><a href="#">Noticias</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#">Clientes</a></li>
+            <li><a href="./../../noticias">Noticias</a></li>
+            <li><a href="./../../nosotros">Contacto</a></li>
+            <li><a href="./../../clientes">Clientes</a></li>
           </ul>
           <form role="search" class="navbar-form navbar-right">
             <div class="form-group">
@@ -57,12 +60,12 @@
       <div id="bs-example-navbar-collapse-1" class="sidenav navbar collapse navbar-collapse">
         <ul class="sidenav">
           <li class="active"> <a href="./../../"> <span aria-hidden="true" class="icon fa fa-home fa-2x"></span><span class="opcion">Inicio</span><span class="sr-only">(actual)   </span></a></li>
-          <li><a href="./../../esterilizacion"> <span aria-hidden="true" class="icon fa fa-stethoscope fa-2x"></span><span class="opcion">Esterilización</span></a></li>
-          <li><a href="./../../imagenologia"> <span aria-hidden="true" class="icon fa fa-picture-o fa-2x"></span><span class="opcion">Imagenología</span></a></li>
+          <li><a href="./../../esterilizacion"> <img src="./../../images/logo-esterilizacion.svg" alt="esterilizacion" height="27px" aria-hidden="true" class="logo"><span class="opcion">Esterilización</span></a></li>
+          <li><a href="./../../imagenologia"> <img src="./../../images/logo-imagenologia.svg" alt="imagenologia" height="32px" aria-hidden="true" class="logo"><span class="opcion">Imagenología</span></a></li>
           <li><a href="./../../veterinaria"> <span aria-hidden="true" class="icon fa fa-paw fa-2x"></span><span class="opcion">Veterinaria</span></a></li>
           <li><a href="./../../cotiza"> <span aria-hidden="true" class="icon fa fa-file-text fa-2x"></span><span class="opcion">Cotizaciones</span></a></li>
           <li><a href="./../../noticias"> <span aria-hidden="true" class="icon fa fa-newspaper-o fa-2x"></span><span class="opcion">Noticias</span></a></li>
-          <li><a href="./../../nosotros"> <span aria-hidden="true" class="icon fa fa-heartbeat fa-2x"></span><span class="opcion">La empresa</span></a></li>
+          <li><a href="./../../nosotros"> <img src="./../../images/logo-blanco.svg" alt="technodomus" height="37px" aria-hidden="true" class="logo"><span class="opcion">La empresa</span></a></li>
           <li><a href="./../../clientes"> <span aria-hidden="true" class="icon fa fa-user-md fa-2x"></span><span class="opcion">Clientes</span></a></li>
           <li><a href="https://twitter"> <span aria-hidden="true" class="icon fa fa-twitter fa-2x"></span><span class="opcion">twitter        </span></a></li>
           <li><a href="https://www.facebook.com/Technodomus/"> <span aria-hidden="true" class="icon fa fa-facebook fa-2x"></span><span class="opcion">Facebook</span></a></li>
@@ -73,82 +76,77 @@
   </header>
   <div class="container-fluid">
     <div class="caja-contenido">
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h2>Lavado de instrumental y dispositivos médicos</h2>
-          </div>
-          <div class="panel-body">
-            <p>El lavado es el paso más importante para mejorar la <b>efectividad </b>de la desinfección o la esterilización ya que:
-              <ul> 
-                <li>Elimina la mayor parte de la carga microbiana.</li>
-                <li>Retira la suciedad y restos visibles</li>
-                <li>Previene la formación de biofilms y presencia de pirogenos ya que los residuos orgánicos funcionan como barrera protectora</li>
-                <li>Protege al personal que de esta forma maneja material más seguro.</li>
-              </ul>
-            </p>
-          </div>
-          <div class="panel-footer">El éxito de la desinfección y esterilización depende de un buen lavado</div>
+      <div class="panel panel-default">
+        <div class="panel-heading"><a>
+            <h2>Lavado de instrumental y dispositivos médicos</h2></a></div>
+        <div class="panel-body">
+          <p>El lavado es el paso más importante para mejorar la <b>efectividad </b>de la desinfección o la esterilización ya que:
+            <ul> 
+              <li>Elimina la mayor parte de la carga microbiana.</li>
+              <li>Retira la suciedad y restos visibles</li>
+              <li>Previene la formación de biofilms y presencia de pirogenos ya que los residuos orgánicos funcionan como barrera protectora</li>
+              <li>Protege al personal que de esta forma maneja material más seguro.</li>
+            </ul>
+          </p>
         </div>
+        <div class="panel-footer">El éxito de la desinfección y esterilización depende de un buen lavado</div>
       </div>
-      <div class="col-xs-12 col-sm-6">
-        <div class="panel panel-default">
-          <div class="panel-body">
-            <h3>¿Vale la pena realizar un lavado manual?</h3>
-            <table>
-              <thead>
-                <tr>
-                  <th>Beneficios</th>
-                  <th>Automático</th>
-                  <th>Manual</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Reducción de la biocarga</td>
-                  <td class="text-center">X</td>
-                  <td class="text-center">X</td>
-                </tr>
-                <tr>
-                  <td>Favorece los procesos de esterilización y desinfección</td>
-                  <td class="text-center">X</td>
-                  <td class="text-center">X</td>
-                </tr>
-                <tr>
-                  <td>Protección del usuario del contacto con material biológico</td>
-                  <td class="text-center">X</td>
-                  <td class="text-center">-</td>
-                </tr>
-                <tr>
-                  <td>Estandarización del proceso</td>
-                  <td class="text-center">X</td>
-                  <td class="text-center">-</td>
-                </tr>
-                <tr>
-                  <td>Facilita el seguimiento del equipo en procesos de certificación y trazabilidad</td>
-                  <td class="text-center">X</td>
-                  <td class="text-center">-</td>
-                </tr>
-                <tr>
-                  <td>Reducción de tiempos</td>
-                  <td class="text-center">X</td>
-                  <td class="text-center">-</td>
-                </tr>
-                <tr>
-                  <td>Manejo del instrumental delicado</td>
-                  <td class="text-center">X</td>
-                  <td class="text-center">-</td>
-                </tr>
-              </tbody>
-            </table>
-            <h3>Recomendaciones generales para el proceso de lavado</h3>
-            <ol>
-              <li>Realizar el lavado en el área designada para la descontaminación.</li>
-              <li>Utilizar <a (href="/enzimatico" )>detergente enzimático</a> para facilitar la remoción de residuos.</li>
-              <li>Utilizar <a (href="/detergentes" )>detergentes con pH neutro</a> ya que compatible con los materiales del equipo y no les causa deterioros a largo plazo como si lo hacen los agenes cáusticos y ácidos.</li>
-              <li>El cepillado debe ser suave para evitar daños en el instrumental.</li>
-            </ol>
-          </div>
+      <div class="panel panel-default panel-2x">
+        <div class="panel-body">
+          <h3>¿Vale la pena realizar un lavado manual?</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Beneficios</th>
+                <th>Automático</th>
+                <th>Manual</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Reducción de la biocarga</td>
+                <td class="text-center">X</td>
+                <td class="text-center">X</td>
+              </tr>
+              <tr>
+                <td>Favorece los procesos de esterilización y desinfección</td>
+                <td class="text-center">X</td>
+                <td class="text-center">X</td>
+              </tr>
+              <tr>
+                <td>Protección del usuario del contacto con material biológico</td>
+                <td class="text-center">X</td>
+                <td class="text-center">-</td>
+              </tr>
+              <tr>
+                <td>Estandarización del proceso</td>
+                <td class="text-center">X</td>
+                <td class="text-center">-</td>
+              </tr>
+              <tr>
+                <td>Facilita el seguimiento del equipo en procesos de certificación y trazabilidad</td>
+                <td class="text-center">X</td>
+                <td class="text-center">-</td>
+              </tr>
+              <tr>
+                <td>Reducción de tiempos</td>
+                <td class="text-center">X</td>
+                <td class="text-center">-</td>
+              </tr>
+              <tr>
+                <td>Manejo del instrumental delicado</td>
+                <td class="text-center">X</td>
+                <td class="text-center">-</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Recomendaciones generales para el proceso de lavado</h3>
+          <ol>
+            <li>Realizar el lavado en el área designada para la descontaminación.</li>
+            <li>Utilizar <a (href="/enzimatico" )>detergente enzimático</a> para facilitar la remoción de residuos.</li>
+            <li>Utilizar <a (href="/detergentes" )>detergentes con pH neutro</a> ya que compatible con los materiales del equipo y no les causa deterioros a largo plazo como si lo hacen los agenes cáusticos y ácidos.</li>
+            <li>El cepillado debe ser suave para evitar daños en el instrumental.</li>
+          </ol>
         </div>
       </div>
     </div>
@@ -156,8 +154,9 @@
   <!-- footer-->
   <footer id="footer">
     <div class="section caja-contenido text-center">
-      <p>Technodomus SA de CV<br>Escocia 24 Planta | Parque San Andrés, Coyoacan | Ciudad de México, 04040 <br>T. 55533-63212 y 01800-8749522 | info@technodomus <br><a href="https://privacidad.org">Aviso de privacidad</a></p>
+      <p>Technodomus SA de CV<br>Escocia 24 Planta | Parque San Andrés, Coyoacan | Ciudad de México, 04040 <br>T. 55533-63212 y 01800-8749522 | info@technodomus <br><a href="./../../aviso-privacidad.html">Aviso de privacidad</a></p>
     </div>
   </footer>
   <script src="./../../scripts/main.js"></script>
+  <script src="./../../scripts/packery.js"></script>
 </body></html>
