@@ -29,15 +29,15 @@
   <![endif]-->
   <!-- navbar-->
   <header>
-    <nav class="navbar">
-      <div class="navbar-fixed-top navbar-inverse">
+    <nav class="navbar navbar-fixed-top">
+      <div class="navbar-inverse">
         <div class="navbar-header">
-          <button type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Navegación</span><span class="glyphicon glyphicon-menu-hamburger"></span></button><a href="#" class="navbar-brand"><img src="./../images/logoNegPar.png" alt="Technodomus" height="100%"></a>
+          <button type="button" data-toggle="collapse" data-target="#navbar-colapsada" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Navegación</span><span class="glyphicon glyphicon-menu-hamburger"></span></button><a href="#" class="navbar-brand"><img src="./../images/logoNegPar.png" alt="Technodomus" height="60px"></a>
         </div>
-        <div class="navbar-right collapse navbar-collapse">
+        <div id="navbar-colapsada" class="navbar-right collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="./../">Inicio<span class="sr-only">(actual)</span></a></li>
-            <li class="dropdown"><a href="#" data-toggle="dropdown" role="button">Productos<span class="caret"></span></a>
+            <li><a href="./../">Inicio<span class="sr-only">(actual)</span></a></li>
+            <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" class="dropdown-toggle">Productos<span class="caret"></span></a>
               <ul aria-labelledby="menu" class="dropdown-menu">
                 <li><a href="./../esterilizacion">Esterilización</a></li>
                 <li> <a href="./../imagenologia">Imagenología</a></li>
@@ -57,22 +57,22 @@
           </form>
         </div>
       </div>
-      <div id="bs-example-navbar-collapse-1" class="sidenav navbar collapse navbar-collapse">
-        <ul class="sidenav">
-          <li class="active"> <a href="./../"> <span aria-hidden="true" class="icon fa fa-home fa-2x"></span><span class="opcion">Inicio</span><span class="sr-only">(actual)   </span></a></li>
-          <li><a href="./../esterilizacion"> <img src="./../images/logo-esterilizacion.svg" alt="esterilizacion" height="27px" aria-hidden="true" class="logo"><span class="opcion">Esterilización</span></a></li>
-          <li><a href="./../imagenologia"> <img src="./../images/logo-imagenologia.svg" alt="imagenologia" height="32px" aria-hidden="true" class="logo"><span class="opcion">Imagenología</span></a></li>
-          <li><a href="./../veterinaria"> <span aria-hidden="true" class="icon fa fa-paw fa-2x"></span><span class="opcion">Veterinaria</span></a></li>
-          <li><a href="./../cotiza"> <span aria-hidden="true" class="icon fa fa-file-text fa-2x"></span><span class="opcion">Cotizaciones</span></a></li>
-          <li><a href="./../noticias"> <span aria-hidden="true" class="icon fa fa-newspaper-o fa-2x"></span><span class="opcion">Noticias</span></a></li>
-          <li><a href="./../nosotros"> <img src="./../images/logo-blanco.svg" alt="technodomus" height="37px" aria-hidden="true" class="logo"><span class="opcion">La empresa</span></a></li>
-          <li><a href="./../clientes"> <span aria-hidden="true" class="icon fa fa-user-md fa-2x"></span><span class="opcion">Clientes</span></a></li>
-          <li><a> <span aria-hidden="true" class="icon fa fa-twitter fa-2x"></span><span class="opcion">twitter        </span></a></li>
-          <li><a> <span aria-hidden="true" class="icon fa fa-facebook fa-2x"></span><span class="opcion">Facebook</span></a></li>
-          <li><a> <span aria-hidden="true" class="icon fa fa-google-plus fa-2x"></span><span class="opcion">Buscar      </span></a></li>
-        </ul>
-      </div>
     </nav>
+    <div class="sidenav navbar">
+      <ul class="sidenav">
+        <li class="active"> <a href="./../"> <span aria-hidden="true" class="icon fa fa-home fa-2x"></span><span class="opcion">Inicio</span><span class="sr-only">(actual)   </span></a></li>
+        <li><a href="./../esterilizacion"> <img src="./../images/logo-esterilizacion.svg" alt="esterilizacion" height="27px" aria-hidden="true" class="logo"><span class="opcion">Esterilización</span></a></li>
+        <li><a href="./../imagenologia"> <img src="./../images/logo-imagenologia.svg" alt="imagenologia" height="32px" aria-hidden="true" class="logo"><span class="opcion">Imagenología</span></a></li>
+        <li><a href="./../veterinaria"> <span aria-hidden="true" class="icon fa fa-paw fa-2x"></span><span class="opcion">Veterinaria</span></a></li>
+        <li><a href="./../cotiza"> <span aria-hidden="true" class="icon fa fa-file-text fa-2x"></span><span class="opcion">Cotizaciones</span></a></li>
+        <li><a href="./../noticias"> <span aria-hidden="true" class="icon fa fa-newspaper-o fa-2x"></span><span class="opcion">Noticias</span></a></li>
+        <li><a href="./../nosotros"> <img src="./../images/logo-blanco.svg" alt="technodomus" height="37px" aria-hidden="true" class="logo"><span class="opcion">La empresa</span></a></li>
+        <li><a href="./../clientes"> <span aria-hidden="true" class="icon fa fa-user-md fa-2x"></span><span class="opcion">Clientes</span></a></li>
+        <li><a> <span aria-hidden="true" class="icon fa fa-twitter fa-2x"></span><span class="opcion">twitter        </span></a></li>
+        <li><a> <span aria-hidden="true" class="icon fa fa-facebook fa-2x"></span><span class="opcion">Facebook</span></a></li>
+        <li><a> <span aria-hidden="true" class="icon fa fa-google-plus fa-2x"></span><span class="opcion">Buscar      </span></a></li>
+      </ul>
+    </div>
   </header>
   <div class="container-fluid">
     <div class="caja-contenido">
@@ -99,7 +99,7 @@
             <p>Un lavado poco cuidadoso en cambio puede acortar la vida útil del equipo al tiempo que reduce la efectividad de la esterilziación.</p>
             <p>Por todo ello, Technodomus ofrece opciones de lavado automatizado y los mejores insumos para el proceso.</p>
             <h4> <a href="./../esterilizacion/lavado/lavadoras.html">Lavadoras</a></h4>
-            <h4>Insumos químicos</h4>
+            <h4><a href="./../esterilizacion/lavado/insumos.html">Insumos químicos</a></h4>
           </div>
           <div class="panel-footer"><a href="./../esterilizacion/lavado/">Conoce más del lavado de instumental</a></div>
         </div>
@@ -116,8 +116,9 @@
         <div class="panel panel-default">
           <div class="panel-heading"><a href="./esterilizadoras/">
               <h2>Esterilizadoras</h2></a></div>
-          <div class="panel-body"><img src="./../images/laokenEscritorioPlasma.jpg" alt="Esterilizador de plasma" class="img-responsive">
-            <p>Los esteriliza que ofrece Technodomus cubren una amplia gama de necesidades y de atención de diferentes tipos de material e instrumental a esterilizar.</p>
+          <div class="panel-body"><img src="./../images/esterilizador-formal-HS66TurboCombiGetinge.jpeg" alt="Esterilizadoras" class="img-responsive">
+            <p>Los esterilizadore que ofrece Technodomus cubren una amplia gama de necesidades y de atención de diferentes tipos de material e instrumental a esterilizar.</p>
+            <p>Contamos con equipos de baja y alta temperatura, con tecnologías de probada eficacia como el vapor, así como sistemas prácticos que minimizan el desgaste del equipo, como el plasma de peróxido.</p>
             <h4> <a href="./../esterilizacion/esterilizadoras/baja-temperatura.html">Esterilizadoras de baja temperatura</a></h4>
             <h4> <a href="./../esterilizacion/esterilizadoras/alta-temperatura.html">Esterilizadoras de alta temperatura</a></h4>
           </div>
@@ -136,10 +137,11 @@
         <div class="panel panel-default">
           <div class="panel-heading"><a href="./t-doc">
               <h2>Trazabilidad</h2></a></div>
-          <div class="panel-body"><img src="./../images/t-doc.jpg" alt="t-doc" class="img-responsive">
+          <div class="panel-body"><img src="./../images/t-doc2.jpg" alt="t-doc" class="img-responsive">
             <p>Dar seguimiento al instrumental no es una tarea sencilla, pero es básica para mantener inventarios correctos, evitar gastos de sobrecompra de material, pero lo más importante, el riesgo de posponer procedimientos agendados debido a que el instrumental esta retrazado o incluso perdido.</p>
             <p>T-DOC es el sistema de gestión y trazabilidad de instrumental médico, líder en el mercado. Con más de 900 instalaciones en 40 países alrededor del mundo, T-DOC le permite enfrentar los retos del manejo del instrumental para preocuparse en lo que realmente importa, el paciente.</p>
           </div>
+          <div class="panel-footer"><a href="./../esterilizacion/trazabilidad">Adentrese en las ventajas de un sistema de trazabilidad avanzado</a></div>
         </div>
       </div>
     </div>
@@ -151,5 +153,4 @@
     </div>
   </footer>
   <script src="./../scripts/main.js"></script>
-  <script src="./../scripts/packery.js"></script>
 </body></html>

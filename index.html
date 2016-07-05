@@ -29,15 +29,15 @@
   <![endif]-->
   <!-- navbar-->
   <header>
-    <nav class="navbar">
-      <div class="navbar-fixed-top navbar-inverse">
+    <nav class="navbar navbar-fixed-top">
+      <div class="navbar-inverse">
         <div class="navbar-header">
-          <button type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Navegación</span><span class="glyphicon glyphicon-menu-hamburger"></span></button><a href="#" class="navbar-brand"><img src="./images/logoNegPar.png" alt="Technodomus" height="100%"></a>
+          <button type="button" data-toggle="collapse" data-target="#navbar-colapsada" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Navegación</span><span class="glyphicon glyphicon-menu-hamburger"></span></button><a href="#" class="navbar-brand"><img src="./images/logoNegPar.png" alt="Technodomus" height="60px"></a>
         </div>
-        <div class="navbar-right collapse navbar-collapse">
+        <div id="navbar-colapsada" class="navbar-right collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="./">Inicio<span class="sr-only">(actual)</span></a></li>
-            <li class="dropdown"><a href="#" data-toggle="dropdown" role="button">Productos<span class="caret"></span></a>
+            <li><a href="./">Inicio<span class="sr-only">(actual)</span></a></li>
+            <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" class="dropdown-toggle">Productos<span class="caret"></span></a>
               <ul aria-labelledby="menu" class="dropdown-menu">
                 <li><a href="./esterilizacion">Esterilización</a></li>
                 <li> <a href="./imagenologia">Imagenología</a></li>
@@ -57,22 +57,22 @@
           </form>
         </div>
       </div>
-      <div id="bs-example-navbar-collapse-1" class="sidenav navbar collapse navbar-collapse">
-        <ul class="sidenav">
-          <li class="active"> <a href="./"> <span aria-hidden="true" class="icon fa fa-home fa-2x"></span><span class="opcion">Inicio</span><span class="sr-only">(actual)   </span></a></li>
-          <li><a href="./esterilizacion"> <img src="./images/logo-esterilizacion.svg" alt="esterilizacion" height="27px" aria-hidden="true" class="logo"><span class="opcion">Esterilización</span></a></li>
-          <li><a href="./imagenologia"> <img src="./images/logo-imagenologia.svg" alt="imagenologia" height="32px" aria-hidden="true" class="logo"><span class="opcion">Imagenología</span></a></li>
-          <li><a href="./veterinaria"> <span aria-hidden="true" class="icon fa fa-paw fa-2x"></span><span class="opcion">Veterinaria</span></a></li>
-          <li><a href="./cotiza"> <span aria-hidden="true" class="icon fa fa-file-text fa-2x"></span><span class="opcion">Cotizaciones</span></a></li>
-          <li><a href="./noticias"> <span aria-hidden="true" class="icon fa fa-newspaper-o fa-2x"></span><span class="opcion">Noticias</span></a></li>
-          <li><a href="./nosotros"> <img src="./images/logo-blanco.svg" alt="technodomus" height="37px" aria-hidden="true" class="logo"><span class="opcion">La empresa</span></a></li>
-          <li><a href="./clientes"> <span aria-hidden="true" class="icon fa fa-user-md fa-2x"></span><span class="opcion">Clientes</span></a></li>
-          <li><a href="https://twitter"> <span aria-hidden="true" class="icon fa fa-twitter fa-2x"></span><span class="opcion">twitter        </span></a></li>
-          <li><a href="https://www.facebook.com/Technodomus/"> <span aria-hidden="true" class="icon fa fa-facebook fa-2x"></span><span class="opcion">Facebook</span></a></li>
-          <li><a href="https://plus.google.com/109633024373291114640"> <span aria-hidden="true" class="icon fa fa-google-plus fa-2x"></span><span class="opcion">Buscar      </span></a></li>
-        </ul>
-      </div>
     </nav>
+    <div class="sidenav navbar">
+      <ul class="sidenav">
+        <li class="active"> <a href="./"> <span aria-hidden="true" class="icon fa fa-home fa-2x"></span><span class="opcion">Inicio</span><span class="sr-only">(actual)   </span></a></li>
+        <li><a href="./esterilizacion"> <img src="./images/logo-esterilizacion.svg" alt="esterilizacion" height="27px" aria-hidden="true" class="logo"><span class="opcion">Esterilización</span></a></li>
+        <li><a href="./imagenologia"> <img src="./images/logo-imagenologia.svg" alt="imagenologia" height="32px" aria-hidden="true" class="logo"><span class="opcion">Imagenología</span></a></li>
+        <li><a href="./veterinaria"> <span aria-hidden="true" class="icon fa fa-paw fa-2x"></span><span class="opcion">Veterinaria</span></a></li>
+        <li><a href="./cotiza"> <span aria-hidden="true" class="icon fa fa-file-text fa-2x"></span><span class="opcion">Cotizaciones</span></a></li>
+        <li><a href="./noticias"> <span aria-hidden="true" class="icon fa fa-newspaper-o fa-2x"></span><span class="opcion">Noticias</span></a></li>
+        <li><a href="./nosotros"> <img src="./images/logo-blanco.svg" alt="technodomus" height="37px" aria-hidden="true" class="logo"><span class="opcion">La empresa</span></a></li>
+        <li><a href="./clientes"> <span aria-hidden="true" class="icon fa fa-user-md fa-2x"></span><span class="opcion">Clientes</span></a></li>
+        <li><a href="https://twitter"> <span aria-hidden="true" class="icon fa fa-twitter fa-2x"></span><span class="opcion">twitter        </span></a></li>
+        <li><a href="https://www.facebook.com/Technodomus/"> <span aria-hidden="true" class="icon fa fa-facebook fa-2x"></span><span class="opcion">Facebook</span></a></li>
+        <li><a href="https://plus.google.com/109633024373291114640"> <span aria-hidden="true" class="icon fa fa-google-plus fa-2x"></span><span class="opcion">Buscar      </span></a></li>
+      </ul>
+    </div>
   </header>
   <div class="container-fluid">
     <div class="caja-contenido">
@@ -108,7 +108,7 @@
         <div class="grid">
           <div id="esterilizacion" class="panel panel-primary">
             <div class="panel-heading">
-              <h1>Esterilización</h1>
+              <h1> <a href="./esterilizacion/">Esterilización</a></h1>
             </div>
             <div class="panel-body"><img src="./images/esterilizadora.jpeg" alt="esterilización" class="img-responsive">
               <h4>Las mejores soluciones para procesar instrumental e insumos estériles con la más alta tecnología para garantizar la seguridad del paciente.</h4>
@@ -118,7 +118,7 @@
           </div>
           <div id="imagenologia" class="panel panel-primary">
             <div class="panel-heading">
-              <h1>Imagenología</h1>
+              <h1> <a href="./imagenologia/">Imagenología</a></h1>
             </div>
             <div class="panel-body"><img src="./images/imagenologia.png" alt="PARCS" class="img-responsive">
               <h4>Los sistemas más actuales para obtener, procesar, almacenar, visualizar y administrar imágenes diagnósticas de alta calidad para ayudar en su proceso de diagnóstico.</h4>
@@ -128,9 +128,9 @@
           </div>
           <div id="veterinaria" class="panel panel-primary">
             <div class="panel-heading">
-              <h1>Veterinaria</h1>
+              <h1><a href="veterinaria/">Veterinaria</a></h1>
             </div>
-            <div class="panel-body"><img src="./images/equiposVeterinaria.jpg" alt="medidor hemoglobina" class="img-responsive">
+            <div class="panel-body"><img src="./images/vet-cr-vita-Carestrem.jpg" alt="medidor hemoglobina" class="img-responsive">
               <h4>Radiología digital y las técnologías más recientes para consulta veterinaria</h4>
               <p>El cambio de readiología de película a digital parece un gran paso para una consulta veterinaria, pero la modernización de su clínica puede ser sencilla y económica.</p>
               <p>Sistemas digitales especificos para aplicaciones veterinarias, que generan imagénes de alta calidad en cuestión de minutos, que acompañamos con otros equipos que permiten un diagnóstico más rápido y preciso.</p><a href="./imagenologia/index.html">Conoce más...</a>
@@ -139,64 +139,62 @@
         </div>
       </div>
       <section id="contacto">
-        <div class="grid">
-          <div class="panel panel-success">
-            <div class="panel-heading">
-              <h2>Contacta y cotiza</h2>
-            </div>
-            <div class="panel-body">
-              <ul class="contacto text-center">
-                        <li> 
-                          <div class="botones">
-                            <div class="boton boton-tel"><a href="tel:5553363212"><i class="fa fa-2x fa-phone"></i></a></div>
-                          </div>
-                        </li>
-                <li><strong>(55)53363212 | 01800 874 9522</strong></li>
-                        <li> 
-                          <div class="botones">
-                            <div class="boton boton-mail"><a href="mailto:info@technodomus.com?cc=servicioaclientes@technodomus.com"><i class="fa fa-2x fa-envelope"></i></a></div>
-                          </div>
-                        </li>
-                <li><strong><a href="mailto:info@technodomus.com?cc=servicioaclientes@technodomus.com">Servicio a Clientes</a></strong></li>
-                        <li> 
-                          <div class="botones">
-                            <div class="boton boton-tw"><a href="twitter.com"><i class="fa fa-2x fa-twitter"></i></a></div>
-                          </div>
-                        </li>
-                        <li> 
-                          <div class="botones">
-                            <div class="boton boton-fb"><a href="facebook.com/technodomus"><i class="fa fa-2x fa-facebook"></i></a></div>
-                          </div>
-                        </li>
-                        <li> 
-                          <div class="botones">
-                            <div class="boton boton-go"><a href="https://plus.google.com/109633024373291114640"><i class="fa fa-2x fa-google"></i></a></div>
-                          </div>
-                        </li>
-              </ul>
-            </div>
+        <div class="panel panel-success">
+          <div class="panel-heading">
+            <h2>Contacta y cotiza</h2>
           </div>
-                  <div class="text-center">
-                    <div class="panel">
-                      <h2>Localizanos</h2>
-                      <div class="map-responsive"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.492137092907!2d-99.14841905015103!3d19.347831986868414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffd2da6664df%3A0x1f577e2c3371be51!2sTechnodomus%2C+S.A.+De+C.V.!5e0!3m2!1ses-419!2smx!4v1464816928299" width="300" height="400" frameborder="0" style="border:0" allowfullscreen></iframe></div>
-                    </div>
-                  </div>
-                  <div class="text-center">
-                    <div class="panel">
-                      <h2>twitter</h2>
-                      <a class="twitter-timeline" href="https://twitter.com/technodomus" data-widget-id="738134280732180481">Tweets de @technodomus.</a>
-                      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                    </div>
-                  </div>
-                  <div class="text-center">
-                    <div class="panel">
-                      <h2>facebook</h2>
-                           
-                      <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTechnodomus&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId=1707855296152585" width="250" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
-                    </div>
-                  </div>
+          <div class="panel-body">
+            <ul class="contacto text-center">
+                      <li> 
+                        <div class="botones">
+                          <div class="boton boton-tel"><a href="tel:5553363212"><i class="fa fa-2x fa-phone"></i></a></div>
+                        </div>
+                      </li>
+              <li><strong>(55)53363212 | 01800 874 9522</strong></li>
+                      <li> 
+                        <div class="botones">
+                          <div class="boton boton-mail"><a href="mailto:info@technodomus.com?cc=servicioaclientes@technodomus.com"><i class="fa fa-2x fa-envelope"></i></a></div>
+                        </div>
+                      </li>
+              <li><strong><a href="mailto:info@technodomus.com?cc=servicioaclientes@technodomus.com">Servicio a Clientes</a></strong></li>
+                      <li> 
+                        <div class="botones">
+                          <div class="boton boton-tw"><a href="twitter.com"><i class="fa fa-2x fa-twitter"></i></a></div>
+                        </div>
+                      </li>
+                      <li> 
+                        <div class="botones">
+                          <div class="boton boton-fb"><a href="facebook.com/technodomus"><i class="fa fa-2x fa-facebook"></i></a></div>
+                        </div>
+                      </li>
+                      <li> 
+                        <div class="botones">
+                          <div class="boton boton-go"><a href="https://plus.google.com/109633024373291114640"><i class="fa fa-2x fa-google"></i></a></div>
+                        </div>
+                      </li>
+            </ul>
+          </div>
         </div>
+                <div class="text-center">
+                  <div class="panel">
+                    <h2>Localizanos</h2>
+                    <div class="map-responsive"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.492137092907!2d-99.14841905015103!3d19.347831986868414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffd2da6664df%3A0x1f577e2c3371be51!2sTechnodomus%2C+S.A.+De+C.V.!5e0!3m2!1ses-419!2smx!4v1464816928299" width="300" height="400" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <div id="twitter" class="panel">
+                    <h2>Twitter</h2>
+                    <a class="twitter-timeline" href="https://twitter.com/technodomus" data-widget-id="738134280732180481">Tweets de @technodomus.</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <div id="facebook" class="panel">
+                    <h2>Facebook</h2>
+                         
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTechnodomus&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId=1707855296152585" width="250" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+                  </div>
+                </div>
       </section>
     </div>
   </div>
@@ -207,5 +205,4 @@
     </div>
   </footer>
   <script src="./scripts/main.js"></script>
-  <script src="./scripts/packery.js"></script>
 </body></html>
