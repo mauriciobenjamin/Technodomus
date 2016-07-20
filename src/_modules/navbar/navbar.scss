@@ -1,0 +1,158 @@
+// estilos de la barra de navegación superior
+@import "../../_styles/variables";
+
+.navbar-brand {
+  min-height: 7rem;
+  padding: 5px 5px;
+  img {
+    position: relative;
+    top: 10%;
+  }
+}
+
+.navbar {
+  &#{&} {
+    background-color: $color1;
+  }
+  min-height: 80px;
+  box-shadow: 0 4px 12px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+  z-index: 1000;
+  .dropdown-menu {
+    min-width: 150px;
+    left: 15px;
+    li {
+      left: 10px;
+    }
+  }
+}
+
+.navbar-inverse {
+  &#{&} {
+    background-color: $color1;
+  }
+  border: 0;
+  min-height: 80px;
+
+  &#{&} .active > a {
+    background-color: darken($color1, 5);
+    &:focus {
+      background-color: darken($color1, 5);
+    }
+    &:hover {
+      background-color: darken($color1, 15);
+    }
+  }
+
+    ul {
+      margin-top: 12px;
+    }
+
+  li {
+    display: block;
+    color: $color3;
+    line-height: 4rem;
+    height: 4rem;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+    &:hover a{
+      color: $color4;
+      background-color: inherit;
+    }
+    a {
+      color: $color2;
+      display: inline-block;
+    }
+    .dropdown-menu {
+      a {
+        color: $color1-50;
+        text-align: center;
+      }
+    }
+  }
+
+  .navbar-form {
+    padding-right: 40px;
+    padding-bottom: 10px;
+  }
+}
+
+
+// estilos de la barra lateral
+.sidenav {
+  @media screen and (max-width: $bp-m) {
+    left: -5rem;
+    &:hover {
+      left: 0;
+    }
+  }
+
+  display: flex;
+  height: 100%;
+  width: 5rem;
+  background-color: $color1;
+  position: fixed;
+  box-shadow: 3px 3px 4px rgba(2, 2, 2, 0.08);
+  overflow-y: auto;
+  left: 0;
+  top: 0;
+  list-style: none;
+  border-radius: 0;
+  margin: 0;
+  padding: 0.5rem 0 0 0.5rem;
+  z-index: 800;
+
+  &:hover {
+    width: 17rem;
+    overflow-y: auto;
+    .opcion {
+      display: inline-block;
+      width: 10rem;
+      padding-left: 0.5rem;
+    }
+  }
+
+  ul {
+    display: block;
+    margin-top: 95px;
+  }
+
+  li {
+    width: 100%;
+    display: block;
+    color: $color3;
+    line-height: 3rem;
+    height: 3rem;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+    &:hover a{
+      color: $color4;
+      background-color: inherit;
+    }
+    a {
+      color: $color2;
+      display: inline-block;
+    }
+    .opcion {
+      display: none;
+      width: 0;
+    }
+  }
+
+  .logo {
+    position: relative;
+    bottom: 12px;
+    left: 14px;
+    padding-right: 1rem;
+  }
+
+  .icon {
+    width: 3.7rem;
+    height: 4rem;
+    text-align: center;
+    display: inline-block;
+    line-height: 1em;
+    &+.fa-fw {};
+  }
+}

@@ -1,0 +1,100 @@
+// Crea un panel principal de dos columnas de ancho
+mixin panelmax(titulo)
+  .panel.panel-default.panel-2x
+    .panel-body
+      h3= titulo
+      if block
+        block
+      else
+        p En construcción
+
+// Crea un panel principal con encabezado azul
+
+mixin panelprin(titulo, link)
+  .panel.panel-primary
+    .panel-heading
+      a(href= link)
+        h1= titulo
+    if block
+      block
+    else
+      p En construcción
+      
+// Panel subprincipal con encabezado más pequeño
+mixin panelsprin(titulo, link)
+  .panel.panel-primary
+    .panel-heading
+      a(href= link)
+        h2= titulo
+    if block
+      block
+    else
+      p En construcción
+
+//Crea un panel simple con titulo 2        
+mixin panelprod(titulo, link)
+  .panel.panel-default
+    .panel-heading
+      a(href= link)
+        h2= titulo
+    if block
+      block
+    else
+      p En construcción
+
+//Crea un panel simple con titulo 3
+mixin panelsubp(titulo, link)
+  .panel.panel-default
+    .panel-heading
+      a(href= link)
+        h3= titulo
+    if block
+      block
+    else
+      p En construcción
+
+// Incerta una imagen responsiva y sus texto alt
+mixin foto(imagen,atText)
+  img(src= baseUrl + 'images/' + imagen alt=atText class='img-responsive')&attributes(attributes)
+
+mixin fotoch(imagen,atText)
+  img(src= baseUrl + 'images/' + imagen alt=atText class='img-responsive img-center')&attributes(attributes)  
+    
+//Genera un bloque de migajas de pan
+mixin migajas(bread)
+  ol.breadcrumb
+    each val, key in bread 
+      li
+        a(href=val) #{key}
+
+//Botones expansivos        
+mixin mixboton(icon, texto)
+  .botones
+    div(class="boton boton-#{icon.estilos}")
+      a(href="#{icon.ref}")
+        i.fa.fa-2x(class="fa-#{icon.fa}")    
+        
+//Cabecera jumbotron
+mixin jumbo(titulo)
+  .jumbotron
+    h1.producto= titulo
+    if block
+      block
+      
+//Encabezado para paginas de productos individuales
+mixin cabecera(titulo,bread)
+  +jumbo(titulo)
+  +migajas(bread)
+  
+// Incertar logos de proveedores
+mixin gke()
+  img(src= baseUrl + 'images/logo-gke.jpg' alt='gke')&attributes(attributes)
+  
+//En construcción
+mixin construccion()
+  +cabecera(producto, bread)
+  img.construccion.responsive(src=baseUrl+"images/construccion.png", alt="en construcción" height='150px')
+  div
+    h1.producto Lo sentimos, estamos en proceso de renovación de la página
+  a(href="../")
+    h2 Regresar...

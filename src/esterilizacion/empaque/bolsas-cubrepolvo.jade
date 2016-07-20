@@ -1,0 +1,24 @@
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var tituloPagina = "Technodomus | Bolsas cubrepolvo"
+
+block content
+  +jumbo('Bolsas cubrepolvo')
+  
+  ol.breadcrumb
+    li
+      a(href="./../../") Inicio
+    li
+      a(href="./../") Esterilización
+    li
+      a(href="./") Empaque
+    li.active
+      a(href="#") Bolsas cubrepolvo
+  
+  +panelprod('Bolsas cubrepolvo')
+    .panel-body
+    +foto('empaque-bolsas-cubre,jpg', 'Bolsas cubrepolvo')
+    p Las bolsas estan padrisimas!!

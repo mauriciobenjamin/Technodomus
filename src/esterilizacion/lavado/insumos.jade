@@ -1,0 +1,33 @@
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var urlLinks = '/esterilizacion/lavado/'
+  - var tituloPagina = "Technodomus | Soluciones en lavado"
+
+block content
+  +jumbo('Químicos para el lavado de instrumental médico')
+  ol.breadcrumb
+    li
+      a(href="./../../") Inicio
+    li
+      a(href="./../") Esterilización
+    li
+      a(href="./") Lavado
+    li.active
+      a(href="#") Insumos
+  
+  .grid
+    +panelsubp('EmPower® Foam Touch-n-Spray', './detergente-enzimatico.html')
+      +foto('Dispensador-EmPowerFoamTouch-Metrix.jpg','Dispensador Espuma EmPower')
+      .panel-body
+        p Espuma lista para su uso en un conveniente aplicador
+        a(href= "./detergente-enzimatico.html") Conozcala a fondo
+        
+    +panelsubp('MetriLub®', './lubricantes-acondicionadores.html')
+      +foto('Lubricante-MetriLube-Metrex.jpg', 'Lubricante MetriLube')
+      .panel-body
+        p Lubricante para instrumental quirurgico a base de aceite mineral, protege las superficies de metal y mejora el funcionamiento de partes moviles.
+      .panel-footer
+        a(href="./lubricantes-acondicionadores.html")

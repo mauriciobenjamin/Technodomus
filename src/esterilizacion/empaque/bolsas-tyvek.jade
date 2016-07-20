@@ -1,0 +1,25 @@
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var tituloPagina = "Technodomus | Bolsas de Tyvek®"
+
+block content
+  +jumbo('Bolsas para esterilización de Tyvek®')
+  
+  ol.breadcrumb
+    li
+      a(href="./../../") Inicio
+    li
+      a(href="./../") Esterilización
+    li
+      a(href="./") Empaque
+    li.active
+      a(href="#") Bolsas de Tyvek®
+  
+  .grid
+    +panelprod('Bolsas de Tyvek®')
+      .panel-body
+      +foto('empaque-bolsas-tyvek,jpg', 'Bolsas de tyvek')
+      p Bolsas

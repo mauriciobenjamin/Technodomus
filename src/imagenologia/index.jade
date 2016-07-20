@@ -1,0 +1,60 @@
+extends ../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../'
+  - var tituloPagina = "Technodomus | Soluciones en imagenología"
+
+block content
+  #parallax-imagen.jumbotron
+    h1.cabecera soluciones en imagenología
+    
+  .grid
+    +panelprin('Imagenología')
+      +foto('imagenologia.png','imagenologia')
+      .panel-body
+        p El correcto diagnóstico necesita de datos oportunos y precisos para ayudar a los pacientes. Y estos deben esta disponibles a lo largo de toda la vida del paciente para poder hacer estudios tranversales de la evolución de su estado.
+        p Por ello, la radiología y otras técnicas de imagen se han hecho herramientas indispensables al dotar al profesional de la medicina de datos reales del estado interno del organismo. Pero tan importante como la generación de imágenes es la posibilidad de <a(href="./PACS/")>acceder</a> a ellas en todo momento y tener una historia clinica completa.
+        p En Technodomus somos consciente del valor de las imagenes médicas por lo que ofrecemos las mejores soluciones para cada necesidad.
+        
+    +panelprod('Radiología digital','./rx-digital')
+      .panel-body
+        p Las técnicas radiológicas son de sobra conocidas por sus ventajas, si a estas le añadimos la posibilidad de obtener imágenes en segundos y en medios de facil almacenamiento y distribución se obtiene un sistema que reduce los tiempos de diagnóstico, eficientiza el uso del equipo de radiológia, mejora el volumen de imágenes obtenidas y da al paciente la ventaja de poder acceder facilmente a sus resultados y reducir su exposición a la radiación.
+        p Todo ello es posible con las soluciones de radiología digital y computarizada que le ofrecemos.
+        h4 
+          a(href="./rx-digital/input-digital/") Dígital Input
+        h4 
+          a(href="./rx-digital/output-digital/") Digital Output 
+        h4
+        a(href="./rx-digital/mesas-rx/") Mesas de Rayos X
+        h4 Sistemas de Radiología Computarizada (CR)
+        a(href= "./rx-digital/input-digital/sistema-cr.html")
+          +foto('cRcarestream.jpeg')
+          | Sistemas de captura de imágenes radiológicas
+        h4 
+          a(href= "./rx-digital/input-digital/sistema-drx.html") Sistemas de Radiología Digital (DRX)
+        h4 
+          a(href="./rx-digital/input-digital/sistema-drx.html") DRX Dental
+    
+    +panelprod('Radiología análoga', './analoga')
+      .panel-body
+        p Los sistemas de película análoga tienen un excelente desempeño en cuanto a su flexibilidad y resolución, dando seguridad al dianóstico.
+        p La gran variedad de tamaños de películas y casetas, permite cubrir necesidades diversas y ampliar sus opciones de atención. 
+        p Para sacar todo el provecho a sus películas, contamos con la mejor selección de químicos y reveladoras para que sus imágenes siempre tengan la mejor calidad.
+        h4
+          a(href="./rx-analogico/casetas.html") Casetas
+        h4 
+          a(href="./rx-analogico/pelicula-plana.html") Película plana
+        h4 
+          a(href="./rx-analogico/pelicula-mamografica.html") Película mamográfica
+        h4 Película Dental
+        
+    +panelprod('RIS','./RIS/')
+      .panel-body
+        p Los Sistemas de Información Radiológica conocidos por sus siglas en inglés como RIS (radiological information system) conforman una pieza clave para el correcto aprovechamiento de un equipo de radiología digital.
+        p RIS mejora el flujo de trabajo de radiología mediante la automatización del proceso de diagnóstico del paciente, desde la introducción de la orden hasta la distribución de resultados, y permite reducir los errores y mejorar la asistencia al paciente. 
+        p Si a esto se añade la posibilidad de acceder a la información de radiología desde la web, el diagnóstico puede realizarse desde cualquier lugar, adaptandose a las necesidades de los centros u hospitales situados en múltiples emplazamientos e integra los flujos de trabajo de mamografía, las revisiones y notificaciones externas para eliminar los sistemas dispares. 
+    
+    +panelprod('PACS', './PACS/')
+      .panel-body
+        p No solo el área de radiológia produce información, otras áreas con servicios de imagenología tienen necesidades de distribución y almacenamiento de imagénes, por lo que integrar todas ellas sera una ventaja para los especialistas y el paciente. Por ello es necesario un Sistema de Almacenamiento y Comunicación de Imágenes (conocidos en inglés como Picture Archiving and Communication System) que proveea de un almacenamiento y distribución económico y conveniente a las necesidades de sus servicios.

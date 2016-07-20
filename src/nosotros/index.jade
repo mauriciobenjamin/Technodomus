@@ -1,0 +1,19 @@
+extends ../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+block content
+  .jumbotron
+    h1 Technodomus es ...
+  
+  .grid
+    +panelprin('Una empresa méxicana')
+      .panel-body
+       include:markdown nosotros.md
+    
+    +panelsubp('¿Te gustaría trabajar con nosotros?')
+      .panel-body
+        p Somos una empresa en crecimiento y constantemente tenemos ofertas de trabajo, conocelas 
+          a(href="./trabaja.html") aquí.

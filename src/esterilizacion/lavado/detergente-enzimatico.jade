@@ -1,0 +1,38 @@
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Detergente Enzimático EmPower'
+  - var tituloPagina = "Technodomus | Soluciones en  " + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Lavado: './', Insumos: './insumos.html', 'Detergente Enzimático':'#'}
+  
+block content
+  +cabecera(producto,bread)
+  
+  .grid
+    +panelprod('EmPower®')
+      .panel-body
+        +foto('Detergente-EmPower-Metrex.png', 'Detergente EmPower')
+        :marked
+          ### Detergente Enzimatico
+          Con dos enzimas proteolíticas y dos agentes limpiadores tensoactívos, es capaz de remover rápida y eficazmente los restos de sangre, tejidos y otros fluidos corporales ricos en proteínas, de la superficie del instrumental quirúrgico y endoscopios.
+          
+          #### Metrex
+          
+          No. Artículo | Descripción
+          :-----------:|:-----------:
+          10-4102 | Caja c/48 Botellas (2 oz. c/u)
+          10-4100 | Caja c/4 Galones (3.8 L c/u)
+      
+    +panelprod('EmPower® Foam')
+      .panel-body
+        +foto('Detergente-EmPowerFoamTouch-Metrex.jpg', 'EmPower Foam')
+        :marked 
+        ### Espuma enzimatica lista para usar
+        Espuma lista para su uso, se puede usar como en la prelimpieza de equipos críticos, antes de pasar a un proceso de desinfección de alto nivel o de esterilización. Esta lista para usar en un sistema de rociador, ideal para su empleo en quirofanos, áreas de procesamiento esteril y otros departamentos donde nos se puede renovar inmediatamente el instrumental limpio.
+        
+        Al ser una espuma, cubre el equipo reduciendo los derrames y salpicaduras, al mismo tiempo que lo prepara para iniciar el proceso de limpieza.
+        #### Metrex
+        
+        

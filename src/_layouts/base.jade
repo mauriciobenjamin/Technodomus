@@ -1,0 +1,50 @@
+//- Custom Configuration
+block config
+  //- Setup site's base URL to match the "baseUrl" key within `package.json`
+  //- Otherwise default to relative pathing
+  - var baseUrl = config.baseUrl || './'
+  - var google = 'https://plus.google.com/109633024373291114640'
+  - var facebook = 'https://www.facebook.com/Technodomus/'
+  - var twitter =  'https://www.twitter.com/Technodomus'
+  
+  
+doctype html
+
+<!--[if lt IE 9]>
+<html class='lt-ie9 no-js' lang='en'>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+<html class='no-js' lang='en'>
+<!--<![endif]-->
+block vars
+include ../_modules/mixins
+
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+  title #{tituloPagina}
+  meta(name='description', content= 'Tecnologia y servicios para los profesionales de la salud, imagenologia, rayos x, esterilizacion, desinfeccion, radiologia y mas.')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  block stylesheets
+    link(rel='stylesheet', href= baseUrl + 'styles/main.css')
+    link(rel="icon", href= baseUrl+"/favicon16.png" sizes="16x16" type="image/png")
+    link(rel="icon", href= baseUrl+"/favicon32.png" sizes="32x32" type="image/png")
+
+body
+  <!--[if lt IE 9]>
+  <p class='browsehappy'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  
+  // navbar
+  include ../_modules/navbar/navbar
+  .container-fluid
+    .caja-contenido
+      
+      block content
+
+  // footer
+  include ../_modules/footer/footer
+  
+  block scripts
+    script(src= baseUrl + 'scripts/main.js')
+</html>

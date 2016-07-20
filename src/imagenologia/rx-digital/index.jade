@@ -1,0 +1,51 @@
+extends ../../_layouts/productos2
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Radiología digital'
+  - var tituloPagina = "Technodomus | " + producto
+  - var bread = {Inicio: baseUrl, Imagenología: './../', 'Radiología Digital': './'}  
+
+block append content
+
+  .grid
+    +panelprod('Incorpore un flujo digital')
+      .panel-body
+        +foto('/radiologia-digital.jpg','Radiología digital')
+        p Mejorar los tiempos de procesamiento de las imágenes, reducir la exposición del paciente a la radiación y eficientar el acceso a la información generada, son las principales ventajas del uso de la radiológia digital.
+        p Technodomus ofrece alernativa para facilitar su trancisión a los sistemas digitales.
+    
+    +panelsubp('Input Digital','./input-digital/')
+      .panel-body
+        +fotoch('/imagenologia-drx.jpg', 'input-digital')
+        p Todo comienza con una imágen correcta, producirla requiere la combinación adecuada de pericia y equipo. Le ofrecemos los mejores equipos para aprovechar toda su experiencia en la generación de imágenes radiológicas.
+        a(href="./input-digital/sistema-cr.html")
+          h3 Sistemas de radiología computarizada
+        a(href="./input-digital/sistema-drx.html")
+          h3 Sistemas de readiología digital
+        a(href="./input-digital/casetas.html")
+          h3 Casetas
+        a(href="./input-digital/pantallas.html")
+          h3 Pantallas
+        
+    +panelsubp('Output Digital','./output-digital/')
+      .panel-body
+        .img-center
+          +fotoch('/imagenologia-monitor.jpeg','./output-digital/')
+        p Generada la imagen, una de las ventajas de los flujos de trabajo digital es la flexibilidad de salidas disponibles, que hacen mucho más accesible las imágenes que los sistemas convencionales.
+        a(href="./output-digital/estaciones.html")
+          h3 Estaciones de trabajo
+        a(href="./output-digital/impresoras.html")
+          h3 Impresoras
+        a(href="./output-digital/monitores-gm.html")
+          h3 Monitores Grado Médico
+        a(href="./output-digital/pelicula-dry.html")
+          h3 Película Dry
+        a(href="./output-digital/quemadores.html")
+          h3 Quemadores de medios ópticos
+          
+    +panelsubp('Mesas de Rayos X','./mesas-rx/')
+      .panel-body
+        +fotoch('/imagenologia-mesas-rx.jpg', './mesas-rx/')
+        p Una forma adecuada de tener un sistema total es contar con una mesa de rayos X totalmente digital

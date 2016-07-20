@@ -1,0 +1,56 @@
+// Tipografías
+@mixin titulos($tam, $color) {
+  color: $color;
+  font: {
+    family: 'Oswald', Helvetica, sans-serif;
+    size: $tam;
+  }
+  a:hover {
+    text-decoration: none;
+    color: desaturate($color, 0.5);;
+  }
+}
+
+@mixin enfasis ($tam, $color) {
+  color: $color;
+  font: {
+    family: 'PT Sans Narrow', serif;
+    size: $tam;
+  }
+}
+
+@mixin textos {
+  font: {
+    family: 'Open Sans', Helvetica, Arial, sans-serif;
+    size: medium;
+  }
+}
+
+//objetos
+@mixin boton($color, $texto) {
+  background-color: $color;
+  color: #ffe;
+  a {
+    color: #ffe;
+    text-decoration: none;
+  }
+  width: $boton-ancho;
+  height: $boton-alto;
+  border-radius: $boton-ancho / 2;
+  text-align: center;
+  font-size: 130%;
+  line-height: $boton-alto;
+  box-shadow:rgba(16, 25, 36, 0.65098) 3px 3px 8px 0px;
+  -webkit-box-shadow:rgba(16, 25, 36, 0.65098) 3px 3px 8px 0px;
+  -moz-box-shadow:rgba(16, 25, 36, 0.65098) 3px 3px 8px 0px;
+  &:hover {
+    width: $boton-ancho-hover;
+    i:after {
+      @include textos;
+      margin-left: 10px;
+      letter-spacing: 1px;
+      content: $texto;
+      vertical-align: 8px;
+    }
+  }
+}

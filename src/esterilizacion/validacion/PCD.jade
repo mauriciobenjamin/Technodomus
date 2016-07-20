@@ -1,0 +1,17 @@
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Indicadores Biológicos'
+  - var tituloPagina = "Technodomus | " + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Validación: './', 'Indicadores Biológicos': '#'}  
+  
+block content
+  +cabecera(producto, bread)
+  
+  .grid
+    +panelprod(producto)
+      .panel-body
+      +foto('validacion-indicadores-bio.jpg', 'Indicadores biológicos')
+      p Indicadores muy buenos

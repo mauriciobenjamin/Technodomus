@@ -1,0 +1,46 @@
+extends ../../_layouts/productos
+
+block append config
+block append config
+  - var baseUrl = './../../'
+  - var urlLinks = '/esterilizacion/empaque/'
+  - var tituloPagina = 'Technodomus | Soluciones en empaque'
+
+block content
+  +jumbo('esterilizadores')
+
+  ol.breadcrumb
+    li
+      a(href="./../../") Inicio
+    li
+      a(href="./../") Esterilización
+    li.active
+      a(href="./") Esterilizadores
+
+  .grid
+    +panelprin('Esterilizadores')
+      .panel-body
+        p El proceso de esterilización involucra medios físicos o químicos que son capaces de destruir las formas de vida microbianas. 
+        p Para hablar de esterilización y no de una simple desinfección, el proceso debe de acabar con la viabildiad de las esporas y otras formas de vida latente de los microorganismos.
+        p De este proceso depende la seguridad de cualquier actividad hospitalaria. Por ello le ofrecemos sistemas que se adaptan a sus necesidades, condiciones y flujos de trabajo.
+        
+    +panelmax('Baja temperatura - Plasma')
+      .panel-body
+        h4 Peróxido de hidrogeno
+        .thumbnail
+          a(href= baseUrl + "plasma.html")
+            +foto('esterilizador-plasma-100.jpg','esterilizadora de plasma Laoken')
+            | Equipo Laoken de esterilización a baja temperatura con plasma de peróxido de hidrógeno
+      
+    +panelprod('Alta Temperatura - Vapor')
+      .panel-body
+        h4 Vapor de agua a presión
+        .thumbnail
+          +foto('esterilizadorVapor-serie400-500hcGetinge.jpeg','esterilizadora Serie 400 de Getinge','200px')
+          a(href= baseUrl + "baja-temperatura.html") Equipos Gettinge de baja temperatura a base de vapor
+
+    +panelprod('Baja Temperatura - Formaldehído')
+      .panel-body
+        h4 Vapor de formaldehído
+          .thumbnail
+            +foto('esterilizador-formal-HS66TurboCombiGetinge.jpeg', 'esterilizadora de vapor frio de formaldehído','200px')(class="img-productos")

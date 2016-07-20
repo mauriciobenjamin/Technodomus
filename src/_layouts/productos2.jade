@@ -1,0 +1,19 @@
+extends ./base
+
+block append config
+  - var panelp = "panel panel-primary"
+  - var imgUrl = '../images/'
+  
+// Add extra stylesheets
+block append stylesheets
+
+block content
+ +cabecera(producto, bread)
+  
+  //- Provides layout level markup
+  .layout-wrapper.productos
+    block productos
+
+
+// Add extra scripts
+block append scripts

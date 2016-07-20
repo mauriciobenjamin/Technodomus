@@ -1,0 +1,78 @@
+header
+  nav.navbar.navbar-fixed-top
+    .navbar-inverse
+      .navbar-header
+        button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar-colapsada', aria-expanded='false')
+          span.sr-only Navegación
+          span.glyphicon.glyphicon-menu-hamburger
+        a.navbar-brand(href= baseUrl)
+          img(src= baseUrl + 'images/logoNegPar.png', alt='Technodomus' height="60px")
+      .navbar-right.collapse.navbar-collapse#navbar-colapsada
+        ul.nav.navbar-nav
+          li
+            a(href= baseUrl) Inicio
+              span.sr-only (actual)
+          li.dropdown
+            a.dropdown-toggle(href="#", data-toggle="dropdown", role="button") Productos
+              span.caret
+            ul.dropdown-menu(aria-labelledby="menu")
+              li
+               a(href= baseUrl + "esterilizacion") Esterilización
+              li 
+                a(href= baseUrl + "imagenologia") Imagenología
+          li
+            a(href= baseUrl + 'cotiza') Cotiza
+          li
+            a(href= baseUrl+'noticias') Noticias
+          li
+            a(href=baseUrl+'nosotros') Empresa
+          li
+            a(href=baseUrl+'clientes') Clientes
+        form.navbar-form.navbar-right(role='search')
+          .form-group
+            input.form-control(type='text', placeholder='Buscar...')
+          button.btn.btn-primary(type='submit')
+            span.glyphicon.glyphicon-search
+  .sidenav.navbar
+      ul.sidenav
+        li.active 
+          a(href= baseUrl) 
+            span.icon.fa.fa-home.fa-2x(aria-hidden="true")
+            span.opcion Inicio
+            span.sr-only (actual)   
+        li
+          a(href= baseUrl + 'esterilizacion') 
+            img.logo(src=baseUrl+"images/logo-esterilizacion.svg", alt="esterilizacion", height="27px", aria-hidden="true")
+            span.opcion Esterilización
+        li
+          a(href= baseUrl + 'imagenologia') 
+            img.logo(src= baseUrl+'images/logo-imagenologia.svg', alt='imagenologia', height="32px", aria-hidden="true")
+            span.opcion Imagenología
+        li
+          a(href= baseUrl + 'cotiza') 
+            span.icon.fa.fa-file-text.fa-2x(aria-hidden="true")
+            span.opcion Cotizaciones
+        li
+          a(href= baseUrl + 'noticias') 
+            span.icon.fa.fa-newspaper-o.fa-2x(aria-hidden="true")
+            span.opcion Noticias
+        li
+          a(href= baseUrl + 'nosotros') 
+            img.logo(src= baseUrl +"images/logo-blanco.svg", alt="technodomus" height="37px", aria-hidden="true")
+            span.opcion Empresa
+        li
+          a(href= baseUrl + 'clientes') 
+            span.icon.fa.fa-user-md.fa-2x(aria-hidden="true")
+            span.opcion Clientes
+        li
+          a(href= twitter ) 
+            span.icon.fa.fa-twitter.fa-2x(aria-hidden="true")
+            span.opcion twitter        
+        li
+          a(href= facebook) 
+            span.icon.fa.fa-facebook.fa-2x(aria-hidden="true")
+            span.opcion Facebook
+        li
+          a(href= google) 
+            span.icon.fa.fa-google-plus.fa-2x(aria-hidden="true")
+            span.opcion Buscar      

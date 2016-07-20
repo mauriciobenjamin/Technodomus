@@ -1,0 +1,137 @@
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var urlLinks = '/esterilizacion/lavado/'
+  - var tituloPagina = "Technodomus | Soluciones en Lavado"
+  mixin bien()
+    span.fa.fa-check-square-o
+  
+  mixin mal()
+    span.fa.fa-ban.text-danger
+
+block content
+  +jumbo('Lavado de instrumental y dispositivos médicos')
+  ol.breadcrumb
+    li
+      a(href="./../../") Inicio
+    li
+      a(href="./../") Esterilización
+    li.active
+      a(href="./") Lavado
+  
+  .grid
+    +panelsprin('Importancia del lavado')
+      .panel-body
+        p El lavado es el paso más importante para mejorar la 
+          b efectividad 
+          | de la desinfección o la esterilización ya que:
+          ul 
+            li Elimina la mayor parte de la carga microbiana.
+            li Retira la suciedad y restos visibles
+            li Previene la formación de biofilms y presencia de pirogenos ya que los residuos orgánicos funcionan como barrera protectora
+            li Protege al personal que de esta forma maneja material más seguro.
+      .panel-footer El éxito de la desinfección y esterilización depende de un buen lavado
+      
+    +panelmax('¿Vale la pena realizar un lavado manual?')
+        table
+          thead
+            tr
+              th Beneficios
+              th Automático
+              th Manual
+          tbody
+            tr
+              td Reducción de la biocarga
+              td.text-center 
+                +bien()
+              td.text-center 
+                +bien()
+            tr
+              td Favorece los procesos de esterilización y desinfección
+              td.text-center 
+                +bien()
+              td.text-center 
+                +bien()
+            tr
+              td Protección del usuario del contacto con material biológico
+              td.text-center 
+                +bien()
+              td.text-center 
+                +mal()            
+            tr
+              td Estandarización del proceso
+              td.text-center 
+                +bien() 
+              td.text-center 
+                +mal ()
+            tr
+              td Facilita el seguimiento del equipo en procesos de certificación y trazabilidad
+              td.text-center 
+                +bien()
+              td.text-center 
+                +mal()            
+            tr
+              td Reducción de tiempos
+              td.text-center 
+                +bien()
+              td.text-center 
+                +mal()
+            tr
+              td Manejo del instrumental delicado
+              td.text-center 
+                +bien()
+              td.text-center 
+                +mal()
+              
+        h3 Recomendaciones generales para el proceso de lavado
+        ol
+          li Realizar el lavado en el área designada para la descontaminación.
+          li Utilizar <a href="./detergente-enzimatico.html">detergente enzimático</a> para facilitar la remoción de residuos.
+          li Utilizar <a href="./detergentes.html">detergentes con pH neutro</a> ya que compatible con los materiales del equipo y no les causa deterioros a largo plazo como si lo hacen los agenes cáusticos y ácidos.
+          li El cepillado debe ser suave para evitar daños en el instrumental.
+
+    +panelsprin('Lavado Automático', './lavadoras.html')
+      +foto('lavadoras-46-series-usuario-getinge.jpg', 'Lavadora en uso')
+      .panel-body
+        p El lavado autómatico no solo aumenta el volumen y la velocidad de procesamiento de material, también mejora las condiciones de seguridad del personal encargado de dichas tareas, reduciendo su exposición a riesgos biológicos.
+      .panel-footer  
+        a(href="./lavadoras.html") Conozca nuestras opciones de lavado autómatico.
+
+    +panelsprin('Insumos para lavado y cuidado de instrumental', './insumos.html')
+      +foto('lavado-manual.jpg', 'lavado manual')
+      .panel-body
+        h3 Para lavado y cuidado de su instrumental
+        p Para un buen lavado, no basta solo un excelente equipo, este requiere de insumos adecuados para realizar sus funciones. Los productos para lavado que ofrecemos no solo mejoran el rendimiento de los procesos de desinfección, sino que también estan diseñado para proteger y alargar la vida útil de su instrumental.
+      .panel-footer
+        a(href="./insumos.html") Descubra las opciones más adecuadas para el lavado.
+
+    +panelsubp('Lavadora desinfectadora WD14')
+      +foto('lavadora-WD14-Getinge.jpg','Lavadora WD14')
+      .panel-body
+        p Lavadora de sobremesa, compacta y eficiente, para instrumental en constante uso.
+      .panel-footer
+        a(href= "./lavadoras.html") Conozca otras opciones en lavadoras.
+        
+    +panelsubp('Detergente enzimatico EmPower®', './insumos.html')
+     +foto('Detergente-EmPower-Metrex.png', 'Detergente EmPower')
+     .panel-body
+       p Detergentes con enzimas protolíticas y surfactantes que ayudan a remover rápida y eficazmente los restos de materiales biológicos ricos en proteinas.
+      .panel-footer
+        a(href="./insumos.html") Visita nuestro catalogo de insumos
+        
+    +panelsubp('Desinfectantes', './desinfectantes.html')
+      +foto("Desinfectante-Metricide-Metrex.jpg", 'Desinfectantes')
+      .panel-body
+        p Además de eliminar los residuos, el lavado debe de reducir la carga microbiana y hacer segura la manipulación del material, para lo cual es necesario el uso de desinfectantes.
+      .panel-footer
+        a(href="./desinfectantes.html") Conoce la gama de desinfectantes
+          
+    +panelsubp('Lavadora desinfectadora WD15', './lavadora-WD15-Claro.html')
+      +foto('Lavadora-WD15-Claro-Getinge.jpg', 'Lavadora WD15')
+      .panel-body
+        p Lavadora para instalar bajo la mesa, alta capacidad y control constante del proceso gracias a su puerta de vidrio.
+      .panel-footer  
+        a(href="./lavadora-WD15-Claro.html") Observe sus ventajas
+          

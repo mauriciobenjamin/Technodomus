@@ -1,0 +1,19 @@
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Indicadores Químicos'
+  - var tituloPagina = "Technodomus | Soluciones en  " + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Validación: './', 'Indicadores Químicos': '#'}  
+  
+block content
+  +cabecera(producto, bread)
+  
+  .grid
+    +panelprod('Cinta testigo')
+      .panel-body
+        +foto('validacion-cinta-testigo.jpg', 'Cinta testigo')
+        p Un indicador adecuado para todos los tipos de esterilización
+      .panel-footer
+        a(href="./cinta-testigo.html") Opciones de Cintas

@@ -1,0 +1,22 @@
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var urlLinks = '/esterilizacion/lavado/'
+  - var tituloPagina = "Technodomus | Soluciones en esterilización de baja temperatura"
+
+block content
+  +jumbo('Esterilizadores de Plasma')
+  
+  ol.breadcrumb
+    li
+      a(href="./../../") Inicio
+    li
+      a(href="./../") Esterilización
+    li
+      a(href="./") Esterilizadores
+    li.active
+      a(href="#") Plasma
+      
+  +panelsubp()

@@ -1,0 +1,23 @@
+extends ../../_layouts/productos2
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Radiología analógica'
+  - var tituloPagina = "Technodomus | Soluciones en " + producto
+  - var bread = {Inicio: baseUrl, Imagenología: './../', 'Radiología Analógica': './'}  
+
+block append content
+
+  .grid
+    +panelprod(producto)
+      .panel-body
+        +foto('/radiologia-digital.jpg','Radiología digital')
+        p Una tecnología probada, con la que podrá aprovechar la experiencia de su personal y obtener imágenes de gran resulución y calidad.
+
+    +panelsubp('Casetas')
+      .panel-body
+        +foto('/imagenologia.png', 'casetas CR')
+        p 
+      .panel-footer
+        a(href="casetas.html") Más de casetas

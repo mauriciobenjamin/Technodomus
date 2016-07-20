@@ -1,0 +1,26 @@
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var tituloPagina = "Technodomus | Bolsas de papel Grado Médico"
+
+block content
+  +jumbo('Bolsas de papel grado médico')
+  
+  ol.breadcrumb
+    li
+      a(href="./../../") Inicio
+    li
+      a(href="./../") Esterilización
+    li
+      a(href="./") Empaque
+    li.active
+      a(href="#") Bolsas de papel Grado Médico
+  
+  .grid
+    +panelprod('Bolsas de papel GM')
+      .panel-body
+      +foto('empaque-bolsas-papel,jpg', 'Bolsas de papel')
+      p Las bolsas estan padrisimas!!
+      p Las mejores bolsas de papel

@@ -1,0 +1,49 @@
+extends ../../_layouts/productos
+
+block append config
+  - var baseUrl = './../../'
+  - var urlLinks = '/esterilizacion/empaque/'
+  - var tituloPagina = 'Technodomus | Soluciones en empaque'
+
+block content
+  +jumbo('Empaque para esterilización de instrumental')
+
+  ol.breadcrumb
+    li
+      a(href="./../../") Inicio
+    li
+      a(href="./../") Esterilización
+    li.active
+      a(href="./") Empaque
+  
+  .grid
+    +panelprod('Un empaque de calidad')
+      .panel-body
+        p Un empaque de calidad tiene que contemplar los siguientes aspectos:
+        ul
+          li
+            p
+              b Sistema de barrera esteril:
+              |  Constituye el embalaje mínimo, es la barrera que impide el ingreso de microorganismos y permite la manipulación y presentación aséptica del producto en el momento de uso
+          li
+            p
+              b Empaque protector:
+              |  Su función principal es prevenir daños al sistema de barrera estéril y su contenido, desde el momento de su empaque hasta su uso.
+          li
+            p
+              b  Sellado hermético:
+              |  El sellado garantiza que el material empacado se mantuvo aislado desde la preparación hasta su distribución, conservando las condiciones que adquirió al ser esterilizado
+    
+    +panelsubp('Bolsas de papel', './bolsas-papel.html')
+      .panel-body
+        +foto('images/bolsas-papel.jpg', 'bolsas de papel')
+        p Las bolsas de papel siguen siendo una tradición de generaciones y generaciones.
+      .panel-footer
+        a(href="./bolsas-papel.html") Las mejores bolsas
+    
+    +panelsubp('Bolsas de Tyvek®', './bolsas-tyvek.html')
+      .panel-body
+        +foto('images/bolsas-tyvek.jpg', 'bolsas de tyvek')
+        p Las bolsas de Tyvek® son mucho más resitentes
+      .panel-footer
+        a(href="./bolsas-tyvek.html") El mejor material para sus bolsas

@@ -1,0 +1,61 @@
+extends _layouts/base
+
+block vars
+  - var tituloPagina = 'Technodomus | Soluciones en equipo médico'
+  - var col3 = "columna col-xs-12 col-sm-6 col-md-4"
+  - var col2 = "col-xs-12 col-md-6"
+
+block content
+  .container-fluid
+    img.construccion.responsive(src=baseUrl+"images/construccion.png", alt="en construcción" height='150px')
+    #productos.carousel.slide.hidden-sm(data-ride='carousel')
+      ol.carousel-indicators
+        li(data-target="#productos" data-slide-to="0" class="active")
+        li(data-target="#productos" data-slide-to="1")
+        li(data-target="#productos" data-slide-to="2")
+      .carousel-inner            
+        .item.active
+          img(src= baseUrl + 'images/esterilizador-plasma-100-carrousel.jpg', alt='esterilizador de plasma')
+          .carousel-caption
+            h2 Esterilización más eficiente y sencilla
+            p Los nuevos equipos de plasma de peróxido ofrecen grandes ventajas. Una esterilización más eficiente y facilidad de uso. 
+              a(href=baseUrl+'esterilizacion/') más información...
+        .item
+          img(src= baseUrl + "images/carrouselCarestream.jpg", alt="impresora DryView")
+          .carousel-caption
+            h2 Soluciones de salida a la medida
+            p La generación de salidas físicas de sus equipos digitales se puede adaptar a sus volumenes de trabajo a través de nuestras soluciones. 
+              a(href=baseUrl+'imagenologia/') más información...
+         
+      a.right.carousel-control(href='#productos', data-slide='next')
+        span.glyphicon.glyphicon-chevron-right
+      a.left.carousel-control(href='#productos', data-slide='prev')
+        span.glyphicon.glyphicon-chevron-left
+        // Final del carousel
+    .grid
+      .panel.panel-principal.panel-15x#esterilizacion
+        .panel-heading
+          a(href=baseUrl+"esterilizacion/")
+            img.img-responsive(src= baseUrl+"images/esterilizacion-usuario.png", alt="esterilización")
+            h1 Esterilización
+        .panel-body
+          h4 Las mejores soluciones para procesar instrumental e insumos estériles con la más alta tecnología para garantizar la seguridad del paciente.
+          p Contamos con equipo de baja y alta temperatura, sistemas completos de tratamiento de instrumental, desde el lavado, hasta el seguimiento y trazabilidad del proceso.
+          p Nuestro compromiso es brindar toda la seguridad para el tratamiento de sus pacientes, al tiempo que su personal mejora el manejo del instrumental y equipo. 
+          a(href= baseUrl+"esterilizacion/index.html") Conoce más de nuestros productos
+      
+      .panel.panel-principal.panel-15x#imagenologia
+        .panel-heading
+          a(href=baseUrl+"imagenologia/")
+            img.img-responsive(src= baseUrl+"images/imagenologia.png", alt="PARCS")
+            h1 Imagenología
+        .panel-body
+          h4 Los sistemas más actuales para obtener, procesar, almacenar, visualizar y administrar imágenes de alta calidad para ayudar en su proceso de diagnóstico.
+          p Flujos de trabajo mejorados, reduciendo tiempos de espera en el procesamiento de las imágenes.
+          p La distribución de las imágenes es más facil que nunca, haciendo más ágil el diagnostico y reduciendo la exposición del paciente a la radiación evitando el duplicado de imágenes.
+          a(href=baseUrl+"imagenologia/index.html") Conoce más de nuestros productos
+        
+  section#contacto
+    include _modules/contacto/contacto
+
+code.version v1.5.2

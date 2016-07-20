@@ -1,0 +1,15 @@
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Esterilizadores de Alta Temperatura'
+  - var tituloPagina = "Technodomus | Soluciones en " + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './', 'Alta Temperatura': '#'}  
+  
+block content
+  +cabecera(producto, bread)
+  
+  .grid
+    +panelprod(producto)
+      .panel-body

@@ -1,0 +1,37 @@
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Lavadoras desinfectadoras'
+  - var tituloPagina = "Technodomus | Soluciones en " + producto
+  - var bread = {Inicio: baseUrl, Esterilización: '../', Lavado: './', 'Lavadoras Autómaticas': '#'}  
+  
+block content
+  +cabecera(producto, bread)
+
+  .grid
+    +panelsubp('Lavadora desinfectadora WD14', './lavadora-WD14-Tablo.html')
+      +foto('lavadora-WD14-Getinge.jpg','Lavadora WD14')
+      .panel-body
+        p Lavadora de sobremesa, compacta y eficiente, para instrumental en constante uso.
+      .panel-footer
+        a(href= "./lavadora-WD14-Tablo.html") Conozcala a fondo
+        
+    +panelsubp('Lavadora desinfectadora WD15', './lavadora-WD15-Claro.html')
+      +foto('Lavadora-WD15-Claro-Getinge.jpg', 'Lavadora WD15')
+      .panel-body
+        p Lavadora para instalar bajo la mesa, alta capacidad y control constante del proceso gracias a su puerta de vidrio.
+      .panel-footer  
+        a(href="./lavadora-WD15-Claro.html") Observe sus ventajas
+    
+          
+    +panelsubp('Lavadoras serie 46', './lavadora-serie46.html')
+      +foto('lavadora-Serie46-Getinge.jpg')
+      .panel-body
+        p Lavadoras compactas pero con una capacidad de hasta 10 bandejas DIN. Alarmas integradas y la mejor tecnología para garantizar la seguridad de los usuarios.
+      .panel-footer
+        a(href="./lavadora-serie46.html") Conozca sus prestaciones
+        
+        a#serieCM320
+          +panelsubp('Lavadoras Serie CM320', './lavadora-cm320.html')

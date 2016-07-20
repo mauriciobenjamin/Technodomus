@@ -1,0 +1,18 @@
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Bolsas de pruebas'
+  - var tituloPagina = "Technodomus | " + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Empaque: './','Bolsas de pruebas': '#'}  
+  
+block content
+  +jumbo(producto)
+  
+  +migajas(bread)
+
+  +panelprod(producto)
+    .panel-body
+    +foto('empaque-bolsas-papel,jpg', 'Bolsas de papel')
+    p Las bolsas estan padrisimas!!

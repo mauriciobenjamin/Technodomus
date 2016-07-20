@@ -1,0 +1,49 @@
+// contacto styles
+#contacto{
+  color: complement($color5);
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  .panel {
+    margin: 3px 6px;
+    height: 546px;
+    @media screen and (min-width: $bp-s) {
+      width: 98%;
+    }
+    @media screen and (min-width: $bp-m) {
+      width: 48%;
+    }
+    @media screen and (min-width: $bp-l) {
+      width: 23%;
+    }
+  }
+}
+
+//ccs para hacer un mapa de google responsivo
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 100%;
+  position: relative;
+  iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+}
+
+#facebook {
+  background-color: $color-faceb;
+  h2 {
+    color: $color3;
+  }
+}
+
+#twitter {
+  background-color: $color-twitter;
+  h2 {
+    color: $color2;
+  }
+}

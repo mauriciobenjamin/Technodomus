@@ -1,0 +1,94 @@
+
+extends ../_layouts/productos
+        
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../'
+  - var tituloPagina = "Technodomus | Soluciones en esterilizacion"
+  
+block content
+  #parallax-esteril.jumbotron
+    h1.cabecera Soluciones en esterilización
+  
+  .grid   
+    +panelprin('El proceso de esterilización')
+      .panel-body
+        +foto('esterilizacion.jpeg','esterilizacion')
+        p El manejo de material médico requiere un proceso que garantice su esterilidad al momento de usarse. Para ello, todo equipo y material debería de pasar por un proceso que incluya:
+        ol
+          li 
+            a(href="./lavado/") Lavado
+          li
+            a(href="./empaque/") Empaque
+          li
+            a(href="./esterilizacion/") Esterilización
+          li
+            a(href="./validacion/") Validación
+          li
+            a(href="./trazabilidad/") Trazabilidad
+        p Para cada paso del proceso, Technodomus le ofrece las mejores alternativas para que sus procesos médicos cuenten siempre con material esteril y en buenas condiciones.
+
+    +panelprod('Lavado','./lavado/')
+      .panel-body
+        +foto('lavado.jpg','lavado')
+        p El lavado es el paso más importante para mejorar la efectividad de la desinfección o la esterilización. Asegura que el material se encuentra en condiciones de ser tratado y que no implica un riesgo potencial de manipulación para el personal.
+        p Un lavado poco cuidadoso en cambio puede acortar la vida útil del equipo al tiempo que reduce la efectividad de la esterilziación.
+        p Por todo ello, Technodomus ofrece opciones de lavado automatizado y los mejores insumos para el proceso.
+        h4 
+          a(href=baseUrl+"esterilizacion/lavado/lavadoras.html") Lavadoras
+        h4
+          a(href=baseUrl+"esterilizacion/lavado/insumos.html") Insumos químicos
+        
+      .panel-footer
+        a(href= baseUrl+"esterilizacion/lavado/") Conoce más del lavado de instumental
+  
+    +panelprod('Empaque', './empaque/')
+      .panel-body
+        +foto('empaque.png', 'empaques')
+        p El empaques es fundamental para grantizar que el material permanece esteril antes de su apertura, pero al mismo tiempo debe permitir la acción del proceso de esterilización seleccionado.
+        p Esto hace que los materiales de empaque tengan propiedades particulares, y que muchos casos se tengan que combinar diferentes materiales aprovechando sus funciones complementarias.
+        p Technodomus provee materiales de empaque de calidad probada para los procesos de esterilización de vapor, plasma de peróxido de hidrogéno y vapor de formaldehido que garantizaran la integridad de sus procesos de estilización.
+        h4
+          a(href=baseUrl+"empaque/bolsas-papel.jade") Papel grado médico
+        h4
+          a(href=baseUrl+"empaque/bolsas-tyvek.jade") Bolsas de Tyvek®
+        h4
+          a(href=baseUrl+"empaque/bolsas-cubrepolvo.jade") Bolsas cubrepolvo
+      .panel-footer
+        a(href= baseUrl+"esterilizacion/empaque") Las mejores opciopnes de empaque aquí.
+            
+    +panelprod('Esterilización', './esterilizacion/')
+      .panel-body
+        +foto('esterilizador-formal-HS66TurboCombiGetinge.jpeg', 'Esterilizadores')
+        p Los esterilizadores que ofrece Technodomus cubren una amplia gama de necesidades y de atención de diferentes tipos de material e instrumental a esterilizar.
+        p Contamos con equipos de baja y alta temperatura, con tecnologías de probada eficacia como el vapor, así como sistemas prácticos que minimizan el desgaste del equipo, como el plasma de peróxido.
+        h4 
+          a(href= baseUrl+'esterilizacion/baja-temperatura.html') Esterilizadores de baja temperatura
+        h4 
+          a(href= baseUrl + "esterilizacion/alta-temperatura.html") Esterilizadores de alta temperatura
+      .panel-footer
+        a(href=baseUrl+"esterilizacion/") Conoce más de nuestra gama de esterilizadores
+        
+    +panelprod('Validación', './validacion/')
+      .panel-body
+        +foto('validacion.jpg', 'validacion')
+        p La validación le permite conocer si el proceso de esterilización fue exitoso y que en consecuencia, se eliminaron los microorgánismos.
+        p No basta con contar con excelentes equipos de esterilización, hay que monitorear de manera constante las variables del proceso para que en todo momento se cumplan los estándares esperados y en caso de haber fallas, estas puedan ser detectadas a tiempo.
+        p Por ello, Technodomus provee diferentes herramientas para facilitar la observación de los procesos, la vigilancia de las normas y finalmente, validar que el proceso de esterilziación se llevo de manera adecuada.
+        p Contamos con indicadores de proceso, indicadores para pruebas, sensores de parámetros e indicadores biológicos que permiten validar los procesos de esterilización con cualquier técnica seleccionada.
+        h4
+          a(href= baseUrl+"./validacion/indicadores-quimicos.html") Indicadores químicos
+        h4
+          a(href=baseUrl+"./validacion/indicadores-biologicos.html") Indicadres biológicos
+        h4
+          a(href=baseUrl+"./validacion/PCD.html") Retos al proceso
+      .panel-footer
+        a(href= baseUrl+"esterilizacion/validacion") Conozca más de nuestras opciones de validación.
+        
+    +panelprod('Trazabilidad', './trazabilidad/')
+      .panel-body
+        +foto('t-doc2.jpg', 't-doc')
+        p Dar seguimiento al instrumental no es una tarea sencilla, pero es básica para mantener inventarios correctos, evitar gastos de sobrecompra de material, pero lo más importante, el riesgo de posponer procedimientos agendados debido a que el instrumental esta retrazado o incluso perdido.
+        p T-DOC es el sistema de gestión y trazabilidad de instrumental médico, líder en el mercado. Con más de 900 instalaciones en 40 países alrededor del mundo, T-DOC le permite enfrentar los retos del manejo del instrumental para preocuparse en lo que realmente importa, el paciente.
+      .panel-footer
+        a(href=baseUrl+"esterilizacion/trazabilidad") Adentrese en las ventajas de un sistema de trazabilidad avanzado

@@ -1,0 +1,85 @@
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var tituloPagina = "Technodomus | Lavadoras Serie 46"
+
+block content
+  h1.producto Lavado
+  
+  ol.breadcrumb
+    li
+      a(href="./../../") Inicio
+    li
+      a(href="./../") Esterilización
+    li.active
+      a(href="./") Lavado
+      
+  +panelprod('Lavadoras y desinfectadoras Serie 46')
+    .panel-body
+      +foto('lavadora-Serie46-Getinge.jpg', 'Lavadoras Serie 46')
+      p La serie 46 incluye lavadoras compactas pero con una capacidad de hasta 10 bandejas DIN (480 x 250 x 50 mm) y tecnología avanzada que incluye alarmas para informar el estado del proceso.
+      ul
+        li Limpieza excepcional
+        li Capaciad de 8 a 10 bandejas DIN
+        li Secado de doble acción que reduce costos y tiempo de procesamiento
+        li Puerta de vidrio para inspección visual del proceso
+        li Tamaño compacto que ahorra espacio
+        li Gran gama de accesorios
+  
+  +panelsubp('caracteristicas generales')
+    .panel-body
+      +foto('getinge-wd15-claro-uso.jpg', 'usuarios')
+      p La Serie 46 de lavadoras desinfectadoras de Getinge combina una tecnología avanzada en una solución higienica y económica, grantizando al usuario una gran seguridad con alarmas integradas.
+      p Diseñada para cumplir la demanda de clínicas dentales, departamentos de cirugía, y hasta de grandes centrales de esterilización. Limpian y desinfectan todo tipo de elementos en cuatro o cinco niveles, cada uno de los cuales esta formado por un estante y un brazo aspersor extraibles para adaptar al equipo a sus necesidades. 
+  +panelsubp('datos técnicos')
+    .panel-body
+      table
+        colgroup
+          col.column1
+          col.column2plus3(span="2", aling='center')
+        thead
+          tr
+            th Getinge Serie 46
+            th.text-center Unidad
+            th.text-center Valores
+            tbody
+              tr
+                td Estantes para lavado
+                td.text-center Pza
+                td.text-center 3
+              tr
+                td Bandejas de lavado DIN 1/1*
+                td.text-center Pza
+                td.text-center 10
+              tr
+                td Bandejas de lavado SPRI I**
+                td.text-center Pza
+                td.text-center 4
+              tr
+                td Volumen de cámara (neto)
+                td.text-center L / pies³
+                td.text-center 180 / 6.3
+              tr
+                td Volumen de cámara (efectivo)
+                td.text-center L / pies³
+                td.text-center 150 / 5.3
+              tr
+                td Ancho de la cámara
+                td.text-center mm / pulg
+                td.text-center 538 / 21.2
+              tr
+                td Profundidad de la cámara
+                td.text-center mm / pulg
+                td.text-center 534 / 21.0
+              tr
+                td Alto de la cámara
+                td.text-center mm / pulg
+                td.text-center 520 / 20.4
+              tr
+                td *= DIN 1/1 = 480x250x50 mm
+              tr
+                td **= SPRI I = 450x340x70 mm
+    .panel-footer
+      a(href="http://www.getinge.com/files/HC/products/cleaning-disinfection/washer-disinfectors/wd15-claro/brochures/ward/getinge-wd15claro-ward-2372-es.pdf") Folleto del producto
