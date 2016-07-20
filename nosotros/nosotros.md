@@ -1,6 +1,6 @@
 que arrancó en el 2002 con la firme convicción de llevar a los profesionales de la salud la mejor tecnología y servicios orientados al equipo médico.
 
-Desde entonces, dirigida por su fundador **Francisco Jiménez Ramírez**, se ha mantenido como referente en las áreas de esterilización hospitalaria e imagenologia médica, ofreciendo servicios agregados inovadores y acercando la tecnología más competitiva
+Desde entonces, se ha mantenido como referente en las áreas de esterilización hospitalaria e imagenologia médica, ofreciendo servicios agregados inovadores y acercando la tecnología más competitiva
 
 La visión de nuestra empresa no acaba en la venta del producto, ofrecemos también servicios de **educación continua** y **capacitación de usuarios**, para que su personal adquiera las competencias más actuales, así como aprovechar al máximo sus instalaciones.
 
