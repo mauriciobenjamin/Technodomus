@@ -3,14 +3,12 @@ extends ../../_layouts/productos
 block append config
   //- Correct base url pathing for this page
   - var baseUrl = './../../'
-  - var producto = 'Desinfectantes'
-  - var tituloPagina = "Technodomus | " + producto
-  - var bread = {Inicio: baseUrl, Esterilización: './../', Lavado: './','Desinfectantes':'#'}  
+  - var producto = 'Desincrustante'
+  - var tituloPagina = "Technodomus | Soluciones en " + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Lavado: './', Desincrustante:'#'}  
   
 block content
-  h1.producto #{producto}
-  
-  +migajas(bread)
+  +cabecera(producto, bread)
 
   +panelprod(producto)
     .panel-body

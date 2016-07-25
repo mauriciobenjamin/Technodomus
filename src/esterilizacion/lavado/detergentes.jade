@@ -4,13 +4,11 @@ block append config
   //- Correct base url pathing for this page
   - var baseUrl = './../../'
   - var producto = 'Detergentes'
-  - var tituloPagina = "Technodomus | " + producto
+  - var tituloPagina = "Technodomus | soluciones en " + producto
   - var bread = {Inicio: baseUrl, Esterilización: './../', Lavado: './', Detergentes:'#'}  
   
 block content
-  h1.producto #{producto}
-  
-  +migajas(bread)
+  +cabecera(producto, bread)
 
   +panelprod(producto)
     .panel-body

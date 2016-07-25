@@ -1,4 +1,4 @@
-// Crea un panel principal de dos columnas de ancho
+//- Crea un panel principal de dos columnas de ancho
 mixin panelmax(titulo)
   .panel.panel-default.panel-2x
     .panel-body
@@ -8,8 +8,8 @@ mixin panelmax(titulo)
       else
         p En construcción
 
-// Crea un panel principal con encabezado azul
 
+//- Crea un panel principal con encabezado azul
 mixin panelprin(titulo, link)
   .panel.panel-primary
     .panel-heading
@@ -20,7 +20,7 @@ mixin panelprin(titulo, link)
     else
       p En construcción
       
-// Panel subprincipal con encabezado más pequeño
+//- Panel subprincipal con encabezado más pequeño
 mixin panelsprin(titulo, link)
   .panel.panel-primary
     .panel-heading
@@ -31,7 +31,7 @@ mixin panelsprin(titulo, link)
     else
       p En construcción
 
-//Crea un panel simple con titulo 2        
+//- Crea un panel simple con titulo 2        
 mixin panelprod(titulo, link)
   .panel.panel-default
     .panel-heading
@@ -42,7 +42,7 @@ mixin panelprod(titulo, link)
     else
       p En construcción
 
-//Crea un panel simple con titulo 3
+//- Crea un panel simple con titulo 3
 mixin panelsubp(titulo, link)
   .panel.panel-default
     .panel-heading
@@ -53,42 +53,48 @@ mixin panelsubp(titulo, link)
     else
       p En construcción
 
-// Incerta una imagen responsiva y sus texto alt
+//- Inserta una imagen responsiva y sus texto alt
 mixin foto(imagen,atText)
   img(src= baseUrl + 'images/' + imagen alt=atText class='img-responsive')&attributes(attributes)
 
 mixin fotoch(imagen,atText)
   img(src= baseUrl + 'images/' + imagen alt=atText class='img-responsive img-center')&attributes(attributes)  
     
-//Genera un bloque de migajas de pan
+//- Genera un bloque de migajas de pan
 mixin migajas(bread)
   ol.breadcrumb
     each val, key in bread 
       li
         a(href=val) #{key}
 
-//Botones expansivos        
+//- Botones expansivos        
 mixin mixboton(icon, texto)
   .botones
     div(class="boton boton-#{icon.estilos}")
       a(href="#{icon.ref}")
         i.fa.fa-2x(class="fa-#{icon.fa}")    
         
-//Cabecera jumbotron
+//- Cabecera jumbotron
 mixin jumbo(titulo)
   .jumbotron
     h1.producto= titulo
     if block
       block
       
-//Encabezado para paginas de productos individuales
+//- Encabezado para paginas de productos individuales
 mixin cabecera(titulo,bread)
   +jumbo(titulo)
   +migajas(bread)
   
-// Incertar logos de proveedores
+//- Insertar logos de proveedores
 mixin gke()
-  img(src= baseUrl + 'images/logo-gke.jpg' alt='gke')&attributes(attributes)
+  img(src= baseUrl + 'images/logo-gke.png' alt='gke')&attributes(attributes)
+  
+mixin getinge()
+  img(src=baseUrl+"images/logo-getinge.png", alt="getinge")&attributes(attributes)
+  
+mixin metrex()
+  img(src=baseUrl+"images/logo-metrex.jpg", alt="metrex")&attributes(attributes)
   
 //En construcción
 mixin construccion()

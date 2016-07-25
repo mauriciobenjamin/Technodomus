@@ -1,12 +1,15 @@
-extends ../_layouts/base
+extends ../_layouts/noticias
 
 block config
   //- Correct base url pathing for this page
   - var baseUrl = '../'
+  - var noticia = 'Noticias'
 
-block content
-  div
-    h1.producto Lo sentimos, estamos en proceso de renovación de la página
+block append content
 
-  a(href="../")
-    h2 Regresar...
+  .grid
+    +panelmax('Próximo Seminario')
+      .panel-body
+        +foto('seminario-septiembre-2016.jpeg', 'Seminario septiembre')
+        a(href="./eventos/seminario-septiembre-2016.html")
+          h3 Más información aquí.
