@@ -392,7 +392,7 @@ table {
   }
 }
 
-//Formatos
+//Formularios
 
 .form-control {
   .form-group .form-control {
@@ -400,6 +400,15 @@ table {
     background-color: #fff;
   }
 }
+
+textarea {
+  border-width: 2px;
+  border-color: #ccc;
+  font-style: 16px;
+  line-height: 1.4;
+  width: 100%;
+  height: auto;
+};
 
 
 //Transitorios

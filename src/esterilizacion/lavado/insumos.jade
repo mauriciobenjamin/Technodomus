@@ -19,11 +19,9 @@ block content
       a(href="#") Insumos
   
   .grid
-    +panelmax('Insumos de alta calidad')
+    +panelprod('Insumos de alta calidad')
       .panel-body
         p En Technodomus sabemos que el equipo no es todo, requiere de personal adecuado y de insumos de la mejor calidad para funcionar correctamente, por ello le ofrecemos una variedad de insumos mejorar sus procesos de lavado y sacar el máximo provecho a los equipos e instrumental de su institución.
-        h4
-          a(href= "./detergentes.html") Detergentes
         h4
           a(href= "./detergente-enzimatico.html") Detergentes enzimáticos
         h4
@@ -32,3 +30,23 @@ block content
           a(href= "./desinfectantes.html") Desinfectantes
         h4
           a(href= "./desincrustante.html") Desincrustante
+
+    +panelsubp('Detergente enzimático','detergente-enzimatico.html')
+      .panel-body
+        a(href= "./detergente-enzimatico.html")
+          +foto('Detergente-EmPower-Metrex.png', 'Detergente Enzimatico')    
+
+    +panelsubp('Abrillantador','abrillantador.html')
+      .panel-body
+        a(href= "./abrillantador.html") 
+          +foto('Lubricante-MetriLube-Metrex.jpg', 'Abrillantador')
+
+    +panelsubp('Desinfectantes','desinfectantes.html')
+      .panel-body
+        a(href= "./desinfectantes.html")
+          +foto('Desinfectante-CaviCide-Metrex.jpg', 'Desinfectante')
+
+    +panelsubp('Desincrustante','desincrustante.html')
+      .panel-body
+        a(href= "./desincrustante.html")
+          +foto('lavado-solucion-MetriShine-Metrex.png', 'Desincrustante')  
