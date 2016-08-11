@@ -11,7 +11,7 @@ block content
     .panel-body
       p Buscamos a profesionales dispuestos a aceptar retos, a seguir creciendo y aprendiendo en entornos estimulantes, y decididos a afrontar cualquier situación. Si estas interesado a integrarte a una empresa dinámica en el ramo de las tecnologías de la salud, esta es tu oportunidad. Envianos tus datos y en breve nos pondremos en contacto contigo.
       form(name='curriculum' id="forma-curriculum" action='https://getsimpleform.com/messages?form_api_token=bdf49a68ed14026243a865dc552c15b1' method="POST")
-        input(type="hidden" name="redirect_to" value="./gracias.html")
+        input(type="hidden" name="redirect_to" value="http://technodomus.com/nosotros/gracias.html")
         .form-group
           label(for='nombre') Nombre 
           input#nombre(type='text' name='nombre' placeholder='Nombre de contacto')
@@ -29,4 +29,5 @@ block content
           label Anexe su curriculum
           input(type="file" value="Anexo" name="curriculum")
           input.btn.btn-raised(type="button" value="Seleccionar archivo")
+        .form-group
           input.btn.btn-primary.btn-raised(type='submit' value='Enviar')
