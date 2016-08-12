@@ -1,4 +1,4 @@
-que arrancó en el 2002 con la firme convicción de llevar a los profesionales de la salud la mejor tecnología y servicios orientados al equipo médico.
+Que arrancó en el 2002 con la firme convicción de llevar a los profesionales de la salud la mejor tecnología y servicios orientados al equipo médico.
 
 Desde entonces, se ha mantenido como referente en las áreas de esterilización hospitalaria e imagenologia médica, ofreciendo servicios agregados inovadores y acercando la tecnología más competitiva
 

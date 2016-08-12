@@ -12,13 +12,13 @@ block content
   .grid
     +panelmax('Forma de contacto')
       .panel-body
-        p Si esta interesado en alguno de nuestros productos le agradeceremos nos envie sus datos para que uno de nuestros especialistas se ponga en contacto con usted
+        p Si esta interesado en alguno de nuestros productos le agradeceremos nos envie sus datos para que uno de nuestros especialistas se ponga en contacto con usted:
         form(name='cotizacion' action='https://formspree.io/info@technodomus.com' method="POST")
           .form-group
             label(for='nombre') Nombre 
-            input#nombre(type='text' name='nombre' placeholder='Nombre de contacto')
+            input#nombre(type='text' name='nombre' placeholder='Nombre de contacto' size='25')
             label Institución 
-            input(type='text' name='institución' placeholder='Institución o empresa')
+            input(type='text' name='institución' placeholder='Institución o empresa' size='25')
           .form-group
             label Telefono
             input(type='tel' name='telefono' placeholder='a 10 dígitos')
