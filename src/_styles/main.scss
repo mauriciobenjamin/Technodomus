@@ -411,7 +411,9 @@ textarea {
 };
 
 .form-group {
-  color: $color1;
+  & label {
+    color: $color5;
+  }
 }
 
 

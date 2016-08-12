@@ -16,17 +16,17 @@ block content
         form(name='cotizacion' action='https://formspree.io/info@technodomus.com' method="POST")
           .form-group
             label(for='nombre') Nombre 
-            input#nombre(type='text' name='nombre' placeholder='Nombre de contacto' size='25')
+            input#nombre(type='text' name='nombre' placeholder='Nombre de contacto' size='40')
             label Institución 
-            input(type='text' name='institución' placeholder='Institución o empresa' size='25')
+            input(type='text' name='institución' placeholder='Institución o empresa' size='40')
           .form-group
             label Telefono
-            input(type='tel' name='telefono' placeholder='a 10 dígitos')
+            input(type='tel' name='telefono' placeholder='a 10 dígitos' size='40')
             label Correo
-            input(type='email' name='_replyto' placeholder="correo@hospital.com")
+            input(type='email' name='_replyto' placeholder="correo@hospital.com" size='40')
           .form-group
             label Productos de su interes
-            input(type='text' name='productos')
+            input(type='text' name='productos' size='40')
           .form-group
             label Especificaciones y comentarios
             textarea(rows='6' type="text" name='mensaje')
