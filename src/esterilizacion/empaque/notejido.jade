@@ -1,0 +1,27 @@
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Materiales no tejidos'
+  - var tituloPagina = "Technodomus | Soluciones en " + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Empaque: './','Materiales no tejidos': '#'}  
+  
+block content
+  +cabecera(producto, bread)
+  
+  .grid
+    +panelprod('Trayliner')
+      .panel-body
+        +foto('empaque-materiales.png','material notejido')
+        :markdown
+          #### Material para fondo de contenedores
+          El material no tejido Trayliner es la solución a la condensación dentro de las cajas contenedores de instrumentos. Es la combinación del papel grado médico de celulosa con fibras de poliéster que le dan resistencia y absorción de humedad. Esta especialmente indicado para recubrir el interior de los contenedores y eviar el goteo sobre el instrumental.
+        +stericlin
+        :marked
+          No. Artículo | Descripción
+          :-----------:|:----------:
+          3FCZB440102 | Protector Absorbente Para Bandejas (Trayliner) Azul 25 X 30 cm caja con 1.000 Pzs
+          3FCZB440104 | Protector De Envoltura Absorbente Para Bandejas (Trayliner) Azul 30 X 50 Cm 500 Pzs
+    
+    +panelprod()

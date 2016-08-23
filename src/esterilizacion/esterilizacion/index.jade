@@ -3,19 +3,13 @@ extends ../../_layouts/productos
 block append config
 block append config
   - var baseUrl = './../../'
-  - var urlLinks = '/esterilizacion/empaque/'
-  - var tituloPagina = 'Technodomus | Soluciones en empaque'
-
+  - var urlLinks = '/esterilizacion/esterilizacion'
+  - var producto = "Esterilizadores"
+  - var tituloPagina = 'Technodomus | Soluciones en ' + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Esterilizadores: './'}  
+  
 block content
-  +jumbo('esterilizadores')
-
-  ol.breadcrumb
-    li
-      a(href="./../../") Inicio
-    li
-      a(href="./../") Esterilización
-    li.active
-      a(href="./") Esterilizadores
+  +cabecera(producto, bread) 
 
   .grid
     +panelprin('Esterilizadores')
@@ -28,16 +22,18 @@ block content
       .panel-body
         h4 Peróxido de hidrogeno
         .thumbnail
-          a(href= baseUrl + "plasma.html")
+          a(href= "./plasma.html")
             +foto('esterilizador-plasma-100.jpg','esterilizadora de plasma Laoken')
             | Equipo Laoken de esterilización a baja temperatura con plasma de peróxido de hidrógeno
       
     +panelprod('Alta Temperatura - Vapor')
       .panel-body
         h4 Vapor de agua a presión
-        .thumbnail
-          +foto('esterilizadorVapor-serie400-500hcGetinge.jpeg','esterilizadora Serie 400 de Getinge','200px')
-          a(href= baseUrl + "baja-temperatura.html") Equipos Gettinge de baja temperatura a base de vapor
+        +foto('esterilizadorVapor-serie400-500hcGetinge.jpeg','esterilizadora Serie 400 de Getinge','200px')
+        p Considerado por muchos el estandar en la esterilización, el vapor sigue siendo una opción viable siempre que el material a esterilizar no sea sensible al calor
+      .panel-footer
+        a(href= "./alta-temperatura.html" ) Equipos Gettinge de alta temperatura a base de vapor
+          
 
     +panelprod('Baja Temperatura - Formaldehído')
       .panel-body

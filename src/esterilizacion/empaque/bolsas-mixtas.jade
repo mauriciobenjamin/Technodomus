@@ -1,0 +1,14 @@
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Empaque mixto'
+  - var tituloPagina = "Technodomus | Soluciones en " + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Empaque: './','Empaque mixto': '#'}  
+  
+block content
+  +cabecera(producto, bread)
+
+  .grid
+  

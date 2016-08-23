@@ -19,31 +19,37 @@ block content
   .grid
     +panelprod('Un empaque de calidad')
       .panel-body
-        p Un empaque de calidad tiene que contemplar los siguientes aspectos:
-        ul
-          li
-            p
-              b Sistema de barrera esteril:
-              |  Constituye el embalaje mínimo, es la barrera que impide el ingreso de microorganismos y permite la manipulación y presentación aséptica del producto en el momento de uso
-          li
-            p
-              b Empaque protector:
-              |  Su función principal es prevenir daños al sistema de barrera estéril y su contenido, desde el momento de su empaque hasta su uso.
-          li
-            p
-              b  Sellado hermético:
-              |  El sellado garantiza que el material empacado se mantuvo aislado desde la preparación hasta su distribución, conservando las condiciones que adquirió al ser esterilizado
-    
-    +panelsubp('Bolsas de papel', './bolsas-papel.html')
+        :markdown
+          Un empaque de calidad tiene que contemplar los siguientes aspectos:
+          
+          + [**Sistema de barrera esteril:**](./bolsas-tyvek.html) Constituye el embalaje mínimo, es la barrera que impide el ingreso de microorganismos y permite la manipulación y presentación aséptica del producto en el momento de uso
+          + [**Empaque protector:**](./proteccion.html) Su función principal es prevenir daños al sistema de barrera estéril y su contenido, desde el momento de su empaque hasta su uso.
+          + **Sellado hermético:** El sellado garantiza que el material empacado se mantuvo aislado desde la preparación hasta su distribución, conservando las condiciones que adquirió al ser esterilizado
+              
+    +panelsubp('Papel grado médico', './papel-gm.html')
       .panel-body
-        +foto('images/bolsas-papel.jpg', 'bolsas de papel')
-        p Las bolsas de papel siguen siendo una tradición de generaciones y generaciones.
+        +foto('empaque-papelcrepe.jpg', 'bolsas de papel')
+        p El papel grado médico ofrece una alternativa económica y práctica para el empaque de piezas e instrumental que por sus dimensiones no se adaptan a las bolsas.
       .panel-footer
-        a(href="./bolsas-papel.html") Las mejores bolsas
+        a(href="./papel-gm.html") Conoce las opciones de papel grado médico.
     
-    +panelsubp('Bolsas de Tyvek®', './bolsas-tyvek.html')
+    +panelsubp('Tyvek®', './tyvek.html')
       .panel-body
-        +foto('images/bolsas-tyvek.jpg', 'bolsas de tyvek')
-        p Las bolsas de Tyvek® son mucho más resitentes
+        +foto('empaque-bolsa-tyvek.png', 'bolsas de tyvek')
+        p El Tyvek® es un material no tejido a base de fibras de polietileno de alta densidad que ofrece propiedades similares al papel con una resistencia mucho mayor. Es permeable a los gases por lo que permite su uso en esterilizadores de plasma o gas. 
       .panel-footer
-        a(href="./bolsas-tyvek.html") El mejor material para sus bolsas
+        a(href="./tyvek.html") Las mejores opciones en Tyvek®.
+    
+    +panelsubp('Materiales no tejidos', './notejido.jade')
+      .panel-body
+        +foto('empaque-materiales.png', 'no tejidos')
+        p La solución más usada para el embalaje durante la esterilización. Una material que se asemeja al papel, en facilidad de manipulación y caida, pero con fibras de poliester que lo hacen mucho más resistente.
+      .panel-footer
+        a(href="./notejido.html") Explore el material no tejido.
+
+    +panelsubp('Empaque de protección', './proteccion.html')
+      .panel-body
+        +foto('empaque-instrumental-cirugia.jpg', 'protección de instrumental')
+        p Las barreras esteriles si bien son resistentes pueden llegar a dañarse durante su manipulación, por lo que un empaque de protección evita que esto suceda y garantiza periodos de almacenaje en condiciones de esterilidad más prolongados.
+      .panel-footer
+        a(href="./proteccion.html") Más sobre los empaques de protección.
