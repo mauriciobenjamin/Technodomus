@@ -5,32 +5,44 @@ block append config
   - var baseUrl = './../../'
   - var producto = 'Esterilizadores de Alta Temperatura'
   - var tituloPagina = "Technodomus | Soluciones en " + producto
-  - var bread = {Inicio: baseUrl, Esterilización: './', 'Alta Temperatura': '#'}  
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Esterilizadores: './','Alta Temperatura': '#'}  
   
 block content
   +cabecera(producto, bread)
   
   .grid
-    +panelmax("Serie HS66")
+    +panelprod("Serie HS66","./vaporHS66.html")
       .panel-body
         +foto('esterilizador-serieHS66-Getinge.jpg','esterilizador serie HS66')
         :markdown
           #### Esterilizadores de vapor compactos
-          Los esterilizadores para hospital HS66 de Getinge son los más compactos y versatiles del mercado, combinando alta capacidad y rentabilidad. Ofrece una construcción modular que le da ran flexibilidad. Cuentan con puerta neumática automática que se desliza verticalmente ahorrando tiempo y espacio de apertura, al mismo tiempo que es segura y permite su operación sin la intervención directa del usuario. De igual forma, cuenta con la opción de carga y descarga autómatica de la cámara.
-        +getinge
-        :marked
-          #### Modelos de la serie HS66
-          La serie cuenta con diferentes modelos que se pueden adaptar a sus necesidades.
-          
-          Caracteristicas | Unidad | HS6606 | HS6610 | HS6613 | HS617 | HS6620
-          :------|:------:|-------:|-------:|-------:|------:|-------:|
-          Volumen de la cámara (una puerta) |	L/pies³ |	308 / 10.9 | 461 / 16.3 |	595 / 21	| 775 / 27.3	| 910 / 32.1
-          Volumen de la cámara (puerta doble) |	L/pies³ |	297 / 10.5	| 449 / 15.8	| 584 / 20.6	| 764 / 27	| 899 / 31.7
-          Ancho de la cámara |	mm/pulg	| 672 / 26.5 | 672 / 26.5 | 672 / 26.5 | 672 / 26.5 |	672 / 26.5
-          Altura de la cámara |	mm/pulg |	672 / 26.5 | 672 / 26.5	| 672 / 26.5 | 672 / 26.5 | 672 / 26.5
-          Profundidad de la cámara | mm/pulg | 660 / 26	| 1000 / 39.4	| 1300 / 51.1 |	1700 / 67 |	2000 / 78.7
-          STE | | 4 |	6	| 8 |	10 | 12
-          ISO	|	| 3 |	6	| 9	| 12 | 12
-          SPRI | | 3 | 6 | 9 | 12 | 12
+          Los esterilizadores compactos y versatiles que combinan alta capacidad y rentabilidad.
       .panel-footer
-        a(href="http://www.getinge.com/files/HC/products/sterilization/steam-sterilizers/hs66-series/product-brochure/getinge-hs66-2295-es.pdf") Folleto de la serie HS66
+        a(href="./vaporHS66.html") Más detalles del equipo
+
+    +panelprod("Serie 400/500 HC","./vapor400.html")
+      .panel-body
+        +foto('esterilizadorVapor-serie400-500hcGetinge.jpeg','esterilizador serie 400')
+        :markdown
+          #### Esterilizadores de vapor
+          Un esterilizador flexible y fácil de usar.
+      .panel-footer
+        a(href="./vapor400.html") Más detalles del equipo
+
+    +panelprod("Serie 633 HC","./vapor633.html")
+      .panel-body
+        +foto('esterilizadorVapor-serie633hcGetinge.jpeg','esterilizador serie 633')
+        :markdown
+          #### Esterilizadores de vapor
+          Variedad de ciclos de esterilización que permiten adaptar al equipo a su flujo de trabajo.
+      .panel-footer
+        a(href="./vapor633.html") Más detalles del equipo
+        
+    +panelprod("Serie 700 HC-E","./vapor700.html")
+      .panel-body
+        +foto('esterilizadorVapor-serie700hc-eGetinge.jpeg','esterilizador serie 700')
+        :markdown
+          #### Esterilizadores de vapor
+          Equipos de alta capacidad y con prestaciones superiores, como cámaras y chaquetas de acero inoxidable 316L.  
+      .panel-footer
+        a(href="./vapor700.html") Más detalles del equipo

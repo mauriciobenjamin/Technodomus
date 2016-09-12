@@ -65,10 +65,28 @@
     }
     .dropdown-menu {
       a {
-        color: $color1-50;
-        text-align: center;
+        color: $color1;
+        text-align: left;
       }
     }
+  }
+
+  .dropdown-submenu {
+    position: relative;
+    &>.dropdown-menu {
+      top: 0;
+      left: 100%;
+      margin-top: -6px;
+      margin-left: -1px;
+    }
+    &:hover >.dropdown-menu {
+      display: block;
+    }
+  }
+
+  .navbar-nav {
+    color: $color4;
+    background-color: $color1-50;
   }
 
   .navbar-form {

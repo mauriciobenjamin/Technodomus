@@ -15,11 +15,11 @@ header
           li.dropdown
             a.dropdown-toggle(href="#", data-toggle="dropdown", role="button") Productos
               span.caret
-            ul.dropdown-menu(aria-labelledby="menu")
-              li
-               a(href= baseUrl + "esterilizacion") Esterilización
-              li 
-                a(href= baseUrl + "imagenologia") Imagenología
+            ul.dropdown-menu.multi-level(aria-labelledby="menu")
+              li.dropdown
+                a(href=baseUrl+"esterilizacion") Esterilización
+              li.dropdown 
+                a(href=baseUrl+"imagenologia") Imagenología
           li
             a(href= baseUrl + 'cotiza') Cotiza
           li

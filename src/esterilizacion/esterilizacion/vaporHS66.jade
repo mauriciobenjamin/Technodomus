@@ -1,0 +1,37 @@
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Esterilizadores HS66'
+  - var tituloPagina = "Technodomus | Soluciones en " + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Esterilizadores: './','Alta Temperatura': 'alta-temperatura.html', 'Serie HS66': '#'}  
+  
+block content
+  +cabecera(producto, bread)
+  
+  .grid
+    +panelprod("Serie HS66")
+      .panel-body
+        +foto('esterilizador-serieHS66-Getinge.jpg','esterilizador serie HS66')
+        :markdown
+          #### Esterilizadores de vapor compactos
+          Los esterilizadores para hospital HS66 de Getinge son los más compactos y versatiles del mercado, combinando alta capacidad y rentabilidad. Ofrece una construcción modular que le da ran flexibilidad. Cuentan con puerta neumática automática que se desliza verticalmente ahorrando tiempo y espacio de apertura, al mismo tiempo que es segura y permite su operación sin la intervención directa del usuario. De igual forma, cuenta con la opción de carga y descarga autómatica de la cámara.
+        +getinge
+    
+    +panelmax("Modelos de la serie HS66")
+      .panel-body
+        :marked
+          Modelo | Volumen de cámara | Volumen de la cámara (puerta doble) | Ancho de la cámara | Altura de la cámara | Profundidad de la cámara | STU | STE |
+          :------|:------:|-------:|-------:|-------:|------:|-------:|---------:|-------:|
+          HS6606 | 308 | 297 | 672 | 672 | 660 | 4 | 4
+          HS6610 | 461 | 449 | 672 | 672 | 1000 | 6 | 6
+          HS6613 | 595 | 595 | 672 | 672 | 1300 | 8 | 8
+          HS6617 | 775 | 764 | 672 | 672 | 1700 | 10 | -
+          HS6620 | 910 | 899 | 672 | 672 | 2000 | 12 | -
+          HS6610 Turbo | 461 | 449 | 672 | 672 | 1000 |  | 6
+          HS6613 Turbo | 595 | 584 | 672 | 672 | 1300 |  | 8
+          HS6617 Turbo | 775 | 764 | 672 | 672 | 1700 |  | 10
+      
+      .panel-footer
+        a(href="http://www.getinge.com/files/HC/products/sterilization/steam-sterilizers/hs66-series/product-brochure/getinge-hs66-2295-es.pdf") Folleto de la serie HS66

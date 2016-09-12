@@ -1,22 +1,42 @@
 extends ../../_layouts/productos
 
 block append config
-  //- Correct base url pathing for this page
   - var baseUrl = './../../'
-  - var urlLinks = '/esterilizacion/lavado/'
-  - var tituloPagina = "Technodomus | Soluciones en esterilización de baja temperatura"
+  - var urlLinks = '/esterilizacion/esterilizacion/plasma.html'
+  - var producto = "Esterilizadores de Plasma"
+  - var tituloPagina = 'Technodomus | Soluciones en ' + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Esterilizadores: './', Plasma: "#"}  
 
 block content
-  +jumbo('Esterilizadores de Plasma')
-  
-  ol.breadcrumb
-    li
-      a(href="./../../") Inicio
-    li
-      a(href="./../") Esterilización
-    li
-      a(href="./") Esterilizadores
-    li.active
-      a(href="#") Plasma
-      
-  +panelsubp()
+  +cabecera(producto, bread) 
+
+  .grid
+    +panelprin("Seguridad y cuidado para su equipo")
+      .panel-body
+        :markdown
+          La tecnología de esterilización por plasma es una de las mas efectivas para el tratamiento de equipo sensibles al calor o delicados, como endoscopios o instrmentos quirurgicos de precisión. Además permite esterilziar en las cavidades más pequeñas, penetrando en lúmenes de hasta un milimetro de diámetro interno.
+          Los equipos que Technodomus ofrece, conjuntan la última tecnología para lograr tiempos de procesaminto eficientes y alta calidad en el proceso.
+    
+    +panelprod("Esterilizador LK/MJG-50","./plasma-30L.html")
+      .panel-body
+        +foto('esterilizador-plasma-30l.png', "Esterilizador de escritorio Laoken")
+        :markdown
+          Una excelente opción cuando se requiere un equipo compacto y facil de instalar en sus espacios actuales.
+      .panel-footer
+        a(href="./plasma-30L.html") Conozca sus caracteristicas técnicas.
+          
+    +panelprod("Esterilizador LK/MJG-100","./plasma-100L.html")
+      .panel-body
+        +foto('esterilizador-plasma-100-laoken.png', "Esterilizador Laoken de 100L")
+        :markdown
+          Un equipo equilibrado con una buena capacidad y diseño contenido. Su cámara con más de 100 L de capacidad permite la esterilziación
+      .panel-footer
+        a(href="./plasma-100L.html") Más información del esterilizador.
+          
+    +panelprod("Esterilizador LK/MJG-200","./plasma-200L.html")
+      .panel-body
+        +foto('esterilizador-plasma-100.jpg', "Esterilizador Laoken de 200L")
+        :markdown
+          La máxima capacidad con un tamaño adecuado. La mejor opción para centros de esterilizaicón de alto volumen.
+      .panel-footer
+        a(href="./plasma-200L.jade") Características técnicas a su disposición.

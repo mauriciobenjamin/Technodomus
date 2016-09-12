@@ -1,7 +1,6 @@
 extends ../../_layouts/productos
 
 block append config
-block append config
   - var baseUrl = './../../'
   - var urlLinks = '/esterilizacion/esterilizacion'
   - var producto = "Esterilizadores"
@@ -18,25 +17,26 @@ block content
         p Para hablar de esterilización y no de una simple desinfección, el proceso debe de acabar con la viabildiad de las esporas y otras formas de vida latente de los microorganismos.
         p De este proceso depende la seguridad de cualquier actividad hospitalaria. Por ello le ofrecemos sistemas que se adaptan a sus necesidades, condiciones y flujos de trabajo.
         
-    +panelmax('Baja temperatura - Plasma')
+    +paneldoble('Baja temperatura - Plasma','./plasma.html')
       .panel-body
-        h4 Peróxido de hidrogeno
-        .thumbnail
-          a(href= "./plasma.html")
-            +foto('esterilizador-plasma-100.jpg','esterilizadora de plasma Laoken')
-            | Equipo Laoken de esterilización a baja temperatura con plasma de peróxido de hidrógeno
-      
-    +panelprod('Alta Temperatura - Vapor')
-      .panel-body
-        h4 Vapor de agua a presión
-        +foto('esterilizadorVapor-serie400-500hcGetinge.jpeg','esterilizadora Serie 400 de Getinge','200px')
-        p Considerado por muchos el estandar en la esterilización, el vapor sigue siendo una opción viable siempre que el material a esterilizar no sea sensible al calor
+        +foto('esterilizador-plasma-100.jpg','esterilizadora de plasma Laoken')
+        h3 Peróxido de hidrogeno
+        p La esterilización por plasma es un proceso que somete al instrumental al contacto con plasma de peróxido de hidrógeno a baja temperatura. El plasma evita la exposición del equipo metálico a vapores corrosivos y a diferencia de otros métodos de baja temperatura, su único residuo es vapor de agua. 
       .panel-footer
-        a(href= "./alta-temperatura.html" ) Equipos Gettinge de alta temperatura a base de vapor
-          
-
-    +panelprod('Baja Temperatura - Formaldehído')
+        a(href="./plasma.html") Más sobre los equipos de esterilización de plasma.
+        
+    +panelprod('Alta Temperatura - Vapor','./alta-temperatura.html')
       .panel-body
-        h4 Vapor de formaldehído
-          .thumbnail
-            +foto('esterilizador-formal-HS66TurboCombiGetinge.jpeg', 'esterilizadora de vapor frio de formaldehído','200px')(class="img-productos")
+        +foto('esterilizadorVapor-serie400-500hcGetinge.jpeg','esterilizadora Serie 400 de Getinge','200px')
+        h3 Vapor de agua a presión
+        p Considerado por muchos el estándar en la esterilización, el vapor sigue siendo una opción viable siempre que el material a esterilizar no sea sensible al calor.
+      .panel-footer
+        a(href= "./alta-temperatura.html" ) Equipos Gettinge de alta temperatura a base de vapor.
+
+    +panelprod('Baja Temperatura - Formaldehído','./baja-temperatura.html')
+      .panel-body
+        +foto('esterilizador-formal-HS66TurboCombiGetinge.jpeg', 'esterilizadora de vapor frio de formaldehído','200px')(class="img-productos")
+        h3 Vapor de formaldehído
+        p Un método efectivo para esterilizar material sensible a la temperatura, de eficacia probada y funcionamiento sencillo que lo hacen una alternativa robusta para la esterilización de alta temperatura.
+      .panel-footer
+        a(href="./baja-temperatura.html") Conozca más de los equipos de vapor de formaldehido.
