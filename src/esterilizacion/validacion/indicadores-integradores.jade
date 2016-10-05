@@ -1,1 +1,39 @@
-extends ./../../_layouts/en-construccion.jade
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Indicadores Integradores'
+  - var tituloPagina = "Technodomus | Soluciones en " + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Validación: './', 'Indicadores Integradores': '#'}  
+  
+block content
+  +cabecera(producto, bread)
+  
+  .grid
+    +panelprod("Integradores")
+      .panel-body
+        +foto('validacion-integrador-claseV.png', 'Integrador clase V')
+        :markdown
+          Etiquetas con indicadores químicos clase V para monitoreo de paquetes en procesos de esterilización por vapor, formaldehído y óxido de etileno conforme a la norma EN ISO 11140-1. Las etiquetas cuentan con una doble capa de adhesivo, por lo que una vez terminado el proceso de esterilización éstas pueden desprenderse y colocarse en la documentación, por ejemplo, en la hoja o bitácora del paciente y mantener la información del proceso disponible.
+          Las etiquetas estan disponibles en diferentes tamaños, y se pueden documentar a mano o con una impresora convencional y después adherir a los paquetes a esterilizar.
+        +gke
+    +panelmax("Caracteristicas")
+      .panel-body
+        :marked
+          No. Artículo | Descripción
+          :-----------:|:----------:
+          211-225 | Tarjetas con 16 indicadores para vapor, 800 pzas 
+          211-220 | Etiquetas con indicadores, en rollo de 1000 pzas 58 x 35 mm Sv = 134 °C/3 min y 121 °C/16.5 min
+          211-222 | Etiquetas con indicadores por pieza, paquete con 200 pzas 58 x 35 mm Sv = 134 °C/3 min y 121 °C/16.5 min
+
+    +panelprod("Tiras Indicadoras para prueba hueca")
+      .panel-body
+        +foto('validacion-tiras-BDS.png', 'Tiras para PCD')
+        p Paquete de relleno de tiras para pruebas de simulación de carga hueca, incluye el juego de sellado para todos los modelos de PCD.
+        +gke
+        :marked
+          No. de Artículo | Descripción 
+          :--------------:|:-----------:
+          211-252 | Tiras indicadoras para PCD, ciclo estandar a vapor Sv = 134 °C/3 min y 121 °C/16.5 min con 250 tiras.
+

@@ -19,12 +19,26 @@ block content
           Por otro lado, al finalizar las etapas o el proceso completo, se debe contar con indicadores de que se lograron las condiciones adecuadas.
           En ambos casos, contamos con las herramientas necesarias para validar sus procesos de esterilización.
           > La validación promueve el control de infecciones, garantiza la calidad del proceso de esterilización y la seguridad del paciente.
+    
+    +panelprod('Indicadores Biológicos', './indicadores-biologicos.html')
+      .panel-body
+        +foto('validacion-indicadores-autocontenidos.png', 'Indicadores biológicos')
+        p Dispositivos inoculados con esporas de microorganismos, que después del proceso de eseterilización son incubados para verificar que el proceso logro hacerlas inviables. El hecho de que trabaje con esporas, las estructuras vivas más resistentes, lo hace el método más efectivo para asegurar la esterilizada del proceso.
+      .panel-footer
+          a(href= "./indicadores-biologicos.html") Una completa línea de indicadores biológicos.
+      
+    +panelprod('Indicadores Químicos', './indicadores-especificos.html')
+      .panel-body
+        +foto('validacion-cinta-testigo.jpg', 'Indicadores químicos')
+        p Sustancias que cambian de color o estado cuando son expuestos a niveles críticos de una o más variables del proceso de esterilización, permitiendo conocer si estas alcanzaron su nivel optimo. Son prácticos y faciles de implementar, ya que incluso muchos empaques ya tienen indicadores de origen. Su correcta selección puede ser vital para alcanzar niveles adecuados de esterlización.
+      .panel-footer
+        a(href= "./indicadores-biologicos.html") Conozca más de nuestros indicadores químicos.
       
     +panelmax('Herramientas de monitoreo')
       .panel-body
         :marked
-          El monitoreo del proceso puede realizarse con:
-          * **Controles físicos** como termómetros, barómetros, sensores de carga, u otros elementos que verifican que se hayan alcanzado los niveles optimos en las variables críticas.
+          El monitoreo requiere que verificar sus condiciones. Para ello, se pueden emplear:
+          * **Controles físicos** como termómetros, barómetros, sensores de carga, u otros elementos que verifican que se hayan alcanzado los niveles optimos en las variables críticas dentro del equipo.
           * **Indicadores químicos**, sustancias que cambian de color o estado cuando se exponen a los niveles adecuados de una o más de las variables críticas. Para facilitar su manejo, los indicadores se administran en dispositivos contenedores. 
           
           ### Los indicadores químicos se clásifican como:
@@ -34,20 +48,6 @@ block content
           II|Indicadores para pruebas especificas|Su tonalidad varia de acuerdo a las condiciones a las que se sometió|[Prueba de Bowie-Dick](./indicadores-especificos.html)
           III|Indicadores de parámetro|Reaccionan solo a una de las variables críticas|[Cintas testigo, marcador, etiquetas](./indicadores-quimicos.html)
           IV|Indicadores multiparámetro|Verifican más de una variable|[Cintas testigo, marcador, etiquetas](./indicadores-quimicos.html)
-          V|Indicadores integradores|Responden a todos los parámetros criticos del proceso de esterilización|[Cintas testigo, marcador, etiquetas](./indicadores-quimicos.html)
+          V|Indicadores integradores|Responden a todos los parámetros criticos del proceso de esterilización|[Instan Mini Bio Plus](./indicadores-biologicos.html#InstantMini) [Integradores](./indicadores-integradores.html)
           VI|Indicadores emulador|Además de responder a todos los parámetros, se pueden usar un cierto numero de ciclos de esterilización|[Cintas testigo, marcador, etiquetas](./indicadores-quimicos.html)
       
-    +panelprod('Indicadores biológicos', './indicadores-biologicos.html')
-      .panel-body
-        +foto('indicadores-biologicos.jpg', 'Indicadores')
-        p Sustancias que cambian de color o estado cuando son expuestos a niveles críticos de una o más variables del proceso de esterilización, permitiendo conocer si estos se cumplieron.
-        p 
-      .panel-footer
-        a(href= "./indicadores-biologicos.html") Una completa línea de indicadores biológicos
-    
-    +panelprod('Indicadores Químicos', './indicadores-quimicos.html')
-      .panel-body
-        +foto('indicadores-quimicos.jpg', 'Indicadores')
-        p Los indicadores favoritos
-      .panel-footer
-        a(href= "./indicadores-biologicos.html") Una completa línea de indicadores biológicos
