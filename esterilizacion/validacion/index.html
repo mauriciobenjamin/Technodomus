@@ -23,15 +23,15 @@
     <nav class="navbar navbar-fixed-top">
       <div class="navbar-inverse">
         <div class="navbar-header">
-          <button type="button" data-toggle="collapse" data-target="#navbar-colapsada" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Navegación</span><span class="glyphicon glyphicon-menu-hamburger"></span></button><a href="./../../" class="navbar-brand"><img src="./../../images/logoNegPar.png" alt="Technodomus" height="60px"></a>
+          <button type="button" data-toggle="collapse" data-target="#navbar-colapsada" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Navegación</span><span class="glyphicon glyphicon-menu-hamburger"></span></button><a href="./../../" class="navbar-brand"><img src="./../../images/logo-octubre.png" alt="Technodomus" height="60px"></a>
         </div>
         <div id="navbar-colapsada" class="navbar-right collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li><a href="./../../">Inicio<span class="sr-only">(actual)</span></a></li>
             <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" class="dropdown-toggle">Productos<span class="caret"></span></a>
-              <ul aria-labelledby="menu" class="dropdown-menu">
-                <li><a href="./../../esterilizacion">Esterilización</a></li>
-                <li> <a href="./../../imagenologia">Imagenología</a></li>
+              <ul aria-labelledby="menu" class="dropdown-menu multi-level">
+                <li class="dropdown"><a href="./../../esterilizacion">Esterilización</a></li>
+                <li class="dropdown"> <a href="./../../imagenologia">Imagenología</a></li>
               </ul>
             </li>
             <li><a href="./../../cotiza">Cotiza</a></li>
@@ -74,9 +74,9 @@
         <li><a href="./">Validación</a></li>
       </ol>
       <div class="grid">
-        <div class="panel panel-default">
+        <div class="panel panel-primary">
           <div class="panel-heading"><a>
-              <h2>Validación</h2></a></div>
+              <h1>Validación</h1></a></div>
           <div class="panel-body"><img src="./../../images/validacion.jpg" alt="Validación" class="img-responsive"><p>No basta con realizar un proceso de esterilización, hay que validar que este haya sido efectivo. Esto incluye, monitorear todo el proceso, observando las variables criticas para comprobar que se cumplan los estándares y detectar fallas a tiempo.
 Por otro lado, al finalizar las etapas o el proceso completo, se debe contar con indicadores de que se lograron las condiciones adecuadas.
 En ambos casos, contamos con las herramientas necesarias para validar sus procesos de esterilización.</p>
@@ -86,83 +86,37 @@ En ambos casos, contamos con las herramientas necesarias para validar sus proces
 
           </div>
         </div>
-        <div class="panel panel-default panel-2x">
-          <div class="panel-body">
-            <h3>Herramientas de monitoreo</h3>
-            <div class="panel-body"><p>El monitoreo del proceso puede realizarse con:</p>
-<ul>
-<li><strong>Controles físicos</strong> como termómetros, barómetros, sensores de carga, u otros elementos que verifican que se hayan alcanzado los niveles optimos en las variables críticas.</li>
-<li><strong>Indicadores químicos</strong>, sustancias que cambian de color o estado cuando se exponen a los niveles adecuados de una o más de las variables críticas. Para facilitar su manejo, los indicadores se administran en dispositivos contenedores. </li>
-</ul>
-<h3 id="los-indicadores-qu-micos-se-cl-sifican-como-">Los indicadores químicos se clásifican como:</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">Clase</th>
-<th>Función</th>
-<th>Descripción</th>
-<th>Ejemplo</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">I</td>
-<td>Indicadores de proceso</td>
-<td>Nos indican que el artículo en el que se aplican ha pasado ya por el proceso de esterilización</td>
-<td><a href="./cinta-testigo.html">Cintas testigo</a>, <a href="./indicadores-quimicos.html">marcador, etiquetas</a></td>
-</tr>
-<tr>
-<td style="text-align:center">II</td>
-<td>Indicadores para pruebas especificas</td>
-<td>Su tonalidad varia de acuerdo a las condiciones a las que se sometió</td>
-<td><a href="./indicadores-especificos.html">Prueba de Bowie-Dick</a></td>
-</tr>
-<tr>
-<td style="text-align:center">III</td>
-<td>Indicadores de parámetro</td>
-<td>Reaccionan solo a una de las variables críticas</td>
-<td><a href="./indicadores-quimicos.html">Cintas testigo, marcador, etiquetas</a></td>
-</tr>
-<tr>
-<td style="text-align:center">IV</td>
-<td>Indicadores multiparámetro</td>
-<td>Verifican más de una variable</td>
-<td><a href="./indicadores-quimicos.html">Cintas testigo, marcador, etiquetas</a></td>
-</tr>
-<tr>
-<td style="text-align:center">V</td>
-<td>Indicadores integradores</td>
-<td>Responden a todos los parámetros criticos del proceso de esterilización</td>
-<td><a href="./indicadores-quimicos.html">Cintas testigo, marcador, etiquetas</a></td>
-</tr>
-<tr>
-<td style="text-align:center">VI</td>
-<td>Indicadores emulador</td>
-<td>Además de responder a todos los parámetros, se pueden usar un cierto numero de ciclos de esterilización</td>
-<td><a href="./indicadores-quimicos.html">Cintas testigo, marcador, etiquetas</a></td>
-</tr>
-</tbody>
-</table>
-
-            </div>
-          </div>
-        </div>
         <div class="panel panel-default">
           <div class="panel-heading"><a href="./indicadores-biologicos.html">
-              <h2>Indicadores biológicos</h2></a></div>
-          <div class="panel-body"><img src="./../../images/indicadores-biologicos.jpg" alt="Indicadores" class="img-responsive">
-            <p>Sustancias que cambian de color o estado cuando son expuestos a niveles críticos de una o más variables del proceso de esterilización, permitiendo conocer si estos se cumplieron.</p>
-            <p> </p>
+              <h2>Indicadores Biológicos</h2></a></div>
+          <div class="panel-body"><img src="./../../images/validacion-indicadores-autocontenidos.png" alt="Indicadores biológicos" class="img-responsive">
+            <p>Dispositivos inoculados con esporas de microorganismos que después del proceso de eseterilización son incubados para verificar que el proceso logro hacerlas inviables. El hecho de que trabaje con esporas, las estructuras vivas más resistentes, lo hace el único método para confirmar la efectividad del proceso de esterilización.</p>
           </div>
-          <div class="panel-footer"><a href="./indicadores-biologicos.html">Una completa línea de indicadores biológicos</a></div>
+          <div class="panel-footer"><a href="./indicadores-biologicos.html">Una completa línea de indicadores biológicos.</a></div>
         </div>
         <div class="panel panel-default">
           <div class="panel-heading"><a href="./indicadores-quimicos.html">
               <h2>Indicadores Químicos</h2></a></div>
-          <div class="panel-body"><img src="./../../images/indicadores-quimicos.jpg" alt="Indicadores" class="img-responsive">
-            <p>Los indicadores favoritos</p>
+          <div class="panel-body"><img src="./../../images/validacion-cinta-testigo.jpg" alt="Indicadores químicos" class="img-responsive">
+            <p>Sustancias que cambian de color o estado cuando son expuestos a niveles críticos de una o más variables del proceso de esterilización, permitiendo conocer si estas alcanzaron su nivel optimo. Son prácticos y faciles de implementar, ya que incluso muchos empaques ya tienen indicadores de origen. Su correcta selección puede ser vital para alcanzar niveles adecuados de esterlización.</p>
           </div>
-          <div class="panel-footer"><a href="./indicadores-biologicos.html">Una completa línea de indicadores biológicos</a></div>
+          <div class="panel-footer"><a href="./indicadores-quimicos.html">Conozca más de nuestros indicadores químicos.</a></div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading"><a href="./indicadores-lavado.html">
+              <h2>Indicadores de lavado y sellado</h2></a></div>
+          <div class="panel-body"><img src="./../../images/validacion-indicadores-lavado.png" alt="Indicadores de proceso de lavado" class="img-responsive">
+            <p>El lavado involucra el manejo de instrumental con residuos orgánicos, por lo que es conveniente contar con indicadores de se logró un adecuado nivel de eliminación, que permita el manejo seguro del material.</p>
+          </div>
+          <div class="panel-footer"><a href="./indicadores-lavado.html">Explore las opciones de indicadores de lavado.</a></div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading"><a href="./documentacion.html">
+              <h2>Sistemas de documentación</h2></a></div>
+          <div class="panel-body"><img src="./../../images/validacion-etiquetadora.png" alt="Pistola etiquetadora" class="img-responsive"><p>El sistema consiste en una pistola de etiquetado, que permite identificar los paquetes a esterilizar. Con ella es posible imprimir hasta 3 renglones para documentar los paquetes con la siguiente información: Esterilizador, lote, iniciales de la persona responsable, fecha de procesamiento y fecha de caducidad.
+Las etiquetas del sistema poseen doble adhesivo e indicadores para vapor y plasma de peróxido de hidrogeno</p>
+          </div>
+          <div class="panel-footer"><a href="./documentacion.html">Más detalles del sistema de documentación.</a></div>
         </div>
       </div>
     </div>
@@ -176,6 +130,4 @@ En ambos casos, contamos con las herramientas necesarias para validar sus proces
     </div>
   </footer>
   <script src="./../../scripts/main.js"></script>
-</body></html>rc="./../../scripts/main.js"></script>
-</body></html>./../scripts/main.js"></script>
 </body></html>
