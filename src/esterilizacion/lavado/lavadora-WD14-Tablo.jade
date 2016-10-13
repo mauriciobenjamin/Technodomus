@@ -3,27 +3,26 @@ extends ../../_layouts/productos
 block append config
   //- Correct base url pathing for this page
   - var baseUrl = './../../'
-  - var producto = 'Lavaodra WD14 Tablo'
-  - var tituloPagina = "Technodomus | " + producto
+  - var producto = 'Lavadora WD14 Tablo'
+  - var tituloPagina = "Technodomus | Soluciones en " + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Lavado: './','Lavadoras Automáticas': 'lavadoras.html', 'Lavadoras Desinfectadoras': 'lavadoras-desinfectadoras.html', 'Lavadoras WD14 Tablo': '#'} 
 
 block content
-  +jumbo('Lavadoras')
-  
-  ol.breadcrumb
-    li
-      a(href="./../../") Inicio
-    li
-      a(href="./../") Esterilización
-    li
-      a(href="./") Lavado
-    li.active
-      a(href="#") #{producto}
+  +cabecera (producto, bread)
       
   .grid    
     +panelprod('Lavadora y desinfectadora WD14 Tablo')
       .panel-body
         +foto('lavadora-WD14-Getinge.jpg', 'Lavadora WD14')
-        p Lavadora desinfectadora de sobremesa totalmente autómatica con un diseño moderno y caracteristicas de lavado multifuncional.
+        p Lavadora desinfectadora de sobremesa totalmente autómatica con un diseño moderno y características de lavado multifuncional.
+        p La lavadora WD14 de Getinge además de su diseño inovador y sus características multifuncionales, cumple con las normas y estandares más relevantes
+        p Con una capacidad para un contendor SPRI2, una canasta de malla fina y una barra de inyección, la WD14 esta pensada para salas de antención con cl´inicas dentales con alta demanda de reuso de instrumentos y una rápida circulación. El consumo de agua y energía de la lavadora es también bajo, lo que mejora aún más su relación costo-eficiencia.
+        p Colocada en una mesa de trabajo, tienen una altura ergonómica ideal, facilitando su instalación y uso.
+        
+    
+    +panelsubp('Características Generales')
+      .panel-body
+        +foto('getinge-wd14-tablo-usuario.jpg', 'usuarios')
         ul
           li Limpieza excepcional
           li Fácil de colocar
@@ -31,13 +30,6 @@ block content
           li Diseño moderno
           li Amplio rango de usos
           li Probada eficacia
-    
-    +panelsubp('caracteristicas generales')
-      .panel-body
-        +foto('getinge-wd14-tablo-usuario.jpg', 'usuarios')
-        p La lavadora WD14 de Getinge además de su diseño inovador y sus caracteristicas multifuncionales, cumple con las normas y estandares más relevantes
-        p Con una capacidad para un contendor SPRI2, una canasta de malla fina y una barra de inyección, la WD14 esta pensada para salas de antención con cl´inicas dentales con alta demanda de reuso de instrumentos y una rápida circulación. El consumo de agua y energía de la lavadora es también bajo, lo que mejora aún más su relación costo-eficiencia.
-        p Colocada en una mesa de trabajo, tienen una altura ergonómica ideal, facilitando su instalación y uso.
         
     +panelsubp('datos técnicos')
       .panel-body

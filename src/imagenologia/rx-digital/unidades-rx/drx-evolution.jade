@@ -1,0 +1,31 @@
+extends ../../../_layouts/productos2
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../../'
+  - var producto = 'Unidades de Rayos X'
+  - var tituloPagina = "Technodomus | " + producto
+  - var bread = {Inicio: baseUrl, Imagenología: './../../', 'Radiología Digital': './../', 'unidades de Rayos X' :'./'}  
+
+block append content
+
+  .grid
+    +panelprod(producto)
+      .panel-body
+        +foto('unidades-drx-evolution.png','DRX Evolution')
+        :markdown
+          El sistema de sala de radiología Carestream Evolution es un sistema de radiología digital versátil que utiliza componentes modulares y configurables para adaptarse a su espacio de trabajo, a su flujo de trabajo y a su presupuesto. 
+          Realice una amplia variedad de exámenes radiográficos generales con una comodidad, productividad y confort para el paciente.
+          Con los [detectores DRX](./../sistemadrx.html) portátiles e inalámbricos, puede cambiar hoy mismo a una sala de rayos X digital con tres configuraciones (Automática, Híbrida y Standard-Q) que puede actualizarse para adecuarse a sus necesidades del mañana.
+        +carestream
+    
+    +panelsubp('Caracteristicas')
+      .panel-body
+        :markdown
+          + Iluminación LED que mejora la funcionalidad y estética del equipo.
+          + Gran flexibilidad gracias a su columna extendida.
+          + Generador Carestream de alto desempeño.
+          + Mesa para colocar pacientes de hasta 320 kg de peso.
+          + Diseño pensado en la inovación constante que permitira adaptar aplicaciones de imagenología avanzadas.
+
+          /* Algunas caracteristicas son opcionales.

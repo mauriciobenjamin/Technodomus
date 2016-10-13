@@ -4,19 +4,12 @@ block append config
   //- Correct base url pathing for this page
   - var baseUrl = './../../'
   - var urlLinks = '/esterilizacion/lavado/'
-  - var tituloPagina = "Technodomus | Soluciones en lavado"
+  - var producto = 'Insumos para lavado'
+  - var tituloPagina = "Technodomus | Soluciones en " + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Lavado: './', Insumos : '#'}  
 
 block content
-  +jumbo('Químicos para el lavado de instrumental médico')
-  ol.breadcrumb
-    li
-      a(href="./../../") Inicio
-    li
-      a(href="./../") Esterilización
-    li
-      a(href="./") Lavado
-    li.active
-      a(href="#") Insumos
+  +cabecera(producto, bread)
   
   .grid
     +panelprod('Insumos de alta calidad')

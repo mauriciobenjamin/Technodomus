@@ -69,7 +69,7 @@ mixin foto(imagen,atText)
   img(src= baseUrl + 'images/' + imagen alt=atText class='img-responsive')&attributes(attributes)
 
 mixin fotoch(imagen,atText)
-  img(src= baseUrl + 'images/' + imagen alt=atText class='img-responsive img-center')&attributes(attributes)  
+  img(src= baseUrl + 'images/' + imagen alt=atText class='img-responsive center')&attributes(attributes)  
     
 //- Genera un bloque de migajas de pan
 mixin migajas(bread)
@@ -112,6 +112,9 @@ mixin stericlin()
   
 mixin laoken()
   img(src=baseUrl+"images/logo-laoken.png", alt="laoken" height="65px")&attributes(attributes)
+
+mixin carestream()
+  img(src=baseUrl+"images/logo-carestream.png", alt="carestream" height="65px")&attributes(attributes)
   
 //- En construcción
 mixin construccion()

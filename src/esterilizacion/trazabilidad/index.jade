@@ -1,4 +1,16 @@
-extends ./../../_layouts/en-construccion
+extends ../../_layouts/productos
 
 block append config
+  //- Correct base url pathing for this page
   - var baseUrl = './../../'
+  - var producto = 'Trazabilidad'
+  - var tituloPagina = "Technodomus | Soluciones en " + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Trazabilidad: './'}  
+  
+block content
+  +cabecera(producto, bread)
+
+  .grid
+    +panelprin(producto)
+      .panel-body
+        +foto('validacion.jpg', 'Validación')

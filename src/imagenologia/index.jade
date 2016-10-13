@@ -7,7 +7,7 @@ block append config
 
 block content
   #parallax-imagen.jumbotron
-    h1.cabecera soluciones en imagenología
+    h1.cabecera Soluciones en imagenología
     
   .grid
     +panelprin('Imagenología')
@@ -19,25 +19,25 @@ block content
         
     +panelprod('Radiología digital','./rx-digital')
       .panel-body
-        p Las técnicas radiológicas son de sobra conocidas por sus ventajas, si a estas le añadimos la posibilidad de obtener imágenes en segundos y en medios de facil almacenamiento y distribución se obtiene un sistema que reduce los tiempos de diagnóstico, eficientiza el uso del equipo de radiológia, mejora el volumen de imágenes obtenidas y da al paciente la ventaja de poder acceder facilmente a sus resultados y reducir su exposición a la radiación.
+        +foto('cRcarestream.jpeg', 'Sistema de captura de imagenes')
+        p Las técnicas radiológicas son de sobra conocidas por sus ventajas, si a estas le añadimos la posibilidad de obtener imágenes en segundos y en medios de facil almacenamiento y distribución se obtiene un sistema que reduce los tiempos de diagnóstico, eficientiza el uso del equipo de radiología, mejora el volumen de imágenes obtenidas y da al paciente la ventaja de poder acceder facilmente a sus resultados y reducir su exposición a la radiación.
         p Todo ello es posible con las soluciones de radiología digital y computarizada que le ofrecemos.
         h4 
-          a(href="./rx-digital/input-digital/") Dígital Input
+          a(href="./rx-digital/input-digital/") Digital Input
         h4 
           a(href="./rx-digital/output-digital/") Digital Output 
         h4
-        a(href="./rx-digital/mesas-rx/") Mesas de Rayos X
-        h4 Sistemas de Radiología Computarizada (CR)
-        a(href= "./rx-digital/input-digital/sistema-cr.html")
-          +foto('cRcarestream.jpeg')
-          | Sistemas de captura de imágenes radiológicas
+          a(href="./rx-digital/unidades-rx/") Unidades de Rayos X
+        h4 
+          a(href= "./rx-digital/input-digital/sistema-cr.html") Sistemas de Radiología Computarizada (CR)
         h4 
           a(href= "./rx-digital/input-digital/sistema-drx.html") Sistemas de Radiología Digital (DRX)
         h4 
-          a(href="./rx-digital/input-digital/sistema-drx.html") DRX Dental
+          a(href="./rx-digital/input-digital/sistema-drx.html#dental") DRX Dental
     
-    +panelprod('Radiología análoga', './analoga')
+    +panelprod('Radiología análoga', './rx-analogico')
       .panel-body
+        +foto('imagenologia-analoga.jpg', 'Imagenología analógica')
         p Los sistemas de película análoga tienen un excelente desempeño en cuanto a su flexibilidad y resolución, dando seguridad al diagnóstico.
         p La gran variedad de tamaños de películas y casetas, permite cubrir necesidades diversas y ampliar sus opciones de atención. 
         p Para sacar todo el provecho a sus películas, contamos con la mejor selección de químicos y herramientas de procesado para que sus imágenes siempre tengan la mejor calidad.
@@ -47,7 +47,8 @@ block content
           a(href="./rx-analogico/pelicula-plana.html") Película plana
         h4 
           a(href="./rx-analogico/pelicula-mamografica.html") Película mamográfica
-        h4 Película Dental
+        h4 
+          a(href="./rx-analogico/pelicula-dental.html") Película Dental
         
     +panelprod('RIS','./RIS/')
       .panel-body

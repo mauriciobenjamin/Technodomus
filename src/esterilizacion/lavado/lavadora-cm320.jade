@@ -5,7 +5,7 @@ block append config
   - var baseUrl = './../../'
   - var producto = 'Lavadora CM320'
   - var tituloPagina = "Technodomus | Soluciones en " + producto
-  - var bread = {Inicio: baseUrl, Esterilización: './../', Lavado: './','Lavadoras Automáticas': 'lavadoras.html', 'Lavadora CM320': '#'}  
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Lavado: './','Lavadoras Automáticas': 'lavadoras.html', 'Lavadoras Desinfectadoras': 'lavadoras-desinfectadoras.html', 'Lavadora CM320': '#'}  
   
 block content
   +cabecera(producto, bread)
@@ -18,32 +18,28 @@ block content
           Lavadora desinfectadora multicámara de alto rendimiento, con capacidad de hasta 15 bandejas DIN por carga y tiempos de procesamiento cortos.
           Su diseño modular y el gran rango de accesorios que posee, la hacen un equipo fácil de adaptar a sus necesidades. 
           La carca y descarga de la lavadora es sencilla gracias a las carretillas de transporte ergónomicas. 
-        
         +getinge
-        
-    +panelsubp('Caracteristicas Generales')
+    +panelsubp('Características Generales')
       .panel-body
         +foto('lavadora-cm320-enuso.jpg', 'Lavadora en uso')
-          :markdown
-            + Alta capacidad y volumen de trabajo
-            + Altamente automatiazada y confiable.
-            + Construida pensando en una fácil higiene
-            + Diseño Modular
-            + Compacta
-            
+        ul
+          li Alta capacidad y volumen de trabajo.
+          li Altamente automatiazada y confiable.
+          li Construida pensando en una fácil higiene.
+          li Diseño Modular.
+          li Compacta.
     +panelsubp('Datos Técnicos')
       .panel-body
         :marked
-          
-        | Caracteristica | Unidad | | 
-        |-------------:|:------:|:----------:|
-        | Volumen efectivo de la cámara | L | 351 |
-        | Charolas DIN | Pza | 15 |
-        | Ancho | mm | 1245 |
-        | Ancho (con puerta de servicio) | mm | 1880 |
-        | Alto | mm | 2425 | 
-        | Profundidad 2 modulos | mm | 2020 |
-        | Profundidad 3 modulos | mm | 2982 |
-        | Profundidad 4 modulos | mm | 3944 |
+          Caracteristica | Unidad | Valor 
+          ---------------|:------:|:-----:
+          Volumen efectivo de la cámara | L | 351
+          Charolas DIN | Pza | 15
+          Ancho | mm | 1245
+          Ancho (con puerta de servicio) | mm | 1880
+          Alto | mm | 2425
+          Profundidad 2 modulos | mm | 2020
+          Profundidad 3 modulos | mm | 2982
+          Profundidad 4 modulos | mm | 3944
       .panel-footer
         a(href="http://www.getinge.com/files/hc/products/cleaning-disinfection/washer-disinfectors/88-turbo/BROCHURES/getinge-88turbo-1942-es-lr.pdf") Folleto del equipo.

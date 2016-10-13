@@ -3,14 +3,13 @@ extends ../../../_layouts/productos2
 block append config
   //- Correct base url pathing for this page
   - var baseUrl = './../../../'
-  - var producto = 'Mesas de Rayos X'
+  - var producto = 'Unidades de Rayos X'
   - var tituloPagina = "Technodomus | " + producto
-  - var bread = {Inicio: baseUrl, Imagenología: './../../', 'Radiología Digital': './../', 'Mesas de Rayos X' :'./'}  
+  - var bread = {Inicio: baseUrl, Imagenología: './../../', 'Radiología Digital': './../', 'unidades de Rayos X' :'./'}  
 
 block append content
 
   .grid
     +panelprod(producto)
       .panel-body
-        +foto('/mesas-rx.jpg','Mesas de rayos X')
-        p Una solución integral
+        +foto('unidades-drx-evolution.png','DRX Evolution')
