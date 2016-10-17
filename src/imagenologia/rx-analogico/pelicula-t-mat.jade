@@ -1,0 +1,54 @@
+extends ../../_layouts/productos2
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Película T-MAT'
+  - var tituloPagina = "Technodomus | Soluciones en " + producto
+  - var bread = {Inicio: baseUrl, Imagenología: './../', 'Radiología Analógica': './', 'Película Plana': './pelicula-plana.html', 'Película T-MAT': '#'}
+block append content
+
+  .grid
+    +panelprin('producto')
+      .panel-body
+        +foto('analogico-peliculaplana.png', 'Pelicula plana')
+        :markdown
+          #### Excelente para imágenes de alta resolución y alto contraste 
+          
+          La G/RA es idónea para radiografía de especialidad y general de alto contraste, incluidos los exámenes ortopédicos.  
+          
+          La tecnología empleada en la pélicula **T-Grain**, única y patentada por la compañía, genera imágenes excepcionalmente nítidas y de bajo nivel de jaspeado que garantizan un  diagnóstico fácil y confiable. 
+          
+          Un cambio especial de color en la densidad de base óptica optimiza la diferenciación de contraste, reduce el cansancio de la visión y aumenta la nitidez de la imagen. 
+          
+          El resultado es una mejor visualización siempre que acceda a las imágenes (en la sala de radiología, en el quirófano, en el consultorio, en la zona de procesamiento y en los entornos de oficina). 
+
+        +carestream
+    
+    +panelprod('Características generales')
+      .panel-body
+        :markdown
+          + La tecnología de **T-Grain** ofrece excelentes imágenes médicas y minimiza los errores de manipulación de densidad negativa en etapa de procesamiento previo que pueden comprometer la interpretación radiográfica.
+            + Cruzamiento de luz reducido sin cambio de velocidad, ofreciendo mayor detalles.
+            + Permite su uso en sistemas de alta velocidad, aún cuando es de velocidad estandar.
+            + Minimiza los errores de manipulación de densidad negativa.
+          + Estabilidad sensitométrica y confiabilidad en el procesamiento automático en una amplia variedad de situaciones de procesamiento.
+          + Reduce la necesidad de segundas tomas.
+          + Puede utilizarse con todas las pantallas intensificadoras de tierras raras emisoras de luz verde.
+          + Reducción extraordinaria del tiempo de procesamiento y aumento de la productividad mediante tecnología de acceso rápido (RA).
+            + Velocidad de procesamiento < 40 s.
+
+
+    +panelprod('Medidas disponibles')
+      .panel-body
+        :marked
+          Código | Medidas | Cantidad
+          :-----:|:-------:|:-------:
+          174 6049 | 35.6 x 91.4 cm (14x36") | 25 Hojas
+          601 8493 | 35.6 x 43.2 cm (14x17") | 100 Hojas
+          601 8303 | 35.6 x 35.6 cm (14x14") | 100 Hojas
+          603 1868 | 30.0 x 35.0 cm (12x14") | 100 Hojas
+          603 1850 | 24.0 x 30.0 cm | 100 Hojas
+          603 1843 | 24.0 x 24.0 cm | 100 Hojas 
+          603 1835 | 20.3 x 25.4 cm | 100 Hojas
+          601 7982 | 18 x 43 cm. (7 x 17") | 100 hojas          
