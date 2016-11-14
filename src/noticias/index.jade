@@ -8,8 +8,17 @@ block config
 block append content
 
   .grid
-    +panelmax('Próximo Seminario')
+    +panelmax('Día Internacional de la Radiología','./eventos/dia-radiologia.html')
+      .panel-body
+        +foto('rayosX.gif', 'Día Internacional de la Radiología')
+        p El 8 de noviembre se celebra el descubrimiento de los rayos X y por consecuencia, el día Internacional de la Radiología...
+        a(href="./novedades/dia-radiologia.html")
+          h4 Conoce más de esta celebración.
+        
+    
+    
+    +panelmax('Seminario de septiembre 2016')
       .panel-body
         +foto('seminario-septiembre-2016.jpeg', 'Seminario septiembre')
         a(href="./eventos/seminario-septiembre-2016.html")
-          h3 Más información aquí.
+          h4 Más información aquí.
