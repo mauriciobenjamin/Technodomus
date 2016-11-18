@@ -8,6 +8,13 @@ block config
 block append content
 
   .grid
+    +panelmax('Día Mundial de la Diabetes','./eventos/dia-diabetes.html')
+      .panel-body
+        +foto('WDD-logo-date-ES-2048px.png', 'Día Mundial de la Diabetes')
+        p Desde el 2009 el 14 de noviembre se celebra el Día Mundial de la Diabetes como parte de los esfuerzos difundir los efectos de esta enfermedad...
+        a(href="./novedades/dia-diabetes.html")
+          h4 Unete a las acciones del día.
+
     +panelmax('Día Internacional de la Radiología','./eventos/dia-radiologia.html')
       .panel-body
         +foto('rayosX.gif', 'Día Internacional de la Radiología')
@@ -15,8 +22,6 @@ block append content
         a(href="./novedades/dia-radiologia.html")
           h4 Conoce más de esta celebración.
         
-    
-    
     +panelmax('Seminario de septiembre 2016')
       .panel-body
         +foto('seminario-septiembre-2016.jpeg', 'Seminario septiembre')

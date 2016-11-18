@@ -1,0 +1,65 @@
+extends ../../_layouts/noticias
+
+block append config
+  - var baseUrl = './../../'
+  - var noticia = "Día Mundial de la Diabetes"
+  - var fecha = "14 de noviembre de 2016"
+  
+block append content
+  
+  .grid
+    +panelprod('Ojo con la Diabetes')
+      .panel-body
+        h5 Publicado por: Technodomus
+        h6 
+          =fecha
+        :markdown
+          **El Día Mundial de la Diabete fue creado en 1991** por la Federación Internacional de la Diabetes (FID) y la Organización Mundial de la Salud (OMS) en respuesta a la creciente preocupación por la amenaza que representa la diabetes. En 2006 se convirtio en día **oficial de las Naciones Unidas**.
+          
+          Se trata de la campaña de sensibilización más grande del mundo, para llamar la atención sobre la importancia de la diabetes en el mundo y sus implicaciones políticas y públicas.
+          
+          Su simbolo es un círculo azul, que significa la unidad de la comunidad mundial de la diabetes en respuesta a la epidemia.
+          
+          El tema principal de este año es **'Ojo con la Diabetes'** con lo que se quiere llamar la atención al hecho de que casí la mitad de los adultos con diabetes, desconocen que su condición, lo que es igual a **193 millones de personas** a nivel global. Muchos de estos casos son de diabetes tipo 2, por lo que un diagnóstico temprano permite iniciar un tratamiento que reduzca el riesgo de complicaciones dañinas y costosas. 
+          
+          Una persona con diabetes tipo 2 puede vivir durante años sin mostrar ningún síntoma, mientras los altos niveles glucosa daña silenciosamente el cuerpo. Por ello, la necesidad de **cribar, diagnosticar y proporcionar un tratamiento** apropiado a las personas con diabetes en etapas tempranas.
+          
+          La diabetes es una carga enorme y en aumento, en 2015:
+          
+          + **415 MILLONES DE ADULTOS** vivían con diabetes
+          + este número se espera aumente a alrededor de **642 MILLONES** o uno en diez adultos para 2040.
+          + Hasta un **70% DE LOS CASOS DE DIABETES TIPO 2 SE PUEDEN PREVENIR** o retrasar adoptando estilos de vida saludables, el equivalente a hasta 160 millones de casos para 2040.
+          + La nutrición nadecuada e inactividad física entre los niños esta provocando que la diabetes tipo 2 en la infancia se convierta e un **PROBLEMA DE SALUD PUBLICA MUNDIAL**
+          + El **12% DEL GASTO TOTAL MUNDIAL** en salud actualmente es gastado en adultos con DIABETES.
+          
+          Para mostrar su apoyo a la iniciativa la FID ha dispuesto la etiqueta #WDD para usarla en las redes sociales, así como extender el uso del circulo azul para manifestar su preocupación por el problema de la diabetes. 
+          
+          Para conocer más visita la página del [Día Mundial de la Diabetes.](http://www.idf.org/wdd-index/about.html) 
+          
+          Sigue el evento en redes sociales con el hashtag [#WDD](https://twitter.com/search?q=%23WDD2016&src=tyah&lang=es).
+          
+          Comparte las imágenes con tus contactos.
+          
+    .panel
+      .panel-body
+        +fotoch('WDD-4.jpg', 'Ojo con la diabetes')
+        
+    .panel
+      .panel-body
+        +fotoch('WDD-1.jpg', 'Ojo con la diabetes')
+
+    .panel
+      .panel-body
+        +fotoch('WDD-2.jpg', 'Ojo con la diabetes')    
+
+    .panel
+      .panel-body
+        +fotoch('WDD-infog-1.jpg', 'Ojo con la diabetes')
+        
+    .panel
+      .panel-body
+        +fotoch('WDD-infog-2.jpg', 'Ojo con la diabetes')
+
+    .panel
+      .panel-body
+        +fotoch('WDD-infog-5.jpg', 'Ojo con la diabetes')
