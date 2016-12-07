@@ -87,7 +87,7 @@ img {
   display: block;
 }
 
-.caja-contenido{
+.caja-contenido {
   display: block;
   padding: 0 2rem;
   flex-flow: row;
@@ -96,6 +96,13 @@ img {
   @media screen and (max-width: $bp-m) {
     margin-left: 0;
   }
+}
+
+.caja-contenido-footer {
+  display: block;
+  padding: 0 2rem;
+  flex-flow: row;
+  margin-top: 1rem;
 }
 
 .col-xs-12 {
@@ -133,6 +140,9 @@ img {
     font-size: 3rem;
     color: $color2;
     text-shadow: 2px 2px 3px black;
+    @media screen and (max-width: $bp-m) {
+      font-size: 1rem;
+    }
   }
 }
 
@@ -353,7 +363,7 @@ h4 {
 p {
   font-size: 1.1em;
   @media screen and (max-width: $bp-m) {
-    font-size: 1.3em;
+    font-size: 1em;
   }
 }
 
