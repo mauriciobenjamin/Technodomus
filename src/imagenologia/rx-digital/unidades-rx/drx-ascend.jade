@@ -3,13 +3,40 @@ extends ../../../_layouts/productos2
 block append config
   //- Correct base url pathing for this page
   - var baseUrl = './../../../'
-  - var producto = 'Unidades de Rayos X'
+  - var producto = 'DRX Ascend'
   - var tituloPagina = "Technodomus | " + producto
-  - var bread = {Inicio: baseUrl, Imagenología: './../../', 'Radiología Digital': './../', 'unidades de Rayos X' :'./'}  
+  - var bread = {Inicio: baseUrl, Imagenología: './../../', 'Radiología Digital': './../', 'Unidades de Rayos X' :'./'}
 
 block append content
 
   .grid
     +panelprod(producto)
       .panel-body
-        +foto('unidades-drx-evolution.png','DRX Evolution')
+        +foto('unidades-drx-ascend.png','DRX Ascend')
+        :markdown
+          DRX Ascend proporciona características de un sistema DR de alto rendimiento a un precio muy atractivo y adecuado para centros de diagnóstico por imagen, centros ortopédicos, servicios de urgencias y departamentos de radiología de hospitales.
+
+          El sistema radiografía digital ahorra espacio, reduce costos de instalación y ofrece flexibilidad al poder usar diferentes componentes.
+
+          Descargue el [folleto del equipo](http://www.carestream.com.mx/DRX-Ascend_system.pdf)
+        +carestream
+
+    +panelsubp('Características')
+      .panel-body
+        +foto('unidades-ascend-uso.png', 'DRX Ascend en uso', 'Configuraciones adecuadas a sus necesidades')
+        :markdown
+          + Sistema sumamente versatil que permite la configuración del soporte de tubo, soporte de pared, la mesa y accesorios.
+          + Opciones de tablero flotante estándar o mesa flotante elevable
+          + Mesa flotante con elevación silenciosa que soporta hasta 295 Kg.
+
+    +panelsubp('Accesorios')
+      .panel-body
+        +foto('unidades-evolution-uso2.png', 'Equipo de DRX Ascend','Imágenes en segundos')
+        :markdown
+          + Detector DRX inalámbrico de Carestream
+          + Detector de tablero de la mesa
+          + Detector lateral fijo o con ruedas
+          + Dispositivo de sujección de chasis
+          + Soporte de tubo de montaje en suelo
+          + Mesa flotante elevable
+          + Soporte de pared vertical

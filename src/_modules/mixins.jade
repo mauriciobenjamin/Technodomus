@@ -65,11 +65,11 @@ mixin panelsubp(titulo, link)
       p En construcción
 
 //- Inserta una imagen responsiva y sus texto alt
-mixin foto(imagen,atText)
-  img(src= baseUrl + 'images/' + imagen alt=atText class='img-responsive')&attributes(attributes)
+mixin foto(imagen,atText,titulo)
+  img(src= baseUrl + 'images/' + imagen alt=atText title=titulo, class='img-responsive')&attributes(attributes)
 
-mixin fotoch(imagen,atText)
-  img(src= baseUrl + 'images/' + imagen alt=atText class='img-responsive center')&attributes(attributes)  
+mixin fotoch(imagen,atText,titulo)
+  img(src= baseUrl + 'images/' + imagen alt=atText title=titulo, class='img-responsive center')&attributes(attributes)
     
 //- Genera un bloque de migajas de pan
 mixin migajas(bread)
