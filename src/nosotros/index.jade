@@ -3,6 +3,8 @@ extends ../_layouts/base
 block config
   //- Correct base url pathing for this page
   - var baseUrl = '../'
+  - var tituloPagina = "Conoce Technodomus por dentro"
+  - var descripcion = "Technodomus, una compañia orientada a mejorar la salud por medio de tecnología que permita procesos médicos efectivos y adecuados."
 
 block content
   .jumbotron
@@ -13,7 +15,12 @@ block content
       .panel-body
        include:markdown nosotros.md
     
-    +panelsubp('¿Te gustaría trabajar con nosotros?')
+    +panelsubp('¿Te gustaría trabajar con nosotros?', './trabaja.html')
       .panel-body
         p Somos una empresa en crecimiento y constantemente tenemos ofertas de trabajo, conocelas 
           a(href="./trabaja.html") aquí.
+
+    +panelsubp('Posada 2016', './posada2016.html')
+      .panel-body
+        p Terminamos el año festejando con nuestras familias los esfuerzos para mejorar la calidad de vida de los pacientes y la práctica de los profesionales de la salud. 
+        a(href="./posada2016.html") La crónica aquí.

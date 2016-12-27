@@ -3,13 +3,44 @@ extends ../../../_layouts/productos2
 block append config
   //- Correct base url pathing for this page
   - var baseUrl = './../../../'
-  - var producto = 'Película Dry'
+  - var producto = 'Película DRYVIEW 3.0'
   - var tituloPagina = "Technodomus | " + producto
-  - var bread = {Inicio: baseUrl, Imagenología: './../../', 'Radiología Digital': './../', 'Output Digital':'./'}  
+  - var bread = {Inicio: baseUrl, Imagenología: './../../', 'Radiología Digital': './../', 'Output Digital':'./'}
+  - var descripcion = "Una película de calidad excepcional para impresoras láser DRYVIEW, compatible con DICOM produce imágenes de alta calidad y bajo nivel de ruido."
+  - var cotiza = {estilos: "cotiza", ref: baseUrl + "cotiza/", fa:"info"}
 
 block append content
 
-  +panelprod('Una imagen, multiples salidas')
-    .panel-body
-      +foto('/output-digital.jpg','Output digital')
-      p El formato digital permite una gran flexibilidad al momento de generar productos adecuados a partir de las imágenes capturadas. No solo se queda en pantalla, las opciones de salida facilitan la consulta, almacenamiento y distribución de la información necesaria para un diagnóstico oportuno.
+  .grid
+    +panelprod(producto)
+      .panel-body
+        +fotoch('/outputD-dryview.png','Película DRYVIEW')
+        p Una película diseñada especialmente para las impresoras láser DRYVIEW Carestream, lo que le permite obtener una imagen de calidad excepcional, bajo nivel de ruido, densidad uniforme y gran nivel de detalle que la hace un producto ideal para obtener diagnósticos confiables.
+        +carestream
+        
+    +panelsubp("Características")
+      .panel-body
+        :marked
+          * Sustrato de poliéster de 0.17 mm, durable y resistente
+          * Calidad excepcional de imágenes de diagnóstico
+          * Gran nitidez en la reproducción de caracteres e imágenes con niveles excepcionales de resolución espacial, contraste y escala de grises
+          * Ruido minimizado y uniformidad mejorada de la densidad  de saturación en la emulsión
+          * Larga vida de almacenamiento, lo que le permite controla mejor su inventario y la adquisición de existencias.
+          * Carga de cartuchos en diez segundos sin luces ni bolsas especiales.
+          * Tecnología de reconocimiento de cartuchos que permite a las impresoras láser DRYVIEW reconocer el tipo, tamaño, grupo y número de hojas restantes de la película.
+          * Cinco tamaños de película para toda una gama de impresoras y aplicaciones
+          
+    +panelsubp("Tamaños")
+      .panel-body
+        :marked
+          pulgadas | centímetros
+          :-------:|:----------:
+          14x17 | 35x43
+          14x14 | 35x35
+          11x14 | 28x35
+          10x12 | 25x30
+          8x10 | 20x25
+          
+          Todos los tamaños estan disponibles en azul y transparente. Para aplicaciones de mamografía, le recomendamos la película [DRYVIEW para mamografía](./pelicula-dry-mamografia.html) que posee mayor densidad y gama dinámica.
+          
+        +mixboton(cotiza)

@@ -5,11 +5,17 @@ block append config
   - var baseUrl = './../../../'
   - var producto = 'Output Digital'
   - var tituloPagina = "Technodomus | " + producto
-  - var bread = {Inicio: baseUrl, Imagenología: './../../', 'Radiología Digital': './../', 'Output Digital':'./'}  
+  - var bread = {Inicio: baseUrl, Imagenología: './../../', 'Radiología Digital': './../', 'Output Digital':'./'} 
+  - var descripcion = "Ofrecemos una amplia variedad de soluciones para dar salida a su procesos de captura digital, desde película seca, monitores, quemadores, impresoras y estaciones de trabajo especializadas en imagenología."
 
 block append content
 
-  +panelprod('Una imagen, multiples salidas')
-    .panel-body
-      +foto('/output-digital.jpg','Output digital')
-      p El formato digital permite una gran flexibilidad al momento de generar productos adecuados a partir de las imágenes capturadas. No solo se queda en pantalla, las opciones de salida facilitan la consulta, almacenamiento y distribución de la información necesaria para un diagnóstico oportuno.
+  .grid
+    +panelprod('Una imagen, multiples salidas')
+      .panel-body
+        +foto('/output-digital.jpg','Output digital')
+        p El formato digital permite una gran flexibilidad al momento de generar productos adecuados a partir de las imágenes capturadas. No sólo se queda en pantalla, las opciones de salida facilitan la consulta, almacenamiento y distribución de la información necesaria para un diagnóstico oportuno. Conozca nuestra variedad de opciones para generar salidas dígitales.
+        
+    +panelsubp('Película DRYVIEW', './pelicula-dry.html')
+      .panel-body
+        p Una película que le va a gustar

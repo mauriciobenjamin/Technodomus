@@ -1,0 +1,16 @@
+extends ../../_layouts/noticias
+
+block append config
+  - var baseUrl = './../../'
+  - var noticia = "El procesamiento de endoscopios"
+  - var fecha = "13 de diciembre de 2016"
+  
+block append content
+  
+  .grid
+    +panelmax('El reto de garantizar su esterilidad')
+      .panel-body
+        h5 Publicado por: Technodomus
+        h6 
+          =fecha
+        include:marked esterilizacion.md

@@ -2,6 +2,7 @@ extends _layouts/base
 
 block vars
   - var tituloPagina = 'Technodomus | Soluciones en equipo médico'
+  - var descripcion = "Tecnologia y servicios para los profesionales de la salud, imagenologia, rayos x, esterilizacion, desinfeccion, trazabilidad, documentación, radiologia, película seca, DRYVIEW, productos Carestream, Getinge, GKE, Laoken y más."
   - var col3 = "columna col-xs-12 col-sm-6 col-md-4"
   - var col2 = "col-xs-12 col-md-6"
 
@@ -12,20 +13,26 @@ block content
       ol.carousel-indicators
         li(data-target="#productos" data-slide-to="0" class="active")
         li(data-target="#productos" data-slide-to="1")
+        li(data-target="#productos" data-slide-to="2")
       .carousel-inner
 
         .item.active
-          img(src= baseUrl + 'images/esterilizador-plasma-100-carrousel.jpg', alt='esterilizador de plasma')
+          img(src= baseUrl + 'images/navidad.png', alt='En esta fechas, les deseamos felices fiestas y prospero 2017', title='Felices fiestas y 2017')
+          .carousel-caption
+
+        .item
+          img(src= baseUrl + "images/carrouselCarestream.jpg", alt="impresora DryView", title="Salida dígital en las películas secas DryView de Carestream")
+          .carousel-caption
+            h2 Soluciones de salida digital a la medida
+            p Las películas secas DryView de Carestream son una solución de alta calidad para sus equipos dígitales de imagenología. 
+              a(href=baseUrl+'imagenologia/rx-digital/output-digital/pelicula-dry.html') Película DryView...
+
+        .item
+          img(src= baseUrl + 'images/esterilizador-plasma-100-carrousel.jpg', alt='esterilizador de plasma', title="Esterilizador de plasma Laoke")
           .carousel-caption
             h2 Esterilización más eficiente y sencilla
             p Los nuevos equipos de plasma de peróxido ofrecen grandes ventajas. Una esterilización más eficiente y facilidad de uso. 
-              a(href=baseUrl+'esterilizacion/esterilizacion/plasma.html') más información...
-        .item
-          img(src= baseUrl + "images/carrouselCarestream.jpg", alt="impresora DryView")
-          .carousel-caption
-            h2 Soluciones de salida a la medida
-            p La generación de salidas físicas de sus equipos digitales se puede adaptar a sus volumenes de trabajo a través de nuestras soluciones. 
-              a(href=baseUrl+'imagenologia/') más información...
+              a(href=baseUrl+'esterilizacion/esterilizacion/plasma.html') Más información...
          
       a.right.carousel-control(href='#productos', data-slide='next')
         span.glyphicon.glyphicon-chevron-right
@@ -40,23 +47,31 @@ block content
             img.img-responsive(src= baseUrl+"images/esterilizacion-usuario.png", alt="esterilización")
             h1 Esterilización
         .panel-body
-          h4 Las mejores soluciones para procesar instrumental e insumos estériles con la más alta tecnología para garantizar la seguridad del paciente.
-          p Contamos con equipo de baja y alta temperatura, sistemas completos de tratamiento de instrumental, desde el lavado, hasta el seguimiento y trazabilidad del proceso.
-          p Nuestro compromiso es brindar una toda seguridad para el tratamiento de sus pacientes, al tiempo que mejora el manejo de su instrumental y equipo. 
-          a(href= baseUrl+"esterilizacion/index.html") Conoce más de nuestros productos
+          :markdown
+            #### Las mejores soluciones para procesar instrumental e insumos estériles con la más alta tecnología para garantizar la seguridad del paciente.
+            
+            Contamos con equipo de [baja](./esterilizacion/esterilizacion/baja-temperatura.html) y [alta temperatura](./esterilizacion/esterilizacion/alta-temperatura.html), sistemas completos de tratamiento de instrumental, desde el [lavado](./esterilizacion/lavado/index.html), hasta la [validación](./esterilizacion/validacion/index.html) y [trazabilidad](./esterilizacion/trazabilidad/index.html) del proceso de marcas lideres como Getinge, Laoken, Gke, Metrex y SteriClin.
+            
+            Nuestro compromiso es brindar una toda seguridad para el tratamiento de sus pacientes, al tiempo que mejora el manejo de su instrumental y equipo. 
+          
+            [Conoce más de nuestros productos](./esterilizacion/)
       
       .panel.panel-principal.panel-15x#imagenologia
         .panel-heading
           a(href=baseUrl+"imagenologia/")
-            img.img-responsive(src= baseUrl+"images/imagenologia.png", alt="PARCS")
+            img.img-responsive(src= baseUrl+"images/imagenologia.png", alt="PACS, RIS y salidas digitales de imagenología")
             h1 Imagenología
         .panel-body
-          h4 Los sistemas más actuales para obtener, procesar, almacenar, visualizar y administrar imágenes de alta calidad para ayudar en su proceso de diagnóstico.
-          p Flujos de trabajo mejorados, reduciendo tiempos de espera en el procesamiento de las imágenes.
-          p La distribución de las imágenes es más facil que nunca, haciendo más ágil el diagnostico y reduciendo la exposición del paciente a la radiación evitando el duplicado de imágenes.
-          a(href=baseUrl+"imagenologia/index.html") Conoce más de nuestros productos
+          :markdown
+            #### Los sistemas más actuales para obtener, procesar, almacenar, visualizar y administrar imágenes de alta calidad para ayudar en su proceso de diagnóstico.
+            
+            La digitalización de sus áreas de imagenología es una decisión que puede contribuir a mejorar sus flujos de trabajo, reduciendo tiempos de espera en el procesamiento de las imágenes.
+            
+            Contamos con las mejores [películas para generar salidas dígitales](./imagenologia/rx-digital/output-digital/pelicula-dry.html), pero también para ofrecer excelentes [imágenes análogicas](./imagenologia/rx-analogico/) e integrar todo sus sistema de imagenología [en una solución](./imagenologia/PACS/) de la marca lider Carestream.
+
+            [Conoce más de nuestros productos](./imagenologia/index.html))
         
   section#contacto
     include _modules/contacto/contacto
 
-code.version v1.5.2
+code.version v0.12

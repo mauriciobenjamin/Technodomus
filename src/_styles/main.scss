@@ -137,7 +137,7 @@ img {
     width: 100%;
   }
   p {
-    font-size: 3rem;
+    font-size: 2rem;
     color: $color2;
     text-shadow: 2px 2px 3px black;
     @media screen and (max-width: $bp-m) {
@@ -157,6 +157,14 @@ img {
 .botones{
   margin-top: 5px;
   display: inline-block;
+  &.boton-flotante {
+    display: flex;
+    position: fixed;
+    right: 1%;
+    top: 90%;
+    z-index: 10;
+  }
+
   .boton{
     margin: 1px auto;
     transition: all .3s;
@@ -172,6 +180,12 @@ img {
 
   .boton-tel {
     @include boton($color1, "¡Llama!");
+    &:hover {
+    }
+  }
+
+  .boton-cotiza {
+    @include boton($color1, "Cotiza aquí");
     &:hover {
     }
   }
