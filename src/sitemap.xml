@@ -1,12 +1,482 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>http://www.technodomus.com/index.html</loc>
-    </url>
-    <url>
-        <loc>http://www.technodomus.com/imagenologia/index.html</loc>
-    </url>
-    <url>
-        <loc>http://www.technodomus.com/esterilizacion/index.html</loc>
-    </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>http://www.technodomus.com/</loc>
+  <lastmod>2016-12-26T02:43:56+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/</loc>
+  <lastmod>2016-12-08T00:35:24+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/imagenologia/</loc>
+  <lastmod>2016-12-26T02:43:59+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/cotiza/</loc>
+  <lastmod>2016-12-08T00:35:24+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/noticias/</loc>
+  <lastmod>2016-12-13T22:28:39+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/nosotros/</loc>
+  <lastmod>2016-12-15T01:14:24+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/clientes/</loc>
+  <lastmod>2016-12-08T00:35:24+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/imagenologia/rx-digital/output-digital/pelicula-dry.html</loc>
+  <lastmod>2016-12-26T02:44:29+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/esterilizacion/plasma.html</loc>
+  <lastmod>2016-12-08T00:35:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/esterilizacion/baja-temperatura.html</loc>
+  <lastmod>2016-12-08T00:35:32+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/esterilizacion/alta-temperatura.html</loc>
+  <lastmod>2016-12-08T00:35:32+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/lavado/index.html</loc>
+  <lastmod>2016-12-08T00:35:33+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/validacion/index.html</loc>
+  <lastmod>2016-12-08T00:35:30+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/trazabilidad/index.html</loc>
+  <lastmod>2016-12-08T00:35:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/imagenologia/rx-analogico/</loc>
+  <lastmod>2016-12-26T02:44:19+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/imagenologia/PACS/</loc>
+  <lastmod>2016-12-26T02:44:22+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/imagenologia/index.html</loc>
+  <lastmod>2016-12-26T02:43:59+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/aviso-privacidad.html</loc>
+  <lastmod>2016-12-08T00:35:23+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/lavado/</loc>
+  <lastmod>2016-12-08T00:35:33+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/empaque/</loc>
+  <lastmod>2016-12-08T00:35:35+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/esterilizacion/</loc>
+  <lastmod>2016-12-08T00:35:32+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/validacion/</loc>
+  <lastmod>2016-12-08T00:35:30+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/trazabilidad/</loc>
+  <lastmod>2016-12-08T00:35:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/lavado/lavadoras.html</loc>
+  <lastmod>2016-12-08T00:35:34+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/lavado/insumos.html</loc>
+  <lastmod>2016-12-08T00:35:33+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/empaque/papel-gm.html</loc>
+  <lastmod>2016-12-26T02:44:16+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/empaque/notejido.html</loc>
+  <lastmod>2016-12-26T02:44:16+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/empaque/tyvek.html</loc>
+  <lastmod>2016-12-26T02:44:16+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/empaque/proteccion.html</loc>
+  <lastmod>2016-12-26T02:44:16+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/validacion/indicadores-quimicos.html</loc>
+  <lastmod>2016-12-08T00:35:30+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/validacion/indicadores-biologicos.html</loc>
+  <lastmod>2016-12-26T02:44:10+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/imagenologia/rx-digital/</loc>
+  <lastmod>2016-12-26T02:44:20+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/imagenologia/rx-digital/input-digital/</loc>
+  <lastmod>2016-12-26T02:44:26+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/imagenologia/rx-digital/unidades-rx/</loc>
+  <lastmod>2016-12-26T02:44:25+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/imagenologia/rx-digital/input-digital/sistema-cr.html</loc>
+  <lastmod>2016-12-08T00:35:40+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/imagenologia/rx-digital/input-digital/sistema-drx.html</loc>
+  <lastmod>2016-12-26T02:44:26+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/imagenologia/rx-analogico/casetas.html</loc>
+  <lastmod>2016-12-26T02:44:19+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/imagenologia/rx-analogico/pelicula-plana.html</loc>
+  <lastmod>2016-12-26T02:44:19+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/imagenologia/rx-analogico/pelicula-mamografica.html</loc>
+  <lastmod>2016-12-08T00:35:36+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/imagenologia/rx-analogico/pelicula-dental.html</loc>
+  <lastmod>2016-12-08T00:35:36+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/imagenologia/RIS/</loc>
+  <lastmod>2016-12-26T02:44:21+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/noticias/novedades/procesamiento-endoscopios.html</loc>
+  <lastmod>2016-12-13T22:28:46+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/noticias/novedades/dia-diabetes.html</loc>
+  <lastmod>2016-12-15T01:14:29+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/noticias/novedades/dia-radiologia.html</loc>
+  <lastmod>2016-12-08T00:35:38+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/noticias/eventos/seminario-septiembre-2016.html</loc>
+  <lastmod>2016-12-08T00:35:38+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/nosotros/trabaja.html</loc>
+  <lastmod>2016-12-08T00:35:27+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/nosotros/posada2016.html</loc>
+  <lastmod>2016-12-21T08:28:38+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/imagenologia/rx-digital/output-digital/</loc>
+  <lastmod>2016-12-26T02:44:28+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/imagenologia/rx-digital/output-digital/pelicula-dry-mamografia.html</loc>
+  <lastmod>2016-12-26T02:44:28+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/esterilizacion/plasma-30L.html</loc>
+  <lastmod>2016-12-26T02:44:11+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/esterilizacion/plasma-100L.html</loc>
+  <lastmod>2016-12-26T02:44:12+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/esterilizacion/formaldehidoHS66.html</loc>
+  <lastmod>2016-12-26T02:44:12+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/esterilizacion/formaldehidoHS66Turbo.html</loc>
+  <lastmod>2016-12-26T02:44:11+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/esterilizacion/vaporHS66.html</loc>
+  <lastmod>2016-12-26T02:44:12+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/esterilizacion/vapor400.html</loc>
+  <lastmod>2016-12-26T02:44:12+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/esterilizacion/vapor633.html</loc>
+  <lastmod>2016-12-26T02:44:13+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/esterilizacion/vapor700.html</loc>
+  <lastmod>2016-12-26T02:44:12+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/lavado/detergente-enzimatico.html</loc>
+  <lastmod>2016-12-26T02:44:15+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/lavado/detergentes.html</loc>
+  <lastmod>2016-12-08T00:35:33+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/lavado/desinfectantes.html</loc>
+  <lastmod>2016-12-26T02:44:14+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/lavado/lavadora-WD15-Claro.html</loc>
+  <lastmod>2016-12-08T00:35:34+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/validacion/indicadores-lavado.html</loc>
+  <lastmod>2016-12-26T02:44:07+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/validacion/documentacion.html</loc>
+  <lastmod>2016-12-26T02:44:09+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/imagenologia/rx-analogico/quimicos-revelado.html</loc>
+  <lastmod>2016-12-08T00:35:36+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/imagenologia/rx-analogico/quimicos-dental.html</loc>
+  <lastmod>2016-12-08T00:35:36+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/empaque/bolsas-tyvek.html</loc>
+  <lastmod>2016-09-12T07:09:55+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/lavado/lavadoras-desinfectadoras.html</loc>
+  <lastmod>2016-12-08T00:35:34+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/lavado/lavadoras-ultrasonicas.html</loc>
+  <lastmod>2016-12-26T02:44:14+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/lavado/lavadora-endoscopios.html</loc>
+  <lastmod>2016-12-08T00:35:33+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/lavado/abrillantador.html</loc>
+  <lastmod>2016-12-26T02:44:15+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/lavado/desincrustante.html</loc>
+  <lastmod>2016-12-26T02:44:15+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/validacion/cinta-testigo.html</loc>
+  <lastmod>2016-12-26T02:44:07+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/validacion/indicadores-especificos.html</loc>
+  <lastmod>2016-12-26T02:44:08+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/validacion/indicadores-integradores.html</loc>
+  <lastmod>2016-12-26T02:44:10+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/validacion/indicadores-proceso.html</loc>
+  <lastmod>2016-12-26T02:44:08+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/imagenologia/rx-digital/input-digital/casetas.html</loc>
+  <lastmod>2016-12-26T02:44:27+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/imagenologia/rx-digital/input-digital/pantallas.html</loc>
+  <lastmod>2016-12-26T02:44:26+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/imagenologia/rx-digital/output-digital/estaciones.html</loc>
+  <lastmod>2016-12-26T02:44:29+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/imagenologia/rx-digital/output-digital/impresoras.html</loc>
+  <lastmod>2016-12-26T02:44:29+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/imagenologia/rx-digital/output-digital/monitores-gm.html</loc>
+  <lastmod>2016-12-26T02:44:28+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/imagenologia/rx-digital/output-digital/quemadores.html</loc>
+  <lastmod>2016-12-26T02:44:29+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/imagenologia/rx-digital/unidades-rx/drx-evolution.html</loc>
+  <lastmod>2016-12-26T02:44:25+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/imagenologia/rx-digital/unidades-rx/drx-ascend.html</loc>
+  <lastmod>2016-12-26T02:44:25+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/imagenologia/rx-analogico/pelicula-x-sight.html</loc>
+  <lastmod>2016-12-26T02:44:18+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/imagenologia/rx-analogico/pelicula-t-mat.html</loc>
+  <lastmod>2016-12-26T02:44:19+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/imagenologia/rx-analogico/pelicula-mxb.html</loc>
+  <lastmod>2016-12-26T02:44:20+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/imagenologia/rx-analogico/pelicula-mxg.html</loc>
+  <lastmod>2016-12-26T02:44:18+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/nosotros/forma-curricula.html</loc>
+  <lastmod>2016-12-08T00:35:27+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/imagenologia/rx-digital/output-digital/impresora-dryview6950.html</loc>
+  <lastmod>2016-12-26T02:44:28+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/lavado/lavadora-WD14-Tablo.html</loc>
+  <lastmod>2016-12-08T00:35:34+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/lavado/lavadora-serie46.html</loc>
+  <lastmod>2016-12-26T02:44:14+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/lavado/lavadora-WD46-turbo.html</loc>
+  <lastmod>2016-12-08T00:35:33+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/lavado/lavadora-serie86.html</loc>
+  <lastmod>2016-12-26T02:44:15+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/lavado/lavadora-88-turbo.html</loc>
+  <lastmod>2016-12-26T02:44:15+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.technodomus.com/esterilizacion/lavado/lavadora-cm320.html</loc>
+  <lastmod>2016-12-26T02:44:14+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
 </urlset>
