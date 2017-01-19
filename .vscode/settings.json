@@ -2,4 +2,5 @@
 {
     "editor.glyphMargin": true,
     "editor.rulers": [2,4,6]
+    "editor.fontFamily": "'Monospac821 BT', Consolas, 'Courier New', monospace"
 }
