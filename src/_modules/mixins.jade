@@ -10,6 +10,7 @@ mixin panelmax(titulo, link)
       else
         p En construcción
 
+//- Panel de doble ancho con encabezado más grande
 mixin paneldoble(titulo,link)
   .panel.panel-primary.panel-2x
     .panel-heading
@@ -63,6 +64,12 @@ mixin panelsubp(titulo, link)
       block
     else
       p En construcción
+
+//- Panel foto sola
+mixin panelfoto(imagen,atText,titulo)
+  .panel.panel-default
+    .panel-body
+      img(src= baseUrl + 'images/' + imagen alt=atText title=titulo, class='img-responsive')&attributes(attributes)    
 
 //- Inserta una imagen responsiva y sus texto alt
 mixin foto(imagen,atText,titulo)
