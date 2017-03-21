@@ -1,0 +1,17 @@
+extends ../../_layouts/noticias
+
+block append config
+  - var baseUrl = './../../'
+  - var noticia = "Atención más cercana a nuestros clientes del Bajío"
+  - var fecha = "13 de diciembre de 2016"
+  - var descripcion = "Technodomus ofrece ahora atención especializada a los estados de Guanajuato, San Luis Potosí, Guanajuato, Queretaro, Aguascalientes, Zacatecas y Jalisco, con los mejores equipos y tecnologías en esterilización por plasma, trazabilidad, validación, radiología digital, impresoras Dry-View, películas para impresión para mejorar la atención a sus pacientes, la calidad y eficiencia de sus servicios."
+  
+block append content
+  
+  .grid
+    +panelmax('Inicia operaciones nuestra sucursal en al centro del país')
+      .panel-body
+        h5 Publicado por: Technodomus
+        h6 
+          =fecha
+        include:marked bajio.md
