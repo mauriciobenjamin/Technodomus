@@ -75,6 +75,9 @@ mixin panelfoto(imagen,atText,titulo)
 mixin foto(imagen,atText,titulo)
   img(src= baseUrl + 'images/' + imagen alt=atText title=titulo, class='img-responsive')&attributes(attributes)
 
+mixin foto_ext(imagen,atText,titulo)
+  img(src=imagen alt=atText title=titulo, class='img-responsive')&attributes(attributes)
+
 mixin fotoch(imagen,atText,titulo)
   img(src= baseUrl + 'images/' + imagen alt=atText title=titulo, class='img-responsive center')&attributes(attributes)
     
