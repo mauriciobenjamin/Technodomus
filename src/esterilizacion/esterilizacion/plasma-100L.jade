@@ -1,0 +1,25 @@
+extends ../../_layouts/productos
+
+block append config
+  - var baseUrl = './../../'
+  - var urlLinks = '/esterilizacion/esterilizacion/plasma.html'
+  - var producto = "Esterilizador de Plasma LK/MJG-100"
+  - var tituloPagina = 'Technodomus | Soluciones en ' + producto
+  - var descripcion = "Un equipo de esterilización con plasma de peróxido de hidrógeno con un equilibrio entre capacidad y espacio ocupado."
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Esterilizadores: './', Plasma: "./plasma.html", "LK/MJG-100":"#"}  
+
+block content
+  +cabecera(producto, bread) 
+
+  .grid
+  
+    +paneldoble("Esterilizador LK/MJG-200")
+      .panel-body
+        +foto('esterilizador-plasma-100.jpg', "Esterilizador Laoken de 100L")
+        :markdown
+          Un equipo equilibrado con una buena capacidad y diseño contenido. Su cámara con más de 100 L de capacidad permite la esterilización 
+        +laoken
+        :marked
+          Puertas | Montaje | Volumen | Dimensiones (mm) | Temperatura de operación | Duración del ciclo
+          :------:|:-------:|:-------:|:----------------:|:------------------------:|:-----------------:
+          1 o 2|En gabinete o emptrado|100 L|800x1100x1730|33 a 55°C|55 min

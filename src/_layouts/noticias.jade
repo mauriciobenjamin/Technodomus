@@ -1,0 +1,17 @@
+extends ./base
+
+block append config
+  - var panelp = "panel panel-primary"
+  - var imgUrl = '../images/'
+  - var fecha = "21 de julio de 2016"
+  
+// Add extra stylesheets
+block append stylesheets
+
+block content
+ +jumbo(noticia)
+
+  
+
+// Add extra scripts
+block append scripts

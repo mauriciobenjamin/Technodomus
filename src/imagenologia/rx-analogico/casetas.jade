@@ -1,0 +1,44 @@
+extends ../../_layouts/productos2
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Casetas analógicas'
+  - var tituloPagina = "Technodomus | Soluciones en " + producto
+  - var bread = {Inicio: baseUrl, Imagenología: './../', 'Radiología Analógica': './', 'Casetas Analógicas': '#'}  
+
+block append content
+
+  .grid
+
+    +panelprin('Casetas X-OMAT')
+      .panel-body
+        +foto('imagenologia-casetas-analogas.jpg', 'Casetas analogas')
+        p Diseñadas con precisión para mantener un contacto entre película y pantalla adecuado al mismo tiempo que se evita la entrada de luz que puede degradar la calidad de la imagen. Esta familia de casetas ha sido ampliamente probada, es adecuada para radiografía general ya que permite aprovechar las ventajas de la película y mantienen una calidad constante debido a su gran resistencia.
+        +carestream
+
+    +panelprod('Características generales')
+      .panel-body
+        :markdown
+          + Nueve tamaños a elegir para contar con la caseta correcta para cada estudio.
+          + Un contacto ideal entre pelicula y pantallas, gracias a la espuma de alta calidad del soporte.
+          + Puede tener o no ventana de identificación.
+          + Control de retrodispersión de la radiación gracias a su panel trasero de plomo.
+          + Gran durabilidad gracias a su construcción de aleación de alumnio.
+          + Fáciles de cargar y descargar.
+
+    +panelprod('Tamaños disponibles')
+      .panel-body
+        :marked
+          Dimensiones | Unidad
+          :-------:|:----------:
+          8 x 10 | pulgadas
+          10 x 12 | pulgadas
+          11 x 14 | pulgadas
+          18 x 24 | cm
+          18 x 34 | cm
+          24 x 24 | cm
+          24 x 30 | cm
+          35 x 35 | cm
+          35 x 43 | cm 
+      

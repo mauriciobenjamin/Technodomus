@@ -1,0 +1,49 @@
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Lavadora 88 Turbo'
+  - var tituloPagina = "Technodomus | Soluciones en " + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Lavado: './','Lavadoras Automáticas': 'lavadoras.html', 'Lavadoras Desinfectadoras': 'lavadoras-desinfectadoras.html', 'Lavadora 88': '#'}  
+  
+block content
+  +cabecera(producto, bread)
+  
+  .grid
+    +panelprod("88 Turbo")
+      .panel-body
+        +foto('lavadora-88-turbo-getinge.jpg', producto)
+        :markdown
+          #### Lavado y desinfección superior
+          
+          Un lavado superior con tiempos más cortos y en cargas de hasta 15 bandejas DIN. Esto es posible al eliminar tiempo del ciclo y el precalentamiento del aclarado final. Por supuesto, esta ganancia de tiempo se obtiene sin afectar la calidad de los procesos. 
+          Estas mejoras aumentan el volumen de material procesado que se traduce en una mejor utilización del instrumental y un aumento potencial del número de operaciones.
+          El beneficio es obvio. Mayor volumen y menos maquinas.
+          
+        +getinge
+          
+    +panelsubp('Caracteristica Generales')
+      .panel-body
+        +foto('lavadora-88-turbo-display.jpg', 'Display de la lavadora 88')
+        :markdown
+          + Alto volumen de salida
+          + Escelente capacidad por carga
+          + Carga segura y ergonómica
+          + Sensores de secado autómatico
+          + Capacidad para manejar gran variedad de artículos
+          
+    +panelsubp('Datos Técnicos')
+      .panel-body
+        :marked
+          
+        | Caracteristica | Unidad | | 
+        |-------------:|:------:|:----------:|
+        | Volumen efectivo de la cámara | L | 340 |
+        | Charolas DIN | Pza | 15 |
+        | Ancho | mm | 1270 |
+        | Profundidad | mm | 990 |
+        | Alto | mm | 1870 | 
+      .panel-footer
+        a(href="http://www.getinge.com/files/hc/products/cleaning-disinfection/washer-disinfectors/88-turbo/BROCHURES/getinge-88turbo-1942-es-lr.pdf") Folleto del equipo.
+        

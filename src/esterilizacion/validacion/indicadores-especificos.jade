@@ -1,0 +1,82 @@
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Indicadores Especificos'
+  - var tituloPagina = "Technodomus | Soluciones en " + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Validación: './', 'Indicadores Especificos': '#'}  
+  
+block content
+  +cabecera(producto, bread)
+  
+  .grid
+    +panelprod("Prueba de simulación de Bowie-Dick")
+      .panel-body
+        +foto('validacion-tubos-BDS.png', 'Simulación de Bowie-Dick')
+        :markdown
+          Esta prueba esta diseñada para detectar fugas, gases no condensables, o una remoción insuficiente del aire en el la etapa de prevacío que provocaria una penetración insuficiente del vapor en los procesos de esterilización por vapor. El tubo se coloca con una [tira indicadora](#indicador-bds) en el esterilizador para realizar un ciclo de esterilización y verificar el resultado según el cambio de color del indicador.
+          Se debe usar diariamente al encender el equipo como una prueba de funcionalidad (prueba tipo, no es una prueba de esterilidad) para los equipos de esterilización por vapor. Debe correrse en el esterilizador con la cámara vacía. La Prueba-BDS no sustituye el monitoreo de rutina.
+          Cumple con las normas AAMI/ANSI ST79 y el método de la norma ISO 11140-1+5.
+        +gke
+        :marked
+          No. de Artículo | Descripción | Prueba
+          :--------------:|:-----------:|:-----:
+          211-151 | PCD compacto azul | Norma Europea
+          211-121 | PCD compacto morado | Carga hueca y Norma Europea
+
+    +panelprod("Tiras Indicadoras para simulación de Bowie-Dick")
+      .panel-body
+        +foto('validacion-tiras-BDS.png', 'Tiras para la simulación Bowie-Dick')
+        p#indicador-bds Paquete de relleno de tiras para la prueba Bowie-Dick que incluye el juego de sellado para todos los modelos del dipositivo de simulación Bowie-Dick.
+        +gke
+        :marked
+          No. de Artículo | Descripción 
+          :--------------:|:-----------:
+          211-112 | Tiras indicadoras para prueba de Bowie-Dick con 250 tiras.
+    
+    +panelprod("Dispositivos de reto al proceso (PCD)")
+      .panel-body
+        :marked
+          Los dispositivos del reto al proceso (Process Challenge Device) se usan en el monitoreo de rutina en procesos de esterilización por vapor, en cada ciclo como parte de un sistema de monitoreo del proceso (PMS - Process Monitor System). El PCD se compone de una carcasa externa de plástico con un tubo de acero inoxidable interno y una cápsula que sostiene el indicador. Todos los PCDs son reutilizables y pueden usarse por un considerable número de ciclos de esterilización.
+
+    +panelsubp('PCD prueba estandar')
+      .panel-body
+        +foto('validacion-pcd-verde.png', 'PCD para PMS')
+        :marked
+          #### PMS normal
+          El PMS consiste en la inclusión de una prueba de carga hueca PCD que simula la penetración del vapor en artículos huecos simples, tubos, instrumentos sólidos o cargas porosas. Se puede usar diariamente para la cualificación del desempeño del proceso.
+        +gke
+        :marked
+          No. de Artículo | Descripción | Prueba
+          :--------------:|:-----------:|:-----:
+          200-020 | PCD compacto verde. Prueba de carga hueca | Prueba normal
+
+    +panelsubp('PCD prueba EN 867-5')
+      .panel-body
+        +foto('validacion-pcd-EN867.png', 'PCD norma 867-5')
+        :marked
+          #### PMS según la norma EN 867-5
+          El PMS es una prueba de carga hueca conforme a la normativa EN 867-5 que está diseñado para monitorear la penetración de vapor en las posiciones más difíciles dentro de la carga del esterilizador. Monitorear sólo la temperatura y la presión no provee información suficiente para asegurar la penetración de vapor. El PMS simula los requisitos de penetración de artículos huecos complejos como instrumentos de cirugía de mínima invasión (MIS), tubos, instrumentos sólidos o cargas porosas.
+        +gke
+        :marked
+          No. de Artículo | Descripción | Prueba
+          :--------------:|:-----------:|:-----:
+          200-021 | PCD compacto anaranjado. Prueba de carga hueca | Prueba EN 867-5
+
+    +panelsubp('Prueba Helix')
+      .panel-body
+        +foto('validacion-pruebahelix.png', 'Prueba Helix')
+        :marked
+          El set de prueba PCD-Helix consiste en un tubo con una cápsula de metal en un extremo en la cual puede colocarse un indicador químico o biológico. Los tubos de prueba están hechos de PFTE (politetrafluoroetileno o Teflón®) con diferentes diámetros y longitudes para pruebas en esterilizadores con etapas de pre-vacio o gravitatorios y otros optimizados para peróxido de hidrógeno.
+        +gke
+        :marked
+          No. Artículo | Descripción
+          :-----------:|:----------:
+          200-011 | Set con 10 Helix-PCD (metal) y 10 tubos PTFE de distintas dimensiones
+          200-013 | Set con 5 Helix-PCD (metal) y 5 tubos PTFE de distintas dimensiones
+          200-025 | Helix-PCD para todos los procesos de esterilización por peroxido de hidrógeno (ø 2 mm Largo 25 cm)
+          200-450 | Helix-PCD para todos los procesos de esterilización por peroxido de hidrógeno (ø 4 mm Largo 50 cm)
+          200-510 | Helix-PCD para todos los procesos de esterilización por peroxido de hidrógeno (ø 5 mm Largo 100 cm)
+          200-550 | Helix-PCD para todos los procesos de esterilización por peroxido de hidrógeno (ø 5 mm Largo 50 cm)
+          214-203 | Tiras Indicadoras para Peroxido de Hidrogeno. 250 pzas

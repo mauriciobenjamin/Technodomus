@@ -1,0 +1,28 @@
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Documentación'
+  - var tituloPagina = "Technodomus | Soluciones en " + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Validación: './', 'Documentación': '#'}  
+  
+block content
+  +cabecera(producto, bread)
+  
+  .grid
+    +panelmax("Sistema de documentación")
+      .panel-body
+        +foto('validacion-etiquetadora.png', 'Pistola etiquetadora')
+        :markdown
+          El sistema consiste en una pistola de etiquetado, que permite identificar los paquetes a esterilizar. Con ella es posible imprimir hasta 3 renglones para documentar los paquetes con la siguiente información: Esterilizador, lote, iniciales de la persona responsable, fecha de procesamiento y fecha de caducidad.
+          Las etiquetas del sistema poseen doble adhesivo e indicadores para vapor y plasma de peróxido de hidrogeno
+        +gke
+        :marked
+          No. de Artículo | Descripción 
+          :--------------:|:-----------:
+          240-850 | Pistola para la impresión de etiquetas, alfanumerica.
+          240-883 | Etiqueta para documentación de paquetes con pistola de impresión con doble adhesivo e indicador de vapor. Caja con 4 rollos
+          244-881 | Etiqueta para documentación de paquetes con pistola de impresión con doble adhesivo e indicador. Caja con 2 rollos.
+    .panel-footer
+      a(href="http://www.gke.eu/es/hand-labelling-device-with-labels-es.html?file=files/gke_2013/content/en/downloads/Data%20sheets/Chemical%20indicators/Documentation%20system.pdf") Ficha técnica del producto.

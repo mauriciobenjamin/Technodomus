@@ -1,0 +1,38 @@
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Esterilizadores de Baja Temperatura de Formaldehído'
+  - var tituloPagina = "Technodomus | Soluciones en " + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './', 'Baja Temperatura': '#'}  
+  
+block content
+  +cabecera(producto, bread)
+  
+  .grid
+    +panelprod('HS66 Combi')
+      .panel-body
+        +foto('esterilizador-HS66-combi-getinge.jpg', 'Esterilizador HS66')
+        :markdown
+          #### Esterilizador combinado Vapor y  Formaldehído
+          La serie HS66 LTSF de esterilizadores de hospital de Getinge le ofrece esterilización a vapor de alta capacidad y la opción exclusiva de esterilización de baja temperatura para materiales sensibles al calor. Estas opciones lo hacen un esterilizador de gran flexibilidad, con opciones de camaras enter 449 y 595 L.
+      .panel-footer
+        a(href="./formaldehidoHS66.html") Conoce más de este esterilizador
+
+    +panelprod('HS66 Turbo Combi')
+      .panel-body
+        +foto('esterilizador-hs66-turbo-combi-getinge.jpg', 'Esterilizador HS66 Turbo')
+        :markdown
+          #### Esterilizador rápido y confiable para todo tipo de materiales
+          El *Turbo Combi* conjunta un método de probada eficiencia para esterlizar material sensible al calor, con un esterilizador de vapor de alta capacidad. A esto se suma el sistema *Turbo* que reduce los tiempos de procesamiento a la mitad.
+      .panel-footer
+        a(href="./formaldehidoHS66Turbo.html") Conoce sus capacidades
+
+    +paneldoble('Baja temperatura - Plasma','./plasma.html')
+      .panel-body
+        +foto('esterilizador-plasma-100.jpg','Esterilizadora de plasma Laoken')
+        h3 Peróxido de hidrogeno
+        p La esterilización por plasma es un proceso que somete al instrumental al contacto con plasma de peróxido de hidrógeno a baja temperatura. El plasma evita la exposición del equipo metálico a vapores corrosivos y a diferencia de otros métodos de baja temperatura, su único residuo es vapor de agua. 
+      .panel-footer
+        a(href="./plasma.html") Más sobre los equipos de esterilización de plasma.

@@ -1,0 +1,82 @@
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Lavadora WD15 Claro'
+  - var tituloPagina = "Technodomus | Soluciones en " + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Lavado: './','Lavadoras Automáticas': 'lavadoras.html', 'Lavadoras Desinfectadoras': 'lavadoras-desinfectadoras.html', 'Lavadora WD15 Claro': '#'}
+
+block content
+  +cabecera(producto, bread)
+      
+  .grid    
+    +panelprod('Lavadora y desinfectadora WD15 Claro')
+      .panel-body
+        +foto('Lavadora-WD15-Claro-Getinge.jpg', 'Lavadora WD14')
+        p Una rápida y atractiva lavadora desinfectadora de alta capacidad para instalar empotrada y que puede cargar hasta 6 bandejas DIN (480 x 250 x 50 mm).
+        ul
+          li Limpieza excepcional
+          li Mínimo consumo de energia e insumos
+          li Capaciad de 6 bandejas DIN
+          li Fácil de operar
+          li Puerta de vidrio para inspección visual del proceso
+          li Tamaño compacto que ahorra espacio - solo 600 mm de ancho incluyendo el secador
+          li Gran gama de accesorios
+
+    +panelsubp('Características Generales')
+      .panel-body
+        +foto('getinge-wd15-claro-uso.jpg', 'usuarios')
+        p La Gentinge WD15 Claro es una lavadora rápida, de alta capacidad y atractiva para colocar en la parte baja de sus áreas de trabajo. Esta diseñada para unidades de atención sanitaria, clinicas y consultas dentales en las que se necesita un equipo compacto y que se pueda empotrar para máximizar el espacio combinandola con uno de los esterilizadores y selladoras de sobremesa Getinge.
+        p La ventana de vidrio con iluminación permite una visión constante del proceso aumentando su seguridad. Esto permite observar de una pasada si los rociadores funcionan como deberían y si el instrumental a desinfectar esta colocados correctamente.
+        
+    +panelsubp('Datos Técnicos')
+      .panel-body
+        table
+          colgroup
+            col.column1
+            col.column2plus3(span="2", aling='center')
+          thead
+            tr
+              th Getinge WD15 Claro
+              th.text-center Unidad
+              th.text-center Valores
+              tbody
+                tr
+                  td Estantes para lavado
+                  td.text-center Pza
+                  td.text-center 3
+                tr
+                  td Bandejas de lavado DIN 1/1*
+                  td.text-center Pza
+                  td.text-center 6
+                tr
+                  td Bandejas de lavado SPRI I**
+                  td.text-center Pza
+                  td.text-center 4
+                tr
+                  td Volumen de cámara (neto)
+                  td.text-center L
+                  td.text-center 180
+                tr
+                  td Volumen de cámara (efectivo)
+                  td.text-center L
+                  td.text-center 150
+                tr
+                  td Ancho de la cámara
+                  td.text-center mm 
+                  td.text-center 538 
+                tr
+                  td Profundidad de la cámara
+                  td.text-center mm 
+                  td.text-center 534 
+                tr
+                  td Alto de la cámara
+                  td.text-center mm 
+                  td.text-center 520 
+                tr
+                  td *= DIN 1/1 = 480x250x50 mm
+                tr
+                  td **= SPRI I = 450x340x70 mm
+      .panel-footer
+        a(href="http://www.getinge.com/files/HC/products/cleaning-disinfection/washer-disinfectors/wd15-claro/brochures/ward/getinge-wd15claro-ward-2372-es.pdf") Folleto del producto

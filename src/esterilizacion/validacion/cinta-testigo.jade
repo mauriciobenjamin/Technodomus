@@ -1,0 +1,40 @@
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Cinta testigo'
+  - var tituloPagina = "Technodomus | Soluciones en " + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Validación: './', 'Indicadores Químicos': './indicadores-quimicos.html', 'Cinta Testigo': '#'}  
+  
+block content
+  +cabecera(producto, bread)
+  
+  .grid
+    +panelprod(producto)
+      .panel-body
+        +foto('validacion-cinta-testigo.jpg', 'Cinta testigo')
+        :marked
+          Indicador de proceso que puede usarse en todos los tipos de esterilización, además de su utilidad para el sellado de paquetes. Cumple con los requerimientos del estándar internacional ISO 11140-1. Disponible para [esterilización con plasma](/esterilizacion/esterilizacion/plasma.html), óxido de etileno y [vapor](/esterilizacion/esterilizacion/alta-temperatura.html) en las marcas gke y steriCLIN.
+        
+    +panelmax('gke')
+      +gke
+      .panel-body
+        :marked
+          No. Artículo | Descripción
+          -------------|:----------:
+          211-351 | Cinta testigo para vapor *19 mm x 50 m. Caja con 12 rollos*
+          212-351 | Cinta testigo para óxido de etileno *19 mm x 50 m.*
+          211-350 | Cinta para enmascarar (Masking-tape) autoadherible sin indicador *19 mm x 50 m*.
+          
+    +panelmax('steriCLIN')
+      +stericlin
+      .panel-body
+        :marked
+          No. Artículo | Descripción
+          -------------|:----------:
+          3FKLB4410102 | Cinta Beige para vapor *19 mm x 50 m*.
+          3FKLB4410106 | Cinta Azul para vapor *19 mm x 50 m*.
+          3FKLB4410110 | Cinta Blanca para plasma *25 mm x 25 m*.
+          
+        

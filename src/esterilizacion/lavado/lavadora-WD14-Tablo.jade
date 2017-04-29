@@ -1,0 +1,67 @@
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Lavadora WD14 Tablo'
+  - var tituloPagina = "Technodomus | Soluciones en " + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Lavado: './','Lavadoras Automáticas': 'lavadoras.html', 'Lavadoras Desinfectadoras': 'lavadoras-desinfectadoras.html', 'Lavadoras WD14 Tablo': '#'} 
+
+block content
+  +cabecera (producto, bread)
+      
+  .grid    
+    +panelprod('Lavadora y desinfectadora WD14 Tablo')
+      .panel-body
+        +foto('lavadora-WD14-Getinge.jpg', 'Lavadora WD14')
+        p Lavadora desinfectadora de sobremesa totalmente autómatica con un diseño moderno y características de lavado multifuncional.
+        p La lavadora WD14 de Getinge además de su diseño inovador y sus características multifuncionales, cumple con las normas y estandares más relevantes
+        p Con una capacidad para un contendor SPRI2, una canasta de malla fina y una barra de inyección, la WD14 esta pensada para salas de antención con cl´inicas dentales con alta demanda de reuso de instrumentos y una rápida circulación. El consumo de agua y energía de la lavadora es también bajo, lo que mejora aún más su relación costo-eficiencia.
+        p Colocada en una mesa de trabajo, tienen una altura ergonómica ideal, facilitando su instalación y uso.
+        
+    
+    +panelsubp('Características Generales')
+      .panel-body
+        +foto('getinge-wd14-tablo-usuario.jpg', 'usuarios')
+        ul
+          li Limpieza excepcional
+          li Fácil de colocar
+          li Confiable
+          li Diseño moderno
+          li Amplio rango de usos
+          li Probada eficacia
+        
+    +panelsubp('datos técnicos')
+      .panel-body
+        table
+          colgroup
+            col.column1
+            col.column2plus3(span="2", aling='center')
+          thead
+            tr
+              th Getinge WD14 Tablo
+              th.text-center Unidad
+              th.text-center Valores
+              tbody
+                tr
+                  td Bandejas de lavado
+                  td.text-center Pza
+                  td.text-center 1
+                tr
+                  td Volumen de cámara
+                  td.text-center L / pies³
+                  td.text-center 60 / 2.1
+                tr
+                  td Ancho de la cámara
+                  td.text-center mm / pulg
+                  td.text-center 435 / 17.1
+                tr
+                  td Profundidad de la cámara
+                  td.text-center mm / pulg
+                  td.text-center 460 / 18.1
+                tr
+                  td Alto de la cámara
+                  td.text-center mm / pulg
+                  td.text-center 300 / 11.8
+      .panel-footer
+        a(href="http://www.getinge.com/files/HC/products/cleaning-disinfection/washer-disinfectors/wd14-tablo/brochures/getinge-wd14-tablo-ward-es.pdf") Folleto del producto

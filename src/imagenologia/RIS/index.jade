@@ -1,0 +1,21 @@
+extends ../../_layouts/productos2
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'RIS'
+  - var tituloPagina = "Technodomus | " + producto
+  - var bread = {Inicio: baseUrl, Imagenología: './../', 'RIS': './'}  
+
+block append content
+
+  .grid
+    +panelprin('Sistemas de Información Radiológica')
+      .panel-body
+        +foto('')
+        p RIS mejora el flujo de trabajo de radiología mediante la automatización del proceso de diagnóstico del paciente, desde la introducción de la orden hasta la distribución de resultados, y permite reducir los errores y mejorar la asistencia al paciente. 
+        p Si a esto se añade la posibilidad de acceder a la información de radiología desde la web, el diagnóstico puede realizarse desde cualquier lugar, adaptandose a las necesidades de los centros u hospitales situados en múltiples emplazamientos e integra los flujos de trabajo de mamografía, las revisiones y notificaciones externas para eliminar los sistemas dispares.
+        
+    +panelprod('Vue RIS')
+      .panel-body
+        p Vue RIS mejora el flujo de trabajo de radiología mediante la automatización del proceso de diagnóstico del paciente, desde la introducción de la orden hasta la distribución de resultados, y permite reducir los errores y mejorar la asistencia al paciente. El acceso al sistema de información de radiología basado en web puede realizarse desde cualquier lugar, se adapta a las necesidades de los centros u hospitales situados en múltiples emplazamientos.

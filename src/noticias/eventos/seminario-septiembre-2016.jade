@@ -1,0 +1,42 @@
+extends ../../_layouts/noticias
+
+block append config
+  - var baseUrl = './../../'
+  - var noticia = "Tendencias en Validación y Normas Internacionales"
+  - var tituloPagina = "Seminario " + noticia
+  - var fecha = "21 de julio de 2016"
+  - var descripcion = "El 5 de septiembre de 2016 Tecnodomus organiza junto a GKE un seminario de actualización sobre validación de los procesos de esterilización segun las normas internacionales."
+  
+block append content
+  
+  .grid
+    +panelmax()
+      h2 Seminario
+      h4 Lunes 5 de septiembre, Gran Hotel Ciudad de México.
+      h5 Publicado por: Technodomus.
+      
+      .panel-body
+        :markdown
+          ![Kaiser](./../../images/ulrich-kaiser-foto.jpg "Dr. Ulrich Kaiser")
+          La tecnología del proceso de esterilizacion por vapor ha cambiado dramáticamente en los ultimos 20 años. Los ciclos fraccionados de pre-vacio han reducido drámaticamente la duración del proceso de esterilización con vapor. 
+          
+          Con la introducción de las tecnólogias de cirujía minimamente invasiva, el instrumental se ha hecho mucho más complejo y con ello, su limpieza y esterilización se ha vuelto más dífícil. Esto aumenta el riesgo de fallos en el proceso de limpieza y esterilización con vapor.
+          
+          Por ello, el próximo **lunes 5 de septiembre de 2016 a partir de las 8.00 AM** se celebrara el Seminario *Tendencias en Validación y Normas Internacionales* impartido por el renombrado **Dr. Ulrich Kaiser** experto en validación de procesos de esterilización de nivel internacional. 
+          
+          El seminario esta diseñado para profesionales médicos de los siguientes departamentos:
+          
+          + Esterilización
+          + Quirofanos
+          + Departamentos de limpieza
+          + Tecnología médica
+          
+          El seminario esta dividido en dos secciones:
+          
+          1. Validación y protocolos para el monitoreo del proceso de limpieza de acuerdo a la norma ISO15883-1 (por la mañana)
+          2. Validación y protocolos para el monitoreo de los procesos de esterilización con vapor de acuerdo a la norma ISO17665-1 (por la tarde)
+          
+          El evento se realizara en el **Gran Hotel Ciudad de México** en Av. 16 de septiembre #82, Col. Centro, Ciudad de México, y debido al cupo límitado, si esta interesado en participar por favor envie sus datos (nombre, institución, departamento y teléfono de contacto) al correo [info@technodomus.com](info@technodomus.com) o llame al [55-5536-3212 ext. 105](5553363212).
+          
+          [Más información](http://www.gke.de/es/eventreader/seminar-mexico-city-217.html)
+          

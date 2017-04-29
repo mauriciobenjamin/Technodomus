@@ -1,0 +1,32 @@
+extends ../../_layouts/productos2
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'T-DOC'
+  - var tituloPagina = "Technodomus | Soluciones en " + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Trazabilidad: './'}
+  - var descripcion = "T-DOC es un sistema completo que permite hacer seguimiento de su instrumental a través de los procesos de lavado, empaquetado, esterilización, distribución y retorno a la CEYES, e incluso de su uso en quirofano."
+  
+block content
+  +cabecera(producto, bread)
+
+  .grid
+    +panelfoto('t-doc2.jpg','T-DOC','Una solución completa de trazabilidad')
+
+    +paneldoble('Solución de manejo y trazabilidad')
+      .panel-body
+        :marked
+          ## La solución completa para el manejo y trazabilidad de los suministros
+
+          T-DOC es una solución que permite el seguimiento de sus suministros durante todo su ciclo de vida. Este seguimiento le permitirá garantizar la calidad de sus servicios y mejorar el control de infecciones para que este sea más preciso y oportuno. 
+          
+          Estas no son las únicas ventajas de T-DOC, como sistema de gestión, permite definir prioridades de producción, eficientar el uso de instalaciones y [equipos](/esterilizacion/esterilizacion/), [verificar la calidad de los procesos](/esterlizacion/validacion/) y un control completo de su stock de instrumental.
+
+          Esto permite a T-DOC ser una magnifica inversión al reducir los gastos de reprocesamiento, instalaciones sin uso por falta de instrumental o extravios de insumos. Es además, un sistema modular que se adapta a sus necesidades en todo momento.
+
+          [Contactenos](mailto:info@technodomus.com) para conocer más de las ventajas de T-DOC
+
+        +getinge
+    
+    +panelfoto('t-doc.jpg','T-DOC','Una solución completa de trazabilidad')

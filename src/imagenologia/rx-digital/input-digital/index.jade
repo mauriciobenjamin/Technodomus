@@ -1,0 +1,24 @@
+extends ../../../_layouts/productos2
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../../'
+  - var producto = 'Input Digital'
+  - var tituloPagina = "Technodomus | " + producto
+  - var bread = {Inicio: baseUrl, Imagenología: './../../', 'Radiología Digital': './../', 'Input Digital':'./'}  
+
+block append content
+
+  .grid
+    +panelprod('Radiología Dígital')
+      .panel-body
+        +foto('/radiologia-digital.jpg','Radiología digital')
+        p Mejorar los tiempos de procesamiento de las imágenes, reducir la exposición del paciente a la radiación y eficientar el acceso a la información generada, son las principales ventajas del uso de la radiológia digital.
+        p Technodomus ofrece alernativa para facilitar su trancisión a los sistemas digitales.
+
+    +panelsubp('Casetas para CR')
+      .panel-body
+        +foto('/imagenologia.png', 'casetas CR')
+        p Las casetas son básicas
+      .panel-footer
+        a(href="casetas.html") Más de casetas

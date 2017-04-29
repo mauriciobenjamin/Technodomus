@@ -1,0 +1,34 @@
+extends ../../_layouts/productos
+
+block append config
+  - var baseUrl = './../../'
+  - var urlLinks = '/esterilizacion/esterilizacion/plasma.html'
+  - var producto = "Esterilizadores de Plasma"
+  - var tituloPagina = 'Technodomus | Soluciones en ' + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Esterilizadores: './', Plasma: "#"}  
+
+block content
+  +cabecera(producto, bread) 
+
+  .grid
+    +panelprin("Seguridad y cuidado para su equipo")
+      .panel-body
+        :markdown
+          La tecnología de esterilización por plasma es una de las mas efectivas para el tratamiento de equipo sensibles al calor o delicados, como endoscopios o instrumentos quirúrgicos de precisión. Además permite esterilizar en las cavidades más pequeñas, penetrando en lúmenes de hasta un milimetro de diámetro interno.
+          Los equipos que Technodomus ofrece, conjuntan la última tecnología para lograr tiempos de procesaminto eficientes y alta calidad en el proceso.
+    
+    +panelprod("Esterilizador LK/MJG-50","./plasma-30L.html")
+      .panel-body
+        +foto('esterilizador-plasma-30l.png', "Esterilizador de escritorio Laoken")
+        :markdown
+          Una excelente opción cuando se requiere un equipo compacto y facil de instalar en sus espacios actuales.
+      .panel-footer
+        a(href="./plasma-30L.html") Conozca sus características técnicas.
+          
+    +panelprod("Esterilizador LK/MJG-100","./plasma-100L.html")
+      .panel-body
+        +foto('esterilizador-plasma-100-laoken.png', "Esterilizador Laoken de 100L")
+        :markdown
+          Un equipo equilibrado con una buena capacidad y diseño contenido. Su cámara con más de 100 L de capacidad permite la esterilización
+      .panel-footer
+        a(href="./plasma-100L.html") Más información del esterilizador.

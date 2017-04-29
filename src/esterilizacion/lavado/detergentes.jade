@@ -1,0 +1,17 @@
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Detergentes'
+  - var tituloPagina = "Technodomus | soluciones en " + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Lavado: './', Detergentes:'#'}  
+  
+block content
+  +cabecera(producto, bread)
+
+  .grid
+    +panelprod(Desinfectantes)
+      .panel-body
+      +foto('Desinfectante-CaviCide-Metrex.jpg', 'Desinfectante')
+      p 

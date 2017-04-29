@@ -1,0 +1,136 @@
+//- Crea un panel principal de dos columnas de ancho
+mixin panelmax(titulo, link)
+  .panel.panel-default.panel-2x
+    .panel-heading
+      a(href=link)
+        h3= titulo
+    .panel-body
+      if block
+        block
+      else
+        p En construcción
+
+//- Panel de doble ancho con encabezado más grande
+mixin paneldoble(titulo,link)
+  .panel.panel-primary.panel-2x
+    .panel-heading
+      a(href=link)
+        h2= titulo
+    if block
+      block
+    else
+      p En construcción
+
+//- Crea un panel principal con encabezado azul
+mixin panelprin(titulo, link)
+  .panel.panel-primary
+    .panel-heading
+      a(href= link)
+        h1= titulo
+    if block
+      block
+    else
+      p En construcción
+      
+//- Panel subprincipal con encabezado más pequeño
+mixin panelsprin(titulo, link)
+  .panel.panel-primary
+    .panel-heading
+      a(href= link)
+        h2= titulo
+    if block
+      block
+    else
+      p En construcción
+
+//- Crea un panel simple con titulo 2        
+mixin panelprod(titulo, link)
+  .panel.panel-default
+    .panel-heading
+      a(href= link)
+        h2= titulo
+    if block
+      block
+    else
+      p En construcción
+
+//- Crea un panel simple con titulo 3
+mixin panelsubp(titulo, link)
+  .panel.panel-default
+    .panel-heading
+      a(href= link)
+        h3= titulo
+    if block
+      block
+    else
+      p En construcción
+
+//- Panel foto sola
+mixin panelfoto(imagen,atText,titulo)
+  .panel.panel-default
+    .panel-body
+      img(src= baseUrl + 'images/' + imagen alt=atText title=titulo, class='img-responsive')&attributes(attributes)    
+
+//- Inserta una imagen responsiva y sus texto alt
+mixin foto(imagen,atText,titulo)
+  img(src= baseUrl + 'images/' + imagen alt=atText title=titulo, class='img-responsive')&attributes(attributes)
+
+mixin foto_ext(imagen,atText,titulo)
+  img(src=imagen alt=atText title=titulo, class='img-responsive')&attributes(attributes)
+
+mixin fotoch(imagen,atText,titulo)
+  img(src= baseUrl + 'images/' + imagen alt=atText title=titulo, class='img-responsive center')&attributes(attributes)
+    
+//- Genera un bloque de migajas de pan
+mixin migajas(bread)
+  ol.breadcrumb
+    each val, key in bread 
+      li
+        a(href=val) #{key}
+
+//- Botones expansivos        
+mixin mixboton(icon, texto)
+  .botones
+    div(class="boton boton-#{icon.estilos}")
+      a(href="#{icon.ref}")
+        i.fa.fa-2x(class="fa-#{icon.fa}")    
+        
+//- Cabecera jumbotron
+mixin jumbo(titulo)
+  .jumbotron
+    h1.producto= titulo
+    if block
+      block
+      
+//- Encabezado para paginas de productos individuales
+mixin cabecera(titulo,bread)
+  +jumbo(titulo)
+  +migajas(bread)
+  
+//- Insertar logos de proveedores
+mixin gke()
+  img(src= baseUrl + 'images/logo-gke.png' alt='gke' title='gke')&attributes(attributes)
+  
+mixin getinge()
+  img(src=baseUrl+"images/logo-getinge.png", alt="getinge" title='Getinge' height="65px")&attributes(attributes)
+  
+mixin metrex()
+  img(src=baseUrl+"images/logo-metrex.jpg", alt="metrex" title='Metrex' height="65px")&attributes(attributes)
+  
+mixin stericlin()
+  img(src=baseUrl+"images/logo-stericlin.png", alt="stericlin" title='SteriClin' height="65px")&attributes(attributes)
+  
+mixin laoken()
+  img(src=baseUrl+"images/logo-laoken.png", alt="laoken" title='Laoken' height="65px")&attributes(attributes)
+
+mixin carestream()
+  img(src=baseUrl+"images/logo-carestream.png", alt="carestream" title='Carestream' height="65px")&attributes(attributes)
+  
+//- En construcción
+mixin construccion()
+  +cabecera(producto, bread)
+  img.construccion.responsive(src=baseUrl+"images/construccion.png", alt="en construcción" height='150px')
+  div
+    h1.producto Lo sentimos, estamos en proceso de renovación de la página
+  a(href="../")
+    h2 Regresar...

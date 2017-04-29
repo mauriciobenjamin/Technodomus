@@ -1,0 +1,42 @@
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Esterilizadores HS66 Combi'
+  - var tituloPagina = "Technodomus | Soluciones en " + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Esterilizadores: './','Baja Temperatura': 'baja-temperatura.html', 'Serie HS66 Combi': '#'}  
+  
+block content
+  +cabecera(producto, bread)
+  
+  .grid
+    +panelprod("Serie HS66 Combi")
+      .panel-body
+        +foto('esterilizador-HS66-combi-getinge.jpg', 'Esterilizador HS66')
+        :markdown
+          La serie HS66 LTSF le ofrece esterilización a vapor y la opción exclusiva de esterilización a baja temperatura para materiales sensibles al calor. Estos esterilizadores proporcionan gran flexibilidad, con equipos de presión controlados por microprocesador que se fabrican conforme a las especificaciones y cumplen las normas internacionales más estrictas en cuanto a calidad y seguridad.
+
+          * Esterilización a baja y alta temperatura en la misma máquina.
+          * Facilidad de uso.
+          * Proceso de esterilización a baja temperatura de eficacia demostrada, aprobada y contrastada para artículos sensibles al calor.
+          * Cumple con las normativas más estrictas.
+          * Flexibilidad y simplicidad operativa.
+          * Gran relación entre capacidad y espacio ocupado.
+        +getinge
+    
+    +panelmax('Datos Técnicos')
+      +foto('esterilizador-hs66-combi-getinge-uso.jpg', ' Esterilizador en uso')
+      .panel-body
+        :marked
+          Disponible en dos modelos HS6610 y HS6613 Turbo con las siguientes características.
+          
+           Modelo | Volumen de cámara | Volumen de la cámara (puerta doble) | Ancho de la cámara | Altura de la cámara | Profundidad de la cámara | ISO | STE |
+          :------|:------:|-------:|-------:|-------:|------:|-------:|---------:|-------:|
+          HS6610 | 461 | 449 | 672 | 672 | 1000 | 6 | 6
+          HS6613 | 595 | 595 | 672 | 672 | 1300 | 9 | 8
+
+      .panel-footer
+        a(href="http://www.getinge.com/files/HC/products/sterilization/low-temp-sterilizers/hs66-ltsf/product-brochure/getinge-hs66-ltsf-sterilizer-series-1814-eng-lr-6sid.pdf") Folleto de la línea de equipos (en inglés).
+        
+        

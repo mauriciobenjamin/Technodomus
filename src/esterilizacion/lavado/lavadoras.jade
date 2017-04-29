@@ -1,0 +1,41 @@
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var urlLinks = '/esterilizacion/lavado/'
+  - var tituloPagina = "Technodomus | Soluciones en lavado autómático"
+
+block content
+  +jumbo('Lavadoras y desinfectadoras')
+  
+  ol.breadcrumb
+    li
+      a(href="./../../") Inicio
+    li
+      a(href="./../") Esterilización
+    li
+      a(href="./") Lavado
+    li.active
+      a(href="#") Lavadoras
+  
+  .grid
+    +panelsprin('Lavadoras desinfectadoras', './lavadoras-desinfectadoras.html')
+      .panel-body
+        +foto('lavadora-WD14-Getinge.jpg', 'Lavadoras desinfectadoras')
+        p Si usted maneja una consulta o todo un hospital con cientos de camas, encontraremos una lavadora-desinfectadora que cumpla con sus necesidades.
+      .panel-footer
+        a(href="./lavadoras-desinfectadoras.html") Seleccione una de nuestras opciones.
+        
+    +panelsprin('Lavadoras ultrasónicas', './lavadoras-ultrasonicas.html')
+      .panel-body
+        +foto('lavadora-ultrasonic-main-getinge.jpg','./lavadoras-ultrasonicas.html') 
+        p Desde 6 hasta 45 litros, las lavadoras ultrasónicas permiten el lavado de material delicado y complejo, usando la energia del ultrasonido. Las lavadoras Getinge ofrecen la tecnología más avanzada de lavado, con una nueva serie, que combina durabilidad con una apariencia moderna.
+      .panel-footer
+        a(href="./lavadoras-ultrasonicas.html") Conoce más del lavado ultrasonico.
+    
+    +panelsprin('Lavadora de endoscopios', './lavadora-endoscopios.html')
+      .panel-body
+        +foto('Lavadora-Endoscopios-CYW-501-Choyang.jpeg', 'lavadora de endoscopios')
+        p Un equipo que permite una triple protección, del paciente, del operador y del endoscopio, que debido a su costo, requiere de cudiados especiales para máximizar su vida útil.
+        a(href="./lavadora-endoscopios.html") Descubra las ventajas del lavado automatizado de endoscopios.

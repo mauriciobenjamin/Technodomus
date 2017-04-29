@@ -1,0 +1,25 @@
+extends ../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../'
+  - var tituloPagina = "Technodomus | Soluciones en Veterinaría"
+  - var producto = 'veterinaria'
+
+block content
+  #parallax-veterinaria.jumbotron
+    h1.cabecera Soluciones en veterinaría
+
+  .grid   
+    +panelprin('Imagenología veterinaria','./imagenologia-v/')
+      +foto('/vet-DRX-caballo2.jpg', 'carestream-drx')
+      .panel-body
+        p El cambio de radiología con película a radiología digital puede parecer un gran paso para una pequeña clínica veterinaria. El software CARESTREAM Image Suite, utilizado junto al sistema <a href="./carestream-vitacr">CARESTREAM Vita CR</a> o DRX-1, le permite modernizar su clínica veterinaria con un equipo digital de forma sencilla y económica. Con un sistema digital específico para aplicaciones veterinarias puede tener imágenes de alta calidad en cuestión de minutos para un diagnóstico más rápido de los animales bajo su cuidado.
+      .panel-footer
+        a(href=baseUrl+"imagenologia") Conozca más de los sistemas radiográficos para veterinaria
+    +panelprin('Químicos y análitica', './laboratorio/')
+      +foto('/equiposVeterinaria.jpg', 'análisis veterinario')
+      .panel-body
+        p Aumente su gama de servicios con soluciones de análitica para su consulta veterinaria que reducen el tiempo de diagnóstico y la dependencia a laboratorios clinicos.
+      .panel-footer
+        a(href=baseUrl+"laboratorio") Explore las alternativas de análitica veterinaría

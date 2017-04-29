@@ -1,0 +1,25 @@
+extends ../../../_layouts/productos2
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../../'
+  - var producto = 'Unidades de Rayos X'
+  - var tituloPagina = "Technodomus | " + producto
+  - var bread = {Inicio: baseUrl, Imagenología: './../../', 'Radiología Digital': './../', 'unidades de Rayos X' :'./'}  
+
+block append content
+
+  .grid
+    +panelprod('DRX Evolution','./drx-evolution.html')
+      .panel-body
+        +foto('unidades-drx-evolution.png','DRX Evolution')
+        p Un sistema de radiología digital versátil que utiliza componentes modulares y configurables para adaptarse a su espacio de trabajo, a su flujo de trabajo y a su presupuesto.
+      .panel-footer
+        a(href="./drx-evolution.html") Conozca mejor las ventajas de esta unidad.
+
+    +panelprod('DRX Ascend', './drx-ascend.html')
+      .panel-body
+        +foto('unidades-drx-ascend.png', 'DRX Ascend')
+        p Un sistema de DR de alto rendimiento a un costo competitivo, que le permite digitalizar su flujo de trabajo para ahorrar espacio y mejora la calidad de la atención.
+      .panel-footer
+        a(href="./drx-ascend.html") Explore a fondo esta opción.

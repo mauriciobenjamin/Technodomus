@@ -1,0 +1,75 @@
+extends ../../_layouts/productos2
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'PACS'
+  - var tituloPagina = "Technodomus | " + producto
+  - var bread = {Inicio: baseUrl, Imagenología: './../', 'PACS': './'}  
+
+block append content
+
+  .grid
+    +panelprin('Sistemas de Almacenamiento y Comunicación de Imágenes')
+      .panel-body
+        +foto('pacs-uso.png', 'PACS en uso')
+        p No solo el área de radiológia produce información, otras áreas con servicios de imagenología tienen necesidades de distribución y almacenamiento de imagénes, por lo que integrar todas ellas sera una ventaja para los especialistas y el paciente. Por ello es necesario un Sistema de Almacenamiento y Comunicación de Imágenes (conocidos en inglés como Picture Archiving and Communication System) que proveea de un almacenamiento y distribución económico y conveniente a las necesidades de sus servicios.
+        +carestream
+
+    +panelprod('Vue PACS')
+      .panel-body
+        :markdown
+          La solución PACS de Carestream se integra dentro de la familia de Tecnologías de la Información Vue, marca lider en el mercado. 
+
+          Vue PACS es un espacio de trabajo que integra herramientas clínicas y aplicaciones, con el flujo de trabajo de los médicos y los radiólogos que necesitan realizar informes en su establecimiento de salud, pero tambien remotamente.
+
+          El sistema Vue PACS funciona con una infraestructura web e integra visualización avanzada, post-procesamiento 3D, un sistema completo de [gestión de lesiones](#lesiones), notificación de resultados críticos y un módulo para mastografía, todo lo cual elimina la necesidad de usar estaciones de trabajo específicas.
+
+          Entre sus ventajas estan:
+
+          #### C-Suite
+          **Gane eficiencia y escalabilidad y ahorre en costos**
+          
+          + Permite la revisión, administración, distribución y archivado  de datos en toda la empresa.
+          + Elimina el tiempo y los costos de usar varias terminales para completar una tarea.
+          + Conecta todos los sistemas PACS existentes con una opción de arquitectura SuperPACS™ que permite que varias ubicaciones fucionen como una sola.
+
+          #### Administradores de sistemas 
+          **Optimice la configuración, la integración y el cumplimiento de estándares.**
+
+          + Habilitada para web, escalable con una configuración de licencias concurrentes.
+          + Integración aún en escenarios complicados
+          + Cumple los estándares XDS, HL7, DICOM y IHE.
+
+          #### Radiólogos 
+          **Elabore informes de forma eficiente y mejore la confiabilidad del diagnóstico.**
+
+          + Un espacio de trabajo para funciones 3D y lecturas rutinarias que compite con los sistemas dedicados.
+          + El módulo de mamografía permite la lectura de radiografías generales tradicionales o de mamogramas tradicionales, ecografía de mama, IRM de mama y exámenes de tomosíntesis digital de mama (DBT) desde un solo PACS.
+          + *PowerViewer* automatiza el registro de estudios creados en momentos distintos y con distintas modalidades.
+          + Utiliza la transmisión de secuencias para permitir una revisión más rápida de los exámenes con un ancho de banda inferior.
+
+          #### Administradores de RIS/PACS
+          **Aproveche la productividad de un único sistema**
+          
+          + Elimine los costos de adquisición, configuración, mantenimiento y formación en varios sistemas.
+          + Mejora la satisfacción del médico referente y de los usuarios.
+
+
+    +panelsubp('Gestión de lesiones')
+      .panel-body#lesiones
+        :markdown
+          ####Lleve la gestión de lesiones a un nuevo nivel
+          
+          La medición precisa de las lesiones es un aspecto esencial para la evaluación confiable del estado y la evolución de los pacientes oncológicos. Los PACS tradicionales no pueden realizar comparaciones cuantitativas de los exámenes previos en especial si estos fueron importados de otros PACS o modalidades.
+          Vue PACS incorpora una nueva aplicación de gestión de lesiones que mejora significativamente la evaluación de los pacientes de oncología:
+          
+          + Proporciona administración de lesiones como una herramienta nativa
+          + Acepta los resultados de exámenes anteriores 
+          + Aumenta la productividad del radiólogo al simplificar la segmentación y el análisis
+          + Proporciona datos volumétricos con PowerViewer para simplificar el proceso de comparación
+          + Permite el seguimiento oncológico con marcadores y control de anatomía general a lo largo del tiempo
+          + Elimina los costos de estaciones de trabajo específicas
+
+          Estas mediciones permiten evauar si una lesión aumenta o se reduce, generando informes completos de imágenes de oncología, de acuerdo a normas tales como los criterios de respuesta a la evaluación de tumores sólidos (RECIST). Los informes sistemáticos y estandarizados de imágenes de oncología permiten una comunicación y colaboración mucho más clara y significativa entre los médicos.
+

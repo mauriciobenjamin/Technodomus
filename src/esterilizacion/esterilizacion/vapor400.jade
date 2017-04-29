@@ -1,0 +1,38 @@
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Esterilizadores Serie 400/500 HC'
+  - var tituloPagina = "Technodomus | Soluciones en " + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Esterilizadores: './','Alta Temperatura': 'alta-temperatura.html', 'Serie 400/500HC': '#'}  
+  
+block content
+  +cabecera(producto, bread)
+  
+  .grid
+    +panelprod("Serie 400/500 HC")
+      .panel-body
+        +foto('esterilizadorVapor-serie400-500hcGetinge.jpeg','esterilizador serie 400/500 HC')
+        :markdown
+          #### Esterilizador de vapor
+          La serie 400/500HC de esterilizadores de vapor de Getinge ofrece una combinación inigualable de eficacia, flexibilidad en los ciclos, acceso a la información en tiempo real y control avanzado del proceso. Las unidades cuentan con una pantalla a color de 5,7' VGA con controles intuitivo que permiten monitorear el proceso con más detalle.
+        +getinge
+      .panel-footer
+        a(href="http://www.getinge.com/files/HC/products/sterilization/steam-sterilizers/hs66-series/product-brochure/getinge-hs66-2295-es.pdf") Folleto de la serie HS66
+    +panelmax("Especificaciones por modelo")
+      :marked
+        Modelo | Volumen Cámara (L) | Ancho | Altura | Profundidad | Vacio |  Gravitacional
+        :-----:|:------------------:|:-----:|:------:|:-----------:|:-----:|:--------------:
+        422HC |130| 445| 445| 660| | X
+        433HC |130| 445| 445| 660| X | X
+        522HC |275| 533| 533| 965| | X
+        533HC |275| 533| 533| 965| X | X
+        26'| 299| 672| 672| - | X | X 
+        39'| 449| 672| 672| - | X | X 
+        51'| 586| 672| 672| - | X | X 
+        39'| 610| 672| 920| - | X | X 
+        43'| 829| 672| 920| - | X | X 
+        61'| 954| 672| 920| - | X | X 
+      .panel-footer
+        a(href="http://www.getinge.com/files/us-hc/product-documents/sterilization/400hce-500hce-sterilizer/productspecifications/hc-400500hceseries-0413-en-us.pdf") Más información (en inglés)

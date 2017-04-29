@@ -1,0 +1,44 @@
+extends ../_layouts/noticias
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+  - var noticia = 'Noticias'
+  - var tituloPagina = "Actualizaciones de tecnología médica, esterilización e imagenólogia, eventos, novedades y noticias."
+  - var descripcion = "Aquí podras encontrar las novedades del mundo de la tecnología médica, así como los eventos que organizamos periódicamente. Lo mas actual, la apertura de nuestra sucursal en el Bajío para dar atención a los estados de Guanajuato, Querétaro, San Luis Potosí, Aguascalientes, Jalisco y Michoacán"
+  
+block append content
+
+  .grid
+    +panelprin('Nueva sucursal en el Bajío', './novedades/atencion-bajio.html')
+      .panel-body
+        +foto_ext('http://vivaaguascalientes.com/wp-content/uploads/2016/02/exedra.jpg', 'Nos acercamos a los estados de Aguascalientes, Guanajuato, Querétaro, San Luis Potosí' ,'Nueva sucursal Bajio')
+        p Conscientes de las necesidades de productos de esterilización e imagenología en la región del Bajio hemos abierto una sucursal para mejorar nuestra atención y facilitar el acceso a la tecnología más actual e innovadora a los profesionales de salud del centro-occidented del país. Atención a cargo de <a href="mailto:mmolina@technodomus.com"> Manuel Molina</a> en el telefono <a href="tel:+5215519654158">5519654158</a>
+        a(href="./novedades/antencion-bajio.html")
+          h4 Inicia actividades nuestra sucursal en el Bajío.
+
+    +panelsprin('El procesamiento de endoscopios', './novedades/procesamiento-endoscopios.html')
+      .panel-body
+        p El uso de los instrumentos endoscopicos es cada vez más común, y si bien han hecho más seguros los procedimienos quirurgicos, su desinfección presenta retos partículares y la comunidad de los profesionales de la salud buscan la mejor opción para garantizar la seguridad del paciente.
+        a(href="./novedades/procesamiento-endoscopios.html")
+          h4 El reto de garantizar su esterilidad.
+
+    +panelsprin('Día Mundial de la Diabetes','./novedades/dia-diabetes.html')
+      .panel-body
+        +foto('WDD-logo-date-ES-2048px.png', 'Día Mundial de la Diabetes')
+        p Desde el 2009 el 14 de noviembre se celebra el Día Mundial de la Diabetes como parte de los esfuerzos difundir los efectos de esta enfermedad...
+        a(href="./novedades/dia-diabetes.html")
+          h4 Unete a las acciones del día.
+
+    +panelsprin('Día Internacional de la Radiología','./novedades/dia-radiologia.html')
+      .panel-body
+        +foto('rayosX.gif', 'Día Internacional de la Radiología')
+        p El 8 de noviembre se celebra el descubrimiento de los rayos X y por consecuencia, el día Internacional de la Radiología...
+        a(href="./novedades/dia-radiologia.html")
+          h4 Conoce más de esta celebración.
+        
+    +panelsprin('Seminario de septiembre 2016')
+      .panel-body
+        +foto('seminario-septiembre-2016.jpeg', 'Seminario septiembre')
+        a(href="./eventos/seminario-septiembre-2016.html")
+          h4 Más información aquí.

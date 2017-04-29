@@ -1,0 +1,5 @@
+# Ideas para los artículos
++ Opciones de esterilización a baja temperatura
++ Monitoreo en tiempo real de la esterilización
++ Cirujia segura
++ costos y beneficios de una política de trazabilidad y monitoreo
