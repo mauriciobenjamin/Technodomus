@@ -28,6 +28,20 @@ block content
             a(href="./trazabilidad/") Trazabilidad
         p Para cada paso del proceso, Technodomus le ofrece las mejores alternativas para que sus procesos médicos cuenten siempre con material esteril y en buenas condiciones.
 
+    +panelprod('Esterilización', './esterilizacion/')
+      .panel-body
+        +foto('esterilizador-plasma-100-laoken.png', 'Esterilizadores', 'Esterilizador Laoken Plasma 100')
+        p Los esterilizadores que ofrece Technodomus cubren una amplia gama de necesidades y de atención de diferentes tipos de material e instrumental a esterilizar.
+        p Contamos con equipos de baja y alta temperatura, con tecnologías de probada eficacia como el vapor, así como sistemas prácticos que minimizan el desgaste del equipo, como el plasma de peróxido.
+        h4 
+          a(href= baseUrl + 'esterilizacion/esterilizacion/baja-temperatura.html') Esterilizadores de baja temperatura
+        h4 
+          a(href= baseUrl + "esterilizacion/esterilizacion/alta-temperatura.html") Esterilizadores de alta temperatura
+        h4
+          a(href= baseUrl + "esterilizacion/esterilizacion/plasma.html") Esterilizadores de plasma de peróxido de hidrogéno
+      .panel-footer
+        a(href=baseUrl+"esterilizacion/") Conoce más de nuestra gama de esterilizadores
+        
     +panelprod('Lavado','./lavado/')
       .panel-body
         +foto('lavado.jpg','lavado')
@@ -59,20 +73,6 @@ block content
       .panel-footer
         a(href= baseUrl+"esterilizacion/empaque") Las mejores opciopnes de empaque aquí.
             
-    +panelprod('Esterilización', './esterilizacion/')
-      .panel-body
-        +foto('esterilizador-formal-HS66TurboCombiGetinge.jpeg', 'Esterilizadores')
-        p Los esterilizadores que ofrece Technodomus cubren una amplia gama de necesidades y de atención de diferentes tipos de material e instrumental a esterilizar.
-        p Contamos con equipos de baja y alta temperatura, con tecnologías de probada eficacia como el vapor, así como sistemas prácticos que minimizan el desgaste del equipo, como el plasma de peróxido.
-        h4 
-          a(href= baseUrl + 'esterilizacion/esterilizacion/baja-temperatura.html') Esterilizadores de baja temperatura
-        h4 
-          a(href= baseUrl + "esterilizacion/esterilizacion/alta-temperatura.html") Esterilizadores de alta temperatura
-        h4
-          a(href= baseUrl + "esterilizacion/esterilizacion/plasma.html") Esterilizadores de plasma de peróxido de hidrogéno
-      .panel-footer
-        a(href=baseUrl+"esterilizacion/") Conoce más de nuestra gama de esterilizadores
-        
     +panelprod('Validación', './validacion/')
       .panel-body
         +foto('validacion.jpg', 'validacion')
