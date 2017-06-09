@@ -450,4 +450,17 @@ textarea {
 }
 
 
+//Eliminar elementos en vistas de movil
+.soloescri {
+  @media screen and (max-width: $bp-m) {
+    display: none;
+  }
+}
+
+.solomob {
+  @media screen and (min-width: $bp-m) {
+    display: none;
+  }
+}
+
 //Final

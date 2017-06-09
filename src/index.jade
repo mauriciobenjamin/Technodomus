@@ -8,14 +8,15 @@ block vars
 
 block content
   .container-fluid
-    img.construccion.responsive(src=baseUrl+"images/construccion.png", alt="en construcción" height='150px')
+    img.construccion.responsive.soloescri(src=baseUrl+"images/construccion.png", alt="en construcción" height='150px')
+    
     #productos.carousel.slide.hidden-sm(data-ride='carousel')
-      ol.carousel-indicators
+      ol.carousel-indicators.soloescri
         li(data-target="#productos" data-slide-to="0" class="active")
         li(data-target="#productos" data-slide-to="1")
         li(data-target="#productos" data-slide-to="2")
 
-      .carousel-inner
+      .carousel-inner.soloescri
 
         .item.active
           a(href= baseUrl+"noticias/novedades/atencion-bajio.html")
@@ -35,14 +36,14 @@ block content
             p Los nuevos equipos de plasma de peróxido ofrecen grandes ventajas. Una esterilización más eficiente y facilidad de uso. 
               a(href=baseUrl+'esterilizacion/esterilizacion/plasma.html') Más información...
          
-      a.right.carousel-control(href='#productos', data-slide='next')
+      a.right.carousel-control.soloescri(href='#productos', data-slide='next')
         span.glyphicon.glyphicon-chevron-right
-      a.left.carousel-control(href='#productos', data-slide='prev')
+      a.left.carousel-control.soloescri(href='#productos', data-slide='prev')
         span.glyphicon.glyphicon-chevron-left
         // Final del carousel
 
     .grid
-      .panel.panel-principal.panel-15x#esterilizacion
+      .panel.panel-principal.panel-15x.soloescri#esterilizacion
         .panel-heading
           a(href=baseUrl+"esterilizacion/")
             img.img-responsive(src= baseUrl+"images/esterilizacion-usuario.png", alt="esterilización")
@@ -56,7 +57,24 @@ block content
             Nuestro compromiso es brindar seguridad total para el tratamiento de sus pacientes, al tiempo que mejora el manejo de su instrumental y equipo. 
           
             [Conoce más de nuestros productos](./esterilizacion/)
-      
+
+      .panel.panel-principal.panel-15x.solomob#esterilizacion
+        .panel-heading
+          a(href=baseUrl+"esterilizacion/")
+            img.img-responsive(src= baseUrl+"images/esterilizacion-usuario.png", alt="esterilización")
+            h1 Esterilización
+        .panel-body
+          :markdown
+            [Esterilizacíon de baja temperatura](./esterilizacion/esterilizacion/baja-temperatura.html)
+            
+            [Esterilización de alta temperatura](./esterilizacion/esterilizacion/alta-temperatura.html) 
+            
+            [Insumos y equipos para lavado](./esterilizacion/lavado/index.html)
+            
+            [Indicadores de validación](./esterilizacion/validacion/index.html)
+            
+            [Sistemas de trazabilidad](./esterilizacion/trazabilidad/index.html)
+            
       .panel.panel-principal.panel-15x#imagenologia
         .panel-heading
           a(href=baseUrl+"imagenologia/")
