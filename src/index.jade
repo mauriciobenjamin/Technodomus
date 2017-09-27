@@ -2,26 +2,22 @@ extends _layouts/base
 
 block vars
   - var tituloPagina = 'Technodomus | Soluciones en equipo médico'
-  - var descripcion = "Tecnologia y servicios para los profesionales de la salud, imagenologia, rayos x, esterilizacion, desinfeccion, trazabilidad, documentación, radiologia, película seca, DRYVIEW, productos Carestream, Getinge, GKE, Laoken y más."
+  - var descripcion = "Tecnologia y servicios para los profesionales de la salud, imagenologia, rayos x, esterilizacion, desinfeccion, trazabilidad, documentación, radiologia, película seca, DRYVIEW, productos Carestream, Getinge, GKE, Laoken y más; en México, Bajio, Zona Metropolitana, Puebla, Estado de México, Queretaro, Jalisco, San Luis Potosí, Guanajuato, Aguascalientes, Michoacan"
   - var col3 = "columna col-xs-12 col-sm-6 col-md-4"
   - var col2 = "col-xs-12 col-md-6"
 
 block content
   .container-fluid
-    img.construccion.responsive(src=baseUrl+"images/construccion.png", alt="en construcción" height='150px')
+    
     #productos.carousel.slide.hidden-sm(data-ride='carousel')
-      ol.carousel-indicators
+      ol.carousel-indicators.soloescri
         li(data-target="#productos" data-slide-to="0" class="active")
         li(data-target="#productos" data-slide-to="1")
         li(data-target="#productos" data-slide-to="2")
 
-      .carousel-inner
+      .carousel-inner.soloescri
 
         .item.active
-          a(href= baseUrl+"noticias/novedades/atencion-bajio.html")
-            img(src= baseUrl+"images/banner-bajio.png", alt="Nueva sucursal en el Bajio, Guanajuato, Querétaro, Aguascalientes, San Luis Potosí, Michoacán, Jalisco", title="Nueva sucirsal en el Bajio")
-
-        .item
           img(src= baseUrl + "images/carrouselCarestream.jpg", alt="impresora DryView", title="Salida dígital en las películas secas DryView de Carestream")
           .carousel-caption
             h2 Soluciones de salida digital a la medida
@@ -35,14 +31,14 @@ block content
             p Los nuevos equipos de plasma de peróxido ofrecen grandes ventajas. Una esterilización más eficiente y facilidad de uso. 
               a(href=baseUrl+'esterilizacion/esterilizacion/plasma.html') Más información...
          
-      a.right.carousel-control(href='#productos', data-slide='next')
+      a.right.carousel-control.soloescri(href='#productos', data-slide='next')
         span.glyphicon.glyphicon-chevron-right
-      a.left.carousel-control(href='#productos', data-slide='prev')
+      a.left.carousel-control.soloescri(href='#productos', data-slide='prev')
         span.glyphicon.glyphicon-chevron-left
         // Final del carousel
 
     .grid
-      .panel.panel-principal.panel-15x#esterilizacion
+      .panel.panel-principal.panel-15x.soloescri#esterilizacion
         .panel-heading
           a(href=baseUrl+"esterilizacion/")
             img.img-responsive(src= baseUrl+"images/esterilizacion-usuario.png", alt="esterilización")
@@ -51,12 +47,29 @@ block content
           :markdown
             #### Las mejores soluciones para procesar instrumental e insumos estériles con la más alta tecnología para garantizar la seguridad del paciente.
             
-            Contamos con equipo de [baja](./esterilizacion/esterilizacion/baja-temperatura.html) y [alta temperatura](./esterilizacion/esterilizacion/alta-temperatura.html), sistemas completos de tratamiento de instrumental, desde el [lavado](./esterilizacion/lavado/index.html), hasta la [validación](./esterilizacion/validacion/index.html) y [trazabilidad](./esterilizacion/trazabilidad/index.html) del proceso de marcas lideres como Getinge, Laoken, Gke, Metrex y SteriClin.
+            Nuestra oferta incluye equipos de [baja](./esterilizacion/esterilizacion/baja-temperatura.html) y [alta temperatura](./esterilizacion/esterilizacion/alta-temperatura.html), sistemas completos de tratamiento de instrumental, desde el [lavado](./esterilizacion/lavado/index.html), hasta la [validación](./esterilizacion/validacion/index.html) y [trazabilidad](./esterilizacion/trazabilidad/index.html) del proceso de marcas lideres como Laoken, Getinge, Gke, Metrex y SteriClin.
             
-            Nuestro compromiso es brindar una toda seguridad para el tratamiento de sus pacientes, al tiempo que mejora el manejo de su instrumental y equipo. 
+            Nuestro compromiso es brindar seguridad total para el tratamiento de sus pacientes, al tiempo que mejora el manejo de su instrumental y equipo. 
           
             [Conoce más de nuestros productos](./esterilizacion/)
-      
+
+      .panel.panel-principal.panel-15x.solomob#esterilizacion
+        .panel-heading
+          a(href=baseUrl+"esterilizacion/")
+            img.img-responsive(src= baseUrl+"images/esterilizacion-usuario.png", alt="esterilización")
+            h1 Esterilización
+        .panel-body
+          :markdown
+            [Esterilizacíon de baja temperatura](./esterilizacion/esterilizacion/baja-temperatura.html)
+            
+            [Esterilización de alta temperatura](./esterilizacion/esterilizacion/alta-temperatura.html) 
+            
+            [Insumos y equipos para lavado](./esterilizacion/lavado/index.html)
+            
+            [Indicadores de validación](./esterilizacion/validacion/index.html)
+            
+            [Sistemas de trazabilidad](./esterilizacion/trazabilidad/index.html)
+            
       .panel.panel-principal.panel-15x#imagenologia
         .panel-heading
           a(href=baseUrl+"imagenologia/")
