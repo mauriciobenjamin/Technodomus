@@ -7,7 +7,7 @@ block append config
   - var tituloPagina = "Technodomus | Soluciones en " + producto
   - var bread = {Inicio: baseUrl, Esterilización: './../', Esterilizadores: './','Baja Temperatura': 'baja-temperatura.html', 'Serie HS66 Combi': '#'}  
   
-block content
+block append content
   +cabecera(producto, bread)
   
   .grid

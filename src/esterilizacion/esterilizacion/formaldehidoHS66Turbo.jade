@@ -3,10 +3,10 @@ extends ../../_layouts/productos
 block append config
   //- Correct base url pathing for this page
   - var baseUrl = './../../'
-  - var producto = 'Esterilizadores HS66 Turbo'
+  - var producto = 'Esterilizadores HS66 Turbo Combi'
   - var tituloPagina = "Technodomus | Soluciones en " + producto
   - var descripcion = "Esterilizador de vapor de formaldehido de alta capacidad y velocidad"
-  - var bread = {Inicio: baseUrl, Esterilización: './../', Esterilizadores: './','Baja Temperatura': 'baja-temperatura.html', 'Serie HS66 Combi': '#'}  
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Esterilizadores: './','Baja Temperatura': 'baja-temperatura.html', 'Serie HS66 Turbo Combi': '#'}  
   
 block content
   +cabecera(producto, bread)
@@ -32,6 +32,7 @@ block content
       .panel-body
         :marked
           Disponible en dos modelos HS6610 y HS6613 Turbo con las siguientes características
+          
            Modelo | Volumen de cámara | Volumen de la cámara (puerta doble) | Ancho de la cámara | Altura de la cámara | Profundidad de la cámara | ISO | STE |
           :------|:------:|-------:|-------:|-------:|------:|-------:|---------:|-------:|
           HS6610 | 461 | 449 | 672 | 672 | 1000 | 6 | 6
@@ -39,3 +40,4 @@ block content
 
       .panel-footer
         a(href="http://www.getinge.com/files/HC/products/sterilization/low-temp-sterilizers/hs66-ltsf/product-brochure/getinge-hs66-ltsf-sterilizer-series-1814-eng-lr-6sid.pdf") Folleto de la línea de equipos (en inglés).
+        +botonCotiza()

@@ -9,14 +9,14 @@ var bootstrap = require('bootstrap');
 var imagesLoaded = require('imagesloaded');
 
 $(function () {
-  console.log('Hola mundo!');
+  console.log('¡Technodomus te saluda!');
 });
 
 $(function() {
   $('.carousel').carousel({
     interval: 15000,
     pause: false,
-    wrap: false,
+    wrap: true,
     keyboard: true
   });
 });

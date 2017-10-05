@@ -4,6 +4,8 @@ block append config
   - var panelp = "panel panel-primary"
   - var columna = "col-xs-12 col-md-6"
   - var imgUrl = '../images/'
+  - var bread = {Inicio: baseUrl}
+  - var cotiza = {estilos: "cotiza", ref:"./cotiza/", fa:"info"}
   
 // Add extra stylesheets
 block append stylesheets
@@ -12,6 +14,11 @@ block content
   //- Provides layout level markup
   .layout-wrapper.productos
     block productos
+    
+      .botones.boton-flotante
+         div(class="boton boton-#{cotiza.estilos}")
+           a(href= baseUrl + "#{cotiza.ref}")
+             i.fa.fa-2x(class="fa-#{cotiza.fa}")
 
 // Add extra scripts
 block append scripts

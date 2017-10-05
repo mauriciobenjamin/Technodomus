@@ -95,6 +95,13 @@ mixin mixboton(icon, texto)
       a(href="#{icon.ref}")
         i.fa.fa-2x(class="fa-#{icon.fa}")    
         
+//- Boton de cotización 
+mixin botonCotiza()
+  .botones.boton-flotante
+    div(class="boton boton-#{cotiza.estilos}")
+      a(href= baseUrl + "#{cotiza.ref}")
+        i.fa.fa-2x(class="fa-#{cotiza.fa}")
+        
 //- Cabecera jumbotron
 mixin jumbo(titulo)
   .jumbotron
