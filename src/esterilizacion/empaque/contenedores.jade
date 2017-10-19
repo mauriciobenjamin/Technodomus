@@ -1,0 +1,22 @@
+extends ../../_layouts/productos2
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Sistemas de contendores para esterilización'
+  - var tituloPagina = "Technodomus | " + producto
+  - var bread = {Inicio: baseUrl, 'Esterilización': './../../', 'Empaque': './../', 'Contenedores':'./'}
+  - var descripcion = "Contendores de la más alta calidad y diseño para esterilización con vapor."
+  - var cotiza = {estilos: "cotiza", ref: baseUrl + "cotiza/", fa:"info"}
+  - var canonical = "http://technodomus.com/esterilizacion/empaque/contenedores.html"
+
+block append content
+
+  .grid
+    +panelprod(producto)
+      .panel-body
+        +fotoch('/png','Película DRYVIEW')
+        p 
+        +carestream
+        
+    +panelsubp("Características")
