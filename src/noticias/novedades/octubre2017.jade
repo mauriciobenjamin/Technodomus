@@ -1,0 +1,18 @@
+extends ../../_layouts/noticias
+
+block append config
+  - var baseUrl = './../../'
+  - var noticia = "Día mundial contra el cáncer de mama "
+  - var subtitulo = "La detección temprana son más oportunidades frente al cáncer"
+  - var fecha = "19 de octubre de 2017"
+  - var descripcion = "Hoy Techondomus se suma a los efuerzos por reducir el impacto del cáncer de mama y mejorar la cultura de prevención, autoexploración y detección temprana"
+  
+block append content
+  
+  .grid
+    +panelmax(subtitulo)
+      .panel-body
+        h5 Publicado por: Technodomus
+        h6 
+          =fecha
+        include:marked octubreMesdelCancerdeMama.md

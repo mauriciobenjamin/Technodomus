@@ -8,9 +8,22 @@ block config
   - var descripcion = "Aquí podras encontrar las novedades del mundo de la tecnología médica, así como los eventos que organizamos periódicamente. Lo mas actual, la apertura de nuestra sucursal en el Bajío para dar atención a los estados de Guanajuato, Querétaro, San Luis Potosí, Aguascalientes, Jalisco y Michoacán"
   
 block append content
-
   .grid
-    +panelprin('Nueva sucursal en el Bajío', './novedades/atencion-bajio.html')
+    +panelsprin('XVIII Congreso Nacional de Enfermería Quirúrgica', './eventos/congreso-enfermeria.html')
+      .panel-body
+        +foto_ext(baseUrl+'images/validacion.jpg')
+        p Las profesionales de la atención quirúrgica a nivel de enfermería se reunieron en Manzanillo Colima, y nos compartieron sus inquietudes sobre la importancia de la esterilización en los procesos quirúrgicos
+        a(href="./eventos/congreso-enfermeria.html", title="Congreso de Enfermería Quirúrgica")
+          h4 Technodomus comparte las ventajas de la esterilización por plasma
+
+    +panelsprin('Día de la concientización sobre el cáncer de mama', './novedades/octubre2017.html')
+      .panel-body
+        +foto_ext(baseUrl+'images/logo-octubre.png', 'Technodomus participa del mes de concientización del cáncer de mama')
+        p El cáncer de mama es ya la principal causa de muertes por cáncer entre mujeres en nuestro país, aún es necesario fortalecer la cultura de la prevención
+        a(href="./novedades/octubre2017.html")
+          h4 Conoce más sobre el cáncer de mama y protegete
+          
+    +panelsprin('Nueva sucursal en el Bajío', './novedades/atencion-bajio.html')
       .panel-body
         +foto_ext('http://vivaaguascalientes.com/wp-content/uploads/2016/02/exedra.jpg', 'Nos acercamos a los estados de Aguascalientes, Guanajuato, Querétaro, San Luis Potosí' ,'Nueva sucursal Bajio')
         p Conscientes de las necesidades de productos de esterilización e imagenología en la región del Bajio hemos abierto una sucursal para mejorar nuestra atención y facilitar el acceso a la tecnología más actual e innovadora a los profesionales de salud del centro-occidented del país. Atención a cargo de <a href="mailto:mmolina@technodomus.com"> Manuel Molina</a> en el telefono <a href="tel:+5215519654158">5519654158</a>

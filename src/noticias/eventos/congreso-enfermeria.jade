@@ -1,0 +1,21 @@
+extends ../../_layouts/noticias
+
+block append config
+  - var baseUrl = './../../'
+  - var noticia = "XVIII Congreso Nacional de Enfermería Quirúrgica"
+  - var subtitulo = "Mejor esterilización para una cirugía segura"
+  - var tituloPagina = noticia
+  - var fecha = "6 de noviembre de 2017"
+  - var descripcion = "Difundiendo el conocimiento de las técnicas más novedosas de esterilización con las especialistas en enfermería quirúrgica"
+  
+block append content
+  
+  .grid
+    +panelmax(subtitulo)
+      h4 25 al 29 de octubre, Manzanillo, Colima.
+      h5 Publicado por: Technodomus.
+      
+      .panel-body
+        img(src=baseUrl+"/images/validacion.jpg", alt="")
+        include:marked congreso-enfermeria.md
+          
