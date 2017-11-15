@@ -1,25 +1,64 @@
-extends ../../_layouts/productos
+extends ../../_layouts/productos2
 
 block append config
   - var baseUrl = './../../'
   - var urlLinks = '/esterilizacion/esterilizacion/plasma.html'
   - var producto = "Esterilizador de Plasma LK/MJG-100"
-  - var tituloPagina = 'Technodomus | Soluciones en ' + producto
-  - var descripcion = "Un equipo de esterilización con plasma de peróxido de hidrógeno con un equilibrio entre capacidad y espacio ocupado."
+  - var tituloPagina = 'Technodomus | ' + producto
+  - var descripcion = "Un equipo de esterilización con plasma de peróxido de hidrógeno con un equilibrio entre capacidad y espacio ocupado. 100 L para esterilizar su equipo más delicado"
   - var bread = {Inicio: baseUrl, Esterilización: './../', Esterilizadores: './', Plasma: "./plasma.html", "LK/MJG-100":"#"}  
 
-block content
-  +cabecera(producto, bread) 
+block append content
 
   .grid
-  
-    +paneldoble("Esterilizador LK/MJG-200")
+    +panelprin(producto)
       .panel-body
-        +foto('esterilizador-plasma-100.jpg', "Esterilizador Laoken de 100L")
+        +foto('esterilizador-plasma-100-laoken.png', 'Esterilizador Laoken de 100L', 'Plasma de 100L')
         :markdown
-          Un equipo equilibrado con una buena capacidad y diseño contenido. Su cámara con más de 100 L de capacidad permite la esterilización 
+          Un equipo equilibrado con una buena capacidad y diseño contenido. Su cámara con más de 100 L de capacidad permite la esterilización de varios sets de endoscopia de manera simultanea.
+          
+          Se puede configurar con una o dos puertas para su uso en una CEyE cerrada. 
+          
+          Posee una alta eficiencia de esterilización en lúmenes que le permite esterilizar el interior de tubos de acero inóxidable de un solo canal de **500 mm** de largo y un ancho de 1 mm. En canales de polietileno o teflón puede alcanzar hasta el fondo de un tubo de **4000 mm**.
         +laoken
+          
+    +panelprod("Características")
+      .panel-body
+        :markdown
+          * Construcción de la cámara de esterilización en aluminio
+          * Dos niveles de repisas corredizas
+          * **Incubador** para indicadores biológicos con capacidad de 8 pruebas simultaneas
+          * Pantalla táctil de 7 pulgadas
+          * Impresora térmica incluida
+          * 32 Mb de memoría interna para registro de los ciclos realizados
+          * Puerta vertical automática que se puede controlar desde el panel central o con interruptores de pedal
+          
+          ### Sistema de casetes
+          * Casetes que garantizan una cantidad igual de peróxido en cada ciclo.
+          * Cada casete puede ser usado para 3 ciclos estandar o 6 ciclos cortos.
+          
+          ### Requisitos de instalación
+          * Area mínima de 1.4 x 1.4 x 2 m
+          * **No requiere ventilación**
+          * Conexión electrica de tres fases. No requiere conexiones de drenaje o agua corriente.
+          
+    +panelsubp('Solución integral')
+      .panel-body
+        :markdown
+          En **Technodomus** nos interesa que cuente con las mejores herramientas tecnologicas para mejorar la salud de sus pacientes. Por ello le ofrecemos nuestro equipo de esterilización en la modalidad de servicio integral que incluye:
+          
+          * Insumos del Esterilizador
+          * [Materiales de empaque](./../empaque/tyvek.html) adecuados
+          * Insumos de trazabilidad y [validación](./../validacion/indicadores-integradores.html)
+          * El [equipo de trazabiliad manual](./../validacion/documentacion.html) y sellado
+          * Servicio técnico permanente
+          * El mejor precio por ciclo de esterilización
+          
+          [Contactenos](mailto:info@technodomus.com) para que conozca más detalles de esta modalidad de servicio.
+    
+    +paneldoble("Datos técnicos")
+      .panel-body
         :marked
           Puertas | Montaje | Volumen | Dimensiones (mm) | Temperatura de operación | Duración del ciclo
           :------:|:-------:|:-------:|:----------------:|:------------------------:|:-----------------:
-          1 o 2|En gabinete o emptrado|100 L|800x1100x1730|33 a 55°C|55 min
+          1 o 2|En gabinete o empotrado|100 L|800x1100x1730|33 a 55 °C|55 min (Estandar) 31 min (Corto)

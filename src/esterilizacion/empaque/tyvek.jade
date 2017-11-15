@@ -1,22 +1,21 @@
-extends ../../_layouts/productos
+extends ../../_layouts/productos2
 
 block append config
   //- Correct base url pathing for this page
   - var baseUrl = './../../'
-  - var producto = 'Tyvek®'
+  - var producto = 'Empaques de Tyvek'
   - var tituloPagina = "Technodomus | Soluciones en " + producto
   - var bread = {Inicio: baseUrl, Esterilización: './../', Empaque: './','Tyvek®': '#'}  
   
-block content
-  +cabecera(producto, bread)  
+block append content
 
   .grid
-    +panelprod('Bolsas y Rolos de Tyvek®')
+    +paneldoble('Bolsas y Rollos de Tyvek®')
       .panel-body
         +foto('empaque-bolsa-tyvek.png', 'Bolsas de tyvek')
         :markdown
           #### Ideal para esterilización con peróxido de hidrógeno
-          El Tyvek® es un notable material no tejido fabricado a partir de fibras de polietileno de alta densidad lo que lo hace inerte, resistente al agua, a la mayoría de los reactivos químicos, y con una elevada resisitencia al desgarre, pero con la facilidad de manejo del papel y propiedades de permeabilidad símilares. A diferencia de la celulosa, no reacciona con el peróxido de hidrógeno, lo que lo hace ideal para ser usado en los esterilizadores de plasma, en equipo sensible a la temperatura, pero también puede ser usado en esterilizadores de gas.
+          El Tyvek® es un notable material no tejido fabricado a partir de fibras de polietileno de alta densidad lo que lo hace inerte, resistente al agua, a la mayoría de los reactivos químicos y con una elevada resistencia al desgarre, pero con la facilidad de manejo del papel y propiedades de permeabilidad símilares. A diferencia de la celulosa, no reacciona con el peróxido de hidrógeno, lo que lo hace ideal para ser usado en los esterilizadores de plasma con equipo sensible a la temperatura, pero también puede ser usado en esterilizadores de oxido de etileno o de vapor de formaldéhido.
         +stericlin
         
         :marked
