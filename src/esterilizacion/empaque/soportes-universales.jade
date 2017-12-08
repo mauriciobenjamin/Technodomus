@@ -1,0 +1,36 @@
+extends ../../_layouts/productos2
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Soportes universales de silicona'
+  - var tituloPagina = "Technodomus | " + producto
+  - var bread = {Inicio: baseUrl, 'Esterilización': './../', 'Empaque': './', 'Soportes Universales':'./soportes-universales.html'}
+  - var descripcion = "Soportes de silicona resistente a altas temperaturas para mantener el instrumental en la posición correcta y facilitar su uso en todo momento"
+  - var cotiza = {estilos: "cotiza", ref: baseUrl + "cotiza/", fa:"info"}
+  - var canonical = "http://technodomus.com/esterilizacion/empaque/soportes-universales.html"
+
+block append content
+
+  .grid
+    +panelprod('Soporte tipo 1')
+      .panel-body
+        +fotoch('soporte-universal-1.png','Soporte universal tipo 1', 'Soporte universal tipo 1')
+        :marked
+          Soporte universal de silicona adecuado para colocar el instrumental en la posición correcta para su esterilización y facilitar el acceso del agente esterilizador a todas las superficies. Además facilita la extracción del equipo para su uso.
+          
+          |Dimensiones     |Largo|Alto|Ancho|
+          |----------------|-----|----|----|
+          |en milimetros   | 240 | 35 | 10 |
+          
+    +panelprod('Soporte tipo 2')
+      .panel-body
+        +fotoch('soporte-universal-2.png','Soporte universal tipo 2', 'Soporte universal tipo 2')
+        :marked
+          Soporte universal de silicona con ranuras cerrados para apoyar el instrumetal sin que este toque el fondo o las paredes del contenedor. Facilita el acceso del agente esterilizador a todas las superficies del equipo, además de que facilita la extracción ordenada del equipo para su uso.
+          
+          Dimensiones     | Largo | Alto | Ancho
+          :-------------:|-------|------|--------
+           en milimetros |  240 | 35 | 10
+
+        +fotoch('soportes-en-uso.jpg', 'Soporte con instrumental', 'El soporte universal facilita el acomodo del instrumental dentro del contenedor')

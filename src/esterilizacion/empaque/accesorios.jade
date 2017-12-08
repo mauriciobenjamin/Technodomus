@@ -1,0 +1,28 @@
+extends ../../_layouts/productos2
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Accesorios para contenedores de esterilización'
+  - var tituloPagina = "Technodomus | " + producto
+  - var bread = {Inicio: baseUrl, 'Esterilización': './../../', 'Empaque': './../', 'Accesorios':'./'}
+  - var descripcion = "Complemente sus contenedores con herramientas que mejoran su flujo de trabajo y resaltan las prestaciones de los contenedores."
+  - var cotiza = {estilos: "cotiza", ref: baseUrl + "cotiza/", fa:"info"}
+  - var canonical = "http://technodomus.com/esterilizacion/empaque/accesorios.html"
+
+block append content
+
+  .grid
+    +panelprod(producto)
+      .panel-body
+        +fotoch('tapetes-silicon-colores.jpg', 'Tapetes de silicona en diferentes colores', 'Accesorios adecuados para el aprovechamiento de los contenedores de esterilización')
+        p Su sistema de contenedores ya ofrece numerosas ventajas, las que pueden aumentar si lo complementa con accesorios adecuados para facilitar el procesamiento y uso del instrumental que se esterilizara en contenedores.
+        p Contamos con una gama de <a href='./tapetes.html'>tapetes</a> y <a href='./soportes-universales.html'>soportes</a> que ayudan a colocar el instrumental en la posición adecuada y tenerlo listo para su uso después de la esterilización.
+        
+    +panelsubp('Tapetes', './tapetes.html')
+      .panel-body
+        +fotoch('tapetes-silicon.jpg', 'Tapetes de silicona', 'Reduzca los problemas con el condensado y mantenga ordenado su instrumental')
+    
+    +panelsubp('Soportes universales', './soportes-universales.html')
+      .panel-body
+        +fotoch('soportes-en-uso.jpg', 'Soporte universal', 'Mantenga el equipo en la posición adecuada y facilite su acceso después de procesar')

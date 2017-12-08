@@ -1,0 +1,69 @@
+extends ../../_layouts/productos2
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Contendores Ermis Standard'
+  - var tituloPagina = "Technodomus | " + producto
+  - var bread = {Inicio: baseUrl, 'Esterilización': './../', 'Empaque': './', 'Contenedores':'./contenedores.html'}
+  - var descripcion = "Contendores de la más alta calidad y diseño para esterilización con vapor."
+  - var cotiza = {estilos: "cotiza", ref: baseUrl + "cotiza/", fa:"info"}
+  - var canonical = "http://technodomus.com/esterilizacion/empaque/contenedores.html"
+
+block append content
+
+  .grid
+    +panelprod('Ermis Standard')
+      .panel-body
+        +fotoch('contenedores-esterilizacion.jpg','Contenedores standard de Ermis', 'Contenedores standard de Ermis')
+        +ermis
+           
+    +panelsubp("Características")
+      .panel-body
+        :marked
+          Una nueva generación de contenedores con un diseño clásico y excelente calidad.
+          + Poste para sostener los filtro reforzado para mayor duración
+          + Se pueden usar filtros de papel desechables o reutilizables de tela o PTFE
+          + Disponibles con fondo perforado para permitir el desalojo del condensado
+          + Cubiertas de seguridad y asas coloreadas para facilitar la codificación de sus contenidos y usos
+          + Empaques de espuma de silicona intercambiables sin necesidad de adhesivos o herramientas especiales
+          + Paredes laterales reforzadas
+          + Partes mobiles de acero inoxidable para incrementar su durabilidad
+          
+          Formato | Dimensiones
+          --------|-------------
+          1/1 100 | 585 x 274 x 88 mm
+          1/1 135 | 585 x 274 x 123 mm
+          1/1 150 | 585 x 274 x 138 mm
+          1/1 200 | 585 x 274 x 188 mm  
+          1/1 260 | 585 x 274 x 248 mm
+          3/4 100 | 462 x 274 x 88 mm
+          3/4 135 | 462 x 274 x 123 mm
+          3/4 150 | 462 x 274 x 138 mm
+          1/2 100 | 297 x 274 x 88 mm
+          1/2 135 | 297 x 274 x 123 mm
+          1/2 150 | 297 x 274 x 138 mm
+          1/2 200 | 297 x 274 x 188 mm  
+          1/2 260 | 297 x 274 x 248 mm
+          
+        +fotoch('contenedor12-ermis.jpg', 'Contenedor 1/2', 'Contendor formato 1/2')
+        p Colores disponibles para las asas y cubiertas de seguridad
+        +muestras('gris', 'amarillo', 'rojo', 'azul', 'verde', 'negro', 'gris-obscuro')
+          
+    +panelfoto('contenedor12-fondoperforado.jpg', 'Contenedor 1/2 con fondo perforado', 'Contenedor formato 1/2 con el fondo perforado')
+    
+    +panelsubp("Accesorios")
+      .panel-body
+        :markdown
+          Los contenedores usan un filtro intercambiable que se ofrece en tres materiales diferentes para que usted cuente con opciones de durabilidad y precio.
+          
+          + Filtro de un solo uso de papel con indicador de vapor en paquete de 100 pz.
+          + Filtro textil
+          + Filtro de PTFE (Teflón) util para 1200 ciclos de esterilización.
+          
+          Además, contamos con un surtido de accesorios de silicona para el acomodo del instrumental, como [tapetes](./tapetes.html) y [soportes universales](./soportes-universales.html)
+          
+        +fotoch('contenedor-tapa.jpg', 'Tapa de contenedor', 'Tapa del contenedor donde se puede observar su filtro')
+        
+block append scripts
+  include ../../_modules/popups/esterilizacionpop
