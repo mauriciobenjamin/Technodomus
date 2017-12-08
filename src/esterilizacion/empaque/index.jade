@@ -22,10 +22,20 @@ block content
         :markdown
           Un empaque de calidad tiene que contemplar los siguientes aspectos:
           
-          + [**Sistema de barrera esteril:**](./bolsas-tyvek.html) Constituye el embalaje mínimo, es la barrera que impide el ingreso de microorganismos y permite la manipulación y presentación aséptica del producto en el momento de uso
+          + [**Sistema de barrera esteril:**](./bolsas-tyvek.html) Constituye el embalaje mínimo, es la barrera que impide el ingreso de microorganismos y permite la manipulación y presentación aséptica del producto en el momento de uso.
           + [**Empaque protector:**](./proteccion.html) Su función principal es prevenir daños al sistema de barrera estéril y su contenido, desde el momento de su empaque hasta su uso.
-          + **Sellado hermético:** El sellado garantiza que el material empacado se mantuvo aislado desde la preparación hasta su distribución, conservando las condiciones que adquirió al ser esterilizado
+          + **Sellado hermético:** El sellado garantiza que el material empacado se mantuvo aislado desde la preparación hasta su distribución, conservando las condiciones que adquirió al ser esterilizado.
+    
+    +panelsubp('Contenedores para esterilización','./contenedores.html')
+      .panel-body
+        +foto('contenedor-as.jpg', 'Contendores para esterilización de usos multiples', 'Contenedores de aluminio de alta calidad')
+        p Contenedores de aluminio de alto calibre, con diferentes colores para codificar las cargas, configuraciones con fondo perforado para evitar la acumulación de condensado, sistemas con filtros o sin filtros, y todas las ventajas de tener un empaque rígido, durable y completamente seguro.
               
+    +panelsubp('Accesorios para contenedores','./accesorios.html')
+      .panel-body
+        +foto('tapetes-silicon-colores.jpg', 'Accesorios para contenedores de esterilización', 'Accesorios para contenedores de esterilización')
+        p Los accesorios necesarios para sacar el mejor provecho de sus sistema de contenedores y facilitar su flujo de trabajo. 
+        
     +panelsubp('Papel grado médico', './papel-gm.html')
       .panel-body
         +foto('empaque-papelcrepe.jpg', 'bolsas de papel')
@@ -53,3 +63,6 @@ block content
         p Las barreras esteriles si bien son resistentes pueden llegar a dañarse durante su manipulación, por lo que un empaque de protección evita que esto suceda y garantiza periodos de almacenaje en condiciones de esterilidad más prolongados.
       .panel-footer
         a(href="./proteccion.html") Más sobre los empaques de protección.
+        
+block append scripts
+  include ../../_modules/popups/esterilizacionpop

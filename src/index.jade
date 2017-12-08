@@ -13,10 +13,18 @@ block content
       ol.carousel-indicators.soloescri
         li(data-target="#productos" data-slide-to="0" class="active")
         li(data-target="#productos" data-slide-to="1")
-
+        li(data-target="#productos" data-slide-to="2")
+        
       .carousel-inner.soloescri
       
         .item.active
+          img(src= baseUrl + "images/carrousel-contenedores.png", alt="Nueva linea de contenedores para esterilización", title="Presentamos dos opciones de contenedores para esterilización de alta calidad")
+          .carousel-caption
+            h2 Conoce nuestra nueva linea de contenedores
+            p Contenedores para esterilización de la más alta calidad diseñados para ser durables y fáciles de usar a la vez. 
+              a(href=baseUrl+'esterilizacion/empaque/contenedores.html') Más detalles...
+
+        .item
           img(src= baseUrl + "images/carrouselCarestream.jpg", alt="impresora DryView", title="Salida dígital en las películas secas DryView de Carestream")
           .carousel-caption
             h2 Soluciones de salida digital a la medida
@@ -24,7 +32,7 @@ block content
               a(href=baseUrl+'imagenologia/rx-digital/output-digital/pelicula-dry.html') Película DryView...
 
         .item
-          img(src= baseUrl + 'images/esterilizador-plasma-100-carrousel.jpg', alt='esterilizador de plasma', title="Esterilizador de plasma Laoke")
+          img(src= baseUrl + 'images/esterilizador-plasma-100-carrousel.jpg', alt='esterilizador de plasma', title="Esterilizador de plasma Laoken")
           .carousel-caption
             h2 Esterilización más eficiente y sencilla
             p Los nuevos equipos de plasma de peróxido ofrecen grandes ventajas. Una esterilización más eficiente y facilidad de uso. 
@@ -61,15 +69,17 @@ block content
           :markdown
             [Esterilizacíon de baja temperatura](./esterilizacion/esterilizacion/baja-temperatura.html)
             
+            [Contenedores para esterilización](./esterilizacion/empaque/contenedores.html)
+            
+            [Indicadores de validación](./esterilizacion/validacion/index.html)
+            
             [Esterilización de alta temperatura](./esterilizacion/esterilizacion/alta-temperatura.html) 
             
             [Insumos y equipos para lavado](./esterilizacion/lavado/index.html)
             
-            [Indicadores de validación](./esterilizacion/validacion/index.html)
-            
             [Sistemas de trazabilidad](./esterilizacion/trazabilidad/index.html)
             
-      .panel.panel-principal.panel-15x#imagenologia
+      .panel.panel-principal.panel-15x.soloescri#imagenologia
         .panel-heading
           a(href=baseUrl+"imagenologia/")
             img.img-responsive(src= baseUrl+"images/imagenologia.png", alt="PACS, RIS y salidas digitales de imagenología")
@@ -84,7 +94,23 @@ block content
 
             [Conoce más de nuestros productos](./imagenologia/index.html))
         
+      .panel.panel-principal.panel-15x.solomob#imagenologia
+        .panel-heading
+          a(href=baseUrl+"imagenologia/")
+            img.img-responsive(src= baseUrl+"images/imagenologia.png", alt="Imagenologia, PACS, RIS, Pelicula Dry View")
+            h1 Imagenología
+        .panel-body
+          :markdown
+            [Pelicula DryView](./imagenologia/rx-digital/output-digital/pelicula-dry.html)
+            
+            [PACS](./imagenologia/PACS/)
+            
+            [RIS](./imagenologia/RIS/)
+            
   section#contacto
     include _modules/contacto/contacto
+
+block append scripts
+  include ./_modules/popups/esterilizacionpop
 
 code.version v0.12

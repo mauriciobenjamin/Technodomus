@@ -10,7 +10,13 @@ block content
   #parallax-esteril.jumbotron
     h1.cabecera Soluciones en esterilización
   
-  .grid   
+  .grid
+    .panel
+      .panel-body
+        +foto('contenedores-esterilizacion.jpg', 'Nuestros nuevos contenedores de esterilización', 'Conoce nuestros nuevos contenedores de esterilización')
+        h4
+          a(href=baseUrl+"esterilizacion/empaque/contenedores.html") Conoce nuestra nueva linea de contenedores para esterilización
+        
     +panelprin('El proceso de esterilización')
       .panel-body
         +foto('esterilizacion.jpeg','esterilizacion')
@@ -63,6 +69,8 @@ block content
         p Esto hace que los materiales de empaque tengan propiedades particulares y que muchos casos se tengan que combinar diferentes materiales aprovechando sus funciones complementarias.
         p Technodomus provee materiales de empaque de calidad probada para los procesos de esterilización de vapor, óxido de etileno, plasma de peróxido de hidrogéno y vapor de formaldehido que garantizaran la integridad de sus procesos de estilización.
         h4
+          a(href=baseUrl+"esterilizacion/empaque/contenedores.html") Contenedores para esterilización
+        h4
           a(href=baseUrl+"esterilizacion/empaque/papel-gm.html") Papel grado médico
         h4
           a(href=baseUrl+"esterilizacion/empaque/notejido.html") Materiales no tejidos
@@ -98,3 +106,6 @@ block content
           a(href=baseUrl+"validacion/documentacion.html", title="Documentación manual") documentación manual.
       .panel-footer
         a(href=baseUrl+"esterilizacion/trazabilidad") Adentrese en las ventajas de un sistema de trazabilidad avanzado
+
+block append scripts
+  include ../_modules/popups/esterilizacionpop

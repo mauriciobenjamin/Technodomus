@@ -3,7 +3,7 @@ extends ../../_layouts/productos2
 block append config
   //- Correct base url pathing for this page
   - var baseUrl = './../../'
-  - var producto = 'Sistemas de contendores para esterilización'
+  - var producto = 'Contenedores para esterilización'
   - var tituloPagina = "Technodomus | " + producto
   - var bread = {Inicio: baseUrl, 'Esterilización': './../../', 'Empaque': './../', 'Contenedores':'./'}
   - var descripcion = "Contendores de la más alta calidad y diseño para esterilización con vapor."
@@ -11,12 +11,31 @@ block append config
   - var canonical = "http://technodomus.com/esterilizacion/empaque/contenedores.html"
 
 block append content
-
   .grid
-    +panelprod(producto)
+    +panelprod('Contenedores Ermis Standard', './contenedores-ermis.html')
       .panel-body
-        +fotoch('/png','Película DRYVIEW')
-        p 
-        +carestream
+        +fotoch('contenedores-esterilizacion.jpg','Contenedores', 'Contenedores metálicos Ermis')
+        p Contenedores de nueva generación adecuados a sus necesidades, con excelente durabilidad y un nuevo diseño que los hace más fáciles de usar.
+    
+    +panelprod('Contenedores Asipco', './contenedores-as.html')
+      .panel-body
+        +fotoch('contenedor-as.jpg','Contenedores', 'Contenedor ganador del premio RedDot')
+        :markdown
+          Contenedores de calidad excepcional. Su diseño fue reconocido con el *reddot desing award 2017*. Un sistema de filtro permanente que evita la necesidad de filtros intercambiables manteniendo la misma seguridad.
+          
+          ![premio de diseño reddot 2017](/images/logo-reddot.png)
         
-    +panelsubp("Características")
+    +panelprod('Tapetes de silicona para contenedores', './tapetes.html')
+      .panel-body
+        +fotoch('tapetes-silicon.jpg', 'Tapetes de silicona', 'Tapetes de silicona para conteneores metálicos')
+        p Un complemento imprescindible para sus contenedores, separando el instrumental durante el proceso de esterilización y evitando que entre en contacto con el líquido que su pudiera haber condensado. Además reduce la posibilidad de abrasión o daños por golpes con el fondo del contenedor.
+            
+    +panelprod('Soportes Universales de silicona', './soportes-universales.html')
+      .panel-body
+        +fotoch('soportes-en-uso.jpg', 'Soportes de silicona', 'Soportes de silicona para acomodo del equipo dentro del contenedor')
+        p Facilite el acomodo del instrumental dentro del contenedor y garantice siempre una esterilización completa manteniendo el equipo en la posición adecuada.
+        
+block append scripts
+  include ../../_modules/popups/esterilizacionpop
+        
+        
