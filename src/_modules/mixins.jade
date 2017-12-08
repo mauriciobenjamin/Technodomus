@@ -132,6 +132,21 @@ mixin laoken()
 
 mixin carestream()
   img(src=baseUrl+"images/logo-carestream.png", alt="carestream" title='Carestream' height="65px")&attributes(attributes)
+
+mixin ermis()
+  img(src=baseUrl+"images/logo-ermis.png", alt="ermis" title='Ermis' height="65px")&attributes(attributes)
+
+mixin as()
+  img(src=baseUrl+"images/logo-as.png", alt="as" title='Ermis' height="65px")&attributes(attributes)
+  
+mixin reddot()
+  img(src=baseUrl+"images/logo-reddot.png", alt="reddot design award" title='RedDot Design Award' height="65px")&attributes(attributes)
+
+// Mixin para hacer una caja con muestrarios de color1
+mixin muestras(...colores)
+  #muestrario
+    each val in colores
+      .caja(class=val)
   
 //- En construcción
 mixin construccion()
