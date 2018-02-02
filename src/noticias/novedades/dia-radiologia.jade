@@ -1,0 +1,40 @@
+extends ../../_layouts/noticias
+
+block append config
+  - var baseUrl = './../../'
+  - var noticia = "Día Internacional de la Radiología"
+  - var tituloPagina = noticia
+  - var fechalarga = "8 de noviembre de 2016"
+  - var fecha = '2016-11-08'
+  - var descripcion = "Nos unimos a los festejos del Dia Internacional de la Radiología, en el aniversariod el descubrimiento de los rayos X"
+  - var autor = 'Technodomus'
+  - var subtitulo = '8 de noviembre'
+  
+block append content
+  
+  .grid
+    +carddoble(subtitulo)
+      .card-body
+        :markdown
+          El 8 de noviembre de 1895 el científico alemán Wilhelm Conrad Röntgen trabajando con un tubo catódico, descubre que este emite una radiación invisible al ojo humano pero capaz de atravesar distintos materiales hasta impresionar una película sensible a la luz que guardaba en un cajón cercano.
+          
+          Esta observación le permitió inferir que esta radiación permitiría elaborar imágenes del interior de diversos objetos, lo cual puso en la práctica radiando la mano de su esposa. Así nació la radiología y desde un inició permitió conocer el estado del interior de los orgánismos con una afectación minima. Este descubrimiento trajo cambios que facilitaron e hicieron más preciso el diagnóstico médico, además de impactar muchas otras áreas, desde la ingeniería hasta el arte. Incluso los rayos X estuvieron involucrados en el descubrimiento del código de la vida, gracias a las imágenes de difracción de rayos X generadas por [Rosalind Franklin](https://es.wikipedia.org/wiki/Fotograf%C3%ADa_51) que permitieron deducir la estructura de doble helice del ADN.
+          
+          Por ello, la Sociedad Europea de Radiología tuvo la iniciativa de celebrar este día, junto con la Sociedad Radiologíca de Norteamérica y el Colegio Américano de Radiología. En esta ocasión, los eventos estan orientados a remarcar la importancia de la **Imagenología de Seno** como herramienta fundamental en la detección, diagnóstico y manejo de las enfermedades de seno.
+          
+          Para conocer más visita la página del [evento.](http://www.internationaldayofradiology.com/) 
+          
+          Como parte de la celebración, la Sociedad Europea de Radiología premiara con registros grátis al congreso de 2017 a quienes envien fotografías de su festejo del Día Internacional de la Radiología. Consulta las [bases.](http://www.myesr.org/start/idor/)
+          
+          Sigue el evento en redes sociales con el hashtag [#IDoR2016](https://twitter.com/search?q=%23IDoR2016&src=tyah).
+    .card
+        .card-body
+          +foto('rayosX.gif', 'Primera Imagen Radiológica')
+          
+      .card
+        .card-body
+          +foto('imagenologia-analoga.jpg','Usos de la ragiología')
+          
+      .card
+        .card-body
+          +foto('imagenologia-monitor.jpeg','Radiología digital')

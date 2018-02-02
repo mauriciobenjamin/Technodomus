@@ -1,0 +1,24 @@
+extends ../../_layouts/productos2
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Película plana'
+  - var tituloPagina = "Technodomus | Soluciones en " + producto
+  - var bread = {Inicio: baseUrl, Imagenología: './../', 'Radiología Analógica': './', 'Película Plana': '#'}  
+
+block append content
+
+  .grid
+    +cardprin('')
+      .card-body
+        +foto('analogico-peliculaplana.png', 'Pelicula plana')
+    
+    +cardprod('Características generales')
+      .card-body
+
+    +cardprod('Medidas disponibles')
+      .card-body
+        :marked
+          Código | Medidas | Cantidad
+          :-----:|:-------:|:-------:

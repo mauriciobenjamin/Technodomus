@@ -1,0 +1,56 @@
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Detergente Enzimático EmPower'
+  - var tituloPagina = "Technodomus | Soluciones en  " + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Lavado: './', Insumos: './insumos.html', 'Detergente Enzimático':'#'}
+  
+block content
+  +cabecera(producto,bread)
+  
+  .grid
+    +cardprod('EmPower®')
+      .card-body
+        +foto('Detergente-EmPower-Metrex.png', 'Detergente EmPower')
+        :markdown
+          ### Detergente Enzimatico
+          Con dos enzimas proteolíticas y dos agentes limpiadores tensoactívos, es capaz de remover rápida y eficazmente los restos de sangre, tejidos y otros fluidos corporales ricos en proteínas, de la superficie del instrumental quirúrgico y endoscopios.
+        +metrex
+        :marked
+          No. Artículo | Descripción
+          :-----------:|:-----------:
+          10-4102 | Caja c/48 Botellas (2 oz. c/u)
+          10-4100 | Caja c/4 Galones (3.8 L c/u)
+      
+    +cardprod('EmPower® Foam')
+      .card-body
+        +foto('Espuma-EmPowerFoam-Metrex.jpg', 'EmPower Foam')
+        :markdown
+          ### Espuma enzimática en rociador
+          El detergente enzimático EmPower® listo para su uso en rociador que por el diseño del aplicador, forma una espuma que no chorrea y cubre la superficie donde se aplica.
+          
+          Util en la prelimpieza de equipos críticos, antes de pasar a un proceso de desinfección de alto nivel o de esterilización, tambien es ideal en condiciones donde es díficil renovar el material de manera inmediata, ya que permite hacer una limpieza rápida y eficiente al tiempo que protege el instumental.
+          
+          Al ser una espuma, cubre el equipo reduciendo los derrames y salpicaduras, al mismo tiempo que lo prepara para iniciar el proceso de limpieza
+        +metrex
+        :marked
+          No. Artículo | Descripción
+          :-----------:|:-----------:
+          104224 | Caja c/12 piezas (24 oz c/u [710 mL])
+    
+    +cardprod('EmPower® Foam Touch-n-Spray')
+      .card-body
+        +foto('Dispensador-EmPowerFoamTouch-Metrex.jpg', 'EmPower Touch-n-Spray')
+        :markdown
+          ### Dispensador automátizado
+          El complemento perfecto para EmPower® Foam, el aplicador Touch-n-Spray funciona con tan solo tocar el gatillo, enviando un flujo continuo de espuma a su instrumental, facilitando su uso, eliminando la necesidad del bombeo y con ello el dolor que esta acción repetitiva puede producir. A largo plazo el dosificador Touch-n-Spray reduce el riesgo de lesiones ocupacionales entre su personal.
+        +metrex
+        :marked
+          No. Artículo | Descripción
+          :-----------:|:-----------:
+          46-1510 | Caja c/10 piezas\*\*
+
+          \*\*Disponible tambien por pieza. 
+    

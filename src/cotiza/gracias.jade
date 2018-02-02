@@ -1,0 +1,19 @@
+extends ../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../'
+  - var titulo = 'Le agradecemos su interés'
+  - var tituloPagina = "Technodomus | Le agradece "
+  - var bread = {Inicio: baseUrl, Cotiza: './../'}  
+  
+block content
+  
+  +cabecera(titulo, bread)
+  
+  .grid
+    +cardmax("En breve")
+      h4 Nos pondremos en contacto
+      p para dar seguimiento a su solicitud.
+      p Muchas gracias por su preferencia. No omitimos recordarle que cualquier información proporcionada será protegida de acuerdo a nuestras políticas de privacidad, en seguimiento de la Ley para la Protección de Datos Personales.
+        a(href="./../aviso-privacidad.html") Vea nuestro aviso de privacidad.

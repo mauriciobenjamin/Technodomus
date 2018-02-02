@@ -1,0 +1,35 @@
+extends ../../_layouts/productos2
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Empaques de Tyvek'
+  - var tituloPagina = "Technodomus | Soluciones en " + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Empaque: './','Tyvek®': '#'}  
+  
+block append content
+
+  .grid
+    +carddoble('Bolsas y Rollos de Tyvek®')
+      .card-body
+        +foto('empaque-bolsa-tyvek.png', 'Bolsas de tyvek')
+        :markdown
+          #### Ideal para esterilización con peróxido de hidrógeno
+          El Tyvek® es un notable material no tejido fabricado a partir de fibras de polietileno de alta densidad lo que lo hace inerte, resistente al agua, a la mayoría de los reactivos químicos y con una elevada resistencia al desgarre, pero con la facilidad de manejo del papel y propiedades de permeabilidad símilares. A diferencia de la celulosa, no reacciona con el peróxido de hidrógeno, lo que lo hace ideal para ser usado en los esterilizadores de plasma con equipo sensible a la temperatura, pero también puede ser usado en esterilizadores de oxido de etileno o de vapor de formaldéhido.
+        +stericlin
+        
+        :marked
+          No. Artículo | Descripción
+          :-----------:|:----------:
+          3FKFB250105 | Bolsa De Tyvek® Plana 7.5 X 20 cm 1.000 Pzs
+          3FKFB250110 | Bolsa De Tyvek® Plana 10 X 27 cm 500 Pzs.
+          3FKFB250115 | Bolsa De Tyvek® Plana 15 X 30 cm 500 Pzs.
+          3FKFB250120 | Bolsa De Tyvek® Plana 20 X 40 cm 500 Pzs.
+          3FKFB250125 | Bolsa De Tyvek® Plana 25 X 48 cm 500 Pzs.
+          3FKFS250204 | Rollo De Bolsa De Tyvek® Plana 7.5 cm / 100 m
+          3FKFS250206 | Rollo De Bolsa De Tyvek® Plana 10 cm / 100 m
+          3FKFS250210 | Rollo De Bolsa De Tyvek® Plana 15 cm / 100 m
+          3FKFS250212 | Rollo De Bolsa De Tyvek® Plana 20 cm / 100 m
+          3FKFS250214 | Rollo De Bolsa De Tyvek® Plana 25 cm / 100 m
+          3FKFS250216 | Rollo de Bolsa De Tyvek® Plana 30 cm / 100 m
+          3FKFS250218 | Bolsa de Bolsa de Tyvek® Plana 38 cm / 100 m

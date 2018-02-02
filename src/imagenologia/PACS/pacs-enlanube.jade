@@ -1,0 +1,17 @@
+extends ../../_layouts/productos2
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'PACS en la nube'
+  - var tituloPagina = "Technodomus | " + producto
+  - var bread = {Inicio: baseUrl, Imagenología: './../', 'PACS': './'}  
+
+block append content
+
+  .grid
+    +cardprin('PACS en la nube')
+      .card-body
+        +foto('pacs-uso.png', 'PACS en uso')
+        p No solo el área de radiológia produce información, otras áreas con servicios de imagenología tienen necesidades de distribución y almacenamiento de imagénes, por lo que integrar todas ellas sera una ventaja para los especialistas y el paciente. Por ello es necesario un Sistema de Almacenamiento y Comunicación de Imágenes (conocidos en inglés como Picture Archiving and Communication System) que proveea de un almacenamiento y distribución económico y conveniente a las necesidades de sus servicios.
+        +carestream

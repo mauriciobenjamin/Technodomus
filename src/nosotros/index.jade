@@ -1,0 +1,37 @@
+extends ../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+  - var tituloPagina = "Conoce Technodomus por dentro"
+  - var descripcion = "Technodomus, una compañia orientada a mejorar la salud por medio de tecnología que permita procesos médicos efectivos y adecuados."
+
+block content
+  +jumbo('Technodomus es...')
+
+  .grid
+    +cardprin('Una empresa méxicana')
+      .card-body
+       include:markdown nosotros.md
+
+       +laoken
+       +carestream
+       +getinge
+       +gke
+       +stericlin
+    
+    +cardsubp('¿Te gustaría trabajar con nosotros?', './trabaja.html')
+      .card-body
+        p Somos una empresa en crecimiento y constantemente tenemos ofertas de trabajo, conocelas
+          a(href="./trabaja.html") aquí.
+
+    +cardsubp('Atención más cercana a el Bajío', '../noticias/novedades/atencion-bajio.html')
+      .card-body
+        p Pensando en nuestros clientes de los estados de Guanajuato, Querétaro, San Luis Potosí, Aguascalientes, Jalisco y zonas aledañas, damos inicio a nuestras oficinas en la región Bajío a cargo de 
+          a(href="mailto:mmolina@technodomus.com") Manuel Molina.  
+          a(href="../noticias/novedades/atencion-bajio.html") Consulta el comunicado.
+
+    +cardsubp('Posada 2016', './posada2016.html')
+      .card-body
+        p Terminamos el año festejando con nuestras familias los esfuerzos para mejorar la calidad de vida de los pacientes y la práctica de los profesionales de la salud. 
+        a(href="./posada2016.html") La crónica aquí.

@@ -1,0 +1,13 @@
+@mixin parallax($imagen) { //Aqui va la url de la imagen
+  position: relative;
+  top: 0;
+  background-image: url($imagen);
+}
+
+#parallax-imagen {
+  @include parallax('../images/carrouselCarestream.jpg');
+}
+
+#parallax-esteril {
+  @include parallax('../images/esterilizador-plasma-100-carrousel.jpg');
+}

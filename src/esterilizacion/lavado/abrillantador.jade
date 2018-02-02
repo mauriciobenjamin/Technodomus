@@ -1,0 +1,25 @@
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Abrillantador'
+  - var tituloPagina = "Technodomus | Soluciones en " + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Lavado: './','Abrillantador':'#'}  
+  
+block content
+  +cabecera(producto, bread)
+
+  .grid
+    +cardmax('MetriLube®')
+      .card-body
+        +foto('Lubricante-MetriLube-Metrex.jpg', 'Lubricante MetriLube')
+        :markdown
+          ### Lubricante de Instrumental Concentrado
+          Lubricante de instrumental quirúrgico a base de aceite mineral concentrado. Esto le permite crear una capa protectora que cubre la superficie de los intrumentos de metal previniendo la corrosión y mejorando el funcionamiento de mecanísmos y piezas moviles.
+        +metrex
+        :marked
+          No. Artículo | Descripción
+          :-----------:|:-----------:
+          10-3425 | Caja c/12 piezas de 24 oz. (710 mL aprox.)
+          10-3400 | Caja c/4 galones (3.78 L aprox.)

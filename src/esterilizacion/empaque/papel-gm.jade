@@ -1,0 +1,68 @@
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Papel Grado Médico'
+  - var tituloPagina = "Technodomus | Soluciones en " + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Empaque: './','Papel Grado médico': '#'}  
+  - var descripcion = "Contamos con bolsas de papel grado médico elaboradas a partir de fibras de celulosa 100%, que permiten tener un empaque económico y efectivo"
+  
+block content
+  +cabecera(producto, bread)
+
+  .grid
+    +cardprod('Papel crepado')
+      .card-body
+        +foto('empaque-papelcrepe.jpg', 'material para envolver')
+        :markdown
+          ####Envoltura para instrumental
+          El papel crepado se elabora a partir de 100% fibras de celulosa de grado médico, lo que permite combinar un empaque económico y efectivo. Es especialmente adecuado para empacar instrumentos ligeros y juegos de instrumental. También es posible combinarlo con otros materiales como [no tejidos](./notejido.html) para lograr una barrera de mayor calidad sin importar el color o el tamaño. Se puede auxiliar de loas normas internacionales, como la [DIN 58953 parte 7](https://www.beuth.de/en/standard/din-58953-7/121371019) u otras semejantes para aprovechar sus capacidades.
+        +stericlin
+        
+        
+    +cardprod("Bolsa mixta")
+      .card-body
+        +foto('empaque-bolsamixta-stericlin.jpg', 'Bolsas de papel')
+        :markdown
+          ####Papel grado médico y película plástica
+          Prácticamente el sistema universal de envasado para esterilización, ideal para empacar todos los instrumentos de peso medio y ligero. El empaque ya cuenta con tres indicadores de esterilización  impresos en la costura lateral para vapor, oxido de etileno y formaldehído.
+          El papel kraft de la parte trasera es permeable a los vapores y gases de esterilización, pero es una barrera resistente contra los germenes. Se pueden adquirir con fuelle para aumentar su capacidad y empaquetar materiales más voluminosos.
+        
+        +stericlin
+        :marked
+          No. Artículo | Descripción
+          :-----------:|:----------:
+          3FKFB210106 | Bolsa mixta Plana De Papel Grado Médico y Película Plástica 7.5 X 15 cm 2.000 Pzs
+          3FKFB210112 | Bolsa mixta Plana De Papel Grado Médico y Película Plástica Transparente 7.5 X 30 cm 2.000 Pzs
+          3FKFB210114 | Bolsa mixta Plana De Papel Grado Médico y Película Plástica 10 X 15 cm 2.000 Pzs
+          3FKFB210116 | Bolsa mixta Plana De Papel Grado Médico y Película Plástica 10 X 20 cm 2.000 Pzs
+          3FKFB210128 | Bolsa mixta Plana De Papel Grado Médico y Película Plástica Transparente 12.5 X 25 cm 2.000 Pzs
+          3FKFB210136 | Bolsa mixta Plana De Papel Grado Médico y Película Plástica 15 X 20 cm 1.000 Pzs
+          3FKFB210142 | Bolsa mixta Plana De Papel Grado Médico y Película Plástica 15 X 38 cm 1.000 Pzs
+          3FKFB210150 | Bolsa mixta Plana De Papel Grado Médico y Película Plástica 20 X 40 cm 1.000 Pzs
+          3FKFB210160 | Bolsa mixta Plana De Papel Grado Médico y Película Plástica Transparente 22 X 42 cm 1.000 Pzs
+          3FKFB210162 | Bolsa mixta Plana De Papel Grado Médico y Película Plástica 25 X 38 cm 1.000 Pzs
+          3FKFB210170 | Bolsa mixta Plana De Papel Grado Médico y Película Plástica 27 X 45 cm 500 Pzs
+          3FKFB210174 | Bolsa mixta Plana De Papel Grado Médico y Película Plástica Transparente 30 X 57 cm 500 Pzs
+          3FKFB210184 | Bolsa mixta Plana De Papel Grado Médico y Película Plástica Transparente 42 X 61 cm 500 Pzs
+          3FKSB220102 | Bolsa mixta C/Fuelle De Papel Grado Médico y Película Plástica Transparente 10 X 5 X 30cm 2.000 Pzs
+          3FKSB220108 | Bolsa mixta C/Fuelle De Papel Grado Médico y Película Plástica Transparente 15 X 5 X 40cm 1.000 Pzs
+    
+    +cardprod("Rollo de bolsas mixtas")
+      .card-body
+        +foto('empaque-rollobolsamixta-stericlin.jpg','Rollo de bolsa mixta')
+        :markdown
+          #### Papel grado médico y película plástica en un tubo flexible.
+          Las mismas ventajas de le bolsa, pero en una presentación que permite elegir diferentes largos según el tamaño del instrumental. También cuentan con indicadores en el borde y pueden ser selladas con calor.
+
+        +stericlin
+        :marked
+          No. Artículo | Descripción
+          :-----------:|:----------:
+          3FKFS230104 | Rollo De Bolsa mixta Plana De Papel Grado Médico y Película Plástica 7.5 cm / 200 m
+          3FKFS230106 | Rollo De Bolsa mixta Plana De Papel Grado Médico y Película Plástica 10 cm / 200 m
+          3FKFS230110 | Rollo De Bolsa mixta Plana De Papel Grado Médico y Película Plástica 15 cm / 200 m
+          3FKFS230112 | Rollo De Bolsa mixta Plana De Papel Grado Médico y Película Plástica 20 cm / 200 m
+          3FKFS230114 | Rollo De Bolsa mixta Plana De Papel Grado Médico y Película Plástica 25 cm / 200 m
+          3FKFS230116 | Rollo De Bolsa mixta Plana De Papel Grado Médico y Película Plástica 30 cm / 200 m

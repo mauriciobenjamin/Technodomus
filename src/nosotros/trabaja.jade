@@ -1,0 +1,32 @@
+extends ./../_layouts/base
+// Oferta de empleo en ventas
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+  - var tituloPagina = "Technodomus conoce nuestros puestos disponibles"
+
+block content
+  .jumbotron
+    h1 Trabaja con nosotros
+  
+  .grid
+    +cardprin('Puestos disponibles')
+      .card-body
+       a(href="https://www.occ.com.mx/Empleo/oferta/9180358") 
+        h3 Especialista en ventas
+       :markdown
+        Buscamos gente que le guste asumir retos, sin temor de enfrentarse a dificultades, capaz de trabajar en un ambiente de constantes retos, con gran capacidad de comprender las exigencias de su trabajo.
+        #### Requisitos
+        - Licenciatura terminada o pasante en Mercadotecnia, Administración, Relaciones Comerciales, Ingeniería Biomédica o carrera similar.
+        - 25 años mínimo.
+        - Cumplira funciones de asesor por lo que tiene que tener experiencia en procesos de ventas.  
+        - Disponibilidad de viajar ya que en ocasiones tendrá que hacerlo.
+        - **Inglés** para traducir manuales y tomar cursos.
+        
+        #### Experiencia 
+        Mínimo tres años comprobables en una misma empresa, en ventas de servicios o productos de venta compleja con plazos medios de cierre. 
+        
+      .card-footer
+        p Envia tu curriculum
+          a(href="./forma-curricula.html")  aquí.

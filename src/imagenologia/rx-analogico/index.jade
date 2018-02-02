@@ -1,0 +1,58 @@
+extends ../../_layouts/productos2
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Radiología analógica'
+  - var tituloPagina = "Technodomus | Soluciones en " + producto
+  - var bread = {Inicio: baseUrl, Imagenología: './../', 'Radiología Analógica': './'}  
+
+block append content
+
+  .grid
+    +cardprin(producto)
+      .card-body
+        +foto('imagenologia-analoga.jpg','Radiología analoga')
+        p Una tecnología probada, con la que podrá aprovechar la experiencia de su personal y obtener imágenes de gran resolución y calidad. Le ofrecemos los insumos necesaros para que obtenga los mejores resultados de los sistemas radiológicos analogos.
+
+    +cardprod('Casetas', './casetas.html')
+      .card-body
+        +foto('imagenologia-casetas-analogas.jpg', 'Casetas analogas')
+        p Diseñadas con precisión para que el contacto entre película y pantalla intensificadora sea el optimo y obtener las mejores imágenes.
+      .card-footer
+        a(href="./casetas.html") Más de casetas
+
+    +cardprod('Película plana', './pelicula-plana.html')
+      .card-body
+        +foto('analogico-peliculaplana.png', 'Pelicula plana')
+        p Contamos con una amplia variedad de películas planas radiológicas que van desde opciones generales, peliculas de gran sensibilidad o resolución, con las que obtendra excelentes imágenes.
+      .card-footer
+        a(href="./pelicula-plana.html") Conozca nuestra gama completa de películas.
+
+    +cardprod('Película dental', './pelicula-dental.html')
+      .card-body
+        +foto('analogico-peliculadental.jpeg', 'Pelicula dental')
+        p El diagnóstico dental requiere de películas especiales, tanto en sus variedades intra y extraorales que permitan una imagen correcta sin causar una molestia excesiva al paciente.
+      .card-footer
+        a(href="./pelicula-dental.html") Explore nuestras opciones en películas dentales.
+
+    +cardprod('Película para mastografía', './pelicula-mamografica.html')
+      .card-body
+        +foto('analogico-peliculamasto.png', 'Pelicula mastográfica')
+        p Pelicuasl que ofrecen un contraste elevado y gran detalle que permite la detección oportuna de de anomalias muy pequeñas en los tejidos mamarios.
+      .card-footer
+        a(href="./pelicula-mamografica.html") Conozca nuestras peliculas mamográficas.
+
+    +cardprod('Químicos para revelado')
+      .card-body
+        +foto('analogico-quimicos.png', 'Químicos para revelado')
+        p Revelador y fijador efectivo para todas las películas de diagnóstico.
+      .card-footer
+        a(href="./quimicos-revelado.html") Más caracteristicas del revelador.
+    
+    +cardprod('Químicos para revelado dental')
+      .card-body
+        +foto('analogico-revelado-dental.jpeg', 'Químicos para revelado dental')
+        p Los mejores químicos para revelado dosificados para el volumen de trabajo dental.
+      .card-footer
+        a(href="./quimicos-dental.html") Más caracteristicas del revelador.

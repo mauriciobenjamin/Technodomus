@@ -1,0 +1,13 @@
+extends ../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+  block content
+    div
+      img.construccion.responsive(src=baseUrl+"images/construccion.png", alt="en construcción" height='150px')
+      h1.producto Lo sentimos, estamos en proceso de renovación de la página
+
+    a(href="../")
+      h2 Regresar...

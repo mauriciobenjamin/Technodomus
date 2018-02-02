@@ -1,0 +1,15 @@
+
+extends ../../_layouts/productos2
+
+block append config
+  - var baseUrl = './../../'
+  - var urlLinks = '/esterilizacion/esterilizacion/plasma.html'
+  - var producto = "Solución integral de esterilización por plasma"
+  - var tituloPagina = 'Technodomus | ' + producto
+  - var descripcion = "Un equipo de esterilización con plasma de peróxido de hidrógeno a su disposición con todos los consumibles y equipos adicionales necesarios para su operación."
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Esterilizadores: './', Plasma: "./plasma.html", 'Solución integral':"#"}
+
+block append content
+
+  .grid
+    +cardprin(producto)

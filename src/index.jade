@@ -1,0 +1,86 @@
+extends _layouts/base
+
+block vars
+  - var tituloPagina = 'Technodomus | Soluciones en equipo médico'
+  - var descripcion = "Tecnologia y servicios para los profesionales de la salud, imagenologia, rayos x, esterilizacion hospitalaria, desinfeccion, trazabilidad, documentación, radiología, película seca, DRYVIEW, productos Carestream, Getinge, GKE, Laoken y más; en México, Bajio, Zona Metropolitana, Puebla, Estado de México, Queretaro, Jalisco, San Luis Potosí, Guanajuato, Aguascalientes, Mérida, Yucatán, Veracruz y Tabasco, Morelos,"
+  - var prodEsteril = {"titulo":"Esterilización", "link":"/esterilizacion/", "etiqueta": "esterilizacion", "imagen": "images/esterilizacion-usuario.png", "alt": "Facilidad de uso de los esterilizadores Laoken", "links": {"Esterilizadores de plasma": "/esterilizacion/esterilizacion/plasma.html"}}
+  - var prodImagen = {"titulo": "Imagenología", "link": "/imagenologia/", "etiqueta": "imagenologia", "imagen": "images/imagenologia.png", "alt": "PACS, RIS y salidas digitales en imagenologia","links": {"PACS en la nube": "/imagenologia/PACS/pacs-enlanube.html", "Index": "/index-respaldo.jade"}}
+
+  mixin frontcard(producto, vista)
+    if vista = "escritorio"
+      .card.card-principal.card-15x(id= producto.etiqueta)
+        .card-heading
+          img.img-fluid(src=baseUrl+ producto.imagen, alt= producto.alt caption= producto.alt)
+          h1
+            a(href= baseUrl + producto.link)= producto.titulo
+        .card-body
+          if block
+            block
+          ul
+          each val, key in producto.links
+            li
+              a(href=baseUrl + val) #{key}
+            
+        
+
+block content
+  .container-fluid
+
+    #productos.carousel.slide.hidden-sm(data-ride='carousel')
+          ol.carousel-indicators.soloescri
+            li(data-target="#productos" data-slide-to="0" class="active")
+            li(data-target="#productos" data-slide-to="1")
+            li(data-target="#productos" data-slide-to="2")
+            
+          .carousel-inner.soloescri
+          
+            .carousel-item.active
+              img(src= baseUrl + "images/carrousel-contenedores.png", alt="Nueva linea de contenedores para esterilización", title="Presentamos dos opciones de contenedores para esterilización de alta calidad")
+              .carousel-caption
+                h2 Conoce nuestra nueva linea de contenedores
+                p Contenedores para esterilización de la más alta calidad diseñados para ser durables y fáciles de usar a la vez. 
+                  a(href=baseUrl+'esterilizacion/empaque/contenedores.html') Más detalles...
+
+            .carousel-item
+              img(src= baseUrl + "images/carrouselCarestream.jpg", alt="impresora DryView", title="Salida dígital en las películas secas DryView de Carestream")
+              .carousel-caption
+                h2 Soluciones de salida digital a la medida
+                p Las películas secas DryView de Carestream son una solución de alta calidad para sus equipos dígitales de imagenología. 
+                  a(href=baseUrl+'imagenologia/rx-digital/output-digital/pelicula-dry.html') Película DryView...
+
+            .carousel-item
+              img(src= baseUrl + 'images/esterilizador-plasma-100-carrousel.jpg', alt='esterilizador de plasma', title="Esterilizador de plasma Laoken")
+              .carousel-caption
+                h2 Esterilización más eficiente y sencilla
+                p Los nuevos equipos de plasma de peróxido ofrecen grandes ventajas. Una esterilización más eficiente y facilidad de uso. 
+                  a(href=baseUrl+'esterilizacion/esterilizacion/plasma.html') Más información...
+            
+          a.carousel-control-next.soloescri(href='#productos', data-slide='next', role="button")
+            span.fa.fa-chevron-right.fa-5x
+          a.carousel-control-prev.soloescri(href='#productos', data-slide='prev', role="button")
+            span.fa.fa-chevron-left.fa-5x
+        // Final del carousel
+
+    .grid
+      +frontcard(prodEsteril, "escritorio")
+        :markdown
+          #### Seguridad para sus pacientes con las mejores soluciones para instrumental e insumos esteriles.
+          
+          Nuestra oferta incluye equipos de [baja](./esterilizacion/esterilizacion/baja-temperatura.html) y [alta temperatura](./esterilizacion/esterilizacion/alta-temperatura.html), sistemas completos de tratamiento de instrumental, desde el [lavado](./esterilizacion/lavado/index.html), hasta la [validación](./esterilizacion/validacion/index.html) y [trazabilidad](./esterilizacion/trazabilidad/index.html) del proceso de marcas lideres como Laoken, Getinge, Gke, Metrex y SteriClin.
+          
+          Nuestro compromiso es brindar seguridad total para el tratamiento de sus pacientes, al tiempo que mejora el manejo de su instrumental y equipo. 
+        
+          [Conoce más de nuestros productos](./esterilizacion/)
+
+      +frontcard(prodImagen, "escritorio")
+        :markdown
+            #### Imágenes de alta calidad para el diagnóstico siempre disponibles.
+            
+            La digitalización de sus áreas de imagenología es una decisión que puede contribuir a mejorar sus flujos de trabajo, reduciendo tiempos de espera en el procesamiento de las imágenes y facilitando el acceso a la información.
+            
+            Contamos con las mejores [películas para generar salidas dígitales](./imagenologia/rx-digital/output-digital/pelicula-dry.html), pero también para ofrecer excelentes [imágenes análogicas](./imagenologia/rx-analogico/) e integrar todo sus sistema de imagenología [en una solución](./imagenologia/PACS/) de la marca lider Carestream.
+
+            [Conoce más de nuestros productos](./imagenologia/index.html))
+
+      include _modules/contacto/contacto
+    

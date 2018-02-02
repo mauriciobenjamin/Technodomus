@@ -1,0 +1,39 @@
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Indicadores Integradores'
+  - var tituloPagina = "Technodomus | Soluciones en " + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Validación: './', 'Indicadores Integradores': '#'}  
+  
+block content
+  +cabecera(producto, bread)
+  
+  .grid
+    +cardprod("Integradores tipo V")
+      .card-body#tipoV
+        +foto('validacion-integrador-claseV.png', 'Integrador tipo V')
+        :markdown
+          Etiquetas con indicadores químicos tipo V para monitoreo de paquetes en procesos de esterilización por vapor, formaldehído y óxido de etileno conforme a la norma EN ISO 11140-1. Las etiquetas cuentan con una doble capa de adhesivo, por lo que una vez terminado el proceso de esterilización éstas pueden desprenderse y colocarse en la documentación, por ejemplo, en la hoja o bitácora del paciente y mantener la información del proceso disponible.
+          Las etiquetas estan disponibles en diferentes tamaños, y se pueden documentar a mano o con una impresora convencional y después adherir a los paquetes a esterilizar.
+        +gke
+        :marked
+          No. Artículo | Descripción
+          :-----------:|:----------:
+          211-225 | Tarjetas con 16 indicadores para vapor, 800 pzas 
+          211-220 | Etiquetas con indicadores, en rollo de 1000 pzas 58 x 35 mm Sv = 134 °C /3 min y 121 °C /15 min
+          211-222 | Etiquetas con indicadores por pieza, paquete con 200 pzas 58 x 35 mm Sv = 134 °C /3 min y 121 °C /15 min
+
+    +cardprod("Indicadores tipo VI")
+      .card-body#tipoVI
+        +foto('validacion-indicador-claseVI.png', 'Indicador tipo VI')
+        :markdown
+          Etiquetas con indicadores químicos tipo VI para ser aplicadas en los paquetes y monitorear el proceso de esterilización. Cumplen con la norma EN-ISO 11140-1 monitoreando todos los parámetros críticos, temperatura, vapor y tiempo de contacto. El indicador solo cambiara de color cuando se alcanzó la temperatura durante la ventana de tiempo y con presencia de vapor. Estos además estan láminados para evitar que las tintas de la etiqueta se transfieran al paquete y manchen el instrumental.
+
+          + Faciles de usar
+          + Interpretación sencilla, con la referencia de color impresa en cada etiqueta
+          + Solución completa a un costo efectivo.
+
+          **Disponibles solo bajo pedido**
+        +gke 

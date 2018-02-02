@@ -1,0 +1,67 @@
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Indicadores de Lavado'
+  - var tituloPagina = "Technodomus | Soluciones en " + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Validación: './', 'Indicadores de Lavado': '#'}  
+  
+block content
+  +cabecera(producto, bread)
+  
+  .grid
+    +cardprod("Indicadores para Termodesinfectadoras")
+      .card-body
+        +foto('validacion-indicadoreslavado.png','Indicadores de Lavado')
+        p Los indicadores Clean-Record® es un sistema diseñados para su uso en lavadoras termodesinfectoras. Los indicadores usan compuestos sintéticos, que sustituyen a los residuos biológicos naturales que se pueden encontrar en el instrumental (como sangre o mucosidades). 
+        p Sustituyen a los indicadores con materiales naturales, que pueden ser riesgosas de manejar y tienen menor vida útil, o que incluso su constancia varía con el envejecimiento.
+        p Esta tecnología permite ofrecer indicadores para diferentes niveles de díficultad de lavado, así al finalizar cada lote, se puede evaluar el nivel de lavado alcanzado y validarlo inmediatamente.
+        +gke
+        :marked
+          No. Artículo | Descripción 
+          :-----------:|:----------:
+          800-004 | Paq. de introducción con indicadores de lavado Nivel 1-4+3 holders,16 dobles/32sencillos
+          810-101 | Indicadores de lavado Nivel 1 (color: amarillo), 160 dobles/320 sencillos
+          810-202 | Indicadores de lavado Nivel 2 (color: verde), 480 dobles/960 sencillos
+          810-301 | Indicadores de lavado Nivel 3 (color: azul), 160 dobles/320 sencillos
+          810-401 | Indicadores de lavado Nivel 4 (color: rojo), 160 dobles/320 sencillos
+          810-902 | Indicadores de lavado multinivel (colores: verde, azul, rojo) 960 pzas.
+
+    +cardprod("Indicadores para Lavadora Ultrasónica")
+      .card-body
+        +foto('validacion-indicadoresUltrasonica.jpg', 'Indicadores de lavado ultrasónico')
+        p Indicadores diseñados para evaluar la efectividad de las tinas de lavado ultrasónico, colocando una tira indicadora dentro del liquido de lavado en forma horizontal o vertical.
+        +gke
+        :marked
+          No. Artículo | Descripción
+          :-----------:|:----------:
+          800-014 | Paquete de con indicadores de lavado Nivel 1-4, 4 de cada nivel.
+          810-112 | Hojas de prueba con 4 tiras Nivel 1 (color: amarillo), 120 pzas
+          810-212 | Hojas de prueba con 4 tiras Nivel 2 (color: verde), 120 pzas
+          810-312 | Hojas de prueba con 4 tiras Nivel 3 (color: azul), 120 pzas
+          810-412 | Hojas de prueba con 4 tiras Nivel 4 (color: rojo), 120 pzas
+    
+    +cardprod("PCD de flujo en huecos")
+      .card-body
+        +foto('validacion-pcd-lavado.png', 'PCD para lavado')
+        p Dispositivo de reto al proceso que permite evaluar la efectividad del lavado en instrumental con lúmenes estrechos, desde 2 a 4 mm. Indicado para la validación de procesos de lavado para endoscopios o instrumental de cirugia no invasiva.
+        +gke
+        :marked
+          No. Artículo | Descripción
+          :-----------:|:----------:
+          800-111 | PCD con 3 adaptadores de 2, 3 y 4 mm de diametro, dos porta indicador y 0.5 m de tubo de silicon.
+          
+          *Se recomienda comprar el PCD con uno o dos paquetes de indicadores de lavado.
+          
+    +cardprod('Soporte para indicadores')
+      .card-body
+        +foto('validacion-soporte.png', 'Soporte para indicadores de lavado ultrasónico')
+        p Soporte que consiste en un base y un poste de acero inóxidable con dos soportes de clip ajustables para colocar el indicador de forma horizontal o vertical dentro del baño ultrasónico.
+        +gke
+        :marked
+          No. Artículo | Descripción
+          :-----------:|:----------:
+          800-115 | Soporte on barra de acero de 7 cm de largo
+          800-116 | Soporte on barra de acero de 20 cm de largo
+          800-117 | Soporte on barra de acero de 40 cm de largo

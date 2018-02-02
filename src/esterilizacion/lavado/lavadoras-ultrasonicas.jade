@@ -1,0 +1,42 @@
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Lavadoras Ultrasónicas'
+  - var tituloPagina = "Technodomus | Soluciones en " + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Lavado: './', 'Lavadoras ultrasónicas':'#'}  
+  
+block content
+  +cabecera(producto, bread)
+
+  .grid
+    +cardprod(producto)
+      .card-body
+        +foto('lavadora-ultrasonido.jpg', 'Lavadora Ultrasonido')
+        :markdown
+          *Getinge Ultrasonic* es una gama completa de tinas de mesa para el lavado ultrasónico fáciles de utilizar y de alta calidad, que incluyen prácticamente todas las características técnicas disponibles. El diseño de la nueva serie mejora los resultados del efecto ultrasónico.
+          
+          La tecnología usada en estos equipos, junto con sus materiales, prolongan su vida útil con un diseño que combina funcionalidad y una imagen moderna.
+        +getinge
+
+    +cardsubp('Características generales')
+      .card-body
+        +foto('lavadoras-ultrasonido.jpg', 'Gama de lavadoras de ultrasonido')
+        ul
+          li La gama va de 6 a 28 litros de capacidad de la tina, todas con tapa y una canasta opcional adaptada a cada tamaño.
+          li Control de tiempo y temperatura electrónico.
+          li Sistema de transductores de alto desempeño.
+          li Sistema de barrido que asegura un campo de ultrasonido homogéneo y un constante cambio del foco de máxima potencia del campo de sonido.
+          li Función de desgasificado (degas) para acelerar la eliminación de gas que puede provocar cavitación excesiva o reducir la eficiencia de la solución limpiadora.
+      
+    +cardsubp('Especificaciones')
+      .card-body
+        :marked
+          Modelo | 60 |	100 |	150 |	180 |	300
+          -------|:--:|:---:|:---:|:---:|:---:
+          Capacidad (Litros) | 6 |	10 | 14 |	18 | 28
+          Peso (kg) |	5.1 |	5.9 |	10 | 8.5 | 11
+          Largo  (mm) | 365 | 365 | 568 | 390 | 568
+          Alto | 186 | 278 | 340 | 340 | 340
+          Profundidad | 264 | 264 | 224 | 321 | 312 

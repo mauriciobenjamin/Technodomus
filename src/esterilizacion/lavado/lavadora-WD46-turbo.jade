@@ -1,0 +1,50 @@
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Lavadora-WD46 Turbo'
+  - var tituloPagina = "Technodomus | Soluciones en " + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Lavado: './','Lavadoras Automáticas': 'lavadoras.html', 'Lavadoras Desinfectadoras': 'lavadoras-desinfectadoras.html', 'Lavadora WD46 Turbo': '#'}  
+  
+block content
+  +cabecera(producto, bread)
+  
+  .grid
+    +cardprod("WD46 Turbo")
+      .card-body
+        +foto('lavadora-WD46Turbo-Getinge.jpg', producto)
+        :markdown
+          Una lavadora-desinfectadora compacta y rápida con una capacidad de hasta 10 bandejas DIN, lo que la hace adecuada para departamentos de esterilización medianos o clínicas grandes.
+          
+    +cardsubp('Caracteristica Generales')
+      .card-body
+        +foto('lavadora-wd46-turbo-uso.jpg', 'Lavadora en uso')
+        :markdown
+          El Turbo mejora la eficiencia del lavado reduciendo los tiempos en un 25% y aumentando la capacidad de procesamiento lo que hace más redituable a inversión.
+          
+          + Turbo exclusivo
+          + Carga seguro y ergonómatica
+          + Sistema de circulación de agua optimizado
+          + Unidad de secado ahorradora de energia
+          + Compacta y con alta capacidad
+          + Incorpora elementos que permiten una completa trazabilidad del proceso
+          + Amplio rango de accesorios
+          
+    +cardsubp('Datos Técnicos')
+      .card-body
+        :marked
+          Disponible en dos modelos 46-4 Turbo y 46-5 Turbo con las siguientes características.
+          
+          | Caracteristica | Unidad | 46-4 Turbo | 46-5 Turbo |
+          |-------------:|:------:|:----------:|:----------:|
+          | Niveles de lavado | | 4 | 5 |
+          | Volumen efectivo de la cámara | L | 201 | 225 |
+          | Charolas DIN | | 8 | 10 |
+          | Ancho | mm | 850 | 850 |
+          | Profundidad | mm | 692 | 692 |
+          | Alto (sin secador) | mm | 1930 | 1930 |
+          | Alto (con secador) | mm | 1975 | 1975 |
+      .card-footer
+        a(href="http://www.getinge.com/files/HC/products/cleaning-disinfection/washer-disinfectors/46-turbo/brochures/getinge-wd46-turbo-2254-la-es-lr.pdf") Folleto del equipo.
+        

@@ -1,0 +1,51 @@
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Lavadoras Serie 86'
+  - var tituloPagina = "Technodomus | Soluciones en " + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Lavado: './','Lavadoras Automáticas': 'lavadoras.html', 'Lavadoras Desinfectadoras': 'lavadoras-desinfectadoras.html', 'Lavadoras Serie 86': '#'}  
+  
+block content
+  +cabecera(producto, bread)
+  
+  .grid
+    +cardprod("Serie 86")
+      .card-body
+        +foto('lavadora-Serie86-getinge.png', producto)
+        :markdown
+          La Serie 86 de Getinge esta diseñada para ser una lavadora inteligente adecuada para centros de esterilización. Brinda una limpieza eficaz en volumenes importantes gracias a su capacidad de hasta 18 bandejas DIN.
+          La variedad de programas, las características de ahorro de tiempo, y el monitoreo integrado de fuciones como la rotación del brazo, el dosificado y la reción, aseguran la limpieza al tiempo que aumentan el flujo y eficiencia del equipo. 
+          La serie cuenta con capacidades de automatización y flexibilidad que reducen la necesidad de personal y hacen posible su uso a pesar de límitaciones de espacio o instlación.
+          
+        +getinge
+          
+    +cardsubp('Caracteristica Generales')
+      .card-body
+        +foto('lavadora-serie86-general.jpg', 'Lavadora vista general')
+        :markdown
+          + Una limpieza y desinfección excepcional
+          + Alta productividad
+          + Fácil operación gracias a una interfaz de usario intuitiva
+          + Monitoreo y documentación del proceso
+          + Monitoreo del brazo de aspersión
+          + Fácil mantenimiento
+          + Acepta un amplio rango de equipos de carga
+          
+    +cardsubp('Datos Técnicos')
+      .card-body
+        :marked
+          Disponible en dos modelos 8666 y 8668
+          
+          | Caracteristica | Unidad | 8666 | 8668 |
+          |-------------:|:------:|:----------:|:----------:|
+          | Niveles de lavado | | 6 | 6 |
+          | Volumen efectivo de la cámara | L | 312 | 340 |
+          | Charolas DIN | | 12 | 18 |
+          | Ancho | mm | 1110 | 1110 |
+          | Profundidad | mm | 910 | 990 |
+          | Alto | mm | 1870 | 1870 |
+      .card-footer
+        a(href="http://www.getinge.com/files/HC/products/cleaning-disinfection/loading-equipment-washer-disinfectors/loading-equipment-for-86s-88t-cm320/brochures/86s-and-88t/getinge-loading-equip-86s-88t-cm320-2393-es.pdf") Folleto del equipo.
+        

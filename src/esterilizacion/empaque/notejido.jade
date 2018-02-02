@@ -1,0 +1,40 @@
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Materiales no tejidos'
+  - var tituloPagina = "Technodomus | Soluciones en " + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Empaque: './','Materiales no tejidos': '#'}  
+  
+block content
+  +cabecera(producto, bread)
+  
+  .grid
+    +cardprod('Trayliner')
+      .card-body
+        +foto('empaque-materiales.png','material notejido')
+        :markdown
+          #### Material para fondo de contenedores
+          El material no tejido Trayliner es la solución a la condensación dentro de las cajas contenedores de instrumentos. Es la combinación del papel grado médico de celulosa con fibras de poliéster que le dan resistencia y absorción de humedad. Esta especialmente indicado para recubrir el interior de los contenedores y eviar el goteo sobre el instrumental.
+        +stericlin
+        :marked
+          No. Artículo | Descripción
+          :-----------:|:----------:
+          3FCZB440102 | Protector Absorbente Para Bandejas (Trayliner) Azul 25 x 30 cm caja con 1.000 Pzs
+          3FCZB440104 | Protector De Envoltura Absorbente Para Bandejas (Trayliner) Azul 30 x 50 cm 500 Pzs
+    
+    +cardprod("Bolsa mixta")
+      .card-body
+        +foto('empaque-bolsas.jpeg','bolsas de material no tejido')
+        :markdown
+          #### Empaque para objetos pesados
+          La bolsa mixta de material no tejido, ofrece la resisencia de estos materiales con la visibilidad de la película plástica transparente, lo que la hace adecuada para el empaque de artículos pesados o voluminosos. Cuenta con indicador triple VAPOR, EO y FORM.
+        +stericlin
+        :marked
+          No. Artículo | Descripción
+          :-----------:|:----------:
+          3FKFB240110 | Bolsa mixta plana de material no tejido 32 x 45 cm 500 Pzs
+          3FKFB240115 | Bolsa mixta plana de material no tejido 40 x 52 cm 250 Pzs
+          3FKFB240120 | Bolsa mixta plana de material no tejido 50 x 60 cm 250 Pzs
+          3FKFB240125 | Bolsa mixta plana de material no tejido 57 x 72 cm 250 Pzs

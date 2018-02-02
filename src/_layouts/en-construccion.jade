@@ -1,0 +1,22 @@
+extends ./productos2.jade
+
+block append config
+  - var cardp = "card card-primary"
+  - var imgUrl = '../images/'
+  - var producto = 'en construcción'
+  - var bread = {Inicio: '/'} 
+// Add extra stylesheets
+block append stylesheets
+
+block content
+  +cabecera(producto, bread)
+  img.construccion.responsive(src=baseUrl+"images/construccion.png", alt="en construcción" height='150px')
+  div
+    h1.producto Lo sentimos, estamos en proceso de renovación de la página
+  
+  a(href="../")
+    h2 Regresar...
+  
+
+// Add extra scripts
+block append scripts

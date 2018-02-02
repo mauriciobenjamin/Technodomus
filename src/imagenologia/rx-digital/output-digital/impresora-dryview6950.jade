@@ -1,0 +1,45 @@
+extends ../../../_layouts/productos2
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../../'
+  - var producto = 'impresora DRYVIEW 6950'
+  - var tituloPagina = "Technodomus | " + producto
+  - var bread = {Inicio: baseUrl, Imagenología: './../../', 'Radiología Digital': './../', 'Output Digital':'./'}
+  - var descripcion = "Impresora láser para radiología digital que permite obtener un rendimiento excepcional en radiología computarizada y digital, así como funciones dedicadas para impresion de mamografía de campo completo. La mejor forma de usar la película seca DryView y sus equipos de DRX y CRX Carestream como el Evolution DRX o los productos CR-Vita."
+
+block append content
+
+  .grid
+    +cardprod(producto)
+      .card-body
+        +fotoch('output-impresora6950.jpg','Impresora DRYVIEW 6850')
+        :markdown
+          El sistema de radiología láser DRYVIEW 6950 de Carestream proporciona un máximo rendimiento incluso en los entornos más exigentes. Ofrece la combinación ideal de innovación y economía, con toda la calidad de [imagen digital DryView](./pelicula_dryview.html). Puede ser usado en sistemas de Tomografía computerizada (TAC), radiografía computerizada (CR), radiología digital (DR), imágenes de resonancia magnética (IRM), mamografía digital de campo completo y mamografía CR.
+        +carestream
+        
+    +cardsubp('Características')
+      .card-body
+        :marked
+          + Láser en seco (fototermográfico)
+          + 650 ppp (pixeles por pulgada)
+          + Espaciado entre puntos de 39 micras
+          + Profundidad de píxel de 14 bits
+          + Primera impresión en 60 segundos
+          + Hasta 160 películas por hora 35x42 cm (14x17 pulg.)
+          + Hasta 250 películas por hora 20x25 cm (8x10 pulg.)
+          + Tres suministros de película
+          + Opción de clasificador de películas
+          + Control autómatico de la calidad de imágen (AIQC)
+          
+    +cardsubp('Especificaciones')
+      .card-body
+        :marked
+          Propiedades | Valor
+          :----------:|:-------:
+          Altura | 115 cm
+          Ancho | 62.6 cm
+          Profundidad | 68.6 cm
+          Peso | 147 kg
+          
+          La impresora DRYVIEW 6950 usa [película radiográfica láser DRYVIEW](./pelicula-dryview.html) en paquetes de 125 hojas que se pueden cargar a plena luz.

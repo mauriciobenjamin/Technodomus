@@ -1,0 +1,43 @@
+extends ../../../_layouts/productos2
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../../'
+  - var producto = 'Output Digital'
+  - var tituloPagina = "Technodomus | " + producto
+  - var bread = {Inicio: baseUrl, Imagenología: './../../', 'Radiología Digital': './../', 'Output Digital':'./'} 
+  - var descripcion = "Ofrecemos una amplia variedad de soluciones para dar salida a su procesos de captura digital, desde película seca DryView, monitores grado médico, quemadores de CDs, impresoras láser y estaciones de trabajo especializadas en imagenología."
+
+block append content
+
+  .grid
+    +cardprod('Una imagen, multiples salidas')
+      .card-body
+        +foto('/output-digital.jpg','Output digital')
+        p El formato digital permite una gran flexibilidad al momento de generar productos adecuados a partir de las imágenes capturadas. No sólo se queda en la pantalla del radiologo, las opciones de salida facilitan la consulta, almacenamiento y distribución de la información necesaria para un diagnóstico oportuno, evitar dobles exposiciones y mantener un mejor control del paciente y uso de los equipos. Conozca nuestra variedad de opciones para generar salidas dígitales.
+        
+    +cardsubp('Película DryView', './pelicula-dryview.html')
+      .card-body
+        +fotoch('/outputD-dryview.png','Película DRYVIEW')
+        :markdown
+          Una película seca que es el referente en el mercado de impresión de radiográfias digitales. Iniciada por Kodak y ahora con el respaldo de Carestream, la película DryView es sin duda la mejor opción para obtener imágenes físicas y es el complemento ideal de las [impresoras láser DryView](./impresora-dryview6950.html).
+      .card-footer
+        a(href="./pelicula-dryview.html") Conoce nuestra variedad de pelicula DryView
+
+    +cardsubp('Película DryView para mastografía', './pelicula-dryview-mamografia.html')
+      .card-body
+        +foto('/outputD-dryview.png','película DRYVIEW para mamografia')
+        :markdown
+          Alta densidad máxima que mejora la nítidez de sombras y áreas obscuras muy sutiles, imágenes de tamaño real y una excepcional capacidad de almacenamiento hacen de la película DryView especializada para mastografía una opción inmejorable para la detección oportuna de cualquier condición, y aprovecha al máximo las capacidades de los [equipos de impresión DryView](./impresora-dryview6950.html)
+      .card-footer
+        a(href="./pelicula-dryview-mamografia.html") Conoce la pelicula DryView especial para masto...
+
+    +cardsubp('Impresora Láser DryView 6950', './impresora-dryview6950.html')
+      .card-body
+        +fotoch('output-impresora6950.jpg','Impresora DRYVIEW 6850')
+        :markdown
+          Inovación y economía se combinan en un equipo que permite obtener el máximo provecho de sus instalaciones de imagenología, tanto de radiología digital, como de tomografía axial (TAC), resonancia magnetica (IRM). Una capacidad de trabajo que cumple con los entornos más exigentes de hasta 250 imágenes por hora.
+      .card-footer
+        a(href="./impresora-dryview6950.html") Una impresora láser eficiente
+
+

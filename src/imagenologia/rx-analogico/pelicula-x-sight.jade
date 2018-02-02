@@ -1,0 +1,25 @@
+extends ../../_layouts/productos2
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Película X-SIGHT'
+  - var tituloPagina = "Technodomus | Soluciones en " + producto  
+
+block append content
+
+  .grid
+
+    +cardprin('')
+      .card-body
+        +foto('analogico-peliculaplana.png', 'Pelicula plana')
+    
+    +cardprod('Características generales')
+      .card-body
+
+    +cardprod('Medidas disponibles')
+      .card-body
+        :marked
+          Código | Medidas | Cantidad
+          :-----:|:-------:|:-------:
+          343 | 1212 | 45045

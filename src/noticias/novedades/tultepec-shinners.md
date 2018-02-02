@@ -1,0 +1,1 @@
+Nos unimos a la pena provocada por la explosión del mercado de San Pablito en Tultepec, pero queremos también compartir una buena noticia, debida al apoyo que la fundación Shinners Internacional esta generando para varios de los menores afectados en este incidente.  

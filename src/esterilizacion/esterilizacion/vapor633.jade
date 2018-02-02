@@ -1,0 +1,22 @@
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Esterilizadores Serie 633 HC'
+  - var tituloPagina = "Technodomus | Soluciones en " + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Esterilizadores: './','Alta Temperatura': 'alta-temperatura.html', 'Serie 633 HC': '#'}  
+  
+block content
+  +cabecera(producto, bread)
+  
+  .grid
+    +cardprod("Serie 400/500 HC")
+      .card-body
+        +foto('esterilizadorVapor-serie633hcGetinge.jpeg','esterilizador serie 400/500 HC')
+        :markdown
+          #### Esterilizador de vapor
+          La serie 400/500HC de esterilizadores de vapor de Getinge ofrece una combinación inigualable de eficacia, flexibilidad en los ciclos, acceso a la información en tiempo real y control avanzado del proceso. Las unidades cuentan con una pantalla a color de 5,7' VGA con controles intuitivo que permiten monitorear el proceso con más detalle.
+        +getinge
+      .card-footer
+        a(href="http://www.getinge.com/files/HC/products/sterilization/steam-sterilizers/hs66-series/product-brochure/getinge-hs66-2295-es.pdf") Folleto de la serie HS66

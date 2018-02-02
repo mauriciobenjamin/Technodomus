@@ -1,0 +1,22 @@
+extends ../../_layouts/noticias
+
+block append config
+  - var baseUrl = './../../'
+  - var noticia = "¿Puedo ahorrar con la esterilización por plasma?"
+  - var subtitulo = "El uso de esterilizadores de plasma de peróxido de hidrógeno puede ahorrar más de 1.4 millones anuales"
+  - var fechalarga = "31 de enero de 2018"
+  - var fecha = '2018-01-31'
+  - var autor = 'Technodomus'
+  - var descripcion = "Los ahorros al reducir los daños que sufre el equipo hacen de la esterilización por plasma una alternativa de gran retorno de inversión a la tradicional esterilización por vapor"
+
+block append content
+  
+  .grid
+    +carddoble(subtitulo)
+      .card-body
+        include:marked costosPlasma.md
+        
+    +cardfoto('esterilizador-plasma-100-laoken.png','Una opcion es el esterilizador Laoken', 'El esterilizador Laoken es una opción para mejorar sus costos', '../../esterilizacion/esterilizacion/plasma.html')
+    
+block append scripts
+  include ../../_modules/popups/esterilizacionpop

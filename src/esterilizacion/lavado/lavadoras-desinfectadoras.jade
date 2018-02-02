@@ -1,0 +1,61 @@
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Lavadoras desinfectadoras'
+  - var tituloPagina = "Technodomus | Soluciones en " + producto
+  - var bread = {Inicio: baseUrl, Esterilización: '../', Lavado: './', 'Lavadoras Autómaticas': '#'}  
+  
+block content
+  +cabecera(producto, bread)
+
+  .grid
+    +cardsubp('Lavadora desinfectadora WD14', './lavadora-WD14-Tablo.html')
+      +foto('lavadora-WD14-Getinge.jpg','Lavadora WD14')
+      .card-body
+        p Lavadora de sobremesa, compacta y eficiente, para instrumental en constante uso.
+      .card-footer
+        a(href= "./lavadora-WD14-Tablo.html") Conozcala a fondo
+        
+    +cardsubp('Lavadora desinfectadora WD15', './lavadora-WD15-Claro.html')
+      +foto('Lavadora-WD15-Claro-Getinge.jpg', 'Lavadora WD15')
+      .card-body
+        p Lavadora para instalar bajo la mesa, alta capacidad y control constante del proceso gracias a su puerta de vidrio.
+      .card-footer  
+        a(href="./lavadora-WD15-Claro.html") Observe sus ventajas
+          
+    +cardsubp('Lavadoras serie 46', './lavadora-serie46.html')
+      +foto('lavadora-Serie46-Getinge.jpg', 'Lavadora Serie 46')
+      .card-body
+        p Lavadoras compactas pero con una capacidad de hasta 10 bandejas DIN. Alarmas integradas y la mejor tecnología para garantizar la seguridad de los usuarios.
+      .card-footer
+        a(href="./lavadora-serie46.html") Conozca sus prestaciones
+
+    +cardsubp('Lavadora WD46 Turbo', './lavadora-WD46-turbo.html')
+      +foto('lavadora-WD46Turbo-Getinge.jpg','Lavadora WD46 Turbo')
+      .card-body
+        p Lavadora con eficiencia mejorada gracias a su sistema turbo exclusivo de Getinge. Adecuada para volumentes de trabajo entre pequeños y medios.
+      .card-footer
+        a(href="./lavadora-WD46-turbo.html") Conoza sus características.
+
+    +cardsubp('Lavadoras serie 86', './lavadora-serie86.html')
+      +foto('lavadora-Serie86-getinge.png', 'Lavadora Serie 86')
+      .card-body
+        p Una lavadora inteligente para volumenes importantes de trabajo, ideal para centros de esterilización hospitalaria.
+      .card-footer
+        a(href="./lavadora-serie86.html") Conozca más de esta lavadora
+
+    +cardsubp('Lavadora 88 Turbo', './lavadora-88-turbo.html')
+      +foto('lavadora-88-turbo-getinge.jpg', producto)
+      .card-body
+        p Alta capacidad, eficiencia y tiempos más cortos, con la exclusiva tecnología turbo de Getinge. Un equipo que puede incrementar la disponibilidad de instrumental mejorando su atención en quirofanos.
+      .card-footer
+        a(href="./lavadora-88-turbo.html") Observe las características de esta lavadora
+     
+    +cardsubp('Lavadoras Serie CM320', './lavadora-cm320.html')
+      +foto('Lavadora-SerieCM320-Getinge.jpg', 'Lavadora CM320')
+      .card-body
+        p Lavadora multicamara de alto rendimiento y tiempos de procesamiento cortos. Lo ideal para grandes volumenes de trabajo.
+      .card-footer
+        a(href="./lavadora-cm320.html") Conozca las ventajas

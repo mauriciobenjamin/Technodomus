@@ -1,0 +1,54 @@
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Indicadores Biológicos'
+  - var tituloPagina = "Technodomus | Soluciones en " + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Validación: './', 'Indicadores Biológicos': '#'}  
+  
+block content
+  +cabecera(producto, bread)
+  
+  .grid
+    +cardprod("Instant-Mini-Bio-Plus")
+      .card-body#InstantMini
+        +foto('validacion-instant-mini-gke.png', 'Instant-Mini-Bio-Plus')
+        :markdown
+          Los indicadores Instant-Mini-Bio-Plus contienen un indicador tipo V que permite que el resultado del proceso de esterilización sea evaluado **instántaneamente** al termino del proceso de esterilización. No requiere de incubación, ahorrando tiempo de espera.
+        +gke
+        :marked
+          No. Articulo | Descripción
+          :-----------:|:----------:
+          324-555 | Indicador biológico autocontenido Instant-Mini-Bio-Plus *Geobacillus steareothermophilus* 105. Vapor. 50 pzas
+          324-655 | Indicador biológico autocontenido Instant-Mini-Bio-Plus *Geobacillus steareothermophilus* 105. Vapor. 50 pzas
+
+    +cardprod("Indicadores biológicos autocontenidos")
+      .card-body
+        +foto('validacion-indicadores-autocontenidos.png', 'Indicadores autocontenidos')
+        :markdown
+          Los indicadores Mini-Bio-Plus Autocontenidos constan de un vial de plástico con una tira de esporas y una ampolleta de vidrio que contiene un medio de cultivo y un indicador de pH. Se pueden usar en el monitoreo de rutina y validación de la mayoría de los procesos de esterilización, ya que no requieren ser análizados en el laboratorio de microbiología.
+          Se encuentran disponibles en versiones para esterilizadores de vapor, formaldehído, peróxido de hidrogeno y óxido de etileno.
+        +gke
+        :marked
+          No. Articulo | Descripción 
+          :-----------:|:----------:
+          324-505 | Indicador Biológico Autocontenido Ge ob. *Geobacillus steareothermophilus* 105. Vapor. 50 pzas
+          324-605 | Indicador Biológico Autocontenido Ge ob. *Geobacillus steareothermophilus* 106. Vapor. 50 pzas
+          327-605 | Indicador Biológico Autocontenido Ge ob. *Geobacillus steareothermophilus* 106. Peróxido de hidrogeno. 50 pzas
+          327-606 | Indicador Biológico Autocontenido Ge ob. *Geobacillus steareothermophilus* 106. Peróxido de hidrogeno. 60 pzas
+    
+    +cardprod("Incubadoras")
+      .card-body
+        +foto('validacion-incubadora-gke.png','Incubadora')
+        :markdown
+          Para incubar los indicadores biológicos sin la necesidad de enviarlos al laboratorio, nada mejor que una incubadora compacta, electrónica y de baño seco, disponible en el área de esterilización. Las incubadoras que ofrecemos estan disponibles en dos versiones con diferente temperatura, las que se pueden verificar en la pantalla que cada equipo incluye. Incluyen bloques de aluminio para incubar SCBI y Stearo-Ampollas, pero también permite la incubación de medios de cultivo.
+
+          Por separado se puede adquirir el titurador de apolletas que hace más seguro el manejo de los indicadores y reduce el riesgo de contaminación.
+        +gke
+        :marked
+          No. Articulo | Descripción 
+          :-----------:|:----------:
+          224-002 | Triturador de ampolletas para activar indicadores biológicos autocontenidos
+          610-119 | Incubadora de baño seco con bloques de alumnio. Temperatura de incubación de 37 °C
+          610-120 | Incubadora de baño seco con bloques de alumnio. Temperatura de incubación de 57 °C

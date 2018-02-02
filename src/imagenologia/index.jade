@@ -1,0 +1,71 @@
+extends ../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../'
+  - var tituloPagina = "Technodomus | Soluciones en imagenología"
+  - var descripcion = "Mejore su atención al paciente con nuestras soluciones de imagenología, como rayos X dígitales, computarizados, soluciones análogicas, salidas de sus equipos dígitales en impresoras láser, películas secas DryView y mastografía"
+
+block content
+  #parallax-imagen.jumbotron
+    h1.cabecera Soluciones en imagenología
+    
+  .grid
+    +cardprin('Imagenología')
+      +foto('imagenologia.png','imagenologia')
+      .card-body
+        p El correcto diagnóstico necesita de datos oportunos y precisos para ayudar a los pacientes. Y estos deben esta disponibles a lo largo de toda la vida del paciente para poder hacer estudios tranversales de la evolución de su estado.
+        p Por ello, la radiología y otras técnicas de imagen se han hecho herramientas indispensables al dotar al profesional de la medicina de datos reales del estado interno del organismo. Pero tan importante como la generación de imágenes es la posibilidad de <a(href="./PACS/")>acceder</a> a ellas en todo momento y tener una historia clinica completa.
+        p En Technodomus somos consciente del valor de las imagenes médicas por lo que ofrecemos las mejores soluciones para cada necesidad.
+        
+    +cardprod('Radiología digital','./rx-digital')
+      .card-body
+        +foto('cRcarestream.jpeg', 'Sistema de captura de imagenes')
+        p Las técnicas radiológicas son de sobra conocidas por sus ventajas, si a estas le añadimos la posibilidad de obtener imágenes en segundos y en medios de facil almacenamiento y distribución se obtiene un sistema que reduce los tiempos de diagnóstico, eficientiza el uso del equipo de radiología, mejora el volumen de imágenes obtenidas y da al paciente la ventaja de poder acceder facilmente a sus resultados y reducir su exposición a la radiación.
+        p Todo ello es posible con las soluciones de radiología digital y computarizada que le ofrecemos.
+        h4 
+          a(href="./rx-digital/input-digital/") Digital Input
+        h4 
+          a(href="./rx-digital/output-digital/pelicula-dryview.html") Película seca DryView
+        h4
+          a(href="./rx-digital/unidades-rx/") Unidades de Rayos X
+        h4 
+          a(href= "./rx-digital/input-digital/sistema-cr.html") Sistemas de Radiología Computarizada (CR)
+        h4 
+          a(href= "./rx-digital/input-digital/sistema-drx.html") Sistemas de Radiología Digital (DRX)
+        h4 
+          a(href="./rx-digital/input-digital/sistema-drx.html#dental") DRX Dental
+    
+    +cardprod('Radiología análoga', './rx-analogico')
+      .card-body
+        +foto('imagenologia-analoga.jpg', 'Imagenología analógica')
+        p Los sistemas de película análoga tienen un excelente desempeño en cuanto a su flexibilidad y resolución, dando seguridad al diagnóstico.
+        p La gran variedad de tamaños de películas y casetas, permite cubrir necesidades diversas y ampliar sus opciones de atención. 
+        p Para sacar todo el provecho a sus películas, contamos con la mejor selección de químicos y herramientas de procesado para que sus imágenes siempre tengan la mejor calidad.
+        h4
+          a(href="./rx-analogico/casetas.html") Casetas
+        h4 
+          a(href="./rx-analogico/pelicula-plana.html") Película plana
+        h4 
+          a(href="./rx-analogico/pelicula-mamografica.html") Película mamográfica
+        h4 
+          a(href="./rx-analogico/pelicula-dental.html") Película Dental
+        
+    +cardprod('RIS','./RIS')
+      .card-body
+        +foto('ris-ejemplo.jpg','Sistemas de Información Radiológica')
+        p Los Sistemas de Información Radiológica conocidos por sus siglas en inglés como RIS (radiological information system) conforman una pieza clave para el correcto aprovechamiento de un equipo de radiología digital.
+      .card-footer
+        a(href="./RIS") Explore las ventajas de un RIS en su flujo de trabajo. 
+    
+    +cardprod('PACS', './PACS')
+      .card-body
+        +foto('pacs-ejemplo.png', 'Sistema de Almacenamiento y Comunicación de Imágenes')
+        p Los Sistemas de Almacenamiento y Comunicación de Imágenes conocidos por sus siglas en inglés PACS (Picture Archiving and Communication System) permiten administrar los productos imagenológicos de forma centralizada, mejorando el diagnóstico y la atención al paciente. Esto incluye nuestros servicios dedicados en la nube que facilitan an las labores de tele diagnóstico.
+      .card-footer
+        ul
+          li
+            a(href="./PACS/pacs-enlanube.html") Conozca nuestros sistema PACS en la nube y sus ventajas.
+          li
+            a(href="./PACS") Otras opciones de sistemas PACS.
+

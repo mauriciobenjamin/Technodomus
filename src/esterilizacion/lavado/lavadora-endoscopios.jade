@@ -1,0 +1,63 @@
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Lavado de Endoscopios'
+  - var tituloPagina = "Technodomus | Soluciones en  " + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Lavado: './', 'Lavadora de endoscopios': '#'}  
+  
+block content
+  +cabecera(producto, bread)
+  
+  .grid
+    +cardprod('Lavadora de endoscopios CYW-501')
+      .card-body
+        +foto('lavado-lavadora-endoscopios-CYW-501-Choyang.png', 'Lavadora de endoscopios')
+        p La lavadora de endoscopios Choyang ofrece todas las características necesarias para lograr la triple protección, del paciente, el personal médico y de todos los tipos de endoscopios flexibles con lo que usted cuente.
+    
+    +cardmax('Características')
+      .card-body
+        :marked
+          + Lavado y desinfección simultanea.
+          + Probador de fugas para verificar la integridad del equipo.
+          + Un lavado y desinfección perfecto gracias a sus tres poderosos motores.
+          + Sistema de chorros a presión de multicanal que rota en un arco de 360°
+          + Sistema avanzado de filtración del agua.
+          + Sistema de disinfección de agua con lampara de UV.
+          + Sistema de control térmico para desinfectar.
+          + Sistema de autodesinfección.
+          + Sistema de purga con alcohol.
+          + Sistema de impresión dinámico.
+          + Sistema de desodorización.
+          + Sistema de apertura autómatica de puerta.
+          
+          #### Programas autómaticos
+          Modo A: Lavado-Detergente-Lavado-Desinfectante-Lavado-Alcohol-Aire.
+          
+          Modo B: Lavado-Detergente-Lavado-Aire.
+          
+          Modo C: Lavado-Desinfectante-Lavado-Aire.
+          
+          Modo D: El mismo que el A pero el desinfectante se descarga después de cada ciclo..
+          
+          ### Especificaciones
+          #### Tiempos de operacion
+          Proceso | Tiempo
+          --------|-------:
+          Lavado|10~50 s / 1~5 min
+          Desinfección|1~9 min / 10~50 min / 1~9 h
+          Detergente|10 s
+          Alcohol|5 s
+          
+          Especificación | Valor
+          ---------------|-----:
+          **Capacidad de tanques** | ----
+          Agua | 20 L
+          Desinfectante | 20 L
+          Detergente | 1 L
+          Alcohol | 1 L
+          **Acopladores** | 6 salidas en la base
+          **Descarga** | 1 salida en el card frontal / 3 salidas en la puerta frontal
+          **Peso** | 80 Kg
+          **Dimensiones** | 640x620X1050 mm

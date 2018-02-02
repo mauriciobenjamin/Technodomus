@@ -1,0 +1,15 @@
+extends ../../../_layouts/productos2
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../../'
+  - var producto = 'Estaciones de trabajo'
+  - var tituloPagina = "Technodomus | Soluciones en" + producto
+  - var bread = {Inicio: baseUrl, Imagenología: './../../', 'Radiología Digital': './../', 'Output Digital':'./'}  
+
+block append content
+
+  +cardprod('Una imagen, multiples salidas')
+    .card-body
+      +foto('/output-digital.jpg','Output digital')
+      p El formato digital permite una gran flexibilidad al momento de generar productos adecuados a partir de las imágenes capturadas. No solo se queda en pantalla, las opciones de salida facilitan la consulta, almacenamiento y distribución de la información necesaria para un diagnóstico oportuno.

@@ -1,0 +1,65 @@
+extends ../../_layouts/productos2
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Contenedores Asipco de AS'
+  - var tituloPagina = "Technodomus | " + producto
+  - var bread = {Inicio: baseUrl, 'Esterilización': './../../', 'Empaque': './../', 'Contenedores':'./contenedores.html', 'Contenedores AS':'./contenedores-as.html'}
+  - var descripcion = "Contendores de la más alta calidad y un costo contenido, una solución que le permite ahorrar a largo plazo"
+  - var cotiza = {estilos: "cotiza", ref: baseUrl + "cotiza/", fa:"info"}
+  - var canonical = "http://technodomus.com/esterilizacion/empaque/contenedores-ermis.html"
+
+block append content
+
+  .grid
+    +cardprod('Una pieza de diseño que mejora sus procesos de esterilización')
+      .card-body
+        +fotoch('contenedor-as.jpg','Contenedores AS Asipco', 'Linea de contenedores AS Asipco') 
+        p La nueva linea de contenedores de <b>AS Medizintechnik Asipco</b> ofrecen un diseño notable tanto por su estética, como por su eficiencia y durabilidad.
+        p Cada contenedor esta elaborado en aluminio robusto a prueba de golpes, el material no se doblara o abollara con el uso normal o incluso con una caída ocasional. 
+        p Las tapas son maquinadas a partir de un bloque solido de aluminio, lo que las hace más resistentes y durables que las de otros contenedores elaboradas por estampado. Un proceso de fabricación inovador.
+        p Sistema de retención de gérmenes permanente que elimina la necesidad de filtros, y los costos asociados a estos por adquisición, tiempos perdidos o fallas del material filtrante.
+        p Diseñados pensando en el usuario, poseen una ergonomía bien estudiada para facilitar su manipulación.
+          
+        +as
+            
+    +cardsubp("Características")
+      .card-body
+        :marked
+          + Materiales de alta calidad, piezas sólidas de aluminio de alto grosor. Las mejores propiedades físicas para ser usadas en un contenedor para esterilización por vapor.
+          + Juntas de silicona adheridas que evitan la acumulación de agua en la unión entre tapas y cuerpo del contenedor.
+          + La tapa posee una geometría de laberinto que permite el paso del vapor pero evita la entrada de microorganismos regulando el caudal de gases admitidos, por lo que el sistema funciona de manera continua evitando en todo momento la entrada de germenes. Es un sistema probado clínicamente y que se basa en los hallazgos del propio [Pasteur](http://es.wikipedia.com/wiki/Louis_Pasteur) al descubrir los microorganismos.
+          + Todas las piezas del contenedor como portaetiquetas, asas, cierres y herrajes se han realizado con la máxima calidad para garantizar su funcionamiento a largo plazo.También fueron diseñadas cuidadosamente para que sean ergonómicas y faciles de usar
+          + Portaetiquetas con diferentes colores para facilitar la organización del instrumental y el seguimiento de la logística propia de su área de esterilización
+          + Fácil mantenimiento y limpieza ya que se pueden procesar con cualquier solución de limpieza mecánica y térmica que use soluciones de pH neutro o ligeramente alcalino.
+          + Cumplen con las normas internacionales y europeas: **ISO 11607-1 y 11607-2, EN868-8, DIN 58953-9 y MDD 93/42/CEE**
+          + Diseño premiado con el RedDot Award 2017
+          
+        +reddot
+            
+    +cardfoto('contenedores-esquema.png', 'Esquema de funcionamiento del sistema', 'Sistema de retención de microorganismos sin filtros')
+    
+    +cardsubp("Especificaciones")
+      .card-body
+        :marked
+          Formato | Dimensiones
+          --------|-------------
+          1/1 10 | 587 x 279 x 101 mm
+          1/1 13 | 587 x 279 x 131 mm
+          1/1 15 | 587 x 279 x 146 mm
+          1/1 20 | 587 x 279 x 198 mm
+          1/1 26 | 587 x 279 x 256 mm  
+          3/4 10 | 464 x 279 x 101 mm
+          3/4 13 | 464 x 279 x 131 mm
+          3/4 15 | 464 x 279 x 146 mm
+          1/2 10 | 297 x 279 x 101 mm
+          1/2 13 | 297 x 279 x 131 mm
+          1/2 15 | 297 x 279 x 146 mm
+          1/2 20 | 297 x 279 x 198 mm
+        
+        p Colores disponibles para los portaetiquetas:
+        +muestras('gris', 'amarillo', 'naranja', 'rojo', 'verde', 'azul', 'negro')
+
+block append scripts
+  include ../../_modules/popups/esterilizacionpop

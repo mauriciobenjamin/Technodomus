@@ -1,0 +1,33 @@
+extends ./../_layouts/noticias
+
+block append config
+  - var baseUrl = './../'
+  - var noticia = "Posada Technodomus 2016"
+  - var tituloPagina = noticia
+  - var fecha = "14 de diciembre de 2016"
+  - var descripcion = "El 3 de diciembre celebramos nuestra posada, la oportunidad para que todos los que trabajamos por la salud en Technodomus festejemos un año más de esfuerzos."
+  
+block append content
+  
+  .grid
+    +cardprod('Un año más de trabajo compartido')
+      .card-body
+        h6 
+          =fecha
+        include:marked posada_2016.md
+        
+    .card
+      .card-body
+        +foto('familia_technodomus.jpg','La familia de Technodomus festejando', 'Familia Technodomus')
+        
+    .card
+      .card-body
+        +foto('pinata1.jpg','El momento de la piñata', 'El momento de la piñata')
+        
+    .card
+      .card-body
+        +foto('bengalas.jpg','Los niños de Techonodomus', 'Los niños de Technodomus')
+
+    .card
+      .card-body
+        +foto('familias.jpg','Las familias de Techonodomus', 'Las familias de Technodomus')

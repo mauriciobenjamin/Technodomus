@@ -1,0 +1,25 @@
+extends ../../_layouts/productos2
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'Película MXB'
+  - var tituloPagina = "Technodomus | Soluciones en " + producto
+  - var bread = {Inicio: baseUrl, Imagenología: './../', 'Radiología Analógica': './', 'Película Plana': '#'}  
+
+block append content
+
+  .grid
+    +cardprin('Película sensible al azul')
+      .card-body
+        +foto('analogico-peliculaMXB.png', 'Pelicula MXB')
+        p Las películas MXB 
+    
+    +cardprod('Características generales')
+      .card-body
+
+    +cardprod('Medidas disponibles')
+      .card-body
+        :marked
+          Código | Medidas | Cantidad
+          :-----:|:-------:|:-------:

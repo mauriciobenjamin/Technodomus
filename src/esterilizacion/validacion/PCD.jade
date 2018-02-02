@@ -1,0 +1,17 @@
+extends ../../_layouts/productos
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../'
+  - var producto = 'PCD'
+  - var tituloPagina = "Technodomus | Soluciones en " + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Validación: './', 'PCD': '#'}  
+  
+block content
+  +cabecera(producto, bread)
+  
+  .grid
+    +cardprod(producto)
+      .card-body
+      +foto('validacion-indicadores-bio.jpg', 'Indicadores biológicos')
+      p Indicadores muy buenos

@@ -1,0 +1,40 @@
+extends ../../_layouts/productos
+
+block append config
+
+	- var baseUrl = './../../'
+	- var producto = 'Empaque de protección'
+	- var tituloPagina = "Technodomus | Soluciones en" + producto
+	- var bread = {Inicio: baseUrl, Esterilizacion: './../', Empaque: './', Proteccion: '#'}
+
+block content
+
+	+cabecera(producto, bread)
+
+	.grid
+		+cardprod('Bolsas cubrepolvo')
+			.card-body
+				+foto('empaque-bolsa-cubrepolvo.jpg', 'Bolsas cubrepolvo')
+				:markdown
+					#### Empaque de protección
+					Bolsas diseñadas para proteger a el sistema de barrera estéril durante su transporte y almacenamiento para ampliar su vida de estante.
+				+stericlin
+				:marked
+					No. Articulo | Descripción
+					:-----------:|:----------:
+					3FSSV510102 | Bolsa Cubrepolvo 20 X 30 cm 1.000 Pzs
+					3FSSV510106 | Bolsa Cubrepolvo 25 X 40 cm 500 Pzs
+					3FSSV510110 | Bolsa Cubrepolvo 30 X 50 cm 500 Pzs
+					3FSSV510116 | Bolsa Cubrepolvo 60 X 75 cm 100 Pzs
+		
+		+cardprod('Bolsas de instrumentos')
+			.card-body
+				+foto('empaque-instrumental-cirugia.jpg', 'Bolsa de instrumentos')
+				:markdown
+					#### Orgániza, fija y protege el instrumental
+					Las bolsas de instrumentos Stericlin® protegen su instrumental de manera confiable gracias a la combinación de material no tejido resistente al proceso de esterilización y película transparente que también es esterilizable, una combinación de materiales ampliamente probada junto con sistemas de barrera esteril. Los compartimentos de la bolsa, de tamaños diferentes para todo tipo de instrumental, aseguran la fijación, rápida identificación y facilitan la remoción de los instrumentos contenidos.
+				+stericlin
+				:marked
+					No. Articulo | Descripción
+					:-----------:|:----------:
+					3FSZB730120 | Bolsa de instrumentos 52 X 21. 250 Pzas.	
