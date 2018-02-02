@@ -19,7 +19,6 @@ var karmaConf = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      './phantomjs-shims.js',
       testFiles
     ],
 
@@ -31,7 +30,8 @@ var karmaConf = function(config) {
     browserify: {
       debug: true,
       transform: [
-        require('envify')
+        require('envify'),
+        require('babelify')
       ]
     },
 

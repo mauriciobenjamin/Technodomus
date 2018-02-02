@@ -1,21 +1,20 @@
 'use strict';
 
-var path = require('path');
-var gulp = require('gulp');
-var gulpLoadPlugins = require('gulp-load-plugins');
-var browserSyncLib = require('browser-sync');
-var pjson = require('./package.json');
-var minimist = require('minimist');
-var glob = require('glob');
+import path from 'path';
+import gulp from 'gulp';
+import gulpLoadPlugins from 'gulp-load-plugins';
+import browserSyncLib from 'browser-sync';
+import pjson from './package.json';
+import minimist from 'minimist';
+import glob from 'glob';
 
 // Load all gulp plugins based on their names
 // EX: gulp-copy -> copy
-var plugins = gulpLoadPlugins();
+const plugins = gulpLoadPlugins();
 // Create karma server
-var KarmaServer = require('karma').Server;
+const KarmaServer = require('karma').Server;
 
-var config = pjson.config;
-config.defaultNotification = function(err) {
+const defaultNotification = function(err) {
   return {
     subtitle: err.plugin,
     message: err.message,
@@ -23,12 +22,15 @@ config.defaultNotification = function(err) {
     onLast: true,
   };
 };
-var args = minimist(process.argv.slice(2));
-var dirs = config.directories;
-var taskTarget = args.production ? dirs.destination : dirs.temporary;
+
+let config = Object.assign({}, pjson.config, defaultNotification);
+
+let args = minimist(process.argv.slice(2));
+let dirs = config.directories;
+let taskTarget = args.production ? dirs.destination : dirs.temporary;
 
 // Create a new browserSync instance
-var browserSync = browserSyncLib.create();
+let browserSync = browserSyncLib.create();
 
 // This will grab all js in the `gulp` directory
 // in order to load all gulp tasks
@@ -39,7 +41,7 @@ glob.sync('./gulp/**/*.js').filter(function(file) {
 });
 
 // Default task
-gulp.task('default', ['clean'], function() {
+gulp.task('default', ['clean'], () => {
   gulp.start('build');
 });
 
@@ -64,7 +66,7 @@ gulp.task('serve', [
 ]);
 
 // Testing
-gulp.task('test', ['eslint'], function(done) {
+gulp.task('test', ['eslint'], (done) => {
   new KarmaServer({
     configFile: path.join(__dirname, '/karma.conf.js'),
     singleRun: !args.watch,
