@@ -1,13 +1,13 @@
 'use strict';
 
-var path = require('path');
+import path from 'path';
 
-module.exports = function(gulp, plugins, args, config, taskTarget, browserSync) {
-  var dirs = config.directories;
-  var dest = path.join(taskTarget);
+export default function(gulp, plugins, args, config, taskTarget, browserSync) {
+  let dirs = config.directories;
+  let dest = path.join(taskTarget);
 
   // Copy
-  gulp.task('copy', function() {
+  gulp.task('copy', () => {
     return gulp.src([
       path.join(dirs.source, '**/*'),
       '!' + path.join(dirs.source, '{**/\_*,**/\_*/**}'),
@@ -16,4 +16,4 @@ module.exports = function(gulp, plugins, args, config, taskTarget, browserSync) 
     .pipe(plugins.changed(dest))
     .pipe(gulp.dest(dest));
   });
-};
+}

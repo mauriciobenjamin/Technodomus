@@ -1,12 +1,12 @@
 'use strict';
 
-var path = require('path');
+import path from 'path';
 
-module.exports = function(gulp, plugins, args, config, taskTarget, browserSync) {
-  var dirs = config.directories;
+export default function(gulp, plugins, args, config, taskTarget, browserSync) {
+  let dirs = config.directories;
 
   // Watch task
-  gulp.task('watch', function() {
+  gulp.task('watch', () => {
     if (!args.production) {
       // Styles
       gulp.watch([
@@ -39,4 +39,4 @@ module.exports = function(gulp, plugins, args, config, taskTarget, browserSync) 
       ]).on('change', browserSync.reload);
     }
   });
-};
+}

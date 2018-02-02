@@ -1,14 +1,14 @@
 'use strict';
 
-var path = require('path');
-var del = require('del');
+import path from 'path';
+import del from 'del';
 
-module.exports = function(gulp, plugins, args, config, taskTarget, browserSync) {
-  var dirs = config.directories;
+export default function(gulp, plugins, args, config, taskTarget, browserSync) {
+  let dirs = config.directories;
 
   // Clean
   gulp.task('clean', del.bind(null, [
     path.join(dirs.temporary),
     path.join(dirs.destination)
   ]));
-};
+}
