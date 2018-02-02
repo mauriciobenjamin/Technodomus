@@ -13,14 +13,14 @@ block append config
 block append content
 
   .grid
-    +panelprod(producto)
-      .panel-body
+    +cardprod(producto)
+      .card-body
         +fotoch('/outputD-dryview.png','Película DRYVIEW')
         p Una película diseñada especialmente para las impresoras láser DRYVIEW Carestream, lo que le permite obtener una imagen de calidad excepcional, bajo nivel de ruido, densidad uniforme y gran nivel de detalle que la hace un producto ideal para obtener diagnósticos confiables.
         +carestream
         
-    +panelsubp("Características")
-      .panel-body
+    +cardsubp("Características")
+      .card-body
         :marked
           * Sustrato de poliéster de 0.17 mm, durable y resistente
           * Calidad excepcional de imágenes de diagnóstico
@@ -31,8 +31,8 @@ block append content
           * Tecnología de reconocimiento de cartuchos que permite a las impresoras láser DRYVIEW reconocer el tipo, tamaño, grupo y número de hojas restantes de la película.
           * Cinco tamaños de película para toda una gama de impresoras y aplicaciones
           
-    +panelsubp("Tamaños")
-      .panel-body
+    +cardsubp("Tamaños")
+      .card-body
         :marked
           pulgadas | centímetros
           :-------:|:----------:

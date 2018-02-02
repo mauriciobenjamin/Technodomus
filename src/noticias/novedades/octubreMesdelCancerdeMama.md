@@ -1,3 +1,9 @@
+---
+title: La detección temprana
+author: Technodomus
+date: 2017-10-19
+---
+
 El cáncer de mama es el cáncer más frecuente en mujeres tanto en los países desarrollados como en los países en desarrollo y su incidencia va en aumento en el mundo en desarrollo debido, entre otros factores, al aumento en la esperanza de vida. Incluso se considera que es la segunda neoplasia más frecuente en la población general con 1.67 millones de nuevos casos diagnosticados anualmente a nivel mundial. En México, desde el 2006, el cáncer de mama desplazo al cérvico uterino como la primera causa de muerte por cáncer en mujeres.<sup id="a1">[1](#f1)</sup> Solo en el 2015 se registraron 6.252 muertes causadas por este tipo de cáncer y la tendencia es que estas aumenten.
 
 A pesar del exito de las estrategias de prevención, la detección precoz sigue siendo la piedra angular para mejorar el pronóstico y la supervivencia. En general los pronosticos serán mejores cuando la detección ocurre en las fases más tempranas. Segun datos del Instituto Nacional del Cáncer de EUA, la tasa de sobrevivencia en 5 años para mujeres con cancer en etapa 0 o I es cercana al 100%.<sup id="a2">[2](#f2)</sup> Comparativamente, la tasa de sobrevivencia actual es del 90% frente al 70% de la década de 1980 <sup id="a3">[3](#f3)</sub>

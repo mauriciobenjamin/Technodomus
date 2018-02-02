@@ -13,16 +13,16 @@ block append config
 block append content
 
   .grid
-    +panelprod(producto)
-      .panel-body
+    +cardprod(producto)
+      .card-body
         +fotoch('tapetes-silicon-colores.jpg', 'Tapetes de silicona en diferentes colores', 'Accesorios adecuados para el aprovechamiento de los contenedores de esterilización')
         p Su sistema de contenedores ya ofrece numerosas ventajas, las que pueden aumentar si lo complementa con accesorios adecuados para facilitar el procesamiento y uso del instrumental que se esterilizara en contenedores.
         p Contamos con una gama de <a href='./tapetes.html'>tapetes</a> y <a href='./soportes-universales.html'>soportes</a> que ayudan a colocar el instrumental en la posición adecuada y tenerlo listo para su uso después de la esterilización.
         
-    +panelsubp('Tapetes', './tapetes.html')
-      .panel-body
+    +cardsubp('Tapetes', './tapetes.html')
+      .card-body
         +fotoch('tapetes-silicon.jpg', 'Tapetes de silicona', 'Reduzca los problemas con el condensado y mantenga ordenado su instrumental')
     
-    +panelsubp('Soportes universales', './soportes-universales.html')
-      .panel-body
+    +cardsubp('Soportes universales', './soportes-universales.html')
+      .card-body
         +fotoch('soportes-en-uso.jpg', 'Soporte universal', 'Mantenga el equipo en la posición adecuada y facilite su acceso después de procesar')

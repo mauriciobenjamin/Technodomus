@@ -1,38 +1,53 @@
 header
-  nav.navbar.navbar-fixed-top
-    .navbar-inverse
-      .navbar-header
-        button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar-colapsada', aria-expanded='false')
-          span.sr-only Navegación
-          span.glyphicon.glyphicon-menu-hamburger
-        a.navbar-brand(href= baseUrl)
-          img(src= baseUrl + 'images/logo-diciembre.png', alt='Technodomus' height="60px")
-      .navbar-right.collapse.navbar-collapse#navbar-colapsada
-        ul.nav.navbar-nav
-          li
-            a(href= baseUrl) Inicio
-              span.sr-only (actual)
-          li.dropdown
-            a.dropdown-toggle(href="#", data-toggle="dropdown", role="button") Productos
-              span.caret
-            ul.dropdown-menu.multi-level(aria-labelledby="menu")
-              li.dropdown
-                a(href=baseUrl+"esterilizacion") Esterilización
-              li.dropdown 
-                a(href=baseUrl+"imagenologia") Imagenología
-          li
-            a(href= baseUrl + 'cotiza') Cotiza
-          li
-            a(href= baseUrl+'noticias') Noticias
-          li
-            a(href=baseUrl+'nosotros') Empresa
-          //- li
-            a(href=baseUrl+'clientes') Clientes
-        form.navbar-form.navbar-right(role='search')
-          .form-group
-            input.form-control(type='text', placeholder='Buscar...')
-          button.btn.btn-primary(type='submit')
-            span.glyphicon.glyphicon-search
+
+  nav.navbar.navbar-expand-sm.fixed-top.navbar-dark
+    a.navbar-brand(href=baseUrl) 
+      img(src= baseUrl + 'images/logoNegPar.png', alt='Technodomus' height="60px")
+    button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+      span.navbar-toggler-icon
+    .collapse.navbar-collapse#navbarSupportedContent
+      ul.navbar-nav.ml-auto.mt-lg-0
+        li.nav-item
+          a.nav-link(href= baseUrl) Inicio
+        li.nav-item.dropdown
+          a.nav-link.dropdown-toggle(href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Productos
+          .dropdown-menu(aria-labelledby="navbarDropdown")
+            a.dropdown-item(href=baseUrl + "esterilizacion") Esterilización
+            a.dropdown-item(href=baseUrl + "imagenologia") Imagenología
+        li.nav-item
+          a.nav-link(href=baseUrl+"cotiza") Cotiza
+        li.nav-item
+          a.nav-link(href=baseUrl+"noticias") Noticias
+        li.nav-item
+          a.nav-link(href=baseUrl+"nosotros") Empresa
+  //-       span.fa.fa-bars
+  //-     a.navbar-brand(href= baseUrl)
+  //-   .navbar-right.collapse.navbar-collapse#navbar-colapsada
+  //-     ul.nav.navbar-nav
+  //-       li
+  //-         a(href= baseUrl) Inicio
+  //-           span.sr-only (actual)
+  //-       li.dropdown
+  //-         a.dropdown-toggle(href="#", data-toggle="dropdown", role="button") Productos
+  //-           span.caret
+  //-         ul.dropdown-menu.multi-level(aria-labelledby="menu")
+  //-           li.dropdown
+  //-             a(href=baseUrl+"esterilizacion") Esterilización
+  //-           li.dropdown 
+  //-             a(href=baseUrl+"imagenologia") Imagenología
+  //-       li
+  //-         a(href= baseUrl + 'cotiza') Cotiza
+  //-       li
+  //-         a(href= baseUrl+'noticias') Noticias
+  //-       li
+  //-         a(href=baseUrl+'nosotros') Empresa
+  //-       //- li
+      //-     a(href=baseUrl+'clientes') Clientes
+      //- form.navbar-form.navbar-right(role='search')
+      //-   .form-group
+      //-     input.form-control(type='text', placeholder='Buscar...')
+      //-   button.btn.btn-primary(type='submit')
+      //-     span.fa.fa-search
   .sidenav.navbar
       ul.sidenav
         li.active 

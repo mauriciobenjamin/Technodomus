@@ -1,15 +1,6 @@
 // estilos de la barra de navegación superior
 @import "../../_styles/variables";
 
-.navbar-brand {
-  min-height: 7rem;
-  padding: 5px 5px;
-  img {
-    position: relative;
-    top: 10%;
-  }
-}
-
 .navbar {
   &#{&} {
     background-color: $color1;
@@ -44,32 +35,32 @@
   }
 
     ul {
-      margin-top: 12px;
+//      margin-top: 12px;
     }
 
-  li {
-    display: block;
-    color: $color3;
-    line-height: 4rem;
-    height: 4rem;
-    padding: 0;
-    display: inline-block;
-    vertical-align: middle;
-    &:hover a{
-      color: $color4;
-      background-color: inherit;
-    }
-    a {
-      color: $color2;
-      display: inline-block;
-    }
-    .dropdown-menu {
-      a {
-        color: $color1;
-        text-align: left;
-      }
-    }
-  }
+  // li {
+  //   display: block;
+  //   color: $color3;
+  //   line-height: 2rem;
+  //   height: 2rem;
+  //   padding: 0;
+  //   display: inline-block;
+  //   vertical-align: middle;
+  //   &:hover a{
+  //     color: $color4;
+  //     background-color: inherit;
+  //   }
+  //   a {
+  //     color: $color2;
+  //     display: inline-block;
+  //   }
+  //   .dropdown-menu {
+  //     a {
+  //       color: $color1;
+  //       text-align: left;
+  //     }
+  //   }
+  // }
 
   .dropdown-submenu {
     position: relative;
@@ -95,10 +86,17 @@
   }
 }
 
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255,255,255,0.7);
+  font-size: 1rem;
+  &:hover {
+    color: #ffffff;
+  }
+}
 
 // estilos de la barra lateral
 .sidenav {
-  @media screen and (max-width: $bp-m) {
+  @media screen and (max-width: $bp-sidenav) {
     left: -5rem;
     &:hover {
       left: 0;
@@ -160,17 +158,16 @@
 
   .logo {
     position: relative;
-    bottom: 12px;
+    bottom: 0.4rem;
     left: 14px;
-    padding-right: 1rem;
+    margin-right: 1.7rem;
   }
 
   .icon {
     width: 3.7rem;
-    height: 4rem;
+    height: 2.5rem;
     text-align: center;
     display: inline-block;
-    line-height: 1em;
     &+.fa-fw {};
   }
 }

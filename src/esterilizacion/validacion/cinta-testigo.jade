@@ -11,15 +11,15 @@ block content
   +cabecera(producto, bread)
   
   .grid
-    +panelprod(producto)
-      .panel-body
+    +cardprod(producto)
+      .card-body
         +foto('validacion-cinta-testigo.jpg', 'Cinta testigo')
         :marked
           Indicador de proceso que puede usarse en todos los tipos de esterilización, además de su utilidad para el sellado de paquetes. Cumple con los requerimientos del estándar internacional ISO 11140-1. Disponible para [esterilización con plasma](/esterilizacion/esterilizacion/plasma.html), óxido de etileno y [vapor](/esterilizacion/esterilizacion/alta-temperatura.html) en las marcas gke y steriCLIN.
         
-    +panelmax('gke')
+    +cardmax('gke')
       +gke
-      .panel-body
+      .card-body
         :marked
           No. Artículo | Descripción
           -------------|:----------:
@@ -27,9 +27,9 @@ block content
           212-351 | Cinta testigo para óxido de etileno *19 mm x 50 m.*
           211-350 | Cinta para enmascarar (Masking-tape) autoadherible sin indicador *19 mm x 50 m*.
           
-    +panelmax('steriCLIN')
+    +cardmax('steriCLIN')
       +stericlin
-      .panel-body
+      .card-body
         :marked
           No. Artículo | Descripción
           -------------|:----------:

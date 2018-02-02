@@ -4,17 +4,17 @@ block append config
   - var baseUrl = './../../'
   - var noticia = "Día Internacional de la Radiología"
   - var tituloPagina = noticia
-  - var fecha = "8 de noviembre de 2016"
+  - var fechalarga = "8 de noviembre de 2016"
+  - var fecha = '2016-11-08'
   - var descripcion = "Nos unimos a los festejos del Dia Internacional de la Radiología, en el aniversariod el descubrimiento de los rayos X"
+  - var autor = 'Technodomus'
+  - var subtitulo = '8 de noviembre'
   
 block append content
   
   .grid
-    +panelprod('8 de noviembre')
-      .panel-body
-        h5 Publicado por: Technodomus
-        h6 
-          =fecha
+    +carddoble(subtitulo)
+      .card-body
         :markdown
           El 8 de noviembre de 1895 el científico alemán Wilhelm Conrad Röntgen trabajando con un tubo catódico, descubre que este emite una radiación invisible al ojo humano pero capaz de atravesar distintos materiales hasta impresionar una película sensible a la luz que guardaba en un cajón cercano.
           
@@ -27,14 +27,14 @@ block append content
           Como parte de la celebración, la Sociedad Europea de Radiología premiara con registros grátis al congreso de 2017 a quienes envien fotografías de su festejo del Día Internacional de la Radiología. Consulta las [bases.](http://www.myesr.org/start/idor/)
           
           Sigue el evento en redes sociales con el hashtag [#IDoR2016](https://twitter.com/search?q=%23IDoR2016&src=tyah).
-    .panel
-      .panel-body
-        +foto('rayosX.gif', 'Primera Imagen Radiológica')
-        
-    .panel
-      .panel-body
-        +foto('imagenologia-analoga.jpg','Usos de la ragiología')
-        
-    .panel
-      .panel-body
-        +foto('imagenologia-monitor.jpeg','Radiología digital')
+    .card
+        .card-body
+          +foto('rayosX.gif', 'Primera Imagen Radiológica')
+          
+      .card
+        .card-body
+          +foto('imagenologia-analoga.jpg','Usos de la ragiología')
+          
+      .card
+        .card-body
+          +foto('imagenologia-monitor.jpeg','Radiología digital')

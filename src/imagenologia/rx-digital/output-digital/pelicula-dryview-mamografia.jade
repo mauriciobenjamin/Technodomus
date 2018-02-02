@@ -12,15 +12,15 @@ block append config
 block append content
 
   .grid
-    +panelprod(producto)
-      .panel-body
+    +cardprod(producto)
+      .card-body
         +foto('/outputD-dryview.png','película DRYVIEW para mamografia')
         :markdown
           La película radiográfica láser DRYVIEW optimizada para aplicaciones de mamografía, se complementa con la [impresora DryView 6950](./impresora-dryview6950.html). Tiene una alta densidad máxima, por lo que las sombras sutiles de la imagen aparecen totalmente nitidas. Posee una capacidad de archivado excepcional. La película radiográfica láser para mamografía DRYVIEW permite generar imágenes de tamaño real y el paquete para luz diurna proporciona una mayor facilidad de uso.
         +carestream
           
-    +panelsubp("Características")
-      .panel-body
+    +cardsubp("Características")
+      .card-body
         :marked
           * Duración en almacenamiento superior a 100 años
           * Cartuchos de películas para cargar a la luz del día
@@ -30,8 +30,8 @@ block append content
           * Gran nitidez en la reproducción de caracteres e imágenes con niveles excepcionales de resolución espacial, contraste y escala de grises
           * Adoptado a sistemas AIQC 
           
-    +panelsubp("Tamaños")
-      .panel-body
+    +cardsubp("Tamaños")
+      .card-body
         :marked
           pulgadas | centímetros
           :-------:|:----------:

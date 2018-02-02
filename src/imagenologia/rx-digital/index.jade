@@ -4,20 +4,20 @@ block append config
   //- Correct base url pathing for this page
   - var baseUrl = './../../'
   - var producto = 'Radiología Digital'
-  - var tituloPagina = "Technodomus | Soluciones en" + producto
+  - var tituloPagina = "Technodomus | Soluciones en " + producto
   - var bread = {Inicio: baseUrl, Imagenología: './../', 'Radiología Digital': './'}  
 
 block append content
 
   .grid
-    +panelprin('Incorpore un flujo digital')
-      .panel-body
+    +cardprin('Incorpore un flujo digital')
+      .card-body
         +foto('/radiologia-digital.jpg','Radiología digital')
         p Mejorar los tiempos de procesamiento de las imágenes, reducir la exposición del paciente a la radiación y eficientar el acceso a la información generada, son las principales ventajas del uso de la radiológia digital.
         p Technodomus ofrece alernativa para facilitar su transición a los sistemas digitales con soluciones Carestream.
     
-    +panelprod('Input Digital','./input-digital/')
-      .panel-body
+    +cardprod('Input Digital','./input-digital/')
+      .card-body
         +fotoch('/imagenologia-drx.jpg', 'input-digital')
         p Todo comienza con una imagen correcta, producirla requiere la combinación adecuada de pericia y equipo. Le ofrecemos los mejores equipos para aprovechar toda su experiencia en la generación de imágenes radiológicas.
         a(href="./input-digital/sistema-cr.html")
@@ -29,8 +29,8 @@ block append content
         a(href="./input-digital/pantallas.html")
           h4 Pantallas
         
-    +panelprod('Output Digital','./output-digital/')
-      .panel-body
+    +cardprod('Output Digital','./output-digital/')
+      .card-body
         +fotoch('/imagenologia-monitor.jpeg','./output-digital/')
         p Generada la imagen, una de las ventajas de los flujos de trabajo digital es la flexibilidad de salidas disponibles, que hacen mucho más accesible las imágenes que los sistemas convencionales.
         a(href="./output-digital/estaciones.html")
@@ -44,9 +44,9 @@ block append content
         a(href="./output-digital/quemadores.html")
           h4 Quemadores de medios ópticos
           
-    +panelprod('Unidades de Rayos X','./unidades-rx/')
-      .panel-body
+    +cardprod('Unidades de Rayos X','./unidades-rx/')
+      .card-body
         +fotoch('/imagenologia-unidades-rx.jpg', 'Unidad para toma de rayos X')
         p Una forma adecuada de tener un sistema total es contar con una mesa de rayos X totalmente digital, las cuales estan diseñadas para ser modulare permitiendo una configuración adaptable, tanto a su espacio, flujo de trabajo y presupuesto.
-      .panel-footer
+      .card-footer
         a(href="./unidades-rx") Conozca mejor sus opciones

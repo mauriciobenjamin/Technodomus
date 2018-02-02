@@ -3,31 +3,31 @@
 
 //'use strict';
 
-$ = jQuery = require('jquery');
-var Masonry = require('masonry-layout');
-var bootstrap = require('bootstrap');
-var imagesLoaded = require('imagesloaded');
+const $ = require('jquery');
+const bootstrap = require('bootstrap');
+const masonry = require('masonry-layout')
 
 $(function () {
   console.log('¡Technodomus te saluda!');
 });
 
-$(function() {
-  $('.carousel').carousel({
-    interval: 15000,
-    pause: false,
-    wrap: true,
-    keyboard: true
-  });
+$('.carousel').carousel({
+  interval: 15000,
+  pause: false,
+  wrap: true,
+  keyboard: true
 });
 
+var msnry = new masonry('.grid', {
+  itemSelector: '.card',
+  //percentPosition: true,
+  gutter: 15
+});
 //El formato de bloques con Masonry y control de carga de imagenes con imagesLoaded que evita superposiciones al armar la pagina
-imagesLoaded.makeJQueryPlugin( $ );
 
-$('.grid').imagesLoaded(function(){
-  var msnry = new Masonry('.grid', {
-    percentPosition: true,
-    itemSelector: '.panel',
-    gutter: 15
-  });
-});
+// imagesLoaded.makeJQueryPlugin( $ );
+//
+// $('.grid').imagesLoaded(function(){
+//   var msnry = new Masonry('.grid', {
+//   });
+// });

@@ -1,0 +1,17 @@
+extends ../../_layouts/noticias
+
+block append config
+  - var baseUrl = './../../'
+  - var noticia = "Congreso de la Sociedad Americana de Radiología"
+  - var subtitulo = "El aprendizaje automático es el novato del año en la RSNA 2017"
+  - var fechalarga = "9 de diciembre de 2017"
+  - var fecha = '2017-12-9'
+  - var autor = 'Technodomus'
+  - var descripcion = "El congreso de la Sociedad Americana de Radiología de este año demostró la cada vez mayor importancia que tiene para el área las tecnologías de inteligencia artificial."
+
+block append content
+  
+  .grid
+    +cardmax(subtitulo)
+      .card-body
+        include:marked rsna2017.md

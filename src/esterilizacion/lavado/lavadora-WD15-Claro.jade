@@ -11,8 +11,8 @@ block content
   +cabecera(producto, bread)
       
   .grid    
-    +panelprod('Lavadora y desinfectadora WD15 Claro')
-      .panel-body
+    +cardprod('Lavadora y desinfectadora WD15 Claro')
+      .card-body
         +foto('Lavadora-WD15-Claro-Getinge.jpg', 'Lavadora WD14')
         p Una rápida y atractiva lavadora desinfectadora de alta capacidad para instalar empotrada y que puede cargar hasta 6 bandejas DIN (480 x 250 x 50 mm).
         ul
@@ -24,14 +24,14 @@ block content
           li Tamaño compacto que ahorra espacio - solo 600 mm de ancho incluyendo el secador
           li Gran gama de accesorios
 
-    +panelsubp('Características Generales')
-      .panel-body
+    +cardsubp('Características Generales')
+      .card-body
         +foto('getinge-wd15-claro-uso.jpg', 'usuarios')
         p La Gentinge WD15 Claro es una lavadora rápida, de alta capacidad y atractiva para colocar en la parte baja de sus áreas de trabajo. Esta diseñada para unidades de atención sanitaria, clinicas y consultas dentales en las que se necesita un equipo compacto y que se pueda empotrar para máximizar el espacio combinandola con uno de los esterilizadores y selladoras de sobremesa Getinge.
         p La ventana de vidrio con iluminación permite una visión constante del proceso aumentando su seguridad. Esto permite observar de una pasada si los rociadores funcionan como deberían y si el instrumental a desinfectar esta colocados correctamente.
         
-    +panelsubp('Datos Técnicos')
-      .panel-body
+    +cardsubp('Datos Técnicos')
+      .card-body
         table
           colgroup
             col.column1
@@ -78,5 +78,5 @@ block content
                   td *= DIN 1/1 = 480x250x50 mm
                 tr
                   td **= SPRI I = 450x340x70 mm
-      .panel-footer
+      .card-footer
         a(href="http://www.getinge.com/files/HC/products/cleaning-disinfection/washer-disinfectors/wd15-claro/brochures/ward/getinge-wd15claro-ward-2372-es.pdf") Folleto del producto

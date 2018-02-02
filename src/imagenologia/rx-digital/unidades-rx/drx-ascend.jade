@@ -10,8 +10,8 @@ block append config
 block append content
 
   .grid
-    +panelprod(producto)
-      .panel-body
+    +cardprod(producto)
+      .card-body
         +foto('unidades-drx-ascend.png','DRX Ascend')
         :markdown
           DRX Ascend proporciona características de un sistema DR de alto rendimiento a un precio muy atractivo y adecuado para centros de diagnóstico por imagen, centros ortopédicos, servicios de urgencias y departamentos de radiología de hospitales.
@@ -21,16 +21,16 @@ block append content
           Descargue el [folleto del equipo](http://www.carestream.com.mx/DRX-Ascend_system.pdf)
         +carestream
 
-    +panelsubp('Características')
-      .panel-body
+    +cardsubp('Características')
+      .card-body
         +foto('unidades-ascend-uso.png', 'DRX Ascend en uso', 'Configuraciones adecuadas a sus necesidades')
         :markdown
           + Sistema sumamente versatil que permite la configuración del soporte de tubo, soporte de pared, la mesa y accesorios.
           + Opciones de tablero flotante estándar o mesa flotante elevable
           + Mesa flotante con elevación silenciosa que soporta hasta 295 Kg.
 
-    +panelsubp('Accesorios')
-      .panel-body
+    +cardsubp('Accesorios')
+      .card-body
         +foto('unidades-evolution-uso2.png', 'Equipo de DRX Ascend','Imágenes en segundos')
         :markdown
           + Detector DRX inalámbrico de Carestream

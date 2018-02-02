@@ -11,8 +11,8 @@ block append config
 block append content
 
   .grid
-    +panelprin(producto)
-      .panel-body
+    +cardprin(producto)
+      .card-body
         +foto('esterilizador-plasma-100-laoken.png', 'Esterilizador Laoken de 100L', 'Plasma de 100L')
         :markdown
           Un equipo equilibrado con una buena capacidad y diseño contenido. Su cámara con más de 100 L de capacidad permite la esterilización de varios sets de endoscopia de manera simultanea.
@@ -22,8 +22,8 @@ block append content
           Posee una alta eficiencia de esterilización en lúmenes que le permite esterilizar el interior de tubos de acero inóxidable de un solo canal de **500 mm** de largo y un ancho de 1 mm. En canales de polietileno o teflón puede alcanzar hasta el fondo de un tubo de **4000 mm**.
         +laoken
           
-    +panelprod("Características")
-      .panel-body
+    +cardprod("Características")
+      .card-body
         :markdown
           * Construcción de la cámara de esterilización en aluminio
           * Dos niveles de repisas corredizas
@@ -31,21 +31,22 @@ block append content
           * Pantalla táctil de 7 pulgadas
           * Impresora térmica incluida
           * 32 Mb de memoría interna para registro de los ciclos realizados
-          * Puerta vertical automática que se puede controlar desde el panel central o con interruptores de pedal
+          * Puerta vertical automática que se puede controlar desde el card central o con interruptores de pedal
           
           ### Sistema de casetes
-          * Casetes que garantizan una cantidad igual de peróxido en cada ciclo.
+          * Casetes que garantizan una cantidad uniforme de peróxido en cada ciclo.
           * Cada casete puede ser usado para 3 ciclos estandar o 6 ciclos cortos.
           
           ### Requisitos de instalación
           * Area mínima de 1.4 x 1.4 x 2 m
           * **No requiere ventilación**
-          * Conexión electrica de tres fases. No requiere conexiones de drenaje o agua corriente.
+          * Conexión electrica de tres fases. 
+          * **No requiere conexiones de drenaje o agua corriente.**
           
-    +panelsubp('Solución integral')
-      .panel-body
+    +cardsubp('Solución integral', '/solucion-integral-esterilizacion.html')
+      .card-body
         :markdown
-          En **Technodomus** nos interesa que cuente con las mejores herramientas tecnologicas para mejorar la salud de sus pacientes. Por ello le ofrecemos nuestro equipo de esterilización en la modalidad de servicio integral que incluye:
+          En **Technodomus** nos interesa que cuente con las mejores herramientas tecnologicas para la salud de sus pacientes. Por ello le ofrecemos nuestro equipo de esterilización en la modalidad de servicio integral que incluye:
           
           * Insumos del Esterilizador
           * [Materiales de empaque](./../empaque/tyvek.html) adecuados
@@ -56,8 +57,8 @@ block append content
           
           [Contactenos](mailto:info@technodomus.com) para que conozca más detalles de esta modalidad de servicio.
     
-    +paneldoble("Datos técnicos")
-      .panel-body
+    +carddoble("Datos técnicos")
+      .card-body
         :marked
           Puertas | Montaje | Volumen | Dimensiones (mm) | Temperatura de operación | Duración del ciclo
           :------:|:-------:|:-------:|:----------------:|:------------------------:|:-----------------:

@@ -3,19 +3,19 @@ extends ../../_layouts/noticias
 block append config
   - var baseUrl = './../../'
   - var noticia = "Día Mundial de la Diabetes"
-  - var fecha = "14 de noviembre de 2016"
+  - var fechalarga = "14 de noviembre de 2016"
+  - var fecha = '2016-11-14'
   - var descripcion = "Technodomus se une a las acciones del Día Mundial de la Diabetes"
+  - var autor = 'Technodomus'
+  - var titulo = 'Ojo con la Diabetes'
   
 block append content
   
   .grid
-    +panelprod('Ojo con la Diabetes')
-      .panel-body
-        h5 Publicado por: Technodomus
-        h6 
-          =fecha
+    +cardprod()
+      .card-body
         :markdown
-          **El Día Mundial de la Diabete fue creado en 1991** por la Federación Internacional de la Diabetes (FID) y la Organización Mundial de la Salud (OMS) en respuesta a la creciente preocupación por la amenaza que representa la diabetes. En 2006 se convirtio en día **oficial de las Naciones Unidas**.
+          **El Día Mundial de la Diabetes fue creado en 1991** por la Federación Internacional de la Diabetes (FID) y la Organización Mundial de la Salud (OMS) en respuesta a la creciente preocupación por la amenaza que representa la diabetes. En 2006 se convirtio en día **oficial de las Naciones Unidas**.
           
           Se trata de la campaña de sensibilización más grande del mundo, para llamar la atención sobre la importancia de la diabetes en el mundo y sus implicaciones políticas y públicas.
           
@@ -40,27 +40,27 @@ block append content
           Sigue el evento en redes sociales con el hashtag [#WDD](https://twitter.com/search?q=%23WDD2016&src=tyah&lang=es).
           
           Comparte las imágenes con tus contactos.
-          
-    .panel
-      .panel-body
+        
+    .card
+      .card-body
         +fotoch('WDD-4.jpg', 'Ojo con la diabetes')
         
-    .panel
-      .panel-body
+    .card
+      .card-body
         +fotoch('WDD-1.jpg', 'Ojo con la diabetes')
 
-    .panel
-      .panel-body
+    .card
+      .card-body
         +fotoch('WDD-2.jpg', 'Ojo con la diabetes')    
 
-    .panel
-      .panel-body
+    .card
+      .card-body
         +fotoch('WDD-infog-1.jpg', 'Ojo con la diabetes')
         
-    .panel
-      .panel-body
+    .card
+      .card-body
         +fotoch('WDD-infog-2.jpg', 'Ojo con la diabetes')
 
-    .panel
-      .panel-body
+    .card
+      .card-body
         +fotoch('WDD-infog-5.jpg', 'Ojo con la diabetes')

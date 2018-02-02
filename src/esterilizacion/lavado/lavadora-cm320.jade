@@ -11,16 +11,16 @@ block content
   +cabecera(producto, bread)
   
   .grid
-    +panelprod("CM320")
-      .panel-body
+    +cardprod("CM320")
+      .card-body
         +foto("Lavadora-SerieCM320-Getinge.jpg",producto)
         :markdown
           Lavadora desinfectadora multicámara de alto rendimiento, con capacidad de hasta 15 bandejas DIN por carga y tiempos de procesamiento cortos.
           Su diseño modular y el gran rango de accesorios que posee, la hacen un equipo fácil de adaptar a sus necesidades. 
           La carca y descarga de la lavadora es sencilla gracias a las carretillas de transporte ergónomicas. 
         +getinge
-    +panelsubp('Características Generales')
-      .panel-body
+    +cardsubp('Características Generales')
+      .card-body
         +foto('lavadora-cm320-enuso.jpg', 'Lavadora en uso')
         ul
           li Alta capacidad y volumen de trabajo.
@@ -28,8 +28,8 @@ block content
           li Construida pensando en una fácil higiene.
           li Diseño Modular.
           li Compacta.
-    +panelsubp('Datos Técnicos')
-      .panel-body
+    +cardsubp('Datos Técnicos')
+      .card-body
         :marked
           Caracteristica | Unidad | Valor 
           ---------------|:------:|:-----:
@@ -41,5 +41,5 @@ block content
           Profundidad 2 modulos | mm | 2020
           Profundidad 3 modulos | mm | 2982
           Profundidad 4 modulos | mm | 3944
-      .panel-footer
+      .card-footer
         a(href="http://www.getinge.com/files/hc/products/cleaning-disinfection/washer-disinfectors/88-turbo/BROCHURES/getinge-88turbo-1942-es-lr.pdf") Folleto del equipo.

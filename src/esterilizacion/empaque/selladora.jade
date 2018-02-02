@@ -1,0 +1,14 @@
+extends ../../_layouts/productos2
+
+block append config
+  - var baseUrl = './../../'
+  - var urlLinks = '/esterilizacion/empaque/index.html'
+  - var producto = "Selladora de bolsas para esterilización"
+  - var tituloPagina = 'Technodomus | ' + producto
+  - var descripcion = "Un equipo de sellado térmico que mejora la calidad de sus proceso de esterilización garantizando facilitando el manejo del instrumental y garantizando la validez de su esterilidad"
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Empaque: './', Selladora: "./selladora.html"}
+
+block append content
+
+  .grid
+    +cardprin(producto)

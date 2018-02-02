@@ -1,7 +1,7 @@
 // Normalize Styles
 @import 'node_modules/normalize.css/normalize';
-@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
-@import "node_modules/bootstrap-material-design/sass/bootstrap-material-design";
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import "node_modules/bootstrap-material-design/scss/bootstrap-material-design";
 @import "src/_modules/navbar/navbar.scss";
 @import "font-awesome/scss/font-awesome";
 @import "src/_modules/contacto/contacto";
@@ -33,12 +33,15 @@
 }
 
 html {
-  font-size: 14px;
+  font-size: 16px;
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-  background-color: $color5;
+  background-color: $colorfondo;
   overflow-y: scroll;
 }
 
+body {
+  background-color: $colorfondo;
+}
 // Styling on warning for users on IE7 or below
 .browsehappy {
   text-align: center;
@@ -48,9 +51,12 @@ html {
   padding: 0.5em 0;
 }
 
-.container-fluid {
-  padding: 0;
-  background-color: $colorfondo;
+main{
+  margin-top: 95px;
+  .container-fluid {
+    padding: 5px 0;
+    margin: 0;
+  }
 }
 
 img {
@@ -89,11 +95,10 @@ img {
 
 .caja-contenido {
   display: block;
-  padding: 0 2rem;
   flex-flow: row;
   margin-left: 5rem;
-  margin-top: 9rem;
-  @media screen and (max-width: $bp-m) {
+  margin-top: 1rem;
+  @media screen and (max-width: $bp-sidenav) {
     margin-left: 0;
   }
 }
@@ -172,61 +177,62 @@ img {
     cursor: pointer;
   }
   .boton-avanza {
-    @include boton($color1, '');
+    @include boton-exp($color1, '');
     position: relative;
     top: -30px;
     left: -20px;
   }
 
   .boton-tel {
-    @include boton($color1, "¡Llama!");
+    @include boton($color1);
     &:hover {
     }
   }
 
   .boton-cotiza {
-    @include boton($color1, "Cotiza aquí");
+    @include boton-exp($color1, "Cotiza aquí");
     &:hover {
     }
   }
 
   .boton-mail {
-    @include boton($color4, "escribenos");
+    @include boton($color4);
     line-height: 46px;
     &:hover {
     }
   }
 
   .boton-fb{
-    @include boton($color-faceb, "Me gusta");
+    @include boton($color-faceb);
   }
   .boton-fb:hover{
   }
 
   .boton-tw{
-    @include boton($color-twitter, "Twittea");
+    @include boton($color-twitter);
   }
   .boton-tw:hover{
   }
 
   .boton-go{
-    @include boton($color-goo, '+1');
+    @include boton($color-goo);
   }
   .boton-go:hover{
   }
 }
 
-//Paneles
-.panel {
+//cards
+.card {
   display: inline-block;
   float: left;
+  margin-bottom: 20px;
   img {
     padding-bottom: 1rem;
   }
   & table {
     width: 100%;
   }
-  @media screen and (min-width: $bp-s) {
+  @media screen {
     width: 100%;
   }
   @media screen and (min-width: $bp-m) {
@@ -237,17 +243,8 @@ img {
   }
 }
 
-.panel-2x {
+.card-2x {
   @media screen and (min-width: $bp-m) {
-    width: 100%;
-  }
-  @media screen and (min-width: $bp-l) {
-    width: 66%;
-  }
-}
-
-.panel-15x {
-  @media screen and (min-width: $bp-s) {
     width: 100%;
   }
   @media screen and (min-width: $bp-l) {
@@ -255,11 +252,22 @@ img {
   }
 }
 
-.grid {
+.card-3x {
+  width: 80%;
 }
 
-.panel-primary {
-  .panel-heading {
+.card-15x {
+  @media screen and (max-width: $bp-s) {
+    width: 100%;
+  }
+  @media screen and (min-width: $bp-l) {
+    width: 49%;
+  }
+}
+
+.card-primary {
+  .card-heading {
+    background: $color1;
     line-height: normal;
     a {
       color: $color2;
@@ -270,7 +278,7 @@ img {
   }
 }
 
-.panel-heading {
+.card-heading {
   padding: 10px 5px;
   text-align: center;
 
@@ -281,7 +289,6 @@ img {
   }
 
   &#{&} {
-    background-color: $color1;
     color: $color2;
   }
   &#{&}:hover {
@@ -293,8 +300,8 @@ img {
   }
 }
 
-.panel-principal {
-  .panel-heading {
+.card-principal {
+  .card-heading {
     background-color: $color1;
     color: $color2;
     padding: 0 0 15px 0;
@@ -440,6 +447,19 @@ textarea {
   }
 }
 
+//Jumbotron
+.jumbotron.tituloJumbo {
+  padding: 1rem;
+  background-color: $color2;
+  box-shadow: 1px 2px 9px -2px rgba(25, 25, 25, 0.7);
+}
+
+//Estilo de los post del blog
+article {
+  h1 {
+    color: $color1;
+  }
+}
 
 //Transitorios
 .construccion {
@@ -509,5 +529,7 @@ textarea {
 .gris-obscuro {
   background-color: #444;
 }
+
+
 
 //Final

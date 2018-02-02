@@ -11,8 +11,8 @@ block content
   +cabecera(producto, bread)
   
   .grid
-    +panelprod("88 Turbo")
-      .panel-body
+    +cardprod("88 Turbo")
+      .card-body
         +foto('lavadora-88-turbo-getinge.jpg', producto)
         :markdown
           #### Lavado y desinfección superior
@@ -23,8 +23,8 @@ block content
           
         +getinge
           
-    +panelsubp('Caracteristica Generales')
-      .panel-body
+    +cardsubp('Caracteristica Generales')
+      .card-body
         +foto('lavadora-88-turbo-display.jpg', 'Display de la lavadora 88')
         :markdown
           + Alto volumen de salida
@@ -33,8 +33,8 @@ block content
           + Sensores de secado autómatico
           + Capacidad para manejar gran variedad de artículos
           
-    +panelsubp('Datos Técnicos')
-      .panel-body
+    +cardsubp('Datos Técnicos')
+      .card-body
         :marked
           
         | Caracteristica | Unidad | | 
@@ -44,6 +44,6 @@ block content
         | Ancho | mm | 1270 |
         | Profundidad | mm | 990 |
         | Alto | mm | 1870 | 
-      .panel-footer
+      .card-footer
         a(href="http://www.getinge.com/files/hc/products/cleaning-disinfection/washer-disinfectors/88-turbo/BROCHURES/getinge-88turbo-1942-es-lr.pdf") Folleto del equipo.
         

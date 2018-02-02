@@ -3,14 +3,15 @@ extends ../../_layouts/noticias
 block append config
   - var baseUrl = './../../'
   - var noticia = "El procesamiento de endoscopios"
-  - var fecha = "13 de diciembre de 2016"
-  
+  - var fechalarga = "13 de diciembre de 2016"
+  - var fecha = '2016-12-13'
+  - var autor = 'Technodomus'
+  - var descripcion = "El procesamiento de los dispositivos de cirugía de mínima invasión requiere de procedimientos de esterilización especializados"
+  - var subtitulo = 'El reto de garantizar su esterilidad'
+
 block append content
   
   .grid
-    +panelmax('El reto de garantizar su esterilidad')
-      .panel-body
-        h5 Publicado por: Technodomus
-        h6 
-          =fecha
+    +cardmax(subtitulo)
+      .card-body
         include:marked esterilizacion.md

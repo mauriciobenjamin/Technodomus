@@ -9,8 +9,8 @@ block append config
 block append content
 
   .grid
-    +panelprin('producto')
-      .panel-body
+    +cardprin('producto')
+      .card-body
         +foto('analogico-peliculaplana.png', 'Pelicula plana')
         :markdown
           #### Excelente para imágenes de alta resolución y alto contraste 
@@ -25,8 +25,8 @@ block append content
 
         +carestream
     
-    +panelprod('Características generales')
-      .panel-body
+    +cardprod('Características generales')
+      .card-body
         :markdown
           + La tecnología de **T-Grain** ofrece excelentes imágenes médicas y minimiza los errores de manipulación de densidad negativa en etapa de procesamiento previo que pueden comprometer la interpretación radiográfica.
             + Cruzamiento de luz reducido sin cambio de velocidad, ofreciendo mayor detalles.
@@ -39,8 +39,8 @@ block append content
             + Velocidad de procesamiento < 40 s.
 
 
-    +panelprod('Medidas disponibles')
-      .panel-body
+    +cardprod('Medidas disponibles')
+      .card-body
         :marked
           Código | Medidas | Cantidad
           :-----:|:-------:|:-------:

@@ -1,17 +1,24 @@
 extends ./base
 
 block append config
-  - var panelp = "panel panel-primary"
+  - var cardp = "card card-primary"
   - var imgUrl = '../images/'
-  - var fecha = "21 de julio de 2016"
   
 // Add extra stylesheets
 block append stylesheets
 
 block content
- +jumbo(noticia)
-
+  +jumbo(noticia)
   
-
+  article
+    header
+      h1.headline= titulo
+      .byline
+        address
+          b Por
+            a(rel= "author" href="mailto:info@technodomus.com")= autor
+            time(pubdate datetime= fecha title= fechalarga) #{fechalarga}
+    .article-content
+  
 // Add extra scripts
 block append scripts

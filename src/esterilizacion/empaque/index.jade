@@ -1,67 +1,61 @@
-extends ../../_layouts/productos
+extends ../../_layouts/productos2
 
 block append config
   - var baseUrl = './../../'
   - var urlLinks = '/esterilizacion/empaque/'
+  - var producto = 'Empaque para esterilización'
   - var tituloPagina = 'Technodomus | Soluciones en empaque'
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Empaque: './'}  
+  - var descripcion = 'Empaques de alta calidad para garantizar que los productos esterilizados permanezcan más tiempo en condiciones de uso adecuadas'
 
-block content
-  +jumbo('Empaque para esterilización de instrumental')
+block append content
 
-  ol.breadcrumb
-    li
-      a(href="./../../") Inicio
-    li
-      a(href="./../") Esterilización
-    li.active
-      a(href="./") Empaque
-  
   .grid
-    +panelprod('Un empaque de calidad')
-      .panel-body
+    +cardprod('Un empaque de calidad')
+      .card-body
         :markdown
           Un empaque de calidad tiene que contemplar los siguientes aspectos:
           
           + [**Sistema de barrera esteril:**](./bolsas-tyvek.html) Constituye el embalaje mínimo, es la barrera que impide el ingreso de microorganismos y permite la manipulación y presentación aséptica del producto en el momento de uso.
           + [**Empaque protector:**](./proteccion.html) Su función principal es prevenir daños al sistema de barrera estéril y su contenido, desde el momento de su empaque hasta su uso.
-          + **Sellado hermético:** El sellado garantiza que el material empacado se mantuvo aislado desde la preparación hasta su distribución, conservando las condiciones que adquirió al ser esterilizado.
+          + [**Sellado hermético:**](./selladora.html) El sellado garantiza que el material empacado se mantuvo aislado desde la preparación hasta su distribución, conservando las condiciones que adquirió al ser esterilizado.
     
-    +panelsubp('Contenedores para esterilización','./contenedores.html')
-      .panel-body
+    +cardsubp('Contenedores para esterilización','./contenedores.html')
+      .card-body
         +foto('contenedor-as.jpg', 'Contendores para esterilización de usos multiples', 'Contenedores de aluminio de alta calidad')
         p Contenedores de aluminio de alto calibre, con diferentes colores para codificar las cargas, configuraciones con fondo perforado para evitar la acumulación de condensado, sistemas con filtros o sin filtros, y todas las ventajas de tener un empaque rígido, durable y completamente seguro.
               
-    +panelsubp('Accesorios para contenedores','./accesorios.html')
-      .panel-body
+    +cardsubp('Accesorios para contenedores','./accesorios.html')
+      .card-body
         +foto('tapetes-silicon-colores.jpg', 'Accesorios para contenedores de esterilización', 'Accesorios para contenedores de esterilización')
         p Los accesorios necesarios para sacar el mejor provecho de sus sistema de contenedores y facilitar su flujo de trabajo. 
         
-    +panelsubp('Papel grado médico', './papel-gm.html')
-      .panel-body
+    +cardsubp('Papel grado médico', './papel-gm.html')
+      .card-body
         +foto('empaque-papelcrepe.jpg', 'bolsas de papel')
         p El papel grado médico ofrece una alternativa económica y práctica para el empaque de piezas e instrumental que por sus dimensiones no se adaptan a las bolsas.
-      .panel-footer
+      .card-footer
         a(href="./papel-gm.html") Conoce las opciones de papel grado médico.
     
-    +panelsubp('Tyvek®', './tyvek.html')
-      .panel-body
+    +cardsubp('Tyvek®', './tyvek.html')
+      .card-body
         +foto('empaque-bolsa-tyvek.png', 'bolsas de tyvek')
         p El Tyvek® es un material no tejido a base de fibras de polietileno de alta densidad que ofrece propiedades similares al papel con una resistencia mucho mayor. Es permeable a los gases por lo que permite su uso en esterilizadores de plasma o gas. 
-      .panel-footer
+      .card-footer
         a(href="./tyvek.html") Las mejores opciones en Tyvek®.
     
-    +panelsubp('Materiales no tejidos', './notejido.html')
-      .panel-body
+    +cardsubp('Materiales no tejidos', './notejido.html')
+      .card-body
         +foto('empaque-materiales.png', 'no tejidos')
         p La solución más usada para el embalaje durante la esterilización. Una material que se asemeja al papel, en facilidad de manipulación y caida, pero con fibras de poliester que lo hacen mucho más resistente.
-      .panel-footer
+      .card-footer
         a(href="./notejido.html") Explore el material no tejido.
 
-    +panelsubp('Empaque de protección', './proteccion.html')
-      .panel-body
+    +cardsubp('Empaque de protección', './proteccion.html')
+      .card-body
         +foto('empaque-instrumental-cirugia.jpg', 'protección de instrumental')
         p Las barreras esteriles si bien son resistentes pueden llegar a dañarse durante su manipulación, por lo que un empaque de protección evita que esto suceda y garantiza periodos de almacenaje en condiciones de esterilidad más prolongados.
-      .panel-footer
+      .card-footer
         a(href="./proteccion.html") Más sobre los empaques de protección.
         
 block append scripts

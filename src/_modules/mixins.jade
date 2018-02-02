@@ -1,19 +1,19 @@
-//- Crea un panel principal de dos columnas de ancho
-mixin panelmax(titulo, link)
-  .panel.panel-default.panel-2x
-    .panel-heading
+//- Crea un card principal de dos columnas de ancho
+mixin cardmax(titulo, link)
+  .card.card-default.card-3x
+    .card-heading
       a(href=link)
         h3= titulo
-    .panel-body
+    .card-body
       if block
         block
       else
         p En construcción
 
-//- Panel de doble ancho con encabezado más grande
-mixin paneldoble(titulo,link)
-  .panel.panel-primary.panel-2x
-    .panel-heading
+//- card de doble ancho con encabezado más grande
+mixin carddoble(titulo,link)
+  .card.card-primary.card-2x
+    .card-heading
       a(href=link)
         h2= titulo
     if block
@@ -21,10 +21,10 @@ mixin paneldoble(titulo,link)
     else
       p En construcción
 
-//- Crea un panel principal con encabezado azul
-mixin panelprin(titulo, link)
-  .panel.panel-primary
-    .panel-heading
+//- Crea un card principal con encabezado azul
+mixin cardprin(titulo, link)
+  .card.card-primary
+    .card-heading
       a(href= link)
         h1= titulo
     if block
@@ -32,10 +32,10 @@ mixin panelprin(titulo, link)
     else
       p En construcción
       
-//- Panel subprincipal con encabezado más pequeño
-mixin panelsprin(titulo, link)
-  .panel.panel-primary
-    .panel-heading
+//- card subprincipal con encabezado más pequeño
+mixin cardsprin(titulo, link)
+  .card.card-primary
+    .card-heading
       a(href= link)
         h2= titulo
     if block
@@ -43,10 +43,10 @@ mixin panelsprin(titulo, link)
     else
       p En construcción
 
-//- Crea un panel simple con titulo 2        
-mixin panelprod(titulo, link)
-  .panel.panel-default
-    .panel-heading
+//- Crea un card simple con titulo 2        
+mixin cardprod(titulo, link)
+  .card.card-default
+    .card-heading
       a(href= link)
         h2= titulo
     if block
@@ -54,10 +54,10 @@ mixin panelprod(titulo, link)
     else
       p En construcción
 
-//- Crea un panel simple con titulo 3
-mixin panelsubp(titulo, link)
-  .panel.panel-default
-    .panel-heading
+//- Crea un card simple con titulo 3
+mixin cardsubp(titulo, link)
+  .card.card-default
+    .card-heading
       a(href= link)
         h3= titulo
     if block
@@ -65,28 +65,33 @@ mixin panelsubp(titulo, link)
     else
       p En construcción
 
-//- Panel foto sola
-mixin panelfoto(imagen,atText,titulo)
-  .panel.panel-default
-    .panel-body
-      img(src= baseUrl + 'images/' + imagen alt=atText title=titulo, class='img-responsive')&attributes(attributes)    
+//- card foto sola
+mixin cardfoto(imagen,atText,titulo,link)
+  .card.card-default
+    .card-body
+      if link
+        a(href= link)
+          img(src= baseUrl + 'images/' + imagen alt=atText title=titulo, class='img-fluid center')&attributes(attributes)    
+      else
+        img(src= baseUrl + 'images/' + imagen alt=atText title=titulo, class='img-fluid center')&attributes(attributes)    
 
 //- Inserta una imagen responsiva y sus texto alt
 mixin foto(imagen,atText,titulo)
-  img(src= baseUrl + 'images/' + imagen alt=atText title=titulo, class='img-responsive')&attributes(attributes)
+  img(src= baseUrl + 'images/' + imagen alt=atText title=titulo, class='img-fluid')&attributes(attributes)
 
 mixin foto_ext(imagen,atText,titulo)
-  img(src=imagen alt=atText title=titulo, class='img-responsive')&attributes(attributes)
+  img(src=imagen alt=atText title=titulo, class='img-fluid')&attributes(attributes)
 
 mixin fotoch(imagen,atText,titulo)
-  img(src= baseUrl + 'images/' + imagen alt=atText title=titulo, class='img-responsive center')&attributes(attributes)
+  img(src= baseUrl + 'images/' + imagen alt=atText title=titulo, class='img-fluid center')&attributes(attributes)
     
 //- Genera un bloque de migajas de pan
 mixin migajas(bread)
-  ol.breadcrumb
-    each val, key in bread 
-      li
-        a(href=val) #{key}
+  div(arial-label="breadcrumb")
+    ol.breadcrumb
+      each val, key in bread 
+        li.breadcrumb-item
+          a(href=val) #{key}
 
 //- Botones expansivos        
 mixin mixboton(icon, texto)
@@ -104,7 +109,7 @@ mixin botonCotiza()
         
 //- Cabecera jumbotron
 mixin jumbo(titulo)
-  .jumbotron
+  .jumbotron.tituloJumbo
     h1.producto= titulo
     if block
       block

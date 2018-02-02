@@ -1,4 +1,4 @@
-extends ../_layouts/noticias
+extends ../_layouts/base
 
 block config
   //- Correct base url pathing for this page
@@ -9,49 +9,63 @@ block config
   
 block append content
   .grid
-    +panelsprin('XVIII Congreso Nacional de Enfermería Quirúrgica', './eventos/congreso-enfermeria.html')
-      .panel-body
+    +cardsprin('¿Puedo ahorrar con la esterilización con plasma?', './novedades/costos-plasma.html')
+     .card-body
+       +fotoch('/esterilizador-plasma-100.jpg', 'Esterilizadores que ahorran financieramente')
+       p Generalmente se piensa que la esterilización por plasma es solo un gasto necesario, pero si se considera los ahorros que puede generar el menor desgaste en los equipos, puede que compense con creces la inversión.
+       a(href="./novedades/costos-plasma.html" title='¿Cuánto puede ahorar la tecnología de esterilización por plasma?')
+         h4 Conoce cuanto puedes ahorrar con el plasma
+
+    +cardsprin('Congreso de la Sociedad Americana de Radiología 2017', './novedades/rsna2017.html')
+     .card-body
+       +fotoch('/imagenologia-monitor.jpeg', 'Actualidades desde la RSNA 2017')
+       p Los radiologos estadounidenses se reunieron para conocer los avances en imagenología destancando la evolución de los sistemas de inteligencia artificial para auxiliar las labores de imagenología.
+       a(href="./novedades/rsna2017.html" title='RSNA2017')
+         h4 Te contamos que paso en el evento
+
+    +cardsprin('XVIII Congreso Nacional de Enfermería Quirúrgica', './eventos/congreso-enfermeria.html')
+      .card-body
         +foto_ext(baseUrl+'images/validacion.jpg')
         p Las profesionales de la atención quirúrgica a nivel de enfermería se reunieron en Manzanillo Colima, y nos compartieron sus inquietudes sobre la importancia de la esterilización en los procesos quirúrgicos
         a(href="./eventos/congreso-enfermeria.html", title="Congreso de Enfermería Quirúrgica")
           h4 Technodomus comparte las ventajas de la esterilización por plasma
 
-    +panelsprin('Día de la concientización sobre el cáncer de mama', './novedades/octubre2017.html')
-      .panel-body
+    +cardsprin('Día de la concientización sobre el cáncer de mama', './novedades/octubre2017.html')
+      .card-body
         +foto_ext(baseUrl+'images/logo-octubre.png', 'Technodomus participa del mes de concientización del cáncer de mama')
         p El cáncer de mama es ya la principal causa de muertes por cáncer entre mujeres en nuestro país, aún es necesario fortalecer la cultura de la prevención
         a(href="./novedades/octubre2017.html")
           h4 Conoce más sobre el cáncer de mama y protegete
           
-    +panelsprin('Nueva sucursal en el Bajío', './novedades/atencion-bajio.html')
-      .panel-body
+    +cardsprin('Nueva sucursal en el Bajío', './novedades/atencion-bajio.html')
+      .card-body
         +foto_ext('http://vivaaguascalientes.com/wp-content/uploads/2016/02/exedra.jpg', 'Nos acercamos a los estados de Aguascalientes, Guanajuato, Querétaro, San Luis Potosí' ,'Nueva sucursal Bajio')
         p Conscientes de las necesidades de productos de esterilización e imagenología en la región del Bajio hemos abierto una sucursal para mejorar nuestra atención y facilitar el acceso a la tecnología más actual e innovadora a los profesionales de salud del centro-occidented del país. Atención a cargo de <a href="mailto:mmolina@technodomus.com"> Manuel Molina</a> en el telefono <a href="tel:+5215519654158">5519654158</a>
         a(href="./novedades/antencion-bajio.html")
           h4 Inicia actividades nuestra sucursal en el Bajío.
 
-    +panelsprin('El procesamiento de endoscopios', './novedades/procesamiento-endoscopios.html')
-      .panel-body
+    +cardsprin('El procesamiento de endoscopios', './novedades/procesamiento-endoscopios.html')
+      .card-body
         p El uso de los instrumentos endoscopicos es cada vez más común, y si bien han hecho más seguros los procedimienos quirurgicos, su desinfección presenta retos partículares y la comunidad de los profesionales de la salud buscan la mejor opción para garantizar la seguridad del paciente.
         a(href="./novedades/procesamiento-endoscopios.html")
           h4 El reto de garantizar su esterilidad.
 
-    +panelsprin('Día Mundial de la Diabetes','./novedades/dia-diabetes.html')
-      .panel-body
+    +cardsprin('Día Mundial de la Diabetes','./novedades/dia-diabetes.html')
+      .card-body
         +foto('WDD-logo-date-ES-2048px.png', 'Día Mundial de la Diabetes')
         p Desde el 2009 el 14 de noviembre se celebra el Día Mundial de la Diabetes como parte de los esfuerzos difundir los efectos de esta enfermedad...
         a(href="./novedades/dia-diabetes.html")
           h4 Unete a las acciones del día.
 
-    +panelsprin('Día Internacional de la Radiología','./novedades/dia-radiologia.html')
-      .panel-body
+    +cardsprin('Día Internacional de la Radiología','./novedades/dia-radiologia.html')
+      .card-body
         +foto('rayosX.gif', 'Día Internacional de la Radiología')
         p El 8 de noviembre se celebra el descubrimiento de los rayos X y por consecuencia, el día Internacional de la Radiología...
         a(href="./novedades/dia-radiologia.html")
           h4 Conoce más de esta celebración.
         
-    +panelsprin('Seminario de septiembre 2016')
-      .panel-body
+    +cardsprin('Seminario de septiembre 2016')
+      .card-body
         +foto('seminario-septiembre-2016.jpeg', 'Seminario septiembre')
         a(href="./eventos/seminario-septiembre-2016.html")
           h4 Más información aquí.

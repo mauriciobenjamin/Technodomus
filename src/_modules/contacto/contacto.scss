@@ -1,23 +1,11 @@
 // contacto styles
-#contacto{
+.contacto{
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   color: complement($color5);
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  .panel {
-    margin: 3px 6px;
-    height: 546px;
-    @media screen and (min-width: $bp-s) {
-      width: 98%;
-    }
-    @media screen and (min-width: $bp-m) {
-      width: 48%;
-    }
-    @media screen and (min-width: $bp-l) {
-      width: 23%;
-    }
-  }
 }
 
 //ccs para hacer un mapa de google responsivo
@@ -25,6 +13,7 @@
   overflow: hidden;
   padding-bottom: 100%;
   position: relative;
+  height: 0;
   iframe {
     left: 0;
     top: 0;
@@ -34,16 +23,6 @@
   }
 }
 
-#facebook {
-  background-color: $color-faceb;
-  h2 {
-    color: $color3;
-  }
-}
-
-#twitter {
-  background-color: $color-twitter;
-  h2 {
-    color: $color2;
-  }
+.botones {
+  padding: 10px;
 }
