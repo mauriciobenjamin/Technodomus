@@ -1,10 +1,10 @@
-
 extends ../_layouts/productos
         
 block config
   //- Correct base url pathing for this page
   - var baseUrl = './../'
   - var tituloPagina = "Technodomus | Soluciones en esterilizacion"
+  - var descripcion = "Technodomus te ofrece una amplia gama de soluciones para el lavado, desinfección, esterilización, trazabilidad y validación de tus procesos, con el fin de que puedas ofrecer a tus pacientes la seguridad de que todo tu instrumental estará en las mejores condiciones."
   
 block content
   #parallax-esteril.jumbotron
@@ -16,7 +16,16 @@ block content
         +foto('contenedores-esterilizacion.jpg', 'Nuestros nuevos contenedores de esterilización', 'Conoce nuestros nuevos contenedores de esterilización')
         h4
           a(href=baseUrl+"esterilizacion/empaque/contenedores.html") Conoce nuestra nueva linea de contenedores para esterilización
-        
+    +cardprod('Desinfección de superficies', './desinfeccion/')
+      .card-body
+        +foto('caviwipes-sola-md.png', 'Caviwipes es una solución a los problemas de desinfección')
+        p El uso de antibióticos ha sido revolucionario en muchos sentidos, pero también ha propiciado el surgimiento de superbacterias que ahora amenazan la salud de quienes acuden a un hospital.
+        p Nombres como <i>Clastridum difficile</i> o <i>Staphylococcus aureus</i> resistente a la meticilina, se hacen cada vez más comunes entre el listado de los problemas de salud pública. En México, se estima que la mitad de los pacientes que ingresan a una unidad de cuidados intensivos adquieren una infección durante su estancia.
+        p Por ello, Technodomus te ofrece soluciones en desinfección que te ayudaran a darle más seguridad a tus pacientes e institución.
+      .card-footer
+        p 
+          a(href="./desinfeccion/") Conoce más de nuestras soluciones en desinfección.
+
     +cardprin('El proceso de esterilización')
       .card-body
         +foto('esterilizacion.jpeg','esterilizacion')

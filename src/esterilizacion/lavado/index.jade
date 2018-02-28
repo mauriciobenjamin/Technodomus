@@ -24,11 +24,12 @@ block append content
           ul 
             li Elimina la mayor parte de la carga microbiana.
             li Retira la suciedad y restos visibles
-            li Previene la formación de biofilms y presencia de pirogenos ya que los residuos orgánicos funcionan como barrera protectora
+            li Previene la formación de biofilms y presencia de pirógenos ya que los residuos orgánicos funcionan como barrera protectora
             li Protege al personal que de esta forma maneja material más seguro.
       .card-footer El éxito de la desinfección y esterilización depende de un buen lavado
       
-    +cardmax('¿Vale la pena realizar un lavado manual?')
+    +cardprin('¿Vale la pena realizar un lavado manual?')
+      .card-body
         table
           thead
             tr
@@ -79,13 +80,20 @@ block append content
               td.text-center 
                 +mal()
               
-        h3 Recomendaciones generales para el proceso de lavado
+        h4 Recomendaciones generales para el proceso de lavado
         ol
           li Realizar el lavado en el área designada para la descontaminación.
           li Utilizar <a href="./detergente-enzimatico.html">detergente enzimático</a> para facilitar la remoción de residuos.
           li Utilizar <a href="./detergentes.html">detergentes con pH neutro</a> ya que compatible con los materiales del equipo y no les causa deterioros a largo plazo como si lo hacen los agentes cáusticos y ácidos.
           li El cepillado debe ser suave para evitar daños en el instrumental.
-
+    
+    +cardsubp('Desinfectantes', './desinfectantes.html')
+      +foto("caviwipes-bleach.jpg", 'Desinfectantes')
+      .card-body
+        p Una vez concluido el lavado, la carga microbiana en las superficies aún puede ser muy considerable, por lo que en los instrumentos que no pueden ser esterilizados deberán desinfectarse químicamente.
+      .card-footer
+        a(href="../desinfeccion") Conoce la gama de desinfectantes
+   
     +cardsprin('Lavadoras autómaticas', './lavadoras.html')
       +foto('lavadoras-46-series-usuario-getinge.jpg', 'Lavadora en uso')
       .card-body
@@ -96,7 +104,6 @@ block append content
     +cardsprin('Insumos para lavado y cuidado de instrumental', './insumos.html')
       +foto('lavado-manual.jpg', 'lavado manual')
       .card-body
-        h3 Para lavado y cuidado de su instrumental
         p Para un buen lavado, no basta solo un excelente equipo, este requiere de insumos adecuados para realizar sus funciones. Los productos para lavado que ofrecemos no solo mejoran el rendimiento de los procesos de desinfección, sino que también estan diseñado para proteger y alargar la vida útil de su instrumental.
       .card-footer
         a(href="./insumos.html") Descubra las opciones más adecuadas para el lavado.
@@ -115,13 +122,7 @@ block append content
       .card-footer
         a(href="./insumos.html") Visita nuestro catalogo de insumos
         
-    +cardsubp('Desinfectantes', './desinfectantes.html')
-      +foto("Desinfectante-Metricide-Metrex.jpg", 'Desinfectantes')
-      .card-body
-        p Además de eliminar los residuos, el lavado debe de reducir la carga microbiana y hacer segura la manipulación del material, para lo cual es necesario el uso de desinfectantes.
-      .card-footer
-        a(href="./desinfectantes.html") Conoce la gama de desinfectantes
-          
+         
     +cardsubp('Lavadora desinfectadora WD15', './lavadora-WD15-Claro.html')
       +foto('Lavadora-WD15-Claro-Getinge.jpg', 'Lavadora WD15')
       .card-body

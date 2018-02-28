@@ -1,0 +1,5 @@
+#J&J esta considerando la venta de su división de esterilización.
+
+Según un reporte de [BloombergTechnology](https://www.bloomberg.com/news/articles/2018-02-19/j-j-is-said-to-explore-sale-of-2-billion-sterilization-division) Johnson&Johnson esta buscando compradores para su división de productos de esterilización como parte de su estrategia de venta de sus negocios secundarios.
+Si bien las intenciones de la compañía aún no se hacen públicas y es posible que no se concrete la venta, la unidad de Productos Avanzados de Esterilización (ASP por sus siglas en inglés), esta bajo revisión como parte de la estrategia de adelgazar el portafolios de la empresa, como ya sucedió en 2017 con la venta de Compeed a HRA Pharma.
+La estrategia va en conjunto con inversiones en medicamentos de nueva generación debido a la perdida de preponderancia de algunas de sus drogas más vendidas, por lo que invirtió $30 mil millones de dolares el año pasado en la adquisición de Actelion Ltd.

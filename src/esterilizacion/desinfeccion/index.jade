@@ -1,17 +1,31 @@
 extends ../../_layouts/productos2
 
 block append config
-  //- Correct base url pathing for this page
   - var baseUrl = './../../'
-  - var producto = 'Desinfectantes'
-  - var tituloPagina = "Technodomus | Soluciones en " + producto
-  - var bread = {Inicio: baseUrl, Esterilización: './../', Lavado: './', Desinfectantes:'#'}  
-  
-block content
-  
-  +cabecera(producto, bread)
-  
+  - var urlLinks = '/esterilizacion/desinfeccion/'
+  - var producto = "Desinfección de superficies"
+  - var tituloPagina = 'Technodomus | ' + producto
+  - var descripcion = "Las infecciones hospitalarias ocurren muchas veces fuera de los quirófanos, cuando bacterias y esporas especialmente resistentes se implantan en las superficies, para lo que se necesitan soluciones particulares para todos los espacios hospitalarios"
+  - var bread = {Inicio: baseUrl, Esterilización: '../', Desinfección: '#'}
+
+block append content
+
   .grid
+    +cardprin(producto)
+      .card-body
+        :marked
+          Los espacio hospitalarios son susceptibles de albergar virus, bacterias, esporas y hongos que pueden infectar a los pacientes y generar problemas de salud adicionales. Estos microorganismos con el paso del tiempo han generado una creciente resistencia, por lo que se requieren métodos de desinfección especializados y probados.
+          Las esporas de *Clastridium difficile*.
+        +metrex
+
+    +cardprod('CaviWipes™ Bleach', './caviwipes-bleach.html')
+      .card-body
+        +foto('caviwipes-bleach.jpg')
+        :markdown
+          #### Un desinfectante efectivo y fácil de aplicar
+          Las CaviWipes™ Bleach permiten conjuntar un poderoso desinfectante como el hipoclorito de sodio, con un sistema de aplicación sencillo que además permite garantizar que la concentración es siempre la adecuada. Esto permite que inactiven incluso a las esporas de *Clostridium difficile.
+      .card-footer
+        a(href="./caviwipes-bleach.html") Conoce mejor estos productos.
 
     +cardprod('CaviCide™')
       .card-body
