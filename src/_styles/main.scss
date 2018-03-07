@@ -340,11 +340,11 @@ h1 {
   @include titulos($titulo, $color3);
   line-height: 0.9em;
   @media screen and (max-width: $bp-m) {
-    @include titulos(3.5rem, $color3);
+    @include titulos(2.2rem, $color3);
     line-height: 3rem;
   }
   @media screen and (max-width: $bp-s) {
-    @include titulos(3.5rem, $color3);
+    @include titulos(2.2rem, $color3);
   }
   &.cabecera {
     color: darken($color1, 10%);;
@@ -401,6 +401,22 @@ a {
 
 .fa-2x {
   vertical-align: middle;
+}
+
+//Iframes responsivos para incertar secciones de código
+
+.contenedor-iframes {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 152%;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 //Tablas

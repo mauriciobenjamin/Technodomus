@@ -1,0 +1,31 @@
+extends ../../_layouts/noticias
+
+block append config
+  - var baseUrl = './../../'
+  - var noticia = "Seminario Tendencias en Limpieza y Esterilización"
+  - var subtitulo = "Registrate para apartar tu lugar"
+  - var fechalarga = "7 de marzo de 2018"
+  - var fecha = '2018-03-07'
+  - var autor = 'Technodomus'
+  - var descripcion = "El próximo 5 de abril en la Unidad de Congresos del Centro Médico Siglo XXI el Dr. Ulrich Kaiser impartirá un seminario donde compartirá sus experiencias en la elaboración de metodologías adecuadas para abordar la complejidad del proceso de esterilización."
+
+block append content
+  
+  .grid
+    .soloescri
+      +cardprod(subtitulo)
+        .card-body
+          :markdown
+            Los últimos años hemos visto una creciente preocupación por mejorar la seguridad de los pacientes a su paso por las instalaciones sanitarias. Contamos con el conocimiento y la tecnología suficiente para prevenir la gran mayoría de las enfermedades adquiridas en las instalaciones nosocomiales, sin embargo esto no ha sido suficiente.
+          
+            Por ello en todo el mundo se han desarrollado iniciativas para hacer que los procesos de atención hospitalaria garanticen estándares de calidad. Uno de los procesos críticos es la esterilización del instrumental quirúrgico el cual es sumamente complejo y crucial para que los pacientes que son intervenidos ya que de la calidad de la esterilización depende prácticamente las posibilidades de supervivencia del paciente.
+
+            Este reto ha llevado a la elaboración de marcos de acción que conjunten la tecnología disponible con procedimientos adecuados para verificar la fiabilidad de los procesos de esterilización. Alguien que ha participado de ester proceso es el Dr. Ulrich Kaiser, quien ha colaborado en el diseño tanto de instrumentos como de normativas para la validación de los ciclos de esterilización. 
+
+            El Dr. Kaiser nos ofrece la oportunidad de conocer los procesos más actuales para la esterilización y lavado de material quirúrgico a partir de su experiencia y de las innovaciones que el campo ha tenido en los últimos años.
+
+            Queremos que aproveches esta oportunidad, por ello el cupo al seminario es limitado, y es necesario tu registro previo para poder apartar un lugar para ti. Regístrate en el formato anexo para que puedas participar del Seminario que se realizara el 5 de abril de 2018 en la Unidad de Congresos del Centro Médico Siglo XIX.
+          
+    +carddoble('Formato de registro')
+      .card-body.contenedor-iframes
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeHpyKl0QUyQl2E5nUnlYb1ZZe8o_084dxaaKrXPuq1CMYNtw/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Cargando...</iframe>
