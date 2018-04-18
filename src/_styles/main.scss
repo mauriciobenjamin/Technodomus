@@ -64,7 +64,9 @@ img {
     max-width: 200px;
     height: 100%;
   }
-
+  .svg {
+    width: 100%
+  }
   &[alt="Kaiser"] {
     float: right;
     padding: 7px;
