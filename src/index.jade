@@ -25,7 +25,10 @@ block vars
 
 block content
   .container-fluid
-
+    div
+      a(href=baseUrl+"noticias/eventos/digitalfairs.html")
+        img.solomob.svg(src=baseUrl+"images/etiqueta-digitalfairs-p.svg", alt="Asiste a la Digital Fairs" style="width: 100%; height: auto;")
+    
     #productos.carousel.slide.hidden-sm(data-ride='carousel')
           ol.carousel-indicators.soloescri
             li(data-target="#productos" data-slide-to="0" class="active")
@@ -36,11 +39,12 @@ block content
           .carousel-inner.soloescri
           
             .carousel-item.active
-              img(src= baseUrl + "images/carrousel-seminariogke.png", alt="Te invitamos a nuestro seminario de limpieza y esterilización con el Dr. Ulrich Kaiser", title="Seminario de Limpieza y Esterilización con el director general de GKE")
+              img(src= baseUrl + "images/carrousel-digitalfairs.png", alt="Digital Fairs 2018 el 25 y 26 de abril", title="Digital Fairs 2018")
               .carousel-caption
-                a(href= baseUrl+ "noticias/eventos/registro-seminario-abril-2018.html")
-                  h1 Registro aquí.
-                  
+                h2 Asiste con nosotros
+                p 
+                  a(href= baseUrl+ "noticias/eventos/digitalfairs.html") Registrate aquí...
+            
             .carousel-item
               img(src= baseUrl + "images/carrousel-caviwipes.png", alt="Las CaviWipes Bleach solucionan problemas de desinfección en superficies", title="Un elemento ideal para reducir la incidencia de infecciones nosocomiales")
               .carousel-caption
