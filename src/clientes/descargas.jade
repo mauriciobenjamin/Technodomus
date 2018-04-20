@@ -1,0 +1,16 @@
+extends ../_layouts/productos2
+
+block append config
+  - var baseUrl = '../'
+  - var tituloPagina = "Descargas"
+  - var producto = tituloPagina
+  - var bread = {Inicio: baseUrl, Descargas: '/descargas.html'}
+  - var descripcion = "Página con contenidos, fichas técnicas, documentos científicos y otras referencias a nuestros productos de esterilización e imagenología, en particular datos de los sistemas de indicadores químicos, indicadores biológicos, eficiencia de los procesos de esterilización."
+
+block append content
+  .card.card-primary.card-full
+    .card-body
+      ul.list-group.list-group-flush
+        li.list-group-item
+          a(href="presentaciones/SeminarioLimpiezaEsterilizacion-04-2018.pdf") Diapositivas del Seminario Limpieza y Validación con el Dr. Ulrich Kaiser 
+            span.alingizq.icon.fa.fa-file-pdf-o.fa-2x(aria-hidden="true")
