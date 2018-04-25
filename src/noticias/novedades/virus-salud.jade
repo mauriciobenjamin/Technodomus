@@ -1,0 +1,17 @@
+extends ../../_layouts/noticias
+
+block append config
+  - var baseUrl = './../../'
+  - var noticia = "Virus de computador ataca de forma especifica al sector salud"
+  - var subtitulo = "La infección ocurre especialmente en equipos obsoletos"
+  - var fechalarga = "25 de abril de 2018"
+  - var fecha = '2018-04-25'
+  - var autor = 'Technodomus'
+  - var descripcion = "Un grupo de hackers parece interesado en extraer información de los equipos de servicios de salud, en particular datos de los pacientes"
+  
+block append content
+  
+  .grid
+    +cardmax(subtitulo)
+      .card-body
+        include:marked hackers-salud.md
