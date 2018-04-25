@@ -55,7 +55,7 @@ main{
   margin-top: 95px;
   .container-fluid {
     padding: 5px 0;
-    margin: 0;
+    margin-bottom: 20px;
   }
 }
 
@@ -226,7 +226,6 @@ img {
 //cards
 .card {
   display: inline-block;
-  float: left;
   margin-bottom: 20px;
   img {
     padding-bottom: 1rem;
@@ -265,6 +264,10 @@ img {
   @media screen and (min-width: $bp-l) {
     width: 49%;
   }
+}
+
+.card-full {
+  width: 100%
 }
 
 .card-primary {
@@ -499,6 +502,35 @@ article {
   @media screen and (min-width: $bp-m) {
     display: none;
   }
+}
+
+.snackbar {
+  visibility: hidden;
+  min-width: 500px;
+  margin-left: 250px; /*Se divide el ancho mínimo entre dos*/
+  background-color: color4;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  &.show {
+    visibility: visible;
+    animation: fadein 0.5s fadeout 0.5s 2.5s;
+  }
+}
+
+@keyframes fadein {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
 }
 
 // Estilos para generar muestrarios de color
