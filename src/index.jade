@@ -26,8 +26,8 @@ block vars
 block content
   .container-fluid
     div
-      a(href=baseUrl+"noticias/eventos/digitalfairs.html")
-        img.solomob.svg(src=baseUrl+"images/etiqueta-digitalfairs-p.svg", alt="Asiste a la Digital Fairs" style="width: 100%; height: auto;")
+      //- a(href=baseUrl+"noticias/eventos/digitalfairs.html")
+      //-   img.solomob.svg(src=baseUrl+"images/etiqueta-digitalfairs-p.svg", alt="Asiste a la Digital Fairs" style="width: 100%; height: auto;")
     
     #productos.carousel.slide.hidden-sm(data-ride='carousel')
           ol.carousel-indicators.soloescri
@@ -39,12 +39,12 @@ block content
           .carousel-inner.soloescri
           
             .carousel-item.active
-              img(src= baseUrl + "images/carrousel-digitalfairs.png", alt="Digital Fairs 2018 el 25 y 26 de abril", title="Digital Fairs 2018")
+              img(src= baseUrl + "images/carrousel-contenedores.png", alt="Nueva linea de contenedores para esterilización", title="Presentamos dos opciones de contenedores para esterilización de alta calidad")
               .carousel-caption
-                h2 Asiste con nosotros
-                p 
-                  a(href= baseUrl+ "noticias/eventos/digitalfairs.html") Registrate aquí...
-            
+                h2 Conoce nuestra nueva linea de contenedores
+                p Contenedores para esterilización de la más alta calidad diseñados para ser durables y fáciles de usar a la vez. 
+                  a(href=baseUrl+'esterilizacion/empaque/contenedores.html') Más detalles...
+                  
             .carousel-item
               img(src= baseUrl + "images/carrousel-caviwipes.png", alt="Las CaviWipes Bleach solucionan problemas de desinfección en superficies", title="Un elemento ideal para reducir la incidencia de infecciones nosocomiales")
               .carousel-caption
@@ -52,12 +52,6 @@ block content
                 p Capaces de eliminar bacterias resistentes a los antibióticos y virus.
                   a(href= baseUrl+ "esterilizacion/desinfeccion/caviwipes-bleach.html") Conocelas...
             
-            .carousel-item
-              img(src= baseUrl + "images/carrousel-contenedores.png", alt="Nueva linea de contenedores para esterilización", title="Presentamos dos opciones de contenedores para esterilización de alta calidad")
-              .carousel-caption
-                h2 Conoce nuestra nueva linea de contenedores
-                p Contenedores para esterilización de la más alta calidad diseñados para ser durables y fáciles de usar a la vez. 
-                  a(href=baseUrl+'esterilizacion/empaque/contenedores.html') Más detalles...
 
             .carousel-item
               img(src= baseUrl + "images/carrouselCarestream.jpg", alt="impresora DryView", title="Salida dígital en las películas secas DryView de Carestream")
