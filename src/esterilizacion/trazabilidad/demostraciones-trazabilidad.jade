@@ -1,0 +1,28 @@
+extends ../../_layouts/productos2
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../../'
+  - var producto = 'Taller de trazabilidad'
+  - var tituloPagina = "Technodomus | " + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Trazabilidad: './'}  
+
+block append content
+
+  .grid
+    +cardprod('Lleva las mejores prácticas a tu CEyE de forma sencilla')
+      .card-body
+        :markdown
+          La seguridad de todos los procesos que se realizan en un hospital es indispensable para garantizar la calidad de la atención y que el ingreso de un paciente no se convierta en un riesgo para su salud.
+
+          Esto no solo afecta a los pacientes, 	un hospital con altas tasas de 	infecciones nosocomiales gasta más en la atención a problemas que pudieron 	ser evitados en un origen y expone su 	prestigio.
+
+          Estas situaciones pueden ser evitadas, pero es responsabilidad de todos en el 	hospital el lograrlo. Las Centrales de 	Esterilización son claves en este 	proceso y por lo mismo esta sometidas a 	un escrutinio permanente. Para cumplir 	con esta expectativa, las CEyEs 	deberían contar con documentación de 	todos sus procesos, de modo que cada 	instrumento y material que es 	esterilizado cuente con información 	suficiente para trazar toda su 	trayectoria desde que llega a la CEyE hasta que es usado.
+
+          El objetivo de este taller es que 	conozca un sistema que le permite 	**documentar de forma clara y precisa 	cada paquete que se esteriliza**, de 	un modo fácil, rápido, eficiente y 	robusto, sin tener que recurrir a una 	solución costosa o que requiera 	numerosos equipos extra. Es una 	solución que se adapta a su entorno de 	trabajo mejorando la relación de 	seguridad y eficiencia de los procesos 	de su CEyE.
+
+          Si esta interesado en conocerla, 	envienos sus datos para platicar con 	usted y poder realizar un taller que le 	permita evaluar las ventajas de un 	procedimiento de trazabilidad manual.
+
+    +carddoble('Registrate')
+      .card-body.contenedor-iframes
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSengxFwX0dCQWjuoomHkBCNVj4549ITGO0lNWfNSVZWpZ-A6g/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Cargando...</iframe>
