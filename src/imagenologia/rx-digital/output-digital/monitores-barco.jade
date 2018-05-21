@@ -1,0 +1,16 @@
+extends ../../../_layouts/productos2
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = './../../../'
+  - var producto = 'Monitores grado médico Barco'
+  - var tituloPagina = "Technodomus | Soluciones en" + producto
+  - var bread = {Inicio: baseUrl, Imagenología: './../../', 'Radiología Digital': './../', 'Output Digital':'./'}
+
+block append content
+
+  +cardprod('Más precisión en tu diagnóstico')
+    .card-body
+      +foto('/output-digital.jpg','Output digital')
+      p Para generar diagnósticos precisos es necesario contar con salidas que permitan reproducir las más sutiles variaciones en las imágenes médicas. En el mercado existen excelentes monitores, pero no estén diseñados para generar imágenes con una calidad homogenea en cada pixel, ni para mantener un desempeño adecuado a lo largo de su ciclo de vida.
+      p Para los casos en que es crucial una imagen intida y estable, los monitores grado médico de Barco son la opción.
