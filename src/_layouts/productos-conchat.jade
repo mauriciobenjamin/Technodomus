@@ -1,0 +1,19 @@
+extends ./base
+
+block append config
+  - var cardp = "card card-primary"
+  - var columna = "col-xs-12 col-md-6"
+  - var imgUrl = '../images/'
+  - var bread = {Inicio: baseUrl}
+  - var cotiza = {estilos: "cotiza", ref:"./cotiza/", fa:"info"}
+  
+// Add extra stylesheets
+block append stylesheets
+
+block content
+  //- Provides layout level markup
+  .layout-wrapper.productos
+    block productos
+    
+// Add extra scripts
+block append scripts

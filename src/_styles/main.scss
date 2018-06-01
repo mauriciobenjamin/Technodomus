@@ -245,12 +245,7 @@ img {
 }
 
 .card-2x {
-  @media screen and (min-width: $bp-m) {
-    width: 100%;
-  }
-  @media screen and (min-width: $bp-l) {
-    width: 49%;
-  }
+  width: 100%;
 }
 
 .card-3x {
