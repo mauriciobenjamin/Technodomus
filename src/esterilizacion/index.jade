@@ -1,21 +1,22 @@
 extends ../_layouts/productos
         
-block config
+block append config
   //- Correct base url pathing for this page
   - var baseUrl = './../'
   - var tituloPagina = "Technodomus | Soluciones en esterilizacion"
   - var descripcion = "Technodomus te ofrece una amplia gama de soluciones para el lavado, desinfección, esterilización, trazabilidad y validación de tus procesos, con el fin de que puedas ofrecer a tus pacientes la seguridad de que todo tu instrumental estará en las mejores condiciones."
-  
+
 block content
   #parallax-esteril.jumbotron
     h1.cabecera Soluciones en esterilización
-  
-  .grid
+    
+  .grid  
     .card
       .card-body
         +foto('contenedores-esterilizacion.jpg', 'Nuestros nuevos contenedores de esterilización', 'Conoce nuestros nuevos contenedores de esterilización')
         h4
           a(href=baseUrl+"esterilizacion/empaque/contenedores.html") Conoce nuestra nueva linea de contenedores para esterilización
+          
     +cardprod('Desinfección de superficies', './desinfeccion/')
       .card-body
         +foto('caviwipes-sola-md.png', 'Caviwipes es una solución a los problemas de desinfección')
@@ -46,12 +47,8 @@ block content
     +cardprod('Esterilización', './esterilizacion/')
       .card-body
         +foto('esterilizador-plasma-100-laoken.png', 'Esterilizadores', 'Esterilizador Laoken Plasma 100')
-        p Los esterilizadores que ofrece Technodomus cubren una amplia gama de necesidades y de atención de diferentes tipos de material e instrumental a esterilizar.
-        p Contamos con equipos de baja y alta temperatura, con tecnologías de probada eficacia como el vapor, así como sistemas prácticos que minimizan el desgaste del equipo, como el plasma de peróxido.
-        h4 
-          a(href= baseUrl + 'esterilizacion/esterilizacion/baja-temperatura.html') Esterilizadores de baja temperatura
-        h4 
-          a(href= baseUrl + "esterilizacion/esterilizacion/alta-temperatura.html") Esterilizadores de alta temperatura
+        p Nuestros esterilizadores estan pensados para las necesidades de un hospital moderno que realiza procedimientos de cirugía minimamente invasiva y/o de alta especialidad.
+        p Contamos con equipos de baja temperatura, con tecnologías de plasma de peróxido de hidrógeno que es un método altamente eficaz para la esterilización de instrumental complejo y que no soporta alta temperatura.
         h4
           a(href= baseUrl + "esterilizacion/esterilizacion/plasma.html") Esterilizadores de plasma de peróxido de hidrogéno
       .card-footer

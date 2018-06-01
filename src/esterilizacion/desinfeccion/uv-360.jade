@@ -1,0 +1,52 @@
+extends ../../_layouts/productos2
+
+block append config
+  - var baseUrl = './../../'
+  - var urlLinks = '/esterilizacion/desinfeccion/'
+  - var producto = "Lampara UV para desinfección de superficies UV-360"
+  - var tituloPagina = 'Technodomus | ' + producto
+  - var descripcion = "Las lamparas UV de espectro C de UVDI eliminan los microorganismo más resistentes como las esporas de Clostridium difficile en solo 10 minutos a la distancia adecuada. Sin desechos, ni peligros para el personal, el sistema UV-360 ha sido probado en entornos clínicos donde junto con protocolos adecuados de limpieza elimina a los microorganismos más resistentes."
+  - var bread = {Inicio: baseUrl, Esterilización: '../', Desinfección: './', 'CaviWipes™ Bleach': "#"}
+
+block append content
+
+  .grid
+    +cardprin(producto)
+      .card-body
+        :markdown
+          ### Toallas desechables impregnadas con cloro CaviCide™
+          
+          Las CaviWipes™ que usted ya conoce, ahora saturadas con una solución de hipoclorito de sodio con la tecnología *Enhanced Chlorine Technology™* que las hacen efectivas contra 41 microorganismos relevantes, incluyendo la esporas de *C. diff*. Solo necesitan 3 minutos, se se usan directamente en superficies duras no porosas, para eliminar a estos patógenos y muchos más que significan riesgos para la salud de pacientes y personal de las instituciones nosocomiales.
+
+          A pesar de su eficiencia contra los microorganismos, no constituyen un riesgo para el usuario y es posible su manipulación sin equipo de protección personal lo que agiliza su uso en todo tipo de ambientes.
+        +metrex
+
+    +cardprod('')
+      .card-body
+        +foto('caviwipes-sola-md.png')
+        :markdown
+          + Las CaviWipes™ Bleach son eficaces contra:
+            + Bacterias resistentes a antibióticos como *Staphylococcus aureus* resistente a la meticilina o el *Enterococcus* resistente a la vancomicina.
+            + Virus
+            + Hongos
+          + Contienen la concentración recomendada por el CDC de 1:10 de una disolución de hipoclorito de sodio al 5%, suficiente para exceder las 5000 ppm de cloro necesarias para desactivar las esporas de *C. diff*.
+          + A pesar de su concentración, las CaviWipes™ son seguras de usar sin equipo de protección especial, si bien se recomienda su uso para evitar irritación.
+          + Puede ser usada como una solución de un solo paso, ya que limpia y desinfecta.
+          + Bajo nivel de olor, lo que reduce el tiempo de espera después de su uso.
+
+    +cardprod('Presentación')
+      .card-body
+        :marked
+          No. Artículo | Descripción
+          :-----------:|:-----------:
+          13-9100 | Caja c/12 botes (90 toallas c/u)
+
+          ### Usos sugeridos
+          + Quirófanos
+          + Salas de emergencia
+          + Centros de endoscopia
+          + Centrales de Equipos y Esterilización (CEyEs)
+          + Ambulancias
+          + Unidades neonatales
+          + Laboratorios
+          + Usos hospitalarios, como escuelas, oficinas e incluso en el hogar.
