@@ -9,7 +9,15 @@ block config
   
 block append content
   .grid
-    +cardsprin('Virus de computo ataca al sector salud')
+  
+    +cardsprin('Mejora tus empaques "pouch" con un correcto sellado', './novedades/sellado.html')
+      .card-body
+        +foto('empaque-instrumental.jpg', 'Mejore el sellado del empaque con sencillos consejos', 'Empaque de instrumental')
+        p El empaque es un punto crítico del proceso de estarilización ya que evita la reinfección del material. En este sentido, el sellado es escencial para que el empaque mantenga su integridad. En este artículo se mencionan algunas prácticas para mejorar el proceso de sellado.
+        a(href="./novedades/sellado.html" title="Mejores prácicas de sellado")
+          h4 Más información.
+
+    +cardsprin('Virus de computo ataca al sector salud', './novedades/virus-salud.html')
       .card-body
         p Un virus dectado en equipos en EUA, Europa y Asía tiene una alta prevalencia entre el sector salud y hace suponer que fue diseñado para atacar este tipo de usuarios.
         a(href="./novedades/virus-salud.html" title="Virus ataca al sector salud")

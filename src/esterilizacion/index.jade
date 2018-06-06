@@ -1,7 +1,6 @@
-extends ../_layouts/productos
+extends ../_layouts/productos2
         
 block append config
-  //- Correct base url pathing for this page
   - var baseUrl = './../'
   - var tituloPagina = "Technodomus | Soluciones en esterilizacion"
   - var descripcion = "Technodomus te ofrece una amplia gama de soluciones para el lavado, desinfección, esterilización, trazabilidad y validación de tus procesos, con el fin de que puedas ofrecer a tus pacientes la seguridad de que todo tu instrumental estará en las mejores condiciones."
@@ -11,7 +10,24 @@ block content
     h1.cabecera Soluciones en esterilización
     
   .grid  
-    .card
+    +cardprin('El proceso de esterilización')
+      +foto('esterilizacion.jpeg','esterilizacion')
+      .card-body          
+      p El manejo de material médico requiere un proceso que garantice su esterilidad al momento de usarse. Para ello, todo equipo y material debería de pasar por un proceso que incluya:
+        ol
+          li 
+            a(href="./lavado/") Lavado
+          li
+            a(href="./empaque/") Empaque
+          li
+            a(href="./esterilizacion/") Esterilización
+          li
+            a(href="./validacion/") Validación
+          li
+            a(href="./trazabilidad/") Trazabilidad
+        p Para cada paso del proceso, Technodomus le ofrece las mejores alternativas para que sus procesos médicos cuenten siempre con material esteril y en buenas condiciones.
+
+    +cardprod('Contenedores', './empaque/contenedores.html')
       .card-body
         +foto('contenedores-esterilizacion.jpg', 'Nuestros nuevos contenedores de esterilización', 'Conoce nuestros nuevos contenedores de esterilización')
         h4
@@ -26,23 +42,6 @@ block content
       .card-footer
         p 
           a(href="./desinfeccion/") Conoce más de nuestras soluciones en desinfección.
-
-    +cardprin('El proceso de esterilización')
-      .card-body
-        +foto('esterilizacion.jpeg','esterilizacion')
-        p El manejo de material médico requiere un proceso que garantice su esterilidad al momento de usarse. Para ello, todo equipo y material debería de pasar por un proceso que incluya:
-        ol
-          li 
-            a(href="./lavado/") Lavado
-          li
-            a(href="./empaque/") Empaque
-          li
-            a(href="./esterilizacion/") Esterilización
-          li
-            a(href="./validacion/") Validación
-          li
-            a(href="./trazabilidad/") Trazabilidad
-        p Para cada paso del proceso, Technodomus le ofrece las mejores alternativas para que sus procesos médicos cuenten siempre con material esteril y en buenas condiciones.
 
     +cardprod('Esterilización', './esterilizacion/')
       .card-body
@@ -112,6 +111,3 @@ block content
           a(href=baseUrl+"validacion/documentacion.html", title="Documentación manual") documentación manual.
       .card-footer
         a(href=baseUrl+"esterilizacion/trazabilidad") Adentrese en las ventajas de un sistema de trazabilidad avanzado
-
-block append scripts
-  include ../_modules/popups/esterilizacionpop
