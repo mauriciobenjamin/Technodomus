@@ -245,11 +245,17 @@ img {
 }
 
 .card-2x {
-  width: 100%;
+  width: 90%;
+  padding: 30px;
+  @media screen and (max-width: $bp-m) {
+    padding: 10px;
+    width: 98%;
+    align-self: center;
+  }
 }
 
 .card-3x {
-  width: 80%;
+  width: 90%;
 }
 
 .card-15x {

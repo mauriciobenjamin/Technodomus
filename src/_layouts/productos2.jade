@@ -10,11 +10,6 @@ block append stylesheets
 
 block content
  +cabecera(producto, bread)
- .botones.boton-flotante
-    div(class="boton boton-#{cotiza.estilos}")
-      a(href= baseUrl + "#{cotiza.ref}")
-        i.fa.fa-2x(class="fa-#{cotiza.fa}")
-
   //- Provides layout level markup
   .layout-wrapper.productos
     block productos
