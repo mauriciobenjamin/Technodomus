@@ -31,6 +31,17 @@ mixin cardprin(titulo, link)
       block
     else
       p En construcción
+
+//- Card para usar todo el espacio que sobre en horizontal
+mixin cardextra(titulo, link)
+  .card.card-primary.card-15x
+    .card-heading
+      a(href= link)
+        h1= titulo
+    if block
+      block
+    else
+      p En construcción
       
 //- card subprincipal con encabezado más pequeño
 mixin cardsprin(titulo, link)
