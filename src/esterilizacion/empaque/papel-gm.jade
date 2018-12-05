@@ -6,27 +6,18 @@ block append config
   - var producto = 'Papel Grado Médico'
   - var tituloPagina = "Technodomus | Soluciones en " + producto
   - var bread = {Inicio: baseUrl, Esterilización: './../', Empaque: './','Papel Grado médico': '#'}  
-  - var descripcion = "Contamos con bolsas de papel grado médico elaboradas a partir de fibras de celulosa 100%, que permiten tener un empaque económico y efectivo"
+  - var descripcion = "Contamos con bolsas de mixtas de papel grado médico elaboradas a partir de fibras de celulosa 100% y un film plástico transparente, que permiten tener un empaque económico y efectivo"
   
 block content
   +cabecera(producto, bread)
 
   .grid
-    +cardprod('Papel crepado')
-      .card-body
-        +foto('empaque-papelcrepe.jpg', 'material para envolver')
-        :markdown
-          ####Envoltura para instrumental
-          El papel crepado se elabora a partir de 100% fibras de celulosa de grado médico, lo que permite combinar un empaque económico y efectivo. Es especialmente adecuado para empacar instrumentos ligeros y juegos de instrumental. También es posible combinarlo con otros materiales como [no tejidos](./notejido.html) para lograr una barrera de mayor calidad sin importar el color o el tamaño. Se puede auxiliar de loas normas internacionales, como la [DIN 58953 parte 7](https://www.beuth.de/en/standard/din-58953-7/121371019) u otras semejantes para aprovechar sus capacidades.
-        +stericlin
-        
-        
     +cardprod("Bolsa mixta")
       .card-body
         +foto('empaque-bolsamixta-stericlin.jpg', 'Bolsas de papel')
         :markdown
           ####Papel grado médico y película plástica
-          Prácticamente el sistema universal de envasado para esterilización, ideal para empacar todos los instrumentos de peso medio y ligero. El empaque ya cuenta con tres indicadores de esterilización  impresos en la costura lateral para vapor, oxido de etileno y formaldehído.
+          Prácticamente el sistema universal de envasado para esterilización, ideal para empacar todos los instrumentos de peso medio y ligero. El empaque ya cuenta con tres indicadores de esterilización  impresos en la costura lateral para vapor, oxido de etileno y formaldéhido.
           El papel kraft de la parte trasera es permeable a los vapores y gases de esterilización, pero es una barrera resistente contra los germenes. Se pueden adquirir con fuelle para aumentar su capacidad y empaquetar materiales más voluminosos.
         
         +stericlin

@@ -6,4 +6,4 @@ La visión de nuestra empresa no acaba en la venta del producto, ofrecemos tambi
 
 En la busqueda de opciones compatibles con el mercado, Technodomus ha buscado alianzas con empresas de equipamiento médico de tradición en EUA y Europa, pero también con los lideres emergentes en China.
 
-Es por ello que nuestro portafolio de productos incluye a marcas como [Getinge](http://www.getinge.com/es), [Carestream](http://www.carestream.mx), [Laoken](http://en.laoke.com), [gke](http://www.gke.eu), [steriCLIN](http://www.vp-group.de/esp/Embalajes-medicos/Accesorios-de-esterilizacion-y-sistemas-de-control), [Choyang](http://www.choyang.com.cn/english/main.asp)
+Es por ello que nuestro portafolio de productos incluye a marcas como [Carestream](http://www.carestream.mx), [Laoken](http://en.laoke.com), [gke](http://www.gke.eu), [steriCLIN](http://www.vp-group.de/esp/Embalajes-medicos/Accesorios-de-esterilizacion-y-sistemas-de-control), [AS Medizintechnik](https://www.as-medizintechnik.de/de-DE/home/)
