@@ -1,26 +1,27 @@
 extends ./../_layouts/base
 // Oferta de empleo en ventas
 
-block config
+block append config
   //- Correct base url pathing for this page
   - var baseUrl = '../'
   - var tituloPagina = "Technodomus conoce nuestros puestos disponibles"
 
-block content
+block append content
   .jumbotron
     h1 Trabaja con nosotros
+    h2 Puestos disponibles
   
   .grid
-    +cardprin('Puestos disponibles')
+    +cardprin('Especialistas en ventas')
       .card-body
        a(href="https://www.occ.com.mx/Empleo/oferta/9180358") 
-        h3 Especialista en ventas
        :markdown
-        Buscamos gente que le guste asumir retos, sin temor de enfrentarse a dificultades, capaz de trabajar en un ambiente de constantes retos, con gran capacidad de comprender las exigencias de su trabajo.
+        Buscamos gente que le guste asumir retos, sin temor de enfrentarse a dificultades, capaz de trabajar en un ambiente de constantes retos, con gran capacidad de comprender las exigencias de su trabajo y consciente de su papel al alcanzar retos y evaluar su desempeño.
+
         #### Requisitos
         - Licenciatura terminada o pasante en Mercadotecnia, Administración, Relaciones Comerciales, Ingeniería Biomédica o carrera similar.
         - 25 años mínimo.
-        - Cumplira funciones de asesor por lo que tiene que tener experiencia en procesos de ventas.  
+        - Cumplirá funciones de asesor por lo que tiene que tener experiencia en procesos de ventas.  
         - Disponibilidad de viajar ya que en ocasiones tendrá que hacerlo.
         - **Inglés** para traducir manuales y tomar cursos.
         
@@ -30,3 +31,17 @@ block content
       .card-footer
         p Envia tu curriculum
           a(href="./forma-curricula.html")  aquí.
+          
+    +cardprin('Especialista de producto en Imagenología')
+      .card-body
+        :markdown
+          ¿Tiene experiencia en el área de la imagenología médica? Buscamos un especialista de producto para esta área, alguien con experiencia previa, pero también con ganas de aprender más. Si tienes facilidad para interactuar con profesionales de la salud y con personas del área comercial, y ya has tenido responsabilidades como capacitador técnico de equipos de imagenología o tecnologías de PACS o RIS esta puede ser tu oportunidad de adentrarte más en este campo.
+
+          #### Requisitos
+          + Licenciatura terminada o pasante en Ingeniería Biomédica, de Sistemas, Electrónica o afines.
+          + Facilidad para comunicarte de forma verbal y escrita.
+          + Inglés a nivel intermedio-avanzado.
+          + Disponibilidad para viajar.
+
+          #### Experiencia
+          Tres años de experiencia en una misma empresa de servicios o venta de equipos médicos del área de imagenología.
