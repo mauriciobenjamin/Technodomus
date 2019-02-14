@@ -1,0 +1,5 @@
+{
+    "editor.fontLigatures": true,
+    "vim.enableNeovim": true,
+    "vim.neovimPath": "/usr/bin/nvim"
+}

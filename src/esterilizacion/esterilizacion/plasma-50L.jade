@@ -1,0 +1,24 @@
+extends ../../_layouts/productos
+
+block append config
+  - var baseUrl = './../../'
+  - var urlLinks = '/esterilizacion/esterilizacion/plasma-50L.html'
+  - var producto = "Esterilizador de Plasma LK/MJG-50"
+  - var tituloPagina = 'Technodomus | Soluciones en ' + producto
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Esterilizadores: './', Plasma: "./plasma.html", "LK/MJG-50":"#"}  
+
+block content
+  +cabecera(producto, bread) 
+
+  .grid
+  
+    +carddoble("Esterilizador LK/MJG-50")
+      .card-body
+        +foto('esterilizador-plasma-30l.png', "Esterilizador de escritorio Laoken")
+        :markdown
+          Una excelente opción cuando se requiere un equipo compacto y facil de instalar en sus espacios actuales.
+        +laoken
+        :marked
+          Puertas | Montaje | Volumen | Dimensiones (mm) | Temperatura de operación | Duración del ciclo
+          :------:|:-------:|:-------:|:----------------:|:------------------------:|:-----------------:
+          1|De mesa|30 L|700x960x680|33 a 55°C|31 min
