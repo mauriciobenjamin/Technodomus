@@ -1,0 +1,17 @@
+extends ../_layouts/productos
+
+block append config
+  - var baseUrl = './../'
+  - var titulo = 'Solicitud de soporte correctamente enviada'
+  - var tituloPagina = "Technodomus | Le agradece su confianza"
+  - var bread = {Inicio: baseUrl, Soporte: './../'}  
+  
+block content
+  
+  +cabecera(titulo, bread)
+  
+  .grid
+    +cardmax("Recibimos su solicitud")
+      h2 Y será atendida a la brevedad
+      p Muchas gracias por su preferencia. No omitimos mencionar que cualquier información que usted nos haya proporcionado será protegida de acuerdo a nuestras políticas de privacidad, en seguimiento de la Ley para la Protección de Datos Personales. Para más información puede consultar nuestro aviso de privacidad.
+        a(href="./../aviso-privacidad.html") Vea nuestro aviso de privacidad.

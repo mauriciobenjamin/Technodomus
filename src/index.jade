@@ -4,7 +4,7 @@ block vars
   - var tituloPagina = 'Technodomus | Soluciones en equipo médico'
   - var descripcion = "Tecnología y servicios para los profesionales de la salud, imagenologia, rayos x, mesas de rayos X, salas de rayos X digitales y computarizados, tomografos, MRI, esterilizacion hospitalaria, plasma, peróxido de hidrógeno, alternativas al sistema sterrad, desinfeccion, trazabilidad, indicadores biológicos, documentación, radiología, película seca, DRYVIEW, productos Carestream, gke, Laoken y más; en México, Bajio, Zona Metropolitana, Puebla, Estado de México, Querétaro, Jalisco, San Luis Potosí, Guanajuato, Aguascalientes, Mérida, Yucatán, Veracruz y Tabasco, Morelos,"
   - var prodEsteril = {"titulo":"Esterilización", "link":"/esterilizacion/", "etiqueta": "esterilizacion", "imagen": "images/esterilizacion-usuario.png", "alt": "Facilidad de uso de los esterilizadores Laoken", "links": {"Esterilizadores de plasma": "/esterilizacion/esterilizacion/plasma.html"}}
-  - var prodImagen = {"titulo": "Imagenología", "link": "/imagenologia/", "etiqueta": "imagenologia", "imagen": "images/imagenologia.png", "alt": "PACS, RIS y salidas digitales en imagenologia","links": {"PACS en la nube": "/imagenologia/PACS/pacs-enlanube.html", "Index": "/index-respaldo.jade"}}
+  - var prodImagen = {"titulo": "Imagenología", "link": "/imagenologia/", "etiqueta": "imagenologia", "imagen": "images/imagenologia.png", "alt": "PACS, RIS y salidas digitales en imagenologia","links": {"PACS en la nube": "/imagenologia/PACS/pacs-enlanube.html", "Radiología digital": "/imagenologia/rx-digital/index.html"}}
 
   mixin frontcard(producto, vista)
     if vista = "escritorio"
@@ -26,8 +26,8 @@ block vars
 block content
   .container-fluid
     div
-      a(href= baseUrl + "esterilizacion/esterilzacion/plasma-100L.html")
-        img.solomob.svg(src=baseUrl+"images/  ")
+      //- a(href= baseUrl + "esterilizacion/esterilzacion/plasma-100L.html")
+      //-   img.solomob.svg(src=baseUrl+"images/  ")
       //- a(href=baseUrl+"noticias/eventos/digitalfairs.html")
       //-   img.solomob.svg(src=baseUrl+"images/etiqueta-digitalfairs-p.svg", alt="Asiste a la Digital Fairs" style="width: 100%; height: auto;")
     
@@ -84,19 +84,18 @@ block content
     .grid
       +frontcard(prodEsteril, "escritorio")
         :markdown
-          #### Seguridad para sus pacientes con las mejores soluciones para instrumental e insumos esteriles.
+          ## La seguridad de contar siempre con material y equipos estériles.
           
-          Nuestra oferta incluye equipos de [baja](./esterilizacion/esterilizacion/baja-temperatura.html) y [alta temperatura](./esterilizacion/esterilizacion/alta-temperatura.html), sistemas completos de tratamiento de instrumental, desde el [lavado](./esterilizacion/lavado/index.html), hasta la [validación](./esterilizacion/validacion/index.html) y [trazabilidad](./esterilizacion/trazabilidad/index.html) del proceso de marcas lideres como Laoken, Getinge, Gke, Metrex y SteriClin.
-          
-          Nuestro compromiso es brindar seguridad total para el tratamiento de sus pacientes, al tiempo que mejora el manejo de su instrumental y equipo. 
+          Garantizar la esterilidad de los procedimientos quirúrgicos es un reto que se actualiza todos los días ya que cada vez que inicia una cirugía, la Central de Esterilización y Equipos (CEyE) se convierte en el guardian de la seguridad del paciente ante eventos infecciosos. En Technodomus nos ocupamos de encontrar una solución integral al proceso de esterilización para no solo contar con equipos adecuados, sino con todos los elementos para validar y dar seguimiento al proceso, para poder trazar las condiciones en que fue procesado cada instrumento en cualquier momento.
+          Por ello, nuestra oferta no solo incluye equipos sino [soluciones completas](./esterilizacion/esterilizacion/solucion-integral-esterilizacion.html) para los problemas de esterilización del material sensible al calor o con canulados, sistemas completos para el tratamiento de todo el material que deber ser procesado para su esterilización o desinfección de alto nivel, desde el [lavado](./esterilizacion/lavado/index.html), [empaque](./esterilizacion/empaque/index.html) hasta la [validación](./esterilizacion/validacion/index.html) y [trazabilidad](./esterilizacion/trazabilidad/index.html) del proceso, con marcas líderes como Laoken, gke, SteriClin y Metrex.
         
           [Conoce más de nuestros productos](./esterilizacion/)
 
       +frontcard(prodImagen, "escritorio")
         :markdown
-            #### Imágenes de alta calidad para el diagnóstico siempre disponibles.
+            ## Imágenes de alta calidad para el diagnóstico siempre disponibles.
             
-            La digitalización de sus áreas de imagenología es una decisión que puede contribuir a mejorar sus flujos de trabajo, reduciendo tiempos de espera en el procesamiento de las imágenes y facilitando el acceso a la información.
+            La digitalización de sus áreas de imagenología es una decisión qinstrumental eue puede contribuir a mejorar sus flujos de trabajo, reduciendo tiempos de espera en el procesamiento de las imágenes y facilitando el acceso a la información. Contamos con equipos para emprender una conversión digital a partir de su instalación actual de rayos X, hasta soluciones completas de sistemas móviles y salas de rayos X totalmente digitales.
             
             Contamos con las mejores [películas para generar salidas dígitales](./imagenologia/rx-digital/output-digital/pelicula-dry.html), pero también para ofrecer excelentes [imágenes análogicas](./imagenologia/rx-analogico/) e integrar todo sus sistema de imagenología [en una solución](./imagenologia/PACS/) de la marca lider Carestream.
 
