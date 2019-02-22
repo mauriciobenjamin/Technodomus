@@ -4,8 +4,6 @@
 //'use strict';
 
 const $ = require('jquery');
-const bootstrap = require('bootstrap');
-const masonry = require('masonry-layout')
 
 $(function () {
   console.log('¡Technodomus te saluda!');
@@ -18,10 +16,12 @@ $('.carousel').carousel({
   keyboard: true
 });
 
-var msnry = new masonry('.grid', {
+$('.card').masonry({
   itemSelector: '.card',
-  //percentPosition: true,
-  gutter: 15
+  gutter: 40,
+  percentPosition: true,
+  columnWidth: '.card-heading',
+  horizontalOrder: true
 });
 //El formato de bloques con Masonry y control de carga de imagenes con imagesLoaded que evita superposiciones al armar la pagina
 

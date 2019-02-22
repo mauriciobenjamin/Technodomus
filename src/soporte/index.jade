@@ -1,0 +1,42 @@
+extends ../_layouts/base.jade
+
+block append config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+  - var tituloPagina = "Soporte y servicio a socios de negocios"
+  - var Descripcion = "Te apoyamos en todo momento, si tienes problemas con alguno de tus equipos, necesitas asesoría sobre el uso de los consumibles o tienes alguna duda de facturación, envianos un mensaje y en breve nos pondremos en contacto para apoyarte"
+
+block content
+  .jumbotron
+    h1.producto Soporte a socios de negocios
+  .grid
+    +cardmax('Solicitud de soporte')
+      .card-body
+        p  ¿Tienes problemas con alguno de tus equipos? ¿Necesitas asesoría sobre el uso de los consumibles? Envianos un mensaje y en breve nos pondremos en contacto para apoyarte y que sigas trabajando sin demoras.
+        form(name='soporte' action='https://formspree.io/soporteventas@technodomus.com' method="POST")
+          .form-group
+            label(for='numero') Número K o número de serie del equipo 
+            input#numero(type='text' name='numero' placeholder='Ingresa aquí el número de serie o número K de tu equipo' size='50')
+          .form-group
+            label Nombre del cliente 
+            input(type='text' name='institución' placeholder='Razón social o nombre' size='68')
+          .form-group
+            label(for="falla") Falla o problema que desea reportar
+            textarea(name="falla", cols="30", rows="5")
+          .form-group
+            label(for="responsable") Persona encargada en el sitio
+            input(type="text", name="responsable" placeholder="Nombre del contacto a quien se acudirá en caso de visita" size = "70")
+          .form-group
+            label Teléfono fijo
+            input(type='tel' name='telefono' placeholder='XXX-XXX-XXXX' size='30')
+            label(for="movil") Teléfono móvil
+            input(type="tel", name="movil" placeholder='XXX-XXX-XXXX' size='30')
+          .form-group
+            label Correo
+            input(type='email' name='_replyto' placeholder="correo@hospital.com" size='60')
+          input.btn.btn-primary.btn-raised(type='submit' value='Enviar')
+          input(type="hidden" name="_next" value="http://technodomus.com/soporte/gracias.html")
+          input(type="hidden" name="_subject" value="Solicitud de soporte")
+          input(type="hidden" name="_cc" value="bjimenez@technodomus.com")
+          input(type="text", name="_gotcha", style="display:none")
+

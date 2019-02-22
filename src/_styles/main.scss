@@ -226,7 +226,7 @@ img {
 //cards
 .card {
   display: inline-block;
-  margin-bottom: 20px;
+  margin: 10px 8px 10px 8px;
   img {
     padding-bottom: 1rem;
   }
@@ -237,10 +237,10 @@ img {
     width: 100%;
   }
   @media screen and (min-width: $bp-m) {
-    width: 49%;
+    width: 45%;
   }
   @media screen and (min-width: $bp-l) {
-    width: 32%;
+    width: 31%;
   }
 }
 
@@ -263,7 +263,7 @@ img {
     width: 100%;
   }
   @media screen and (min-width: $bp-l) {
-    width: 49%;
+    width: 47%;
   }
 }
 
@@ -534,13 +534,27 @@ article {
   to {bottom: 0; opacity: 0;}
 }
 
+// Estilos para las formas, especialmente los placeholders
+input::placeholder {
+  color: $color1-50;
+  line-height: 25px;
+}
+
+input.btn{
+  margin: 1rem;
+}
+
+textarea {
+  border: 1px solid $color2;
+  outline: none;
+}
 // Estilos para generar muestrarios de color
 #muestrario {
   flex-grow: 1;
   padding: 0.2em;
   display: flex;
   flex-flow: row wrap;
-  aling-items: flex-start;
+  align-items: flex-start;
 }
 
 #muestrario .caja {
