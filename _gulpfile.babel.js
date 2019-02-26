@@ -1,13 +1,12 @@
 'use strict';
 
-import path from 'path';
-import gulp from 'gulp';
-import gulpLoadPlugins from 'gulp-load-plugins';
-import browserSyncLib from 'browser-sync';
-import pjson from './package.json';
-import minimist from 'minimist';
-import glob from 'glob';
-
+const path = require('path');
+const gulp = require('gulp');
+const gulpLoadPlugins = require('gulp-load-plugins');
+const browserSyncLib = require('browser-sync');
+const pjson = require('./package.json');
+const minimist = require('minimist');
+const glob = require('glob');
 // Load all gulp plugins based on their names
 // EX: gulp-copy -> copy
 const plugins = gulpLoadPlugins();

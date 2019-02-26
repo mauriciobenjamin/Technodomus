@@ -1,7 +1,9 @@
 {
   "name": "technodomus",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "dependencies": {
+    "acorn": "^6.1.0",
+    "babel": "^6.23.0",
     "babel-register": "^6.26.0",
     "bootstrap": "^4.0.0",
     "bootstrap-material-design": "^4.1.1",
@@ -16,7 +18,12 @@
     "popper.js": "^1.13.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/register": "^7.0.0",
+    "@fortawesome/fontawesome-free": "^5.7.2",
     "autoprefixer": "~6.7.5",
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "~7.1.1",
     "babel-plugin-add-module-exports": "~0.2.1",
@@ -29,13 +36,14 @@
     "foldero": "~0.1.1",
     "glob": "~7.1.1",
     "gulp": "^3.9.1",
+    "gulp-babel": "^8.0.0",
     "gulp-changed": "~2.0.0",
     "gulp-cssnano": "~2.1.2",
     "gulp-data": "~1.2.1",
     "gulp-eslint": "~3.0.1",
     "gulp-htmlmin": "~3.0.0",
     "gulp-if": "~2.0.2",
-    "gulp-imagemin": "~3.1.1",
+    "gulp-imagemin": "^5.0.3",
     "gulp-jade": "~1.1.0",
     "gulp-load-plugins": "~1.5.0",
     "gulp-notify": "~3.0.0",
@@ -46,13 +54,13 @@
     "gulp-sourcemaps": "~2.4.1",
     "gulp-uglify": "~2.0.1",
     "gulp-util": "~3.0.8",
-    "imagemin-pngquant": "~5.0.0",
+    "imagemin-pngquant": "^7.0.0",
     "imagemin-svgo": "~5.2.0",
     "jade": "~1.11.0",
     "jasmine-core": "2.5.2",
     "js-yaml": "~3.8.1",
-    "karma": "~1.5.0",
-    "karma-browserify": "~5.1.1",
+    "karma": "^4.0.0",
+    "karma-browserify": "^6.0.0",
     "karma-jasmine": "~1.1.0",
     "karma-phantomjs-launcher": "~1.0.2",
     "lodash": "^4.17.11",
@@ -90,5 +98,20 @@
       "js": "main**.js",
       "css": "main**.{sass,scss}"
     }
-  }
+  },
+  "description": "Generated on 2018-01-24 using [generator-yeogurt@2.0.0](https://github.com/larsonjj/generator-yeogurt)",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mauriciobenjamin/Technodomus.git"
+  },
+  "keywords": [
+    "paginaweb"
+  ],
+  "author": "Mauricio Jimenez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mauriciobenjamin/Technodomus/issues"
+  },
+  "homepage": "https://github.com/mauriciobenjamin/Technodomus#readme"
 }

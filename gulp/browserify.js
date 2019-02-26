@@ -1,76 +1,50 @@
 'use strict';
 
-import path from 'path';
-import glob from 'glob';
-import browserify from 'browserify';
-import watchify from 'watchify';
-import envify from 'envify';
-import babelify from 'babelify';
-import _ from 'lodash';
-import vsource from 'vinyl-source-stream';
-import buffer from 'vinyl-buffer';
-import gulpif from 'gulp-if';
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
-export default function(gulp, plugins, args, config, taskTarget, browserSync) {
-  let dirs = config.directories;
-  let entries = config.entries;
+exports.default = function (gulp, plugins, args, config, taskTarget, browserSync) {
+  var dirs = config.directories;
+  var entries = config.entries;
 
-  let browserifyTask = (files) => {
-    return files.map((entry) => {
-      let dest = path.resolve(taskTarget);
+  var browserifyTask = function browserifyTask(files) {
+    return files.map(function (entry) {
+      var dest = path.resolve(taskTarget);
 
       // Options
-      let customOpts = {
+      var customOpts = {
         entries: [entry],
         debug: true,
-        transform: [
-          babelify, // Enable ES6 features
-          envify // Sets NODE_ENV for better optimization of npm packages
+        transform: [babelify, // Enable ES6 features
+        envify // Sets NODE_ENV for better optimization of npm packages
         ]
       };
 
-      let bundler = browserify(customOpts);
+      var bundler = browserify(customOpts);
 
       if (!args.production) {
         // Setup Watchify for faster builds
-        let opts = _.assign({}, watchify.args, customOpts);
+        var opts = _.assign({}, watchify.args, customOpts);
         bundler = watchify(browserify(opts));
       }
 
-      let rebundle = function() {
-        let startTime = new Date().getTime();
-        bundler.bundle()
-          .on('error', function(err) {
-            plugins.util.log(
-              plugins.util.colors.red('Browserify compile error:'),
-              '\n',
-              err.stack,
-              '\n'
-            );
-            this.emit('end');
-          })
-          .on('error', plugins.notify.onError(config.defaultNotification))
-          .pipe(vsource(entry))
-          .pipe(buffer())
-          .pipe(plugins.sourcemaps.init({loadMaps: true}))
-            .pipe(gulpif(args.production, plugins.uglify()))
-            .on('error', plugins.notify.onError(config.defaultNotification))
-          .pipe(plugins.rename(function(filepath) {
-            // Remove 'source' directory as well as prefixed folder underscores
-            // Ex: 'src/_scripts' --> '/scripts'
-            filepath.dirname = filepath.dirname.replace(dirs.source, '').replace('_', '');
-          }))
-          .pipe(plugins.sourcemaps.write('./'))
-          .pipe(gulp.dest(dest))
-          // Show which file was bundled and how long it took
-          .on('end', function() {
-            let time = (new Date().getTime() - startTime) / 1000;
-            console.log(
-              plugins.util.colors.cyan(entry)
-              + ' was browserified: '
-              + plugins.util.colors.magenta(time + 's'));
-            return browserSync.reload('*.js');
-          });
+      var rebundle = function rebundle() {
+        var startTime = new Date().getTime();
+        bundler.bundle().on('error', function (err) {
+          plugins.util.log(plugins.util.colors.red('Browserify compile error:'), '\n', err.stack, '\n');
+          this.emit('end');
+        }).on('error', plugins.notify.onError(config.defaultNotification)).pipe(vsource(entry)).pipe(buffer()).pipe(plugins.sourcemaps.init({ loadMaps: true })).pipe(gulpif(args.production, plugins.uglify())).on('error', plugins.notify.onError(config.defaultNotification)).pipe(plugins.rename(function (filepath) {
+          // Remove 'source' directory as well as prefixed folder underscores
+          // Ex: 'src/_scripts' --> '/scripts'
+          filepath.dirname = filepath.dirname.replace(dirs.source, '').replace('_', '');
+        })).pipe(plugins.sourcemaps.write('./')).pipe(gulp.dest(dest))
+        // Show which file was bundled and how long it took
+        .on('end', function () {
+          var time = (new Date().getTime() - startTime) / 1000;
+          console.log(plugins.util.colors.cyan(entry) + ' was browserified: ' + plugins.util.colors.magenta(time + 's'));
+          return browserSync.reload('*.js');
+        });
       };
 
       if (!args.production) {
@@ -82,8 +56,8 @@ export default function(gulp, plugins, args, config, taskTarget, browserSync) {
   };
 
   // Browserify Task
-  gulp.task('browserify', (done) => {
-    return glob('./' + path.join(dirs.source, dirs.scripts, entries.js), function(err, files) {
+  gulp.task('browserify', function (done) {
+    return glob('./' + path.join(dirs.source, dirs.scripts, entries.js), function (err, files) {
       if (err) {
         done(err);
       }
@@ -91,4 +65,17 @@ export default function(gulp, plugins, args, config, taskTarget, browserSync) {
       return browserifyTask(files);
     });
   });
-}
+};
+
+var path = require('path');
+var glob = require('glob');
+var browserify = require('browserify');
+var watchify = require('watchify');
+var envify = require('envify');
+var babelify = require('babelify');
+var _ = require('lodash');
+var vsource = require('vinyl-source-stream');
+var buffer = require('vinyl-buffer');
+var gulpif = require('gulp-if');
+
+module.exports = exports['default'];

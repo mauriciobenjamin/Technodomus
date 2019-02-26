@@ -1,19 +1,23 @@
 'use strict';
 
-import path from 'path';
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
-export default function(gulp, plugins, args, config, taskTarget, browserSync) {
-  let dirs = config.directories;
-  let dest = path.join(taskTarget);
+exports.default = function (gulp, plugins, args, config, taskTarget, browserSync) {
+  var dirs = config.directories;
+  var dest = _path2.default.join(taskTarget);
 
   // Copy
-  gulp.task('copy', () => {
-    return gulp.src([
-      path.join(dirs.source, '**/*'),
-      '!' + path.join(dirs.source, '{**/\_*,**/\_*/**}'),
-      '!' + path.join(dirs.source, '**/*.jade')
-    ])
-    .pipe(plugins.changed(dest))
-    .pipe(gulp.dest(dest));
+  gulp.task('copy', function () {
+    return gulp.src([_path2.default.join(dirs.source, '**/*'), '!' + _path2.default.join(dirs.source, '{**/\_*,**/\_*/**}'), '!' + _path2.default.join(dirs.source, '**/*.jade')]).pipe(plugins.changed(dest)).pipe(gulp.dest(dest));
   });
-}
+};
+
+var _path = require('path');
+
+var _path2 = _interopRequireDefault(_path);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+module.exports = exports['default'];

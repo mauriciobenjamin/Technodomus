@@ -1,35 +1,31 @@
 'use strict';
 
-import fs from 'fs';
-import path from 'path';
-import foldero from 'foldero';
-import jade from 'jade';
-import yaml from 'js-yaml';
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
-export default function(gulp, plugins, args, config, taskTarget, browserSync) {
-  let dirs = config.directories;
-  let dest = path.join(taskTarget);
-  let dataPath = path.join(dirs.source, dirs.data);
+exports.default = function (gulp, plugins, args, config, taskTarget, browserSync) {
+  var dirs = config.directories;
+  var dest = _path2.default.join(taskTarget);
+  var dataPath = _path2.default.join(dirs.source, dirs.data);
 
   // Jade template compile
-  gulp.task('jade', () => {
-    let siteData = {};
-    if (fs.existsSync(dataPath)) {
+  gulp.task('jade', function () {
+    var siteData = {};
+    if (_fs2.default.existsSync(dataPath)) {
       // Convert directory to JS Object
-      siteData = foldero(dataPath, {
+      siteData = (0, _foldero2.default)(dataPath, {
         recurse: true,
         whitelist: '(.*/)*.+\.(json|ya?ml)$',
         loader: function loadAsString(file) {
-          let json = {};
+          var json = {};
           try {
-            if (path.extname(file).match(/^.ya?ml$/)) {
-              json = yaml.safeLoad(fs.readFileSync(file, 'utf8'));
+            if (_path2.default.extname(file).match(/^.ya?ml$/)) {
+              json = _jsYaml2.default.safeLoad(_fs2.default.readFileSync(file, 'utf8'));
+            } else {
+              json = JSON.parse(_fs2.default.readFileSync(file, 'utf8'));
             }
-            else {
-              json = JSON.parse(fs.readFileSync(file, 'utf8'));
-            }
-          }
-          catch(e) {
+          } catch (e) {
             console.log('Error Parsing DATA file: ' + file);
             console.log('==== Details Below ====');
             console.log(e);
@@ -48,14 +44,8 @@ export default function(gulp, plugins, args, config, taskTarget, browserSync) {
       console.log(config);
     }
 
-    return gulp.src([
-      path.join(dirs.source, '**/*.jade'),
-      '!' + path.join(dirs.source, '{**/\_*,**/\_*/**}')
-    ])
-    .pipe(plugins.changed(dest))
-    .pipe(plugins.plumber())
-    .pipe(plugins.jade({
-      jade: jade,
+    return gulp.src([_path2.default.join(dirs.source, '**/*.jade'), '!' + _path2.default.join(dirs.source, '{**/\_*,**/\_*/**}')]).pipe(plugins.changed(dest)).pipe(plugins.plumber()).pipe(plugins.jade({
+      jade: _jade2.default,
       pretty: true,
       locals: {
         config: config,
@@ -64,15 +54,36 @@ export default function(gulp, plugins, args, config, taskTarget, browserSync) {
           data: siteData
         }
       }
-    }))
-    .pipe(plugins.htmlmin({
+    })).pipe(plugins.htmlmin({
       collapseBooleanAttributes: true,
       conservativeCollapse: true,
       removeCommentsFromCDATA: true,
       removeEmptyAttributes: true,
       removeRedundantAttributes: true
-    }))
-    .pipe(gulp.dest(dest))
-    .on('end', browserSync.reload);
+    })).pipe(gulp.dest(dest)).on('end', browserSync.reload);
   });
-}
+};
+
+var _fs = require('fs');
+
+var _fs2 = _interopRequireDefault(_fs);
+
+var _path = require('path');
+
+var _path2 = _interopRequireDefault(_path);
+
+var _foldero = require('foldero');
+
+var _foldero2 = _interopRequireDefault(_foldero);
+
+var _jade = require('jade');
+
+var _jade2 = _interopRequireDefault(_jade);
+
+var _jsYaml = require('js-yaml');
+
+var _jsYaml2 = _interopRequireDefault(_jsYaml);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+module.exports = exports['default'];

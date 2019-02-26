@@ -1,14 +1,24 @@
 'use strict';
 
-import path from 'path';
-import del from 'del';
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
-export default function(gulp, plugins, args, config, taskTarget, browserSync) {
-  let dirs = config.directories;
+exports.default = function (gulp, plugins, args, config, taskTarget, browserSync) {
+  var dirs = config.directories;
 
   // Clean
-  gulp.task('clean', del.bind(null, [
-    path.join(dirs.temporary),
-    path.join(dirs.destination)
-  ]));
-}
+  gulp.task('clean', _del2.default.bind(null, [_path2.default.join(dirs.temporary), _path2.default.join(dirs.destination)]));
+};
+
+var _path = require('path');
+
+var _path2 = _interopRequireDefault(_path);
+
+var _del = require('del');
+
+var _del2 = _interopRequireDefault(_del);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+module.exports = exports['default'];
