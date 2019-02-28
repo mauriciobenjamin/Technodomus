@@ -9,12 +9,12 @@ $(function () {
   console.log('¡Technodomus te saluda!');
 });
 
-$('.carousel').carousel({
-  interval: 15000,
-  pause: false,
-  wrap: true,
-  keyboard: true
-});
+// $('.carousel').carousel({
+//   interval: 15000,
+//   pause: false,
+//   wrap: true,
+//   keyboard: true
+// });
 
 $('.card').masonry({
   itemSelector: '.card',
