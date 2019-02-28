@@ -3,7 +3,6 @@
 @import 'node_modules/bootstrap/scss/bootstrap';
 @import "node_modules/bootstrap-material-design/scss/bootstrap-material-design";
 @import "src/_modules/navbar/navbar.scss";
-@import "node_modeules/@fortawesome/fontawesome-free/scss";
 @import "src/_modules/contacto/contacto";
 @import 'src/_modules/footer/footer';
 @import "src/_modules/navbar/navbar.scss";
@@ -178,6 +177,7 @@ img {
     overflow: hidden;
     cursor: pointer;
   }
+  
   .boton-avanza {
     @include boton-exp($color1, '');
     position: relative;
@@ -187,39 +187,27 @@ img {
 
   .boton-tel {
     @include boton($color1);
-    &:hover {
-    }
   }
 
   .boton-cotiza {
     @include boton-exp($color1, "Cotiza aquí");
-    &:hover {
-    }
   }
 
   .boton-mail {
     @include boton($color4);
     line-height: 46px;
-    &:hover {
-    }
   }
 
   .boton-fb{
     @include boton($color-faceb);
   }
-  .boton-fb:hover{
-  }
 
   .boton-tw{
     @include boton($color-twitter);
   }
-  .boton-tw:hover{
-  }
 
   .boton-go{
     @include boton($color-goo);
-  }
-  .boton-go:hover{
   }
 }
 
