@@ -19,9 +19,9 @@ $(function () {
 $('.card').masonry({
   itemSelector: '.card',
   gutter: 40,
-  percentPosition: true,
+  percentPosition: false,
   columnWidth: '.card-heading',
-  horizontalOrder: true
+  horizontalOrder:  false
 });
 //El formato de bloques con Masonry y control de carga de imagenes con imagesLoaded que evita superposiciones al armar la pagina
 
