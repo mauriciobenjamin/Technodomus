@@ -18,10 +18,12 @@ $(function () {
 
 $('.card').masonry({
   itemSelector: '.card',
-  gutter: 40,
-  percentPosition: false,
-  columnWidth: '.card-heading',
-  horizontalOrder:  false
+  gutter: 10,
+  percentPosition: true,
+  columnWidth: ".card-head",
+  horizontalOrder:  true,
+  originTop: true,
+  originLeft: false
 });
 //El formato de bloques con Masonry y control de carga de imagenes con imagesLoaded que evita superposiciones al armar la pagina
 
