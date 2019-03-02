@@ -104,6 +104,10 @@ img {
   }
 }
 
+.grid {
+  position: relative;
+}
+
 .caja-contenido-footer {
   display: block;
   padding: 0 2rem;
@@ -213,8 +217,10 @@ img {
 
 //cards
 .card {
-  display: inline-block;
+  display: block;
+  position: absolute;
   margin: 10px 8px 10px 8px;
+  z-index: 1;
   img {
     padding-bottom: 1rem;
   }
@@ -230,6 +236,12 @@ img {
   @media screen and (min-width: $bp-l) {
     width: 31%;
   }
+}
+
+.card-body {
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
 
 .card-2x {
@@ -582,7 +594,3 @@ textarea {
 .gris-obscuro {
   background-color: #444;
 }
-
-
-
-//Final

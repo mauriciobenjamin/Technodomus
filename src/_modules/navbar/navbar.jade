@@ -1,19 +1,22 @@
+block append vars
+  -var selected = 'Inicio'
+  -var menu= {'Inicio': baseUrl, 'Esterilización': baseUrl+"esterilizacion",'Imagenología': baseUrl+"imagenologia",'Cotiza':baseUrl+"cotiza", 'Soporte':baseUrl+"soporte",'Blog':baseUrl+"noticias",'Nosotros':baseUrl+"nosotros" }
+
 header
 
-  nav.navbar.navbar-expand-sm.fixed-top.navbar-dark
+  nav.navbar.navbar-expand-lg.fixed-top.navbar-dark.justify-content-between
     a.navbar-brand(href=baseUrl) 
       img(src= baseUrl + 'images/logoNegPar.png', alt='Technodomus' height="60px")
     button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
       span.navbar-toggler-icon
     .collapse.navbar-collapse#navbarSupportedContent
-      ul.navbar-nav.ml-auto.mt-lg-0
+      ul.navbar-nav.ml-auto.mt-2.mt-lg-0
         li.nav-item
-          a.nav-link(href= baseUrl) Inicio
-        li.nav-item.dropdown
-          a.nav-link.dropdown-toggle(href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Productos
-          .dropdown-menu(aria-labelledby="navbarDropdown")
-            a.dropdown-item(href=baseUrl + "esterilizacion") Esterilización
-            a.dropdown-item(href=baseUrl + "imagenologia") Imagenología
+          a.nav-link(href=baseUrl) Inicio
+        li.nav-item
+          a.nav-link(href=baseUrl + "esterilizacion") Esterilización
+        li.nav-item
+          a.nav-link(href=baseUrl + "imagenologia") Imagenología
         li.nav-item
           a.nav-link(href=baseUrl+"cotiza") Cotiza
         li.nav-item
