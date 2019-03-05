@@ -4,14 +4,20 @@ block config
   //- Correct base url pathing for this page
   - var baseUrl = '../'
   - var noticia = 'Noticias'
-  - var tituloPagina = "Actualidad de la esterilización y la imagenología en México"
+  - var tituloPagina = "Blog para dar a conocer las actualidades de la esterilización y la imagenología en México y el mundo"
   - var descripcion = "Información técnica precisa sobre los avances y novedades en tecnología médica, imagenología, rayos X, esterilización, manejo de la CEyE, trazabilidad y validación de los procesos de esterilización. También publicamos información sobre los eventos de actualización en los que participamos o los que organizamos con especialistas nacionales e internacionales. Conoce sobre las alternativas a los sistemas de esterilización más conocidos como el Sterrad® de Johnson&Johnson® o el autoclave tradicional de vapor"
   
 block append content
+  +jumbo('Blog de Technodomus')
+  
   .grid
     +cardsprin('¿Cuál es el mejor sistema de esterilización de baja temperatura para mi?', './novedades/baja-temperatura-parte1.html') 
       .card-body
         +foto('')
+        p En esta serie de artículos puedes conocer las características, alcances, ventajas y desventajas de los métodos de esterilización de baja temperatura 
+        a(href="./novedades/esterilizacion_baja_temperatura_parte1.html" title="Compara los métodos de baja temperatura para elegir la mejor opción de esterilización.")
+          h4 Conoce mejor los metodos de baja temperatura
+
     +cardsprin('Mejora tus empaques "pouch" con un correcto sellado', './novedades/sellado.html')
       .card-body
         +foto('empaque-instrumental.jpg', 'Mejore el sellado del empaque con sencillos consejos', 'Empaque de instrumental')

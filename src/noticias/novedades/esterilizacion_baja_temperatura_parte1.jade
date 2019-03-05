@@ -1,0 +1,17 @@
+extends ../../_layouts/noticias
+
+block append config
+  - var baseUrl = './../../'
+  - var noticia = "Esterilización de baja temperatura. Parte 1"
+  - var subtitulo = ""
+  - var fechalarga = "4 de marzo de 2019"
+  - var fecha = '2019-04-04'
+  - var autor = 'Technodomus'
+  - var descripcion = ""
+  
+block append content
+  
+  .grid
+    +cardmax(subtitulo)
+      .card-body.articulo
+        include:marked metodos_bajatemperatura.md

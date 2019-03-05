@@ -219,8 +219,8 @@ img {
 .card {
   display: block;
   position: absolute;
-  margin: 10px 8px 10px 8px;
   z-index: 1;
+  margin: 7px -5px 8px 5px;
   img {
     padding-bottom: 1rem;
   }
@@ -242,6 +242,12 @@ img {
   position: relative;
   height: 100%;
   width: 100%;
+  .articulo {
+    padding: 0 5rem 0 5rem;
+    @media screen and (max-width: $bp-s) {
+      padding: 0;
+    }
+  }
 }
 
 .card-2x {
