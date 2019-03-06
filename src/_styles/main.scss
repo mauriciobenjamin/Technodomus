@@ -224,6 +224,12 @@ img {
   img {
     padding-bottom: 1rem;
   }
+  .resumen {
+    color: $color5;
+    font-size: 14pt;
+    padding: 20px 40px 20px 40px;
+    background-color: $colorfondo;
+  }
   & table {
     width: 100%;
   }
@@ -244,6 +250,7 @@ img {
   width: 100%;
   .articulo {
     padding: 0 5rem 0 5rem;
+    
     @media screen and (max-width: $bp-s) {
       padding: 0;
     }

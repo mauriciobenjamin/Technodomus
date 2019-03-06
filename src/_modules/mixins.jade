@@ -10,6 +10,15 @@ mixin cardmax(titulo, link)
       else
         p En construcción
 
+mixin cardArticulo(titulo, resumen, palabras_clave)
+
+  .card.card-default.card-2x
+    .card-body.articulo
+      p.resumen= resumen
+      p.claves= palabras_clave
+      article
+        block
+
 //- card de doble ancho con encabezado más grande
 mixin carddoble(titulo,link)
   .card.card-primary.card-2x
