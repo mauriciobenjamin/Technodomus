@@ -3,7 +3,6 @@
 @import 'node_modules/bootstrap/scss/bootstrap';
 @import "node_modules/bootstrap-material-design/scss/bootstrap-material-design";
 @import "src/_modules/navbar/navbar.scss";
-@import "font-awesome/scss/font-awesome";
 @import "src/_modules/contacto/contacto";
 @import 'src/_modules/footer/footer';
 @import "src/_modules/navbar/navbar.scss";
@@ -105,6 +104,10 @@ img {
   }
 }
 
+.grid {
+  position: relative;
+}
+
 .caja-contenido-footer {
   display: block;
   padding: 0 2rem;
@@ -178,6 +181,7 @@ img {
     overflow: hidden;
     cursor: pointer;
   }
+  
   .boton-avanza {
     @include boton-exp($color1, '');
     position: relative;
@@ -187,48 +191,44 @@ img {
 
   .boton-tel {
     @include boton($color1);
-    &:hover {
-    }
   }
 
   .boton-cotiza {
     @include boton-exp($color1, "Cotiza aquí");
-    &:hover {
-    }
   }
 
   .boton-mail {
     @include boton($color4);
     line-height: 46px;
-    &:hover {
-    }
   }
 
   .boton-fb{
     @include boton($color-faceb);
   }
-  .boton-fb:hover{
-  }
 
   .boton-tw{
     @include boton($color-twitter);
-  }
-  .boton-tw:hover{
   }
 
   .boton-go{
     @include boton($color-goo);
   }
-  .boton-go:hover{
-  }
 }
 
 //cards
 .card {
-  display: inline-block;
-  margin: 10px 8px 10px 8px;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  margin: 10px;
   img {
     padding-bottom: 1rem;
+  }
+  .resumen {
+    color: $color5;
+    font-size: 14pt;
+    padding: 20px 40px 20px 40px;
+    background-color: $colorfondo;
   }
   & table {
     width: 100%;
@@ -241,6 +241,22 @@ img {
   }
   @media screen and (min-width: $bp-l) {
     width: 31%;
+  }
+  @media screen and (max-width: $bp-s) {
+    margin-left: 1px;
+  }
+}
+
+.card-body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  .articulo {
+    padding: 0 5rem 0 5rem;
+    
+    @media screen and (max-width: $bp-s) {
+      padding: 0;
+    }
   }
 }
 
@@ -348,17 +364,20 @@ h1 {
   @media screen and (max-width: $bp-m) {
     @include titulos(2.2rem, $color3);
     line-height: 3rem;
-  }
+  };
   @media screen and (max-width: $bp-s) {
     @include titulos(2.2rem, $color3);
-  }
+  };
   &.cabecera {
     color: darken($color1, 10%);;
-  }
-
+  };
   &.producto {
     color: darken($color5, 25%);
     padding-top: 20px;
+    font-size: 3.5rem;
+    @media screen and (max-width: $bp-m) {
+      padding: 1rem;  
+    };
   }
 }
 
@@ -470,10 +489,21 @@ textarea {
 }
 
 //Jumbotron
-.jumbotron.tituloJumbo {
-  padding: 1rem;
-  background-color: $color2;
-  box-shadow: 1px 2px 9px -2px rgba(25, 25, 25, 0.7);
+.jumbotron {
+  margin: 0.3rem;
+  .tituloJumbo {
+    padding: 1rem;
+    background-color: $color2;
+    box-shadow: 1px 2px 9px -2px rgba(25, 25, 25, 0.7);
+  } 
+  @media screen and (max-width: $bp-m) {
+    padding: 0.5rem; 
+  }
+}
+
+//Breadcrum
+.breadcrum {
+  
 }
 
 //Estilo de los post del blog
@@ -594,7 +624,3 @@ textarea {
 .gris-obscuro {
   background-color: #444;
 }
-
-
-
-//Final

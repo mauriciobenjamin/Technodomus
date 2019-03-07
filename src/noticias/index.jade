@@ -4,33 +4,41 @@ block config
   //- Correct base url pathing for this page
   - var baseUrl = '../'
   - var noticia = 'Noticias'
-  - var tituloPagina = "Actualizaciones de tecnología médica, esterilización e imagenólogia, eventos, novedades y noticias."
-  - var descripcion = "Aquí podras encontrar las novedades del mundo de la tecnología médica, así como los eventos que organizamos periódicamente. Lo mas actual, la apertura de nuestra sucursal en el Bajío para dar atención a los estados de Guanajuato, Querétaro, San Luis Potosí, Aguascalientes, Jalisco y Michoacán"
+  - var tituloPagina = "Blog de actualidades sobre esterilización hospitalaria y la imagenología médica en México y el mundo"
+  - var descripcion = "Información técnica precisa sobre los avances y novedades en tecnología médica, imagenología, rayos X, esterilización, manejo de la CEyE, trazabilidad y validación de los procesos de esterilización. También publicamos información sobre los eventos de actualización en los que participamos o los que organizamos con especialistas nacionales e internacionales. Conoce sobre las alternativas a los sistemas de esterilización más conocidos como el Sterrad® de Johnson&Johnson® o el autoclave tradicional de vapor"
   
 block append content
-  .grid
+  +jumbo('Blog de Technodomus')
   
+  .grid
+    +cardsprin('¿Cuál es el mejor sistema de esterilización de baja temperatura para mi?', './novedades/esterilizacion_baja_temperatura_parte1.html') 
+      .card-body
+        +foto('planta_irradiacion.jpg', 'La tecnología de radiación de rayos gamma es efectiva pero difícil de implementar', 'Planta de esterilización del ININ en Salazar, Estado de México')
+        p En esta serie de artículos puedes conocer las características, alcances, ventajas y desventajas de los métodos de esterilización de baja temperatura 
+        a(href="./novedades/esterilizacion_baja_temperatura_parte1.html" title="Compara los métodos de baja temperatura para elegir la mejor opción de esterilización.")
+          h4 Conoce mejor los métodos de baja temperatura
+
     +cardsprin('Mejora tus empaques "pouch" con un correcto sellado', './novedades/sellado.html')
       .card-body
         +foto('empaque-instrumental.jpg', 'Mejore el sellado del empaque con sencillos consejos', 'Empaque de instrumental')
-        p El empaque es un punto crítico del proceso de estarilización ya que evita la reinfección del material. En este sentido, el sellado es escencial para que el empaque mantenga su integridad. En este artículo se mencionan algunas prácticas para mejorar el proceso de sellado.
+        p El empaque es un punto crítico del proceso de esterilización ya que evita la reinfección del material. En este sentido, el sellado es esencial para que el empaque mantenga su integridad. En este artículo se mencionan algunas prácticas para mejorar el proceso de sellado.
         a(href="./novedades/sellado.html" title="Mejores prácicas de sellado")
           h4 Más información.
 
     +cardsprin('Virus de computo ataca al sector salud', './novedades/virus-salud.html')
       .card-body
-        p Un virus dectado en equipos en EUA, Europa y Asía tiene una alta prevalencia entre el sector salud y hace suponer que fue diseñado para atacar este tipo de usuarios.
+        p Un virus de computo detectado en equipos en EUA, Europa y Asía tiene una alta prevalencia entre el sector salud y hace suponer que fue diseñado para atacar este tipo de usuarios.
         a(href="./novedades/virus-salud.html" title="Virus ataca al sector salud")
           h4 Más información.
 
-    +cardsprin('Carestream Digital Fairs 2018')
+    +cardsprin('Carestream Digital Fairs 2018', './eventos/digitalfairs.html')
       .card-body
         +foto('carestreamDigitalFairs.png', 'Carestream Digital Fairs 2018', 'Digital Fairs')
-        p Los días 25 y 26 de abril Carestream nos va a sorprender con tecnologías utiles y novedosas para mejorar la calidad de los cuidados de la salud.
+        p Los días 25 y 26 de abril Carestream nos va a sorprender con tecnologías útiles y novedosas para mejorar la calidad de los cuidados de la salud.
         a(href="./eventos/digitalfairs.html" title="Asiste a la Digital Fairs con nosotros")
           h4 Conoce más de este evento.
         
-    +cardsprin('Tendencias en limpieza y esterilizacion')
+    +cardsprin('Tendencias en limpieza y esterilizacion', './eventos/seminario-abril-2018.html')
       .card-body
         +foto('seminariogke-2018.png', 'Seminario Internacional de Limpieza y Esterilización', 'Conoce las tendencias actuales para la esterilización en tu hospital')
         p El Dr. Kaiser impartió un seminario con información científica para entender y validar mejor los procesos de esterilización que se realizan en cualquier CEyE.

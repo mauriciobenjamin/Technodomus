@@ -1,0 +1,29 @@
+extends ./base
+
+block append config
+  - var cardp = "card card-primary"
+  - var imgUrl = '../images/'
+  
+// Add extra stylesheets
+block append stylesheets
+
+block content
+  
+  .grid
+    .card.card-default.card-2x
+      article
+        .card-body
+          h1.headline= titulo
+          header
+            .byline
+              address.articulo
+                b Por
+                  a(rel= "author" href="mailto:info@technodomus.com")= autor
+                  time(pubdate datetime= fecha title= fechalarga) #{fechalarga}
+          p.resumen= resumen
+          p.claves= palabras_clave
+          .article-content.articulo
+            block articulo
+              
+// Add extra scripts
+block append scripts

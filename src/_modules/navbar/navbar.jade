@@ -1,19 +1,22 @@
+block append vars
+  -var selected = 'Inicio'
+  -var menu= {'Inicio': baseUrl, 'Esterilización': baseUrl+"esterilizacion",'Imagenología': baseUrl+"imagenologia",'Cotiza':baseUrl+"cotiza", 'Soporte':baseUrl+"soporte",'Blog':baseUrl+"noticias",'Nosotros':baseUrl+"nosotros" }
+
 header
 
-  nav.navbar.navbar-expand-sm.fixed-top.navbar-dark
+  nav.navbar.navbar-expand-lg.fixed-top.navbar-dark.justify-content-between
     a.navbar-brand(href=baseUrl) 
       img(src= baseUrl + 'images/logoNegPar.png', alt='Technodomus' height="60px")
     button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
       span.navbar-toggler-icon
     .collapse.navbar-collapse#navbarSupportedContent
-      ul.navbar-nav.ml-auto.mt-lg-0
+      ul.navbar-nav.ml-auto.mt-2.mt-lg-0
         li.nav-item
-          a.nav-link(href= baseUrl) Inicio
-        li.nav-item.dropdown
-          a.nav-link.dropdown-toggle(href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Productos
-          .dropdown-menu(aria-labelledby="navbarDropdown")
-            a.dropdown-item(href=baseUrl + "esterilizacion") Esterilización
-            a.dropdown-item(href=baseUrl + "imagenologia") Imagenología
+          a.nav-link(href=baseUrl) Inicio
+        li.nav-item
+          a.nav-link(href=baseUrl + "esterilizacion") Esterilización
+        li.nav-item
+          a.nav-link(href=baseUrl + "imagenologia") Imagenología
         li.nav-item
           a.nav-link(href=baseUrl+"cotiza") Cotiza
         li.nav-item
@@ -54,12 +57,12 @@ header
       ul.sidenav
         li.active 
           a(href= baseUrl) 
-            span.icon.fa.fa-home.fa-2x(aria-hidden="true")
-            span.opcion Inicio
+            img.logo(src=baseUrl+"images/home.svg", alt="Inicio", height="30px", aria-hidden="true")
+            span.opcion Inicio 
             span.sr-only (actual)   
         li
           a(href= baseUrl + 'esterilizacion') 
-            img.logo(src=baseUrl+"images/logo-esterilizacion.svg", alt="esterilizacion", height="27px", aria-hidden="true")
+            img.logo(src=baseUrl+"images/logo-esterilizacion.svg", alt="esterilizacion", height="28px", aria-hidden="true")
             span.opcion Esterilización
         li
           a(href= baseUrl + 'imagenologia') 
@@ -67,11 +70,11 @@ header
             span.opcion Imagenología
         li
           a(href= baseUrl + 'cotiza') 
-            span.icon.fa.fa-file-text.fa-2x(aria-hidden="true")
+            img.logo(src=baseUrl+"images/file-alt.svg", alt="Inicio", height="32px", aria-hidden="true")
             span.opcion Cotizaciones
         li
           a(href= baseUrl + 'noticias') 
-            span.icon.fa.fa-newspaper-o.fa-2x(aria-hidden="true")
+            img.logo(src=baseUrl+"images/newspaper.svg", alt="Inicio", height="27px", aria-hidden="true")
             span.opcion Noticias
         li
           a(href= baseUrl + 'nosotros') 
@@ -82,14 +85,18 @@ header
             span.icon.fa.fa-user-md.fa-2x(aria-hidden="true")
             span.opcion Clientes
         li
+          a(href=baseUrl+"soporte")
+            img.logo(src=baseUrl+"images/tools.svg", alt="Inicio", height="28px", aria-hidden="true")
+            span.opcion Soporte    
+        li
           a(href= twitter) 
-            span.icon.fa.fa-twitter.fa-2x(aria-hidden="true")
+            img.logo(src=baseUrl+"images/twitter.svg", alt="Inicio", height="32px", aria-hidden="true")
             span.opcion Twitter
         li
           a(href= facebook) 
-            span.icon.fa.fa-facebook.fa-2x(aria-hidden="true")
+            img.logo(src=baseUrl+"images/facebook.svg", alt="Inicio", height="32px", aria-hidden="true")
             span.opcion Facebook
         li
           a(href= google) 
-            span.icon.fa.fa-google-plus.fa-2x(aria-hidden="true")
+            img.logo(src=baseUrl+"images/google.svg", alt="Inicio", height="32px", aria-hidden="true")
             span.opcion Google+      

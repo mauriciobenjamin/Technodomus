@@ -1,33 +1,17 @@
 // Main javascript entry point
 // Should handle bootstrapping/starting application
 
-//'use strict';
-
+'use strict';
 const $ = require('jquery');
+const Muuri = require('muuri');
+const bootstrap = require('bootstrap');
+// const bootstrap_material = require('bootstrap-material-design');
+const popperjs = require('popper.js');
 
-$(function () {
-  console.log('¡Technodomus te saluda!');
+console.log('¡Technodomus te saluda!');
+
+
+const grid = new Muuri('.grid', {
+  items: '.card',
+  alignBottom: true,
 });
-
-$('.carousel').carousel({
-  interval: 15000,
-  pause: false,
-  wrap: true,
-  keyboard: true
-});
-
-$('.card').masonry({
-  itemSelector: '.card',
-  gutter: 40,
-  percentPosition: true,
-  columnWidth: '.card-heading',
-  horizontalOrder: true
-});
-//El formato de bloques con Masonry y control de carga de imagenes con imagesLoaded que evita superposiciones al armar la pagina
-
-// imagesLoaded.makeJQueryPlugin( $ );
-//
-// $('.grid').imagesLoaded(function(){
-//   var msnry = new Masonry('.grid', {
-//   });
-// });

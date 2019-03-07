@@ -6,9 +6,10 @@ block config
   - var google = 'https://plus.google.com/109633024373291114640'
   - var facebook = 'https://www.facebook.com/Technodomus/'
   - var twitter =  'https://www.twitter.com/Technodomus'
+  - var tituloPagina = 'Technodomus | Soluciones en equipo médico'
+  - var descripcion = 'Mejoramos la calidad de vida acercando tecnología innovadora a los profesionales de la salud en el área de imagenología y esterilización'
+  - var palabras_clave = "esterilización, hospitales, imagenología, medicina, equipos, rayos x, plasma"
   
-block append scripts
-  include ../_modules/popups/chat-bot
   
 doctype html
 
@@ -39,13 +40,14 @@ head
   title #{tituloPagina}
   meta(name='description', content= descripcion )
   meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  meta(name="keywords", content= palabras_clave)
   
   <!-- tag de pinteres --->
   meta(name="p:domain_verify" content="cd9ea555b6349a8c1c18061a3352acd4")
-  
+
   if canonical
     link(rel="canonical" href= canonical)
-
+  
   block stylesheets
     link(rel='stylesheet', href= baseUrl + 'styles/main.css')
     link(rel="icon", href= baseUrl+"/favicon16.png" sizes="16x16" type="image/png")
@@ -70,13 +72,12 @@ body
   <!-- End Google Tag Manager (noscript) -->
 
   <!--[if lt IE 9]>
-  <p class='browsehappy'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> to improve your experience.</p>
+  <p class='browsehappy'>Estas usando una versión <strong>desactualizada</strong> de navegador de internet. Por favor <a href='http://browsehappy.com/'>actualiza tu navegador</a> para mejorar tu experiencia con esta y otras páginas, además de tu seguridad.</p>
   <![endif]-->
   
   // navbar
   include ../_modules/navbar/navbar
   main.container-fluid
-    //img.construccion.responsive(src=baseUrl+"images/liston-sismo.png", alt="Fuerza México" height='150px')
     .caja-contenido
       
       block content
@@ -87,3 +88,5 @@ body
 
   block scripts
     script(src= baseUrl + 'scripts/main.js')
+    
+    
