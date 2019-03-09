@@ -4,6 +4,7 @@
 - var go = {"estilos": "go","ref": "https://plus.google.com/109633024373291114640","img": "./images/google.svg", "alt":"google"}
 - var tel = {"estilos": "tel","ref": "tel:5553363212","img": "./images/phone.svg", "alt":"teléfono"}
 - var mail = {"estilos": "mail","ref": "mailto:info@technodomus.com","img": "./images/envelope.svg", "alt":"correo electrónico"}
+- var wapp = {"estilos": "wapp", "ref": "https://web.whatsapp.com/send?phone=525584248665Podrian%20enviarme%20m%C3%A1s%20informaci%C3%B3n", "img": "./images/whatsapp.svg", "alt": "whatsapp"}
 
 mixin mixbotones(icon, texto)
   .botones
@@ -22,10 +23,11 @@ mixin cardcont(titulo)
         p en construcción
 
 
-+cardcont("Habla con nosotros")
++cardcont("Queremos saber de ti")
   .contacto
     +mixbotones(tel)
     +mixbotones(mail)
+    +mixbotones(wapp)
     +mixbotones(tw)
     +mixbotones(fb)
     +mixbotones(go)

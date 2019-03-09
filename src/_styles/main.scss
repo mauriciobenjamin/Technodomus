@@ -213,6 +213,10 @@ img {
   .boton-go{
     @include boton($color-goo);
   }
+
+  .boton-wapp{
+    @include boton($color-wapp);
+  }
 }
 
 //cards
@@ -499,11 +503,6 @@ textarea {
   @media screen and (max-width: $bp-m) {
     padding: 0.5rem; 
   }
-}
-
-//Breadcrum
-.breadcrum {
-  
 }
 
 //Estilo de los post del blog
