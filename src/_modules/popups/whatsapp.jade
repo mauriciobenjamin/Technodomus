@@ -1,0 +1,15 @@
+script(src=baseUrl+"scripts/floating-wpp.js")
+link(rel="stylesheet", href=baseUrl+"styles/floating-wpp.css")
+
+  #myDiv
+
+block append scripts
+  script.
+    $(function () {
+      $('#myDiv').floatingWhatsApp({
+        phone: '525584248665',
+        popupMessage: '¿Necesitas ayuda con algún equipo?',
+        showPopup: true
+      });
+    });
+  

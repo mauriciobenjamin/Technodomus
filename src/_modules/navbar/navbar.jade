@@ -1,6 +1,9 @@
-block append vars
-  -var selected = 'Inicio'
-  -var menu= {'Inicio': baseUrl, 'Esterilización': baseUrl+"esterilizacion",'Imagenología': baseUrl+"imagenologia",'Cotiza':baseUrl+"cotiza", 'Soporte':baseUrl+"soporte",'Blog':baseUrl+"noticias",'Nosotros':baseUrl+"nosotros" }
+- var selected = 'Inicio'
+- var menu= {'Inicio': baseUrl, 'Esterilización': baseUrl+"esterilizacion",'Imagenología': baseUrl+"imagenologia",'Cotiza':baseUrl+"cotiza", 'Soporte':baseUrl+"soporte",'Blog':baseUrl+"noticias",'Nosotros':baseUrl+"nosotros" }
+- var whatsapp = 'https://web.whatsapp.com/send?phone=525584248665Podrian%20enviarme%20m%C3%A1s%20informaci%C3%B3n' 
+- var google = 'https://plus.google.com/109633024373291114640'
+- var facebook = 'https://www.facebook.com/Technodomus/'
+- var twitter =  'https://www.twitter.com/technodomus'
 
 header
 
@@ -20,7 +23,7 @@ header
         li.nav-item
           a.nav-link(href=baseUrl+"cotiza") Cotiza
         li.nav-item
-          a.nav-link(href=baseUrl+"noticias") Noticias
+          a.nav-link(href=baseUrl+"noticias") Blog
         li.nav-item
           a.nav-link(href=baseUrl+"nosotros") Empresa
         li.nav-item
@@ -70,12 +73,12 @@ header
             span.opcion Imagenología
         li
           a(href= baseUrl + 'cotiza') 
-            img.logo(src=baseUrl+"images/file-alt.svg", alt="Inicio", height="32px", aria-hidden="true")
+            img.logo(src=baseUrl+"images/file-alt.svg", alt="Cotiza", height="32px", aria-hidden="true")
             span.opcion Cotizaciones
         li
           a(href= baseUrl + 'noticias') 
-            img.logo(src=baseUrl+"images/newspaper.svg", alt="Inicio", height="27px", aria-hidden="true")
-            span.opcion Noticias
+            img.logo(src=baseUrl+"images/newspaper.svg", alt="Blog", height="27px", aria-hidden="true")
+            span.opcion Blog
         li
           a(href= baseUrl + 'nosotros') 
             img.logo(src= baseUrl +"images/logo-blanco.svg", alt="technodomus" height="37px", aria-hidden="true")
@@ -86,17 +89,22 @@ header
             span.opcion Clientes
         li
           a(href=baseUrl+"soporte")
-            img.logo(src=baseUrl+"images/tools.svg", alt="Inicio", height="28px", aria-hidden="true")
+            img.logo(src=baseUrl+"images/tools.svg", alt="Soporte", height="28px", aria-hidden="true")
             span.opcion Soporte    
         li
+          a(href= whatsapp) 
+            img.logo(src=baseUrl+"images/whatsapp.svg", alt="whatsapp", height="32px", aria-hidden="true")
+            span.opcion Whatsapp      
+        li
           a(href= twitter) 
-            img.logo(src=baseUrl+"images/twitter.svg", alt="Inicio", height="32px", aria-hidden="true")
+            img.logo(src=baseUrl+"images/twitter.svg", alt="twitter", height="32px", aria-hidden="true")
             span.opcion Twitter
         li
           a(href= facebook) 
-            img.logo(src=baseUrl+"images/facebook.svg", alt="Inicio", height="32px", aria-hidden="true")
+            img.logo(src=baseUrl+"images/facebook.svg", alt="facebook", height="32px", aria-hidden="true")
             span.opcion Facebook
         li
           a(href= google) 
-            img.logo(src=baseUrl+"images/google.svg", alt="Inicio", height="32px", aria-hidden="true")
-            span.opcion Google+      
+            img.logo(src=baseUrl+"images/google.svg", alt="google", height="32px", aria-hidden="true")
+            span.opcion Google      
+        
