@@ -1,0 +1,19 @@
+
+extends ../../_layouts/noticias2
+
+block append config
+  - var baseUrl = './../../'
+  - var noticia = "Philips acuerda la adquisición del negocio de TI de Carestream"
+  - var subtitulo = "Consolidación de la propuesta tecnológica de sistemas de la información para la gestión de imágenes médicas, diagnóstico, análisis y flujos de trabajo."
+  - var fechalarga = "12 de marzo de 2019"
+  - var fecha = '2019-04-12'
+  - var autor = ' Benjamín Jiménez'
+  - var descripcion = "La compra del negocio de sistemas de información sanitaria de Carestream por parte de Philips generara a un actor clave del mercado de imagenología y tecnologías de la información"
+  - var palabras_clave = ['radiologia', 'TI', 'Carestream', 'Philips', 'PACS', 'VNA', 'Flujos de trabajo']
+  - var titulo = noticia
+  - var tituloPagina = titulo
+  - var resumen = "La adquisición de la unidad de negocio de tecnologías de la información de Carestream por parte de Philips generará a un nuevo actor con una de las presencias de mercado más importantes en el área de TI aplicadas a radiología tanto por sus ingresos como por su distribución geográfica."
+
+block articulo
+  include:marked philips_adquiere_hcis.md
+  

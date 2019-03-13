@@ -21,7 +21,9 @@ block content
                   a(rel= "author" href="mailto:info@technodomus.com")= autor
                   time(pubdate datetime= fecha title= fechalarga) #{fechalarga}
           p.resumen= resumen
-          p.claves= palabras_clave
+          p.claves
+            each item in palabras_clave
+              b=item+" / "
           .article-content.articulo
             block articulo
               
