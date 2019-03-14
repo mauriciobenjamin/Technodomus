@@ -17,7 +17,7 @@ block content
           header
             .byline
               address.articulo
-                b Por
+                b Por 
                   a(rel= "author" href="mailto:info@technodomus.com")= autor
                   time(pubdate datetime= fecha title= fechalarga) #{fechalarga}
           p.resumen= resumen
@@ -26,6 +26,16 @@ block content
               b=item+" / "
           .article-content.articulo
             block articulo
+    
+    if tambien
+      .card.card-2x
+        .card-header
+          h3 También te puede interesar
+        .card-body
+          ul
+          each link, title in tambien
+            li
+              a(href=link) #{title}
               
 // Add extra scripts
 block append scripts
