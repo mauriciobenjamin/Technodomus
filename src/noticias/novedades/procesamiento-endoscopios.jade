@@ -1,17 +1,17 @@
-extends ../../_layouts/noticias
+extends ../../_layouts/noticias2
 
 block append config
   - var baseUrl = './../../'
   - var noticia = "El procesamiento de endoscopios"
   - var fechalarga = "13 de diciembre de 2016"
   - var fecha = '2016-12-13'
-  - var autor = 'Technodomus'
+  - var autor = ' Technodomus'
   - var descripcion = "El procesamiento de los dispositivos de cirugía de mínima invasión requiere de procedimientos de esterilización especializados"
   - var subtitulo = 'El reto de garantizar su esterilidad'
+  - var resumen = "El crecimiento en las intervenciones a través de instrumentos de cirugía mínimamente ha hecho crecer la demanda de un correcto procesamiento para que siempre se cuente con instrumental estéril y seguro para el paciente. Sin embargo, su esterilización es complicada por fallas inherentes a su diseño que no permite que se usen los proceso usuales de esterilización. Por ello son necesarias medidas complementarias, como el monitoreo del proceso a través de dispositivos de reto."
+  - var titulo = "Retos en el procesamiento estéril de endoscopios"
+  - var tambien = {"Esterilización de baja temperatura I": "./esterilizacion_baja_temperatura_parte1.html", "¿Puedo ahorrar con la esterilización con plasma?": "./costos-plasma.html", "Mejora tus empaques 'puch'": "./sellador.html"}
+  - var palabras_clave = ["Esterilización", "Retos al proceso", "Indicadores", "Cirugía de mínima invasión"]
 
-block append content
-  
-  .grid
-    +cardmax(subtitulo)
-      .card-body
-        include:marked esterilizacion.md
+block articulo
+  include:marked esterilizacion.md
