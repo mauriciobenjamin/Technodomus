@@ -1,1 +1,0 @@
-La Universidad Soochow de China, realizó un estudio en su hospital afiliado se dió a la tarea de evaluar el impacto de de los errores de empaque en los instrumentos quirúrgicos 

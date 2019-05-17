@@ -14,8 +14,8 @@ Los encargados de esterilización que manejan equipos endoscopios no deben olvid
 
 ## Referencias
 
-<b id="f1">1</b> Rutala WA, Weber DJ; Gastrointestinal Endoscopes: A Need to Shift From Desinfection to Sterilization?, *JAMA*. 2014;312(14):1405-1406. [Publicación electrónica](https://doi:10.1001/jama.2014.12559) [↩](#a1)
+<b id="f1">1</b> Rutala WA, Weber DJ; Gastrointestinal Endoscopes: A Need to Shift From Desinfection to Sterilization?, *JAMA*. 2014;312(14):1405-1406. [doi:10.1001/jama.2014.12559](https://doi:10.1001/jama.2014.12559) [↩](#a1)
 
-<b id="f2">2</b> Rutala WA, Weber  DJ; Healthcare Infection Control Practices Advisory Committee. *Guideline for disinfection and sterilization in healthcare facilities*, 2008. [Documento electrónico](http://www.cdc.gov/hicpac/pdf/guidelines/disinfection_nov_2008.pdf) [↩](#a2)
+<b id="f2">2</b> Rutala WA, Weber  DJ; Healthcare Infection Control Practices Advisory Committee. *Guideline for disinfection and sterilization in healthcare facilities*, 2008. [Documento electrónico](http://www.cdc.gov/hicpac/pdf/guidelines/disinfection_nov_2008.pdf.) [↩](#a2)
 
 <b id="f3">3</b> Epstein  L, Hunter  JC, Arwady  MA,  et al.; New Delhi metallo-β-lactamase–producing carbapenem-resistant *Escherichia coli* associated with exposure to duodenoscopes. *JAMA*. 2014;312(14):1447-1455. [doi:10.1001/jama.2014.12720](https://doi:10.1001/jama.2014.12720). [↩](#a3)
