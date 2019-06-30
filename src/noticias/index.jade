@@ -5,12 +5,20 @@ block config
   - var baseUrl = '../'
   - var noticia = 'Noticias'
   - var tituloPagina = "Blog de actualidades sobre esterilización hospitalaria y la imagenología médica en México y el mundo"
-  - var descripcion = "Información técnica precisa sobre los avances y novedades en tecnología médica, imagenología, rayos X, esterilización, manejo de la CEyE, trazabilidad y validación de los procesos de esterilización. También publicamos información sobre los eventos de actualización en los que participamos o los que organizamos con especialistas nacionales e internacionales. Conoce sobre las alternativas a los sistemas de esterilización más conocidos como el Sterrad® de Johnson&Johnson® o el autoclave tradicional de vapor"
+  - var descripcion = "Información técnica precisa sobre los avances y novedades en tecnología médica, imagenología, rayos X, esterilización, manejo de la CEyE, trazabilidad y validación de los procesos de esterilización. También publicamos información sobre los eventos de actualización en los que participamos o los que organizamos con especialistas nacionales e internacionales. Conoce sobre las alternativas a los sistemas de esterilización más conocidos como el Sterrad® de Johnson&Johnson®, el VPro de Steris o el autoclave tradicional de vapor"
   
 block append content
   +jumbo('Blog de Technodomus')
   
   .grid
+
+    //- +cardsprin('Otros peróxidos usados en esterilización', './novedades/esterilizacion_baja_temperatura_parte3.html') 
+    //-   .card-body
+    //-     p La segunda parte de la serie sobre métodos de esterilización de baja temperatura se concentra en los dos métodos de esterilización por peróxido de hidrógeno más usados en la actualidad. 
+    //-     a(href="./novedades/esterilizacion_baja_temperatura_parte2.html" title="Cónoce mejor el método por peróxido de hidrógeno para definir si adapta mejor a las condiciones de tus cargas de esterilización")
+    //-       h4 Conoce mejor los métodos de vapor de peróxido de hidrógeno y plasma de peróxido de hidrógeno. 
+
+
     +cardsprin('¿Cuáles son las ventajas del peróxido de hidrógeno?', './novedades/esterilizacion_baja_temperatura_parte2.html') 
       .card-body
         <a title="Diliff [CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0/)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Plasma_lamp_touching.jpg"><img width="100%" alt="Plasma lamp touching" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Plasma_lamp_touching.jpg/256px-Plasma_lamp_touching.jpg"></a>

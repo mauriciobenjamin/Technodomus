@@ -2,17 +2,17 @@ extends ../../_layouts/noticias2
 
 block append config
   - var baseUrl = './../../'
-  - var noticia = "Métodos de baja temperatura, el peróxido de hidrógeno."
-  - var subtitulo = "Esterilización de baja temperatura, parte II"
+  - var noticia = "Esterilización de baja temperatura II"
+  - var subtitulo = "Método a base de peróxido de hidrógeno"
   - var fechalarga = "9 de abril de 2019"
   - var fecha = '2019-04-09'
   - var autor = ' Benjamín Jiménez'
-  - var descripcion = "Elegir un método de esterilización de baja temperatura no es sencillo debido a la gran variedad de tecnologías disponibles. En esta segunda parte, analizamos el método del peróxido de hidrógeno y sus principales ventajas con respecto a otros métodos de baja temperatura"
-  - var palabras_clave = ['baja temperatura', 'esterilización', 'peróxido de hidrógeno', 'plasma', 'VHPO', 'H202', 'Sterrad', 'VPro', '130HPO'. 'Stericool', 'esterilizacion en frio']
+  - var descripcion = "Elegir un método de esterilización de baja temperatura no es sencillo debido a la gran variedad de tecnologías disponibles. En esta segunda parte analizamos los métodos que emplean peróxido de hidrógeno, tanto el de vapor como el de plasma, para discutir sus diferencias y ventajas, entre sí y respecto a otros métodos de baja temperatura. Esta es la segunda parte de nuestra serie sobre métodos de esterilización de baja temperatura."
+  - var palabras_clave = ['Baja temperatura', 'Esterilización', 'Peróxido de Hidrógeno', 'Plasma', 'VHPO', 'H2O2', 'Sterrad', 'VPro', 'Stericool', 'Esterilización en frio']
   - var titulo = noticia
   - var tituloPagina = titulo
   - var resumen = "Uno de los métodos de baja temperatura más usados en la actualidad es que emplea peróxido de hidrógeno como agente esterilizante. Tiene numerosas ventajas, especialmente que no es tóxico y su manejo es más seguro y amable con el medio ambiente comparado con los métodos que usan formaldehído y óxido de etileno. Su aplicación de cualquier forma requiere condiciones especificas para ser efectiva y que es importante conocer para usarlo correctamente. Además, el método se presenta en dos formas como vapor y como plasma, los cuales tienen condiciones de funcionamiento especificas."
-  - var tambien = {"Esterilización de baja temperatura I": "./esterilizacion_baja_temperatura_parte1.html", "¿Puedo ahorrar con la esterilización con plasma?": "./costos-plasma.html", "Mejora tus empaques 'puch'": "./sellador.html", "Procesamiento de endoscopios": "./procesamiento-endoscopios.html"}
+  - var tambien = {"Esterilizacion de baja temperatura III": "./esterilizacion_baja_temperatura_parte3.html","Esterilización de baja temperatura I": "./esterilizacion_baja_temperatura_parte1.html","¿Puedo ahorrar con la esterilización con plasma?": "./costos-plasma.html", "Mejora tus empaques 'puch'": "./sellado.html", "Procesamiento de endoscopios": "./procesamiento-endoscopios.html"}
 
 block articulo
   include:marked metodos_bajatemperatura_II.md
