@@ -26,4 +26,3 @@ El lavado es el paso más importante para mejorar la **efectividad** de la desin
 | Facilita el seguimiento del equipo en procesos de certificación y trazabilidad | X | - |
 | Reducción de tiempos | X | - |
 | Manejo del instrumental delicado | X | - |
-

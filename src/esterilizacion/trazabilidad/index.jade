@@ -9,24 +9,31 @@ block append config
   - var descripcion = "T-DOC es un sistema completo que permite hacer seguimiento de su instrumental a través de los procesos de lavado, empaquetado, esterilización, distribución y retorno a la CEYES, e incluso de su uso en quirofano."
   
 block content
-  +cabecera(producto, bread)
 
   .grid
-    +cardfoto('t-doc2.jpg','T-DOC','Una solución completa de trazabilidad')
-
-    +carddoble('Solución de manejo y trazabilidad')
+    +cardprod("Sistema de trazabilidad semiautomática")
       .card-body
-        :marked
-          ## La solución completa para el manejo y trazabilidad de los suministros
-
-          T-DOC es una solución que permite el seguimiento de sus suministros durante todo su ciclo de vida. Este seguimiento le permitirá garantizar la calidad de sus servicios y mejorar el control de infecciones para que este sea más preciso y oportuno. 
+        :markdown
+          Una solución accesible a la trazabilidad hasta el quirófano
           
-          Estas no son las únicas ventajas de T-DOC, como sistema de gestión, permite definir prioridades de producción, eficientar el uso de instalaciones y [equipos](/esterilizacion/esterilizacion/), [verificar la calidad de los procesos](/esterilizacion/validacion/) y un control completo de su stock de instrumental.
+          Nuestro sistema de trazabilidad semiautomática consiste en una pistola de etiquetado, que permite identificar los paquetes a esterilizar antes de se procesado, al salir de servicio de esterilización, en la sala de operaciones y después de su uso. Con ella es posible imprimir hasta 3 renglones para documentar los paquetes con la siguiente información: Equipo esterilizador usado, lote, iniciales de la persona responsable, fecha de procesamiento y fecha de caducidad.
 
-          Esto permite a T-DOC ser una magnifica inversión al reducir los gastos de reprocesamiento, instalaciones sin uso por falta de instrumental o extravíos de insumos. Es además, un sistema modular que se adapta a sus necesidades en todo momento.
+          Las etiquetas del sistema poseen doble adhesivo lo que permite usarlas como evidencia en una hoja de cirugía segura. También incorpora indicadores de proceso para diferentes sistemas de esterilización.
 
-          [Contactenos](mailto:info@technodomus.com) para conocer más de las ventajas de T-DOC
+          [Agenda](./demostraciones-trazabilidad.html) una demostración para que conozcas todas su ventajas.
 
-        +getinge
-    
-    +cardfoto('t-doc.jpg','T-DOC','Una solución completa de trazabilidad')
+        +gke
+        :marked
+          No. de Artículo | Descripción 
+          :--------------:|:-----------:
+          240-850 | Pistola para la impresión de etiquetas, alfanumérica.
+          240-883 | Etiqueta para documentación de paquetes con pistola de impresión con doble adhesivo e indicador de vapor. Caja con 4 rollos
+          244-881 | Etiqueta para documentación de paquetes con pistola de impresión con doble adhesivo e indicador de plasma. Caja con 2 rollos.
+
+      .card-footer
+        a(href="http://www.gke.eu/es/hand-labelling-device-with-labels-es.html?file=files/gke_2013/content/en/downloads/Data%20sheets/Chemical%20indicators/Documentation%20system.pdf") Ficha técnica del producto.
+        
+    +cardprod('Etiquetadora de trazabilidad manual')
+      .card-body
+        +foto('validacion-etiquetadora2.png', 'Pistola etiquetadora', 'Pistola etiquetadora que permite la trazabilidad manual del su instrumental al procesarlo para esterilización')
+   
