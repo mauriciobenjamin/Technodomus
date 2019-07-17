@@ -3,8 +3,8 @@ extends _layouts/base
 block vars
   - var tituloPagina = 'Technodomus | Soluciones en equipo médico'
   - var descripcion = "Tecnología y servicios para los profesionales de la salud, imagenologia, rayos x, mesas de rayos X, salas de rayos X digitales y computarizados, tomografos, MRI, esterilizacion hospitalaria, plasma, peróxido de hidrógeno, alternativas al sistema sterrad, desinfeccion, trazabilidad, indicadores biológicos, documentación, radiología, película seca, DRYVIEW, productos Carestream, gke, Laoken y más; en México, Bajio, Zona Metropolitana, Puebla, Estado de México, Querétaro, Jalisco, San Luis Potosí, Guanajuato, Aguascalientes, Mérida, Yucatán, Veracruz y Tabasco, Morelos,"
-  - var prodEsteril = {"titulo":"Esterilización", "link":"/esterilizacion/", "etiqueta": "esterilizacion", "imagen": "images/esterilizacion-usuario.png", "alt": "Facilidad de uso de los esterilizadores de plasma a baja temperatura", "links": {"Solución integral de esterilización": "/esterilizacion/esterilizacion/solucion-integral-esterilización.html", "Trazabilidad y validación": "/esterilizacion/validacion/"}}
-  - var prodImagen = {"titulo": "Imagenología", "link": "/imagenologia/", "etiqueta": "imagenologia", "imagen": "images/imagenologia.png", "alt": "PACS, RIS y salidas digitales en imagenologia","links": {"PACS en la nube": "/imagenologia/PACS/pacs-enlanube.html", "Radiología digital": "/imagenologia/rx-digital/index.html"}}
+  - var prodEsteril = {"titulo":"Esterilización", "link":"/esterilizacion/", "etiqueta": "esterilizacion", "imagen": "images/esterilizacion-usuario.png", "alt": "Facilidad de uso de los esterilizadores de plasma a baja temperatura", "links": {"Solución integral de esterilización": "/esterilizacion/esterilizacion/solucion-integral-esterilización.html", "Trazabilidad y validación": "/esterilizacion/validacion/", "Indicadores Biológicos": "/esterilizacion/validacion/indicadores-biologicos.html"}}
+  - var prodImagen = {"titulo": "Imagenología", "link": "/imagenologia/", "etiqueta": "imagenologia", "imagen": "images/imagenologia.png", "alt": "PACS, RIS y salidas digitales en imagenologia","links": {"PACS en la nube": "/imagenologia/PACS/pacs-enlanube.html", "Radiología digital": "/imagenologia/rx-digital/index.html", "Sistemas de ultrasonido": "/imagenologia/ultrasonido/index.html"}}
 
   mixin frontcard(producto, vista)
     if vista = "escritorio"
@@ -39,13 +39,15 @@ block content
         :markdown
             ## Imágenes de alta calidad para el diagnóstico siempre disponibles.
             
-            La digitalización de sus áreas de imagenología es una decisión qinstrumental eue puede contribuir a mejorar sus flujos de trabajo, reduciendo tiempos de espera en el procesamiento de las imágenes y facilitando el acceso a la información. Contamos con equipos para emprender una conversión digital a partir de su instalación actual de rayos X, hasta soluciones completas de sistemas móviles y salas de rayos X totalmente digitales.
+            La digitalización de sus áreas de imagenología es una decisión instrumental eue puede contribuir a mejorar sus flujos de trabajo, reduciendo tiempos de espera en el procesamiento de las imágenes y facilitando el acceso a la información. Contamos con equipos para emprender una conversión digital a partir de su instalación actual de rayos X, hasta soluciones completas de sistemas móviles y salas de rayos X totalmente digitales.
             
-            Agregamos a nuestro portafolío productos que completan una solución total de imagen diagnostica, con ultrasonidos, tomografos y resonancia magnética que permiten tenes una respuesta a cada necesidad de diagnóstico por imagen.
-            
-            Contamos con las mejores [películas para generar salidas dígitales](./imagenologia/rx-digital/output-digital/pelicula-dry.html), pero también para ofrecer excelentes [imágenes análogicas](./imagenologia/rx-analogico/) e integrar todo sus sistema de imagenología [en una solución](./imagenologia/PACS/) de la marca lider Carestream.
+            Agregamos a nuestro portafolío productos que completan una solución total de imagen diagnostica, con ultrasonidos, tomógrafos y resonancia magnética que permiten tenes una respuesta a cada necesidad de diagnóstico por imagen.
 
-            [Conoce más de nuestros productos](./imagenologia/index.html))
+            Nuestro portafolio va desde sistemas de ultrasonido de uso general, hasta sistemas especializados de diagnóstico como la [resonancia magnética](./imagenologia/alta-especialidad/resonancia/) o la tomografía por emisión de positrones (PET). 
+
+            Contamos con las mejores [películas para generar salidas dígitales](./imagenologia/rx-digital/output-digital/pelicula-dry.html), pero también para ofrecer excelentes [imágenes análogicas](./imagenologia/rx-analogico/) e integrar todo sus sistema de imagenología [en una solución](./imagenologia/PACS/) de marcas líderes como Carestream y Philips.
+
+            [Conoce más de nuestros productos](./imagenologia/index.html)
       
       .snackbar
         Texto de prueba
