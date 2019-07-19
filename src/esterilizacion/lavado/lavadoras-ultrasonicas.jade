@@ -3,36 +3,26 @@ extends ../../_layouts/productos2
 block append config
   //- Correct base url pathing for this page
   - var baseUrl = './../../'
-  - var producto = 'Lavadoras Ultrasónicas'
+  - var producto = 'Lavado con ultrasonido'
   - var tituloPagina = "Technodomus | Soluciones en " + producto
   - var bread = {Inicio: baseUrl, Esterilización: './../', Lavado: './', 'Lavadoras ultrasónicas':'#'}  
   - var descripcion = "Una gama completa de lavadoras de ultrasonido con diferentes tamaños de tina que van desde 10 hasta 144 litros y que permiten mejorar la calidad de sus procesos de lavado especialmente en el instrumental más delicado y con formas más intrincadas como el equipo de endoscopia o cirugía mínimamente invasiva"
-  
-block content
-  +cabecera(producto, bread)
 
-  .grid
-    +cardprod()
-      +foto('lavadora-ultrasonido.jpg', 'Lavadora Ultrasonido')
-      .card-body
+block append content 
+  .grid 
+    +cardprod('Lavadoras ultrasónicas') 
+      +foto('lavadora_ultrasonido.jpg', 'Lavadora Ultrasonido') 
+      .card-body 
         :markdown
-          Technodomus cuenta con una gama completa de tinas de mesa, desde 10 a 30 L, y de tinas de pie de 50 a 140 L, para el lavado ultrasónico. Fáciles de utilizar y de alta calidad, nuestras lavadoras cuentan con tina de acero inoxidable, control de temperatura de hasta 65 °C, sistema de drenaje y controles digitales, e indicadores LED o con pantalla LCD a elegir.
-          Además, cuentan con la posibilidad de realizar ciclos de lavado en una, dos o tres frecuencias distintas, lo que hace más eficiente el lavado y mejora el desempeño ante diferentes condiciones de suciedad y configuración de los instrumentos a procesar.
+            Technodomus cuenta con una gama completa de tinas de mesa, desde 10 a 30 L, y de tinas de pie de 50 a 140 L, para el lavado usando ultrasonido. Fáciles de utilizar y de alta calidad, nuestras lavadoras cuentan con tina de acero inoxidable, control de temperatura de hasta 65 °C, sistema de drenaje y controles digitales, e indicadores LED. 
+            La lavadora cuenta con un potente generador de ultrasonido de 40 kHz, con la posibilidad de sustituir el transductor básico por un modelo con la capacidad realizar ciclos de lavado en una o dos, o con hasta tres frecuencias distintas, de 40, 60 y 80 kHz en los modelos de 20 y 30 litros. El cambio en las frecuencias hace más eficiente el lavado y mejora el desempeño ante diferentes condiciones de suciedad y configuración de los instrumentos a procesar.
 
-    +cardsubp('Características generales')
-      .card-body
-        +foto('lavadoras-ultrasonido.jpg', 'Gama de lavadoras de ultrasonido')
-        ul
-          li La gama va de 10 a 30 litros de capacidad de la tina, todas con tapa y una canasta opcional adaptada a cada tamaño.
-          li Control de tiempo y temperatura electrónico.
-          li Sistema de transductores de alto desempeño con la opción de una sola frecuencia (40kHz), dos frecuencias (40 y 60 kHz) o tres frecuencias (40, 60 y 80 kHz) en los modelos de 20 y 30 litros.
-      
-    +cardsubp('Especificaciones')
+    +cardextra('Especificaciones')
       .card-body
         :marked
-          Modelo |	10 |	15 |	20 |	30
-          -------|:---:|:---:|:---:|:---:
-          Capacidad (Litros) | 10 | 15 |	20 | 30
+          Modelo | KMH1240W9101 | KMH1360w9151 | KMH1720U9201 | KMH11100U930
+          -------|:------------:|:------------:|:------------:|:-------------:
+          Capacidad (Litros) | 10 | 15 | 20 | 30
           Largo  (mm) | 330 | 360 | 550 | 550 
           Alto (mm) | 365 | 365 | 365 | 415
           Profundidad (mm) | 270 | 330 | 330 | 330
@@ -40,5 +30,6 @@ block content
           Alto tina | 150 | 150 | 150 | 200
           Ancho tina | 240 | 300 | 300 | 300 
           Potencia Ultrasonido (W) | 240 | 360 | 600 | 720
-            
-          
+      .card-footer
+        p Descarga las especificaciones completas 
+          a(href="./especificaciones_ultrasonido.pdf") aquí.
