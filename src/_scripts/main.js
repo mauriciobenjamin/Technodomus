@@ -3,15 +3,17 @@
 
 'use strict';
 const $ = require('jquery');
-const Muuri = require('muuri');
-const bootstrap = require('bootstrap');
-// const bootstrap_material = require('bootstrap-material-design');
-const popperjs = require('popper.js');
+$(document).ready(function () {
+  const Muuri = require('muuri');
+  const bootstrap = require('bootstrap');
+  // const bootstrap_material = require('bootstrap-material-design');
+  const popperjs = require('popper.js');
 
-console.log('¡Technodomus te saluda!');
+  console.log('¡Technodomus te saluda!');
 
 
-const grid = new Muuri('.grid', {
-  items: '.card',
-  alignBottom: true,
+  const grid = new Muuri('.grid', {
+    items: '.card',
+    alignBottom: true,
+  });
 });
