@@ -1,0 +1,34 @@
+extends ../_layouts/productos2
+
+block vars
+  - var baseUrl = './../'
+  - var urlLinks = '/imagenologia/'
+  - var producto = "DRX Nano Revolution"
+  - var tituloPagina = 'Technodomus | ' + producto
+  - var descripcion = "Un sistema de rayos X digital móvil revolucionario de tamaño compacto que usa un emisor de campo de nano tubos de carbono para generar los rayos X, lo que lo hace mucho más pequeño y fácil de maniobrar que sus homólogos de tubo tradicional de tungsteno"
+  - var bread = {Inicio: baseUrl, Imagenología: './', 'Nano Revolution': '#'}
+
+block append content
+
+  .grid
+    +cardprin(producto)
+      .card-body
+        include:marked nano.md
+
+    +cardfoto('nano2.jpg', 'Tecnología de nanotubos de carbono que reduce el peso y consumo de energía', 'DRX Revolution Nano')
+
+    +cardfoto('nano1.jpg', 'Pensado en la maniobrabilidad y su uso en áreas con espacios restringidos', 'Un DRX móvil extremadamente flexible')
+
+    +cardsubp('Ventajas clave')
+      .card-body
+        ul
+          li Pequeño y ligero, fácil de transportar y almacenar en espacios pequeños.
+          li Brazo artículado basculante que permite un fácil posicionamiento.
+          li Tubo de <em>Carbon Nano</em> más ligero y con mejor vida útil.
+          li Diseño pensado en presupuestos ajustados.
+
+    +cardfoto('nano3.jpg', 'Pensado para usarlos en habitaciones, quirofanos, salas de urgencias y cuidados intensivos', 'El balance entre precio y desempeño')
+
+    +cardsubp('El balance entre precio y desempeño', '../cotiza/')
+      .card-body
+        p Si esta buscando renovar o cambiar su equipo de rayos X móvil, puede que un sistema CR sea una alternativa conveniente, pero que no tiene todas las ventajas de un sistema digital. Nano permite tener lo mejor de ambas opciones, ya que integra los avances del sistema líder DRX-Revolution escaladas para hacerlo una alternativa de precio contenido. Es la revolución que estaba esperando para dar el paso a ser totalmente digital. Solicite una <a href="../cotiza/", title="Cotizalo">cotización.</a>
