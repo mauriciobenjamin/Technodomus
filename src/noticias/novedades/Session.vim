@@ -7,12 +7,13 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
+badd +4 dosificacion-personalizada.md
 badd +1 razones-quimicos.md
 badd +2 farmacopea-loquehayquesaber.md
 badd +1 razones-para-usar-iq.jade
 badd +2 esterilizacion_baja_temperatura_parte2.jade
 badd +9 razones-para-usar-indicadores-quimico.jade
-badd +19 ~/Desarrollo/Technodomus/segunda/src/noticias/index.jade
+badd +26 ~/Desarrollo/Technodomus/segunda/src/noticias/index.jade
 badd +23 indicadores-biologicos.md
 badd +1 procesamiento-endoscopios.jade
 badd +17 esterilizacion.md
@@ -43,13 +44,13 @@ setlocal fen
 normal! zo
 14
 normal! zo
-let s:l = 15 - ((7 * winheight(0) + 11) / 22)
+let s:l = 15 - ((12 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 15
 normal! 0147|
-tabedit ~/Desarrollo/Technodomus/segunda/src/noticias/index.jade
+tabedit farmacopea-loquehayquesaber.md
 set splitbelow splitright
 set nosplitbelow
 set nosplitright
@@ -59,22 +60,47 @@ set winheight=1
 set winminwidth=0
 set winwidth=1
 argglobal
-setlocal fdm=manual
-setlocal fde=0
+setlocal fdm=expr
+setlocal fde=Foldexpr_markdown(v:lnum)
 setlocal fmr={{{,}}}
 setlocal fdi=#
 setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-silent! normal! zE
-let s:l = 30 - ((13 * winheight(0) + 10) / 21)
+2
+normal! zo
+let s:l = 5 - ((4 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-30
-normal! 0372|
-tabnext 2
+5
+normal! 0
+tabedit dosificacion-personalizada.md
+set splitbelow splitright
+set nosplitbelow
+set nosplitright
+wincmd t
+set winminheight=0
+set winheight=1
+set winminwidth=0
+set winwidth=1
+argglobal
+setlocal fdm=expr
+setlocal fde=Foldexpr_markdown(v:lnum)
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+let s:l = 13 - ((12 * winheight(0) + 16) / 32)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+13
+normal! 011|
+tabnext 3
 set stal=1
 if exists('s:wipebuf') && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
