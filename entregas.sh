@@ -9,15 +9,10 @@ git push origin actualizacion
 rsync -rv ~/Desarrollo/Technodomus/segunda/src/ ~/Desarrollo/Technodomus/paginaweb/src/ 
 rsync -rv ~/Desarrollo/Technodomus/segunda/build/ ~/Desarrollo/Technodomus/originales/
 
-# #Actualización del git maestro
-# ../paginaweb
-# git add .
-# git commit -m "$1"
-# git push origin master
+ORIGINALES="/home/mauricio/Desarrollo/Technodomus/originales/"
 
-# #Actualización del git de la página
-# ../originales
-# git add .
-# git commit -m "$1"
-# git push -u origin master
+#Actualización del git de la página
+git -C ORIGINALES add .
+git -C ORIGINALES commit -m "$1"
+git push -C ORIGINALES -u origin master
 
