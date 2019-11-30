@@ -12,7 +12,7 @@ rsync -rv ~/Desarrollo/Technodomus/segunda/build/ ~/Desarrollo/Technodomus/origi
 ORIGINALES="/home/mauricio/Desarrollo/Technodomus/originales/"
 
 #Actualización del git de la página
-git -C ORIGINALES add .
-git -C ORIGINALES commit -m "$1"
+git -C $ORIGINALES add .
+git -C $$ORIGINALES commit -m "$1"
 git push -C ORIGINALES -u origin master
 
