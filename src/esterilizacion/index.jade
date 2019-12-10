@@ -16,13 +16,13 @@ block content
         p El manejo de material médico requiere un proceso que garantice su esterilidad al momento de usarse. Para ello, todo equipo y material debería de pasar por un proceso que incluya:
           ol
             li 
-              a(href="./lavado/") Lavado
+              a(href="./lavado/") Lavado y revisión
             li
               a(href="./empaque/") Empaque
             li
               a(href="./esterilizacion/") Esterilización
             li
-              a(href="./validacion/") Validación
+              a(href="./validacion/") Monitoreo
             li
               a(href="./trazabilidad/") Trazabilidad
         p Para cada paso del proceso, Technodomus le ofrece las mejores alternativas para que sus procesos médicos cuenten siempre con material esteril y en buenas condiciones.
@@ -30,7 +30,8 @@ block content
     +cardprod('Servicio Integral de Esterilización', './esterilizacion/solucion-integral-esterilizacion.html')
       .card-body
         +foto('empaque-en-uso.jpg', 'El servicio integral de esterilización incluye todos los consumibles para cada ciclo', 'uso de los empaques de tyvek')
-        p Conoce una solución que te permite contar con un esterilizador con la tecnología más moderna y todos los insumos necesarios para que solo te preocupes por tu flujo de trabajo.
+        p No te precupes más por cirugías canceladas, equipos que no estan funcionando o dudas en la trazabilidad del proceso. Una solución para todos tus retos de esterilización de baja temperatura.
+        p Conoce la solución que te permite contar con un esterilizador con la tecnología más moderna y todos los insumos necesarios para que solo te preocupes por tu flujo de trabajo.
         h4
           a(href=baseUrl+"esterilizacion/esterilizacion/solucion-integral-esterilizacion.html") Más información del servicio integral
 
@@ -38,8 +39,18 @@ block content
       .card-body
         +foto('contenedores-esterilizacion.jpg', 'Nuestros nuevos contenedores de esterilización', 'Conoce nuestros nuevos contenedores de esterilización')
         h4
-          a(href=baseUrl+"esterilizacion/empaque/contenedores.html") Conoce nuestra nueva linea de contenedores para esterilización
-          
+          a(href=baseUrl+"esterilizacion/empaque/contenedores.html") Conoce nuestra línea de contenedores para esterilización
+
+    +cardprod('Esterilización de baja temperatura', './esterilizacion/plasma.html')
+      .card-body
+        +foto('esterilizador-plasma-100-laoken.png', 'Esterilizadores', 'Esterilizador Laoken Plasma 100')
+        p Nuestros esterilizadores estan pensados para las necesidades de un hospital moderno que realiza procedimientos de cirugía minimamente invasiva y/o de alta especialidad.
+        p Contamos con equipos de baja temperatura, con tecnología de plasma de peróxido de hidrógeno que es un método altamente eficaz para la esterilización de instrumental complejo y que no soporta altas temperaturas, por lo que es la mejor opción para endoscopios, laparoscopios y otros instrumentos con piezas ópticas.
+        h4
+          a(href= baseUrl + "esterilizacion/esterilizacion/plasma.html") Esterilizadores de plasma de peróxido de hidrogéno
+      .card-footer
+        a(href=baseUrl+"esterilizacion/") Conoce más de nuestra gama de esterilizadores
+        
     +cardprod('Desinfección de superficies', './desinfeccion/')
       .card-body
         +foto('caviwipes-sola-md.png', 'Caviwipes es una solución a los problemas de desinfección')
@@ -50,16 +61,6 @@ block content
         p 
           a(href="./desinfeccion/") Conoce más de nuestras soluciones en desinfección.
 
-    //- +cardprod('Esterilización', './esterilizacion/')
-    //-   .card-body
-    //-     +foto('esterilizador-plasma-100-laoken.png', 'Esterilizadores', 'Esterilizador Laoken Plasma 100')
-    //-     p Nuestros esterilizadores estan pensados para las necesidades de un hospital moderno que realiza procedimientos de cirugía minimamente invasiva y/o de alta especialidad.
-    //-     p Contamos con equipos de baja temperatura, con tecnologías de plasma de peróxido de hidrógeno que es un método altamente eficaz para la esterilización de instrumental complejo y que no soporta alta temperatura.
-    //-     h4
-    //-       a(href= baseUrl + "esterilizacion/esterilizacion/plasma.html") Esterilizadores de plasma de peróxido de hidrogéno
-    //-   .card-footer
-    //-     a(href=baseUrl+"esterilizacion/") Conoce más de nuestra gama de esterilizadores
-        
     +cardprod('Lavado','./lavado/')
       .card-body
         +foto('lavado.jpg','lavado')
@@ -83,7 +84,7 @@ block content
         h4
           a(href=baseUrl+"esterilizacion/empaque/contenedores.html") Contenedores para esterilización
         h4
-          a(href=baseUrl+"esterilizacion/empaque/papel-gm.html") Papel grado médico
+          a(href=baseUrl+"esterilizacion/empaque/selladora.html") Selladora de bolsa
         h4
           a(href=baseUrl+"esterilizacion/empaque/notejido.html") Materiales no tejidos
         h4
