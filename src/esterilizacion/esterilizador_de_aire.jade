@@ -1,17 +1,18 @@
-extends ../../_layouts/productos2
+extends ../_layouts/productos2
 
 block append config
   - var baseUrl = './../../'
-  - var urlLinks = '/esterilizacion/esterilizacion/plasma.html'
-  - var producto = "Esterilizador de Plasma LK/MJG-100"
+  - var urlLinks = '/esterilizacion/esterilizador_de_aire.html'
+  - var producto = "Esterilizador de aire por plasma"
   - var tituloPagina = 'Technodomus | ' + producto
-  - var descripcion = "Un equipo de esterilización con plasma de peróxido de hidrógeno con un equilibrio entre capacidad y espacio ocupado. 100 L para esterilizar su equipo más delicado"
-  - var bread = {Inicio: baseUrl, Esterilización: './../', Esterilizadores: './', Plasma: "./plasma.html", "LK/MJG-100":"#"}  
+  - var descripcion = "Purifica y esteriliza el aire de cualquier espacio con un equipo móvil que permite aprovechar sus ventajas. Esterilización con un modulo de plasma que degrada las moléculas orgánicas para eliminar microoganismos y virus de forma segura. Reduce la exposición a virus como el coronavirus o SARS-CoV-2 que provoca el COVID-19"
+  - var bread = {Inicio: baseUrl, Esterilización: './../', "Esterilizador de aire"":"#"}  
 
 block append content
 
   .grid
     +cardprin(producto)
       .card-body
-        +foto('esterilizador-plasma-100-laoken.png', 'Esterilizador Laoken de 100L', 'Plasma de 100L')
+        +foto('esterilizador-de-aire.png', 'Esterilizador de aire por plasma', 'Esterilizador KJF-Y100')
         :markdown
+          ### Aire seguro en todo momento y en cualquier lugar.

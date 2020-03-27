@@ -9,7 +9,14 @@ block content
   #parallax-esteril.jumbotron
     h1.cabecera Soluciones en esterilización
     
-  .grid  
+  .grid
+    +cardprin('Esterilizador de aire', './esterilizador_de_aire.html' )
+      .card-body
+        +foto('esterilizador-aire.png', 'Esterilizador de aire por plasma')
+        p Un sistema que no solo filtra las particular suspendidas purificando el aire, sino que gracias a su modulo de plasma, degrada los materiales orgánicos destruyendo vapores orgánicos como el formaldehído, y por supuesto a microorgánismos, incluyendo esporas, bacterias resistentes a los antibióticos y virus como el coronavirus SARS-CoV2 causante del COVID-19. 
+        h4 
+          a(href="./esterilizador_de_aire.html") Conoce más de esta tecnología 
+
     +cardprin('El proceso de esterilización')
       .card-body          
         +foto('esterilizacion.jpeg','esterilizacion')
