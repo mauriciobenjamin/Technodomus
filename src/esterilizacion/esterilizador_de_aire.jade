@@ -6,13 +6,30 @@ block append config
   - var producto = "Esterilizador de aire por plasma"
   - var tituloPagina = 'Technodomus | ' + producto
   - var descripcion = "Purifica y esteriliza el aire de cualquier espacio con un equipo móvil que permite aprovechar sus ventajas. Esterilización con un modulo de plasma que degrada las moléculas orgánicas para eliminar microoganismos y virus de forma segura. Reduce la exposición a virus como el coronavirus o SARS-CoV-2 que provoca el COVID-19"
-  - var bread = {Inicio: baseUrl, Esterilización: './../', "Esterilizador de aire"":"#"}  
+  - var bread = {Inicio: baseUrl, Esterilización: './../', "Esterilizador de aire":"#"}  
 
 block append content
 
   .grid
     +cardprin(producto)
       .card-body
-        +foto('esterilizador-de-aire.png', 'Esterilizador de aire por plasma', 'Esterilizador KJF-Y100')
+        +foto('esterilizadores-aire.png', 'Esterilizador de aire por plasma', 'Esterilizador KJF-Y100')
         :markdown
           ### Aire seguro en todo momento y en cualquier lugar.
+
+          Filtra las partículas de 0.3 µ con un filtro HEPA y retiene vapores orgánicos como el formaldehído para tener un aire más puro. Lo que lo hace efectivo contra microorgánismos es el modulo de plasma que degrada las moleculas orgánicas que los protegen y permite eliminar un 99.90% de las esporas y estafilococos resistentes a los antibioticos, y todo tipo de virus como el coronavirus que causa el COVID-19. Este sistema permite además eliminar los compuestos orgánicos volátiles (VOCs) tóxicos.
+
+          El sistema cuenta con sensores de humedad, temperatura y PM 2.5 para evaluar la calidad de aire, con la capacidad de conectarse de forma inalámbrica por WiFi™ y Bluetooth® para controlarlo de forma remota desde un dispositivo móvil o de la web, almacenando la información en la nube para su evaluación posterior.
+
+          Su móvilidad permite usarlo en diferentes áreas multiplicando su funcionalidad, permitiendo la protección de multiples espacios sin molestar con instalaciones complicadas ni ruido molesto ya que tiene un nivel de ruido de solo 50 dB.
+
+    +cardprod('Purificación y desinfección en cinco etapas')  
+      .card-body
+        :markdown
+          Hasta cinco etapas de filtrado que eliminan de forma progresiva todos aquello que no sean gases inertes respirables.
+          
+          + **Filtro primario**, que elimina las partículas más grandes
+          + **Filtro secundario**, de fibras sintéticas que retiene las partículas de tamaño intermedio
+          + **Módulo de plasma**, que elimina los microorganismos por medio de radicales libres del oxígeno
+          + **Filtro absorbente** de polímero que elimina vapores orgánicos y olores
+          + **Filtro HEPA** que retiene hasta un 99% de partículas entre 0.1 y 0.3 µm.
