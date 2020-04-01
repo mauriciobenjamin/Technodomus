@@ -11,8 +11,11 @@ En general el peróxido no daña las superficies del instrumental pero se ha obs
 ### Otros plasmas de baja temperatura
 
 También esta en estudio la generación de plasmas a temperatura ambiente y con presiones cercanas a la atmosférica, haciendo pasar un gas entre dos placas de un material dieléctrico, método similar al usado en al producción de ozono por efecto corona y que se conocen como plasmas de descarga de barrera dieléctrica, que podrían usarse en la desinfección de superficies.
+
 En todos los casos, los plasmas tienen una vida corta, por lo que solo pueden ser aplicados cerca de las superficies y en general su penetración es acotada. Al mismo tiempo, debido a su alta reactividad, su acción es muy rápida y la liberación del material también ya que dejan muy pocos residuos. 
+
 Como se menciono antes, para formar un plasma es necesario un gas y la aplicación de energía. El gas determina muchas de las propiedades del plasma, y considerando que un mecanismo de inactivación de microorganismos es la oxidación, los gases con los que más se ha experimentado son los que forman compuestos oxidantes como el oxigeno, vapor de ácido perácetico, de formaldehído, halógenos y el que nos ocupa, el vapor de peróxido de hidrógeno. En cuanto a la energía necesaria para ionizar el gas, la más sencilla es la aplicación de calor, hasta que los choques entre las moléculas del gas provoquen el desprendimiento de electrones, el problema es que para ellos se requieren temperaturas extremadamente altas, de hasta 3000 °C. Para poder generar un plasma a temperaturas menores, es necesario primero que la cantidad de gas a ionizar sea menor y para aplicar la energía en forma de campos electromagnéticos, microondas o radiofrecuencias de alta energía. Estos plasmas generalmente requieren de vacíos muy profundos en el orden de 0.001 a 0.15 kPa y temperaturas entre 30 y 50 °C. 
+
 Las especies que se forman durante el plasma, se recombinaran al eliminarse la fuente de energía, por lo que, en el caso del peróxido de hidrógeno, se combinaran para formar agua y oxigeno molecular. 
 
 Se desconocen los mecanismos exactos de reacción que provoca el plasma, pero se asume que reaccionan con las proteínas, lípidos, las enzimas, el ADN, el ARN y otras moléculas esenciales de los microorganismos provocando su muerte o inactivación.Las especies que se forman u
