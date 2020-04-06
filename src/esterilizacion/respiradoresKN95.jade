@@ -1,0 +1,39 @@
+extends ../_layouts/productos2
+
+block append config
+  - var baseUrl = './../../'
+  - var urlLinks = '/esterilizacion/respiradorKN95.html'
+  - var producto = "Respiradores de alta eficiencia KN95"
+  - var tituloPagina = 'Technodomus | ' + producto
+  - var descripcion = "Protección personal con características similares o incluso superiores a las de los respiradores N95 y probados en la pandemia de COVID-19 en Wuhan causada por el coronavirus SARS-Cov2"
+  - var bread = {Inicio: baseUrl, Esterilización: './', "Esterilizador de aire":"#"}  
+
+block append content
+  .grid
+    +cardprin(producto)
+      .card-body
+        +foto('respiradorKN95.png', 'Respirador de alta eficiencia para protección personal')
+        p Cumpliendo o excediendo los parámetros de la normativa N95 (NIOSH-42CFR84) y con certificación CE, el respirador KN95 para profesionales de la salud protege de forma efectiva contra aerosoles y fluidos corporales, reduciendo de forma significativa el riesgo de contagio por enfermedades de transmisión aérea. Reduce también todos los riesgos asociados a contaminantes ambientales con tamaños de partícula superiores a 0.3 µm como polvo, polen y esporas.
+        p El respirador ha probado su eficacia y fue diseñado a partir de la experiencia de la epidemia del SARS 2002 para mejorar su desempeño ante aerosoles infecciosos.
+
+    +cardprod("Destacados")
+      .card-body
+        ul
+          li Cinco (5) capas de material filtrante con dos (2) capas de no tejido melt blow con BFE de 99%
+          li Ajuste más fácil con elásticos en las orejas.
+          li Diseño de bajo perfil y corte para su uso en combinación con caretas y gafas de seguridad.
+          li Materiales flexibles para adaptarse mejor a diferentes rostros, no tejidos sintéticos con alta capacidad filtrante.
+          li Ajuste en la nariz para mejorar la calidad del sello.
+          li Pliegues termosoldados para facilitar la respiración y el ajuste del respirador.
+
+    +cardprod("Comparación entre distintas clases de respiradores")
+      .card-body
+        :marked
+          | Estándar | N95 (NIOS-42CFR84) |	FFP2 (EN 149-2001) | KN95 (GB2626-2006) |
+          |----------|--------------------|--------------------|--------------------|
+          | Desempeño del filtro|≥ 95%|≥ 94%|≥ 95%|
+          | Agente de prueba|NaCl|NaCl y aceite de parafina|NaCl|
+          | Tasa de flujo|85 L/min|95 L/min|85 L/min|
+          | Total de filtración hacia el interior probando en sujetos humanos haciendo ejercicio|NA|≤ 8% de fuga|≤ 8% de fuga|
+          | Resistencia a la inhalación - Caída máxima de presión|≤ 343 Pa|≤ 70 Pa (a 30 L/min)<br>≤ 240 Pa (a 95 L/min)<br>≤ 500 Pa (saturado)|≤ 350 Pa|
+          | Resistencia a la exhalación - Caída máxima de presión|≤ 245 Pa|≤ 300 Pa|≤ 250 Pa
