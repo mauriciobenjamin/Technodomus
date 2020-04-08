@@ -227,6 +227,9 @@ img {
   margin: 10px;
   img {
     padding-bottom: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   .resumen {
     color: $color5;

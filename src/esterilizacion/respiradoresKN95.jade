@@ -7,30 +7,46 @@ block append config
   - var tituloPagina = 'Technodomus | ' + producto
   - var descripcion = "Protección personal con características similares o incluso superiores a las de los respiradores N95 y probados en la pandemia de COVID-19 en Wuhan causada por el coronavirus SARS-Cov2"
   - var bread = {Inicio: baseUrl, Esterilización: './', "Esterilizador de aire":"#"}  
+  - var palabras_clave = "N95, equipo de protección personal, mascarillas, COVID-19, respiradores, FFP2, KN95, SARS-CoV2"
 
 block append content
   .grid
     +cardprin(producto)
       .card-body
-        +foto('respiradorKN95.png', 'Respirador de alta eficiencia para protección personal')
-        p Cumpliendo o excediendo los parámetros de la normativa N95 (NIOSH-42CFR84) y con certificación CE, el respirador KN95 para profesionales de la salud protege de forma efectiva contra aerosoles y fluidos corporales, reduciendo de forma significativa el riesgo de contagio por enfermedades de transmisión aérea. Reduce también todos los riesgos asociados a contaminantes ambientales con tamaños de partícula superiores a 0.3 µm como polvo, polen y esporas.
-        p El respirador ha probado su eficacia y fue diseñado a partir de la experiencia de la epidemia del SARS 2002 para mejorar su desempeño ante aerosoles infecciosos.
+        +foto('mascarilla.png', 'Respirador de alta eficiencia para protección personal')
+        p Cumpliendo o excediendo los parámetros de la normativa N95 (NIOSH-42CFR84), en cumplimiento con la norma GB2626-2006 y la EN 149-2001 y con certificación CE, el respirador KN95 para profesionales de la salud protege de forma efectiva contra aerosoles y fluidos corporales, reduciendo de forma significativa el riesgo de contagio por enfermedades de transmisión aérea. Reduce también todos los riesgos asociados a contaminantes ambientales con tamaños de partícula superiores a 0.3 µm como polvo, polen y esporas.
+        p Este diseño de respirador pensado para usarse con aerosoles infecciosos, probó su eficacia en la epidemia de COVID-19 en Wuhan.
 
     +cardprod("Destacados")
       .card-body
+        +foto('capas_mascarillas.png', 'cinco capas de textiles no tejidos con capacidad filtrante de 99% de bacterias.')
         ul
-          li Cinco (5) capas de material filtrante con dos (2) capas de no tejido melt blow con BFE de 99%
+          li Cinco (5) capas de material filtrante con dos (2) capas de no tejido <em>melt blow</em> con BFE de 99%
           li Ajuste más fácil con elásticos en las orejas.
           li Diseño de bajo perfil y corte para su uso en combinación con caretas y gafas de seguridad.
           li Materiales flexibles para adaptarse mejor a diferentes rostros, no tejidos sintéticos con alta capacidad filtrante.
           li Ajuste en la nariz para mejorar la calidad del sello.
           li Pliegues termosoldados para facilitar la respiración y el ajuste del respirador.
+          li Caja con 50 piezas en empaque individual.
+    
+    +cardprod("Características")
+      .card-body
+        +foto('cajasKN95.png', 'Presentación de caja con 50 piezas')
+        :marked
+          | Característica | Valor |
+          |----------------|:-----:|
+          | Desempeño del filtro|99%|
+          | Agente de prueba|NaCl|
+          | Tasa de flujo|85 L/min|
+          | Total de filtración hacia el interior|≤ 8% de fuga|
+          | Resistencia a la inhalación - Caída máxima de presión|≤ 350 Pa|
+          | Resistencia a la exhalación - Caída máxima de presión|≤ 250 Pa|
 
     +cardprod("Comparación entre distintas clases de respiradores")
       .card-body
         :marked
           | Estándar | N95 (NIOS-42CFR84) |	FFP2 (EN 149-2001) | KN95 (GB2626-2006) |
-          |----------|--------------------|--------------------|--------------------|
+          |:---------|:------------------:|:------------------:|:------------------:|
           | Desempeño del filtro|≥ 95%|≥ 94%|≥ 95%|
           | Agente de prueba|NaCl|NaCl y aceite de parafina|NaCl|
           | Tasa de flujo|85 L/min|95 L/min|85 L/min|
