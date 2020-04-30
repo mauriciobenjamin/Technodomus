@@ -1,0 +1,25 @@
+extends ../../_layouts/productos2
+
+block append config
+  - var baseUrl = './../../'
+  - var producto = 'Renta de equipos de digitalización e impresión'
+  - var tituloPagina = "Technodomus | " + producto
+  - var bread = {Inicio: baseUrl, Imagenología: './../', 'Equipos de Imagenología': './'}
+  - var descripcion = "Si estas buscando mejorar tus servicios de radiología puedes hacerlo rápidamente sin una gran inversión rentando nuestros equipos de imagenología digital como CRs (radiología computarizada) o equipos nuevos de outlet con precios muy atractivos."
+  - var palabras_clave = "Radiología digital, CR, renta de equipos, impresoras de rayos x"
+
+block append content
+  .grid
+
+    +cardprod('Modernize su servicio de imagenología con una inversión mínima')
+      .card-body
+        +foto('/carestream-directview-cr.jpg','CR, sistemas de radiología computarizada')
+        p Mejorar los tiempos de procesamiento de las imágenes, reduce la exposición del paciente a la radiación y facilita el acceso a la información generada, todo eso con una inversión inicial mínima y con sin invertir en activos. Todo esto permite la renta de equipos de radiología dígital que están respaldados por nuestro departamento de servicio técnico y el del fabricante para que usted pueda operar sin interrupciones.
+        p No se arriesgue comprando equipos de procedencia desconocida y sin soporte del fabricante. Nuestros equipos en renta están listos para funcionar y haz mas estudios desde el primer día.
+        p Contacta a nuestros <a href="mailto:imagen@technodomus.com">especialistas de imagen</a> para conocer las características y condiciones de los equipos.
+
+    +cardprod('Outlet de equipos')
+      .card-body
+        +foto('./carestream-cr.jpg', 'Radiología digital más accesibles')
+        p También contamos con impresoras y equipos de radiología móvil nuevos a precios muy atractivos para expandir su base de atención. <a href="mailto:imagen@technodomus.com">Contactanos</a> para conocer los equipos disponibles y las opciones de financiamiento.
+        +foto('impresora-dryview-5850.jpg', 'Impresoras a precios especiales')
