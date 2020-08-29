@@ -1,0 +1,20 @@
+extends ../_layouts/productos2
+
+block append config
+  - var baseUrl = './../'
+  - var producto = "Productora de dosis unitarias Rapid"
+  - var subtitulo = "Trazabilidad, unidosis, y adherencia al tratamiento"
+  - var bread = {Inicio: baseUrl, "Farmacia hospitalaria": "#"}
+  - var fechalarga = "27 de septiembre de 2019"
+  - var fecha = '2019-09-27'
+  - var descripcion = "La nueva farmacopea de los Estados Unidos Méxicanos (FEUM) en su Suplemento para Establecimientos Dedicados a la Venta y Suministro de Medicametnos y demás insumos para la salud establece como una obligación para las farmacias hospitalarias el contar con sistemas de trazabiliad. Esto es mucho más que solo contar con una maquina para hacer unidosis o un robot para controlar el almacen de medicamentos, implica el poder contrlar en todo momento que pasa con cada farmaco" 
+  - var tituloPagina = producto
+  - var resumen = "Desde el ingreso a almacen hasta la toma, todos los procesos y profesionales envueltos en el uso de los medicamentos pueden contar con una solución que potencie el uso racional de los mismos garantizando el abasto y la administración del medicamento correcto a la persona correcta."
+
+block append content
+  .grid
+    +carddoble("Una solución integral, desde almacen hasta la cama del paciente")
+      .card-body
+        img(src="../images/flujo-farmacia.jpg", alt="Todo el proceso de flujo de la farmacia", title="Flujo de la farmacia")
+        include:marked ./descripcion.md
+
