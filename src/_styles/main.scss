@@ -55,6 +55,9 @@ main{
   .container-fluid {
     padding: 5px 0;
     margin-bottom: 20px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
   }
 }
 
@@ -96,7 +99,6 @@ img {
 
 .caja-contenido {
   display: block;
-  flex-flow: row;
   margin-left: 5rem;
   margin-top: 1rem;
   @media screen and (max-width: $bp-sidenav) {
@@ -106,6 +108,7 @@ img {
 
 .grid {
   position: relative;
+  max-width: 80vw;
 }
 
 .caja-contenido-footer {
@@ -269,6 +272,7 @@ img {
 
 .card-2x {
   width: 90%;
+  max-width: 800px;
   padding: 30px;
   @media screen and (max-width: $bp-m) {
     padding: 10px;
