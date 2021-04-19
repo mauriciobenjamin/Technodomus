@@ -1,7 +1,7 @@
-extends ./_layouts/base
+extends ../_layouts/base
 
 block config 
-  - var baseUrl = './'
+  - var baseUrl = '../'
   - var tituloPagina = 'Gracias por estar con nosotros'
   - var descripcion = 'Queremos agradecer tu participación en nuestra encuesta'
     
@@ -12,7 +12,7 @@ block append content
     +cardmax('Tus comentarios nos ayudan a mejorar')
       .card-body
         p Toda la información que nos proporcionaste será manejada con estricta confidencialidad. Si tienes cualquier duda puedes consultar nuestro 
-          a(href="aviso-privacidad.html") aviso de privacidad 
+          a(href="../aviso-privacidad.html") aviso de privacidad 
           | y estamos en el correo 
           a(href="mailto:info@technodomus.com") info@technodomus.com 
           | para cualquier duda o sugerencia.

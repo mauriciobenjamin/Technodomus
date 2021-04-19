@@ -23,21 +23,20 @@ block vars
               a(href=baseUrl + val) #{key}
         
 block content
-  .container-fluid
-    .grid
-      +frontcard(prodEsteril, "escritorio")
-        :markdown
-          ## La seguridad de contar siempre con material y equipos estériles.
-          Garantizar la esterilidad de los procedimientos quirúrgicos es un reto que se actualiza todos los días ya que cada vez que inicia una cirugía, la Central de Esterilización y Equipos (CEyE) se convierte en el guardian de la seguridad del paciente ante eventos infecciosos. En Technodomus nos ocupamos de encontrar una solución integral al proceso de esterilización para no solo contar con equipos adecuados, sino con todos los elementos para validar y dar seguimiento al proceso, para poder trazar las condiciones en que fue procesado cada instrumento en cualquier momento.  
-          Por ello, nuestra oferta no solo incluye equipos sino [soluciones completas](./esterilizacion/esterilizacion/solucion-integral-esterilizacion.html) para los problemas de esterilización del material sensible al calor o con canulados, sistemas completos para el tratamiento de todo el material que deber ser procesado para su esterilización o desinfección de alto nivel, desde el [lavado](./esterilizacion/lavado/index.html), [empaque](./esterilizacion/empaque/index.html) hasta la [validación](./esterilizacion/validacion/index.html) y [trazabilidad](./esterilizacion/trazabilidad/index.html) del proceso, con marcas líderes como Laoken, gke, SteriClin y Metrex.
-          [Conoce más de nuestros productos](./esterilizacion/)
-      +frontcard(prodFarma, "escritorio")
-        :markdown
-          ## El control de los medicamentos desde su ingreso hasta el paciente.
-          Uno de los principales generadores de incidentes dentro de los hospitales es la administración incorrecta de medicamentos. Es un problema complejo ya que los medicamentos tienen un largo recorrido, donde abundan los puntos en los que se pueden confundir, perder o administrar de forma incorrecta por desconocimiento de los antecedentes clínicos del paciente.  
-          Por ello introducimos al mercado nacional una solución integral para el manejo de la farmacia hospitalaria que va más alla de su automatización y contempla todos los pasos del recorrido de los medicamentos y su integración con el flujo de los sistemas hospitalarios. No son solo maquinas de empaquetado, es un sistema que comunica al médico tratante, con el farmaceutico y a este con los responsables de hacer llegar el medicamento correcto al paciente correcto. Espera más noticias de nuestro sistema.
-      +frontcard(prodImagen, "escritorio")
-        :markdown
+  .grid
+    +frontcard(prodEsteril, "escritorio")
+      :markdown
+        ## La seguridad de contar siempre con material y equipos estériles.
+        Garantizar la esterilidad de los procedimientos quirúrgicos es un reto que se actualiza todos los días ya que cada vez que inicia una cirugía, la Central de Esterilización y Equipos (CEyE) se convierte en el guardian de la seguridad del paciente ante eventos infecciosos. En Technodomus nos ocupamos de encontrar una solución integral al proceso de esterilización para no solo contar con equipos adecuados, sino con todos los elementos para validar y dar seguimiento al proceso, para poder trazar las condiciones en que fue procesado cada instrumento en cualquier momento.  
+        Por ello, nuestra oferta no solo incluye equipos sino [soluciones completas](./esterilizacion/esterilizacion/solucion-integral-esterilizacion.html) para los problemas de esterilización del material sensible al calor o con canulados, sistemas completos para el tratamiento de todo el material que deber ser procesado para su esterilización o desinfección de alto nivel, desde el [lavado](./esterilizacion/lavado/index.html), [empaque](./esterilizacion/empaque/index.html) hasta la [validación](./esterilizacion/validacion/index.html) y [trazabilidad](./esterilizacion/trazabilidad/index.html) del proceso, con marcas líderes como Laoken, gke, SteriClin y Metrex.
+        [Conoce más de nuestros productos](./esterilizacion/)
+    +frontcard(prodFarma, "escritorio")
+      :markdown
+        ## El control de los medicamentos desde su ingreso hasta el paciente.
+        Uno de los principales generadores de incidentes dentro de los hospitales es la administración incorrecta de medicamentos. Es un problema complejo ya que los medicamentos tienen un largo recorrido, donde abundan los puntos en los que se pueden confundir, perder o administrar de forma incorrecta por desconocimiento de los antecedentes clínicos del paciente.  
+        Por ello introducimos al mercado nacional una solución integral para el manejo de la farmacia hospitalaria que va más alla de su automatización y contempla todos los pasos del recorrido de los medicamentos y su integración con el flujo de los sistemas hospitalarios. No son solo maquinas de empaquetado, es un sistema que comunica al médico tratante, con el farmaceutico y a este con los responsables de hacer llegar el medicamento correcto al paciente correcto. Espera más noticias de nuestro sistema.
+    +frontcard(prodImagen, "escritorio")
+      :markdown
           ## Imágenes de alta calidad para el diagnóstico siempre disponibles.
           La digitalización de sus áreas de imagenología es una decisión instrumental que puede contribuir a mejorar sus flujos de trabajo, reduciendo tiempos de espera en el procesamiento de las imágenes y facilitando el acceso a la información. Contamos con equipos para emprender una conversión digital a partir de su instalación actual de rayos X, hasta soluciones completas de sistemas móviles y salas de rayos X totalmente digitales.  
           Contamos con las mejores [películas para generar salidas digitales](./imagenologia/rx-digital/output-digital/pelicula-dry.html), pero también para ofrecer excelentes [imágenes analógicas](./imagenologia/rx-analogico/) e integrar todo sus sistema de imagenología [en una solución](./imagenologia/PACS/) de la marca líder Carestream.
@@ -45,5 +44,4 @@ block content
       .snackbar
         Texto de prueba
 
-      include _modules/contacto/contacto
-    
+    include _modules/contacto/contacto
