@@ -5,7 +5,7 @@ git commit -m "$1"
 git push origin actualizacion
 
 #Sincronización de los archivos de producción
-gulp --production
+gulp -production
 rsync -rv ~/Desarrollo/Technodomus/segunda/src/ ~/Desarrollo/Technodomus/paginaweb/src/ 
 rsync -rv ~/Desarrollo/Technodomus/segunda/build/ ~/Desarrollo/Technodomus/originales/
 
