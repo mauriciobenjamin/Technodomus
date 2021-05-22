@@ -5,6 +5,8 @@ block append config
   - var baseUrl = './../../'
   - var producto = 'Indicadores Biológicos'
   - var tituloPagina = "Technodomus | Soluciones en " + producto
+  - var descripcion = 'Importantes en los procesos de validación, un método que muchos consideran aun el estándar para el monitoreo de la esterilización, contamos con una variedad de diferentes tipos, desde tradicionales a los de lectura rápida, elaborados en laboratorios y con todos los requisitos de calidad.'
+  - var palabras_clave = 'indicadores biologicos, esterilizacion, geobacillus steareothermophilus, lectura rapida, monitoreo, testigos, vapor, plasma'
   - var bread = {Inicio: baseUrl, Esterilización: './../', Validación: './', 'Indicadores Biológicos': '#'}  
   
 block content
@@ -15,7 +17,7 @@ block content
       .card-body#InstantMini
         +foto('validacion-instant-mini-gke.png', 'Instant-Mini-Bio-Plus')
         :markdown
-          Los indicadores Instant-Mini-Bio-Plus contienen un indicador tipo V que permite que el resultado del proceso de esterilización sea evaluado **instántaneamente** al termino del proceso de esterilización. No requiere de incubación, ahorrando tiempo de espera.
+          Los indicadores Instant-Mini-Bio-Plus contienen un indicador químico tipo 5 que permite evaluar el resultado del proceso de esterilización **instántaneamente**, al momento de salir de la carga. No requiere de incubación, ahorrando tiempo de espera. Adicionalmente el indicador se puede incubar de forma normal para tener el doble registro del resultado. Los indicadores *Instant-Mini-Bio-Plus* cuentan con esporas especialmente cultivadas para tener una alta resistencia, por lo que exceden los valores D de otras en el mercado.
         +gke
         :marked
           No. Articulo | Descripción
@@ -25,24 +27,32 @@ block content
 
     +cardprod("Indicadores biológicos rápidos")
       .card-body
-        +foto('indicadores-rapidos.jpg', 'Indicadores de incubación corta')
-        :markdown
-          Una tecnología que combina una reacción biológica con un química para tener un testigo de la esterilización en un tiempo reducido. Los indicadores biológicos rápidos aprovechan reacciones enzimáticas para identificar la viabilidad de los microorganismos antes de que estos puedan incubar. 
+        +foto('indicadores_biologicos.png', 'Indicadores de lectura rápida para vapor y peróxido de hidrógeno')
+        :marked
+          La combinación de dos técnicas de lectura para tener un resultado oportuno de los proceso de esterilización. Estos indicadores han sido diseñados para detectar en ellos la presencia de la enzima ɑ-Glucosidasa que se degrada posteriormente a la muerte de la espora y además es necesaria para el desarrollo de la bacteria, por lo que su ausencia es sinónimo de muerte bacteriana. 
+
+          Esto reduce el tiempo de espera para tener una lectura positiva a incluso 4 minutos y una lectura negativa en 20 min. dando mayor seguridad al proceso sin sacrificar tiempo.
+
+          Modelo | Método de esterilización | Tiempo de incubación
+          :-------:|:--------------:|:--------------:
+          UGBI0201 | Vapor | 4-20 min 
+          UGBI0101 | Vapor | 15-60 min 
+          UGBI0301 | Vapor | 30-180 min 
+          UGBI0102 | Peróxido de hidrógeno | 4-20 min 
           
     +cardprod("Indicadores biológicos autocontenidos")
       .card-body
         +foto('validacion-indicadores-autocontenidos.png', 'Indicadores autocontenidos')
         :markdown
-          Los indicadores Mini-Bio-Plus Autocontenidos constan de un vial de plástico con una tira de esporas y una ampolleta de vidrio que contiene un medio de cultivo y un indicador de pH. Se pueden usar en el monitoreo de rutina y validación de la mayoría de los procesos de esterilización, ya que no requieren ser análizados en el laboratorio de microbiología.
-          Se encuentran disponibles en versiones para esterilizadores de vapor, formaldehído, peróxido de hidrogeno y óxido de etileno.
+          Los indicadores Mini-Bio-Plus Autocontenidos constan de un vial de plástico con un disco de esporas, una ampolleta de vidrio que contiene un medio de cultivo y un indicador de pH. Se pueden usar en el monitoreo de rutina y validación de la mayoría de los procesos de esterilización, ya que no requieren ser análizados en el laboratorio de microbiología.
+          Se encuentran disponibles en versiones para esterilizadores de vapor y peróxido de hidrogeno con *Geobacillus steareothermophilus* en diferentes resistencias de acuerdo a sus necesidades (sobre pedido para otros métodos de esterilización).
         +gke
         :marked
-          No. Articulo | Descripción 
-          :-----------:|:----------:
-          324-505 | Indicador Biológico Autocontenido Ge ob. *Geobacillus steareothermophilus* 105. Vapor. 50 pzas
-          324-605 | Indicador Biológico Autocontenido Ge ob. *Geobacillus steareothermophilus* 106. Vapor. 50 pzas
-          327-605 | Indicador Biológico Autocontenido Ge ob. *Geobacillus steareothermophilus* 106. Peróxido de hidrogeno. 50 pzas
-          327-606 | Indicador Biológico Autocontenido Ge ob. *Geobacillus steareothermophilus* 106. Peróxido de hidrogeno. 60 pzas
+          No. Articulo | Método de esterilización | Población | Pzas
+          :-----------:|:------------------------:|:----------:|:--------
+          324-505 | Vapor | 10⁵ | 50 pzas
+          324-605 | Vapor | 10⁶ | 50 pzas
+          327-605 | Peróxido de hidrogeno | 10⁶ | 50 pzas
     
     +cardprod("Incubadoras")
       .card-body
@@ -58,3 +68,20 @@ block content
           224-002 | Triturador de ampolletas para activar indicadores biológicos autocontenidos
           610-119 | Incubadora de baño seco con bloques de alumnio. Temperatura de incubación de 37 °C
           610-120 | Incubadora de baño seco con bloques de alumnio. Temperatura de incubación de 57 °C
+
+    +cardprod("Incubadoras para lectura rápida")
+      .card-body 
+        +foto('incubadora-ug-ar400.png', 'Incubadora para 4 tipos de indicadores de lectura rápida')
+        :marked
+          Las incubadoras **Ugaiya** emplean la tecnología de análisis espectral para monitorear los cambios de fluorescencia que las esporas sobrevivientes podrían causar en la enzima que contiene el medio de cultivo.
+
+          Los lectores son compatibles con los indicadores biológicos de lectura rápida más populares del mercado y pueden ser usadas también para incubar los indicadores convencionales. Además poseen interfaces para exportar la información y dar trazabilidad al proceso de validación. 
+          
+          Cuentan con pantalla tactil a color que permite conocer el tiempo de incubación, estado del indicador, porcentaje de fluorescencia y resultado de la incubación.
+
+          Modelo | Tipo de indicadores | Tiempo de lectura
+          :--------|:-------------------:|:-------------:
+          UG-AR400 | 4 tipos diferentes | 4 a 180 min (segun el indicador) 
+          UG-AR200 | 20 min VH202 | 4-20 min 
+          UG-AR100 | 60 min Vapor | 15-60 min 
+          UG-AR300 | 180 min Vapor | 30-180 min 
