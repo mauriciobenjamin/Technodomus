@@ -5,7 +5,9 @@ block append config
   - var urlLinks = '/esterilizacion/esterilizacion/plasma.html'
   - var producto = "Esterilizadores de Plasma"
   - var tituloPagina = 'Technodomus | Soluciones en ' + producto
-  - var bread = {Inicio: baseUrl, Esterilización: './../', Esterilizadores: './', Plasma: "#"}  
+  - var bread = {Inicio: baseUrl, Esterilización: './../', Esterilizadores: './', Plasma: "#"} 
+  - var descripcion = 'La tecnología de esterilización por peróxido de hidrógeno es una alternativa para evitar daños al instrumental, una de sus principales ventajas. Como todo método de esterilización tienen desventajas, pero su velocidad y eficacia las compensan cuando se valora que aumentan la utilización del quirófano y menos gastos en instrumental'
+  - var palabras_clave = 'esterilizacion baja temperatura, plasma de peróxido de hidrógeno ventajas y desventajas, alternativa sterrad, autoclaves plasma, metodos de esterilziación'
 
 block content
   +cabecera(producto, bread) 
@@ -14,7 +16,9 @@ block content
     +cardprin("Seguridad y cuidado para su equipo")
       .card-body
         :markdown
-          La tecnología de esterilización por plasma es una de las mas efectivas para el tratamiento de equipo sensible al calor o a la humedad, como endoscopios, lentes, instrumentos ópticos, instrumentos quirúrgicos de precisión o de metales suaves. Además permite esterilizar en las cavidades más pequeñas, penetrando en lúmenes de hasta un milimetro de diámetro interno y eliminando microorgánismos de todos los rincones de su equipo.
+          La tecnología de esterilización por plasma es una de las mas efectivas para el tratamiento de equipo sensible al calor o a la humedad, como endoscopios, lentes, instrumentos ópticos, instrumentos quirúrgicos de precisión o de metales suaves, incluyendo instrumental de silicón, Teflón, polietileno, Nylón, poliuretano y acetato, entre otros, por lo que es ideal para el procesamiento de equipos de cirugía de mínima invasión y ortopedia.
+         
+          Además permite esterilizar en las cavidades más pequeñas, penetrando en lúmenes de hasta un milimetro de diámetro interno y eliminando microorgánismos de todos los rincones de su equipo.
           Los equipos que le ofrecemos poseen tecnología avanzada que les permite lograr tiempos de procesamiento eficientes y alta calidad en el proceso, con la ventaja adicional de una interfaz de usuario fácil de usar que reduce la incidencia de ciclos rechazados y por lo mismo, el desperdicio de tiempo e insumos.
     
     +cardprod("Esterilizador LK/MJG-50","./plasma-30L.html")
@@ -32,3 +36,11 @@ block content
           Un equipo equilibrado con una buena capacidad y diseño contenido. Su cámara con más de 100 L de capacidad permite la esterilización de varios sets de instrumental de manera simultanea. Además cuenta con una incubadora de indicadores biológicos incorporada lo que facilita los procesos de validación de la carga.
       .card-footer
         a(href="./plasma-100L.html") Más información del esterilizador.
+
+    +cardprod("Esterilizador LK/MJG-150","./plasma-150L.html")
+      .card-body
+        +foto('laoken-150.png', "Esterilizador Laoken de 150L")
+        :markdown
+          Una cámara de mayor capacidad para hospitales con alto consumo y movimiento. El mayor volumen reduce también la posibilidad de errores al cargar el instrumental y permite la esterilización de set y equipos quirugicos de mayor tamaño.
+      .card-footer
+        a(href="./plasma-150L.html") Más información del esterilizador.

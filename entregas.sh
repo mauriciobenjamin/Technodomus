@@ -5,11 +5,10 @@ git commit -m "$1"
 git push origin actualizacion
 
 #Sincronización de los archivos de producción
-gulp -production
-rsync -rv ~/Desarrollo/Technodomus/segunda/src/ ~/Desarrollo/Technodomus/paginaweb/src/ 
-rsync -rv ~/Desarrollo/Technodomus/segunda/build/ ~/Desarrollo/Technodomus/originales/
+gulp --production
+rsync -rva ./build/ ../technodomus_produccion/respositorio
 
-ORIGINALES=/home/mauricio/Desarrollo/Technodomus/originales/
+ORIGINALES=/data/Desarrollo/technodomus_produccion/respositorio
 
 #Actualización del git de la página
 git -C $ORIGINALES add .

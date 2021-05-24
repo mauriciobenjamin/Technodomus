@@ -3,20 +3,22 @@ extends ../../_layouts/productos2
 block append config
   - var baseUrl = './../../'
   - var urlLinks = '/esterilizacion/esterilizacion/plasma.html'
-  - var producto = "Esterilizador de Plasma LK/MJG-200"
+  - var producto = "Esterilizador de Plasma LK/MJG-150"
   - var tituloPagina = 'Technodomus | Soluciones en ' + producto
   - var bread = {Inicio: baseUrl, Esterilización: './../', Esterilizadores: './', Plasma: "./plasma.html", "LK/MJG-200":"#"}  
+  - var descripcion = ''
+  - var palabras_clave = ''
 
 block content
   +cabecera(producto, bread) 
 
   .grid
           
-    +carddoble("Esterilizador LK/MJG-100")
+    +carddoble("Esterilizador LK/MJG-150")
       .card-body
-        +foto('esterilizador-plasma-100.jpg', "Esterilizador Laoken de 200L")
+        +foto('laoken-150.png', "Esterilizador Laoken de 150L")
         :markdown
-          Un equipo equilibrado con una buena capacidad y diseño contenido. Su cámara con más de 100 L de capacidad permite la esterilziación 
+          Un equipo equilibrado con una buena capacidad y diseño contenido. Su cámara con más de 150 L de capacidad permite la esterilziación 
         +laoken
         :marked
           Puertas | Montaje | Volumen | Dimensiones (mm) | Temperatura de operación | Duración del ciclo
