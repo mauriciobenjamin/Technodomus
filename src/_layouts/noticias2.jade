@@ -3,9 +3,26 @@ extends ./base
 block append config
   - var cardp = "card card-primary"
   - var imgUrl = '../images/'
-  
-// Add extra stylesheets
-block append stylesheets
+  - var titulo = 'Titulo del articulo'
+  - var fecha = "2019-01-01"
+  - var fecha_ultima = "2021-01-01"
+  - var imagen = "https://technodomus.com/images/logotipo.png"
+
+block append structured-data 
+  script(type="application/ld+json").
+    {
+      "@context": "http://schema.org",
+      "@type": "Article",
+      "headline": "#{ titulo }",
+      "image": "#{imagen}",
+      "author": {
+        "@type": "Person",
+        "name": "#{ autor }"
+      },
+      "datePublished": "#{ fecha }",
+      "dateModified": "#{ fecha_ultima }",
+      "articleSection": "#{ resumen }"
+    }
 
 block content
   
@@ -14,7 +31,7 @@ block content
       article
         .card-body
           h1.headline= titulo
-          header
+          .card-header
             .byline
               address.articulo
                 b Por 
@@ -24,7 +41,7 @@ block content
           p.resumen= resumen
           p.claves
             each item in palabras_clave
-              b=item+" / "
+              b= item+" / "
           .article-content.articulo
             block articulo
     
