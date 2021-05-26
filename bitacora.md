@@ -1,5 +1,9 @@
 # Bitacora de cambios de la página
 
+## Pendientes
+- [ ] Agregar datos estructurados a los productos
+
+
 ## 24 de mayo de 2021
 
 Se incluiran dentro de los layouts elementos de datos estructurados para mejorar el posicionamiento. Entre los datos estan los *breadcrumbs* el esquema para articulos en los dos layouts (productos y productos2).
@@ -32,3 +36,8 @@ El esquema para agregar datos estructurados sugerido es:
 </html>
 ```
 Para probar los datos estructurados se puede usar la herramienta de verificación de google [aquí](https://search.google.com/test/rich-results?id=6R4Ok3DeK9qATRbx1Pk_Ig)
+
+Al día de hoy solo se estructuraron los datos para los artículos de blog. Ahora hay que incluir entre las variables:
++ Titulo
++ Imagen (Que se mostrara en los resultados de busqueda)
++ Fechas

@@ -6,6 +6,9 @@ block append config
   - var tituloPagina = "Cotiza ahora"
   - var Descripcion = "¿Quieres cotizar algunos de nuestros productos? LLena el formato para que recibas más información de nuestros servicios integrales de esterilización, las diferencias con el equipo Sterrad, las mesas y salas de rayos X, y todas nuestras soluciones"
 
+block append structured-data 
+  meta(http-equiv="Content-type", content="text/html; charset=UTF-8")
+
 block content
   .jumbotron
     h1.producto Cotiza con nosotros
@@ -13,25 +16,25 @@ block content
   .grid
     +cardmax('¡Queremos saber de ti!')
       p Si esta interesado en alguno de nuestros productos le agradeceremos nos envié sus datos para que uno de nuestros especialistas se ponga en contacto con usted:
-      form(name='cotizacion' action='https://formspree.io/info@technodomus.com' method="POST")
+      form(name='cotizacion' action='https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8' method="POST")
+        input(type="hidden", name="oid", value="00D4P0000010eaY")
+        input(type="hidden", name="lead_source", id="lead_source", value="Web Directo")
+        input(type="hidden", name="retURL", value="https://technodomus.com/cotiza/gracias.html")
         .form-group
-          label(for='nombre') Nombre 
-          input#nombre(type='text' name='nombre' placeholder='Nombre de contacto' size='40')
-          label Institución 
-          input(type='text' name='institución' placeholder='Institución o empresa' size='40')
+          label(for='first_name') Nombre 
+          input(type='text' name='first_name' placeholder='Nombre' id="first_name" size='40' maxlength="40")
+          br
+          label(for='last_name') Apellidos 
+          input(type='text' name='last_name' placeholder='Apellidos' size='40' id="last_name" maxlength="80")
+          br
+          label(for='company') Institución o compañía 
+          input(type='text' id="company" name='company' placeholder='Institución o empresa' size='40')
         .form-group
           label Teléfono
-          input(type='tel' name='telefono' placeholder='a 10 dígitos' size='40')
+          input(type='tel' name='telefono' placeholder='a 10 dígitos' size='20' id="phone" maxlength="40")
           label Correo
-          input(type='email' name='_replyto' placeholder="correo@hospital.com" size='40')
+          input(type='email' name='_replyto' placeholder="correo@hospital.com" size='20' maxlength="80" id="email")
         .form-group
-          label Productos de su interés
-          input(type='text' name='productos' size='40')
-        .form-group
-          label Especificaciones y comentarios
-          textarea(rows='6' type="text" name='mensaje')
+          label Productos de su interés y comentarios
+          textarea(id="00N4P00000FplIl" name="00N4P00000FplIl" wrap="soft" rows='6' type="text")
           input.btn.btn-primary.btn-raised(type='submit' value='Enviar')
-        input(type="hidden" name="_next" value="http://technodomus.com/cotiza/gracias.html")
-        input(type="hidden" name="_subject" value="Solicitud de cotización")
-        input(type="hidden" name="_cc" value="bjimenez@technodomus.com")
-        input(type="text", name="_gotcha", style="display:none")
