@@ -16,13 +16,14 @@ block content
   .grid
     +cardmax('¡Queremos saber de ti!')
       p Si esta interesado en alguno de nuestros productos le agradeceremos nos envié sus datos para que uno de nuestros especialistas se ponga en contacto con usted:
+      //- Datos para agregar prospectos directamente a SalesForce Si se requiere debugin agregar input type="hidden" name="debug" value=1 y input type="hidden" name="debugEmail" value="bjimenez@technodomus.com"
       form(name='cotizacion' action='https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8' method="POST")
         input(type="hidden", name="oid", value="00D4P0000010eaY")
         input(type="hidden", name="lead_source", id="lead_source", value="Web Directo")
         input(type="hidden", name="retURL", value="https://technodomus.com/cotiza/gracias.html")
         .form-group
           label(for='first_name') Nombre 
-          input(type='text' name='first_name' placeholder='Nombre' id="first_name" size='40' maxlength="40")
+          input(type='text' name='first_name' required placeholder='Nombre' id="first_name" size='40' maxlength="40")
           br
           label(for='last_name') Apellidos 
           input(type='text' name='last_name' placeholder='Apellidos' size='40' id="last_name" maxlength="80")
@@ -30,10 +31,10 @@ block content
           label(for='company') Institución o compañía 
           input(type='text' id="company" name='company' placeholder='Institución o empresa' size='40')
         .form-group
-          label Teléfono
-          input(type='tel' name='telefono' placeholder='a 10 dígitos' size='20' id="phone" maxlength="40")
-          label Correo
-          input(type='email' name='_replyto' placeholder="correo@hospital.com" size='20' maxlength="80" id="email")
+          label(for='phone') Teléfono
+          input(type='text' name='phone' placeholder='a 10 dígitos' size='20' id="phone" maxlength="40" required)
+          label(for='email') Correo electrónico
+          input(type='email' name='email' placeholder="correo@hospital.com" size='20' maxlength="80" id="email" required)
         .form-group
           label Productos de su interés y comentarios
           textarea(id="00N4P00000FplIl" name="00N4P00000FplIl" wrap="soft" rows='6' type="text")
