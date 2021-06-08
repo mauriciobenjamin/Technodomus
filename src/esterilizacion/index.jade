@@ -3,7 +3,8 @@ extends ../_layouts/productos2
 block append config
   - var baseUrl = './../'
   - var tituloPagina = "Technodomus | Soluciones en esterilizacion"
-  - var descripcion = "Technodomus te ofrece una amplia gama de soluciones para el lavado, desinfección, esterilización, trazabilidad y validación de tus procesos, con el fin de que puedas ofrecer a tus pacientes la seguridad de que todo tu instrumental estará en las mejores condiciones."
+  - var descripcion = "Technodomus te ofrece una amplia gama de soluciones para el lavado, desinfección, esterilización, trazabilidad y validación de tus procesos, con el fin de que puedas ofrecer a tus pacientes la seguridad de que todo tu instrumental estará en las mejores condiciones. Desde autoclaves hasta cinta testigo, bolsa de papel grado médico, indicadores biológicos, detergente enzimatico, plasma de peroxido de hidrogeno y metodos de esterilizacion de baja temperatura"
+  - var palabras_clave = 'autoclaves, lavadoras, indicadores, testigos, selladora de bolsas, cinta testigo, plasma de peroxido de hidrogeno'
 
 block content
   #parallax-esteril.jumbotron
@@ -17,13 +18,6 @@ block content
         h4 
           a(href="./esterilizador_de_aire.html") Conoce más de esta tecnología 
 
-    +cardprin('Respiradores KN 95', 'respiradoresKN95.html' )
-      .card-body
-        +foto('laterales.png', 'Mascarilla de alta eficiencia para protección personal respiratoria')
-        p Los equipos de protección personal respiratoria de alta eficiencia son una herramienta de trabajo básico para los profesionales de la salud que están expuestos a patógenos de transmisión aérea y en general en ambientes contaminados donde existe un riesgo de daño por partículas suspendidas en el aire. En la actual pandemia del COVID-19 estas mascarillas son recomendadas por la Organización Mundial de la Salud (OMS) como protección para quienes cuidan a los infectados con el coronavirus y evitar contagios. Los respiradores que ofrecemos cumplen con las normas europeas y sus características exceden a los requisitos de la norma N95 
-        h4 
-          a(href="./respiradoresKN95.html") Todas sus características aquí.
-          
     +cardprin('El proceso de esterilización')
       .card-body          
         +foto('esterilizacion.jpeg','esterilizacion')
