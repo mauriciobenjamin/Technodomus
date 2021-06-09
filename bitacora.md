@@ -7,6 +7,8 @@
 
 El formulario de registro de prospectos tenia errores en el atributo `for` que no correspondian con el `input` y también estaban mal asignados los valores de `name` e `id` por lo que no llegaban los valores a SalesForce, por eso perdimos dos prospectos. **IMPORTANTE** Hay que hacer más testing antes de subir una funcionalidad.
 
+Se eliminó la página de los respiradores ya que ese producto ya no se seguira promocionando.
+
 ## 26 de mayo de 2021
 
 Se modificó el formulario de solicitud de cotizaciones para que ahora los datos lleguen directamente al CRM con las instrucciones del panel de configuración de SalesForce `Configuración>Herramientas de la plataforma>Configuración de funciones>Marketing>Prospectos Web` que genera el HTML para un formulario de registro. Era algo que no estaba buscando.
