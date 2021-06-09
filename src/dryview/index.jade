@@ -1,0 +1,16 @@
+extends ../_layouts/productos2 
+
+block append config
+	- var baseUrl = './../'
+	- var producto = 'Promociones de película DryView'
+	- var tituloPagina = producto
+	- var descripcion = 'Conoce los precios especiales que tenemos para ti en película láser seca para las impresoras DryView de Carestream, obten la mejor calidad en tus radiografías para un diágnostico más preciso'
+	- var palabras_clave = 'pelicula radiografica digital seca'
+	- var bread = {Inicio: baseUrl, 'Promociones DryView': '#'}
+
+block append content
+
+	.grid 
+		+cardprod(producto)
+			.card-body 
+				+fotoch('otuputD-dryview.png')
