@@ -3,6 +3,62 @@
 ## Pendientes
 - [ ] Agregar datos estructurados a los productos
 
+## 8 de junio de 2021
+
+Se comenzó a diseñar una landing page para las ofertas de dryview y se vio la necesidad de mejorar el desempeño de las imágenes. Para ello se usaron utilidades de optimización de imagen en un script.
+
+Se hizo un respaldo de las imagenes originales en `/data/Desarrollo/optimizacion_imagenes/originales` y en esa carpeta estan los scripts de optimización.
+```bash
+#!/bin/bash
+
+input_dir="$1"
+quality="$2"
+output_dir="$3"
+
+if [[ -z "$input_dir" ]]; then
+        echo "Especifica un directorio de entrada"
+        exit 1
+elif [[ -z "$quality" ]]; then 
+        echo "Especifica una calidad para los JPEG"
+        exit 1
+elif [[ -z "$output_dir" ]]; then
+        echo "Especifica un directorio de salida"
+        exit 1
+fi
+
+# Convirte los webp a png ya que el generador no los reconoce
+for img in $( find $input_dir -type f -iname "*.webp" );
+do
+        dwebp $img -o ${img%.*}.png
+done
+
+# Optimiza todos los png
+for img in $( find $input_dir -type f -iname "*.png" );
+do
+        optipng $img -out $output_dir/${img#$input_dir/}
+done
+
+# Optimiza todos los jpeg
+for img in $( find $input_dir -type f -iname "*.jpeg" -o -iname "*.jpg" );
+do
+        cp $img $output_dir/${img#$input_dir/}
+        jpegoptim -m $quality $output_dir/${img#$input_dir/}
+done
+
+# Optimiza los svg
+for img in $( find $input_dir -type f -iname "*.svg" );
+do
+        svgo $img -o $output_dir/${img#$input_dir/}
+done
+
+```
+También para ello se tuvo que instalar varias aplicaciones segun [estas indicaciones](https://css-tricks.com/converting-and-optimizing-images-from-the-command-line/)
+
+```bash
+sudo apt install webp jpegoptim optipng
+npm install -g svgexport svgo
+```
+
 ## 7 de junio de 2021
 
 El formulario de registro de prospectos tenia errores en el atributo `for` que no correspondian con el `input` y también estaban mal asignados los valores de `name` e `id` por lo que no llegaban los valores a SalesForce, por eso perdimos dos prospectos. **IMPORTANTE** Hay que hacer más testing antes de subir una funcionalidad.
