@@ -3,6 +3,9 @@
 ## Pendientes
 - [ ] Agregar datos estructurados a los productos
 
+## 16 de junio de 2021
+Para el registro al próximo webinar se implemento la página de webinars, pero ante el cambio de plataforma a Odoo se decidió redireccionar a la página de Odoo directamente con la función de javascript `window.location.replace("https://technodomus.odoo.com/webinars")`
+
 ## 8 de junio de 2021
 
 Se comenzó a diseñar una landing page para las ofertas de dryview y se vio la necesidad de mejorar el desempeño de las imágenes. Para ello se usaron utilidades de optimización de imagen en un script.
