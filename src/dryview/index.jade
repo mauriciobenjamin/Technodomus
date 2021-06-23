@@ -8,9 +8,12 @@ block append config
 	- var palabras_clave = 'pelicula radiografica digital seca'
 	- var bread = {Inicio: baseUrl, 'Promociones DryView': '#'}
 
+block append structured-data 
+	script. 
+		window.location.replace("https://technodomus.odoo.com/r/fgn")
 block append content
 
 	.grid 
 		+cardprod(producto)
 			.card-body 
-				+fotoch('otuputD-dryview.png')
+				+fotoch('output-dryview.png')
