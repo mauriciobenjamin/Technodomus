@@ -3,6 +3,12 @@
 ## Pendientes
 - [ ] Agregar datos estructurados a los productos
 
+## 29 de junio de 2021
+Comenzamos a redireccionar las solicitudes de cotización con `window.location.replace` a la pagina de `https://technodomus.odoo.com/cotiza`
+
+## 23 de junio de 2021
+Se creo un redireccionamiento vía `window.location.replace` de la pagina de dry view al sitio de odoo/promociones
+
 ## 16 de junio de 2021
 Para el registro al próximo webinar se implemento la página de webinars, pero ante el cambio de plataforma a Odoo se decidió redireccionar a la página de Odoo directamente con la función de javascript `window.location.replace("https://technodomus.odoo.com/webinars")`
 

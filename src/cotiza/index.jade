@@ -1,13 +1,14 @@
 extends ../_layouts/base
 
 block append config
-  //- Correct base url pathing for this page
   - var baseUrl = '../'
   - var tituloPagina = "Cotiza ahora"
   - var Descripcion = "¿Quieres cotizar algunos de nuestros productos? LLena el formato para que recibas más información de nuestros servicios integrales de esterilización, las diferencias con el equipo Sterrad, las mesas y salas de rayos X, y todas nuestras soluciones"
 
 block append structured-data 
   meta(http-equiv="Content-type", content="text/html; charset=UTF-8")
+  script. 
+    window.location.replace("https://technodomus.odoo.com/cotiza")
 
 block content
   .jumbotron
