@@ -2,6 +2,9 @@
 
 ## Pendientes
 - [ ] Agregar datos estructurados a los productos
+## 1 de junio de 2021
+
+Se elimino el chat de drift del sitio, el cual estaba asociado a Google Tag Manager, y no lo recordaba, por lo que estuve buscando bastante tiempo el código de inserción del chat, que no existía ya que todo se incertaba desde GTM. Ademas de eso se eliminaron los archivos de scripts de Drift que ya no se usaban, de paginas de suscripción de mailchimp, botones de google+ y se recentraron los iconos en los botones.
 
 ## 29 de junio de 2021
 Comenzamos a redireccionar las solicitudes de cotización con `window.location.replace` a la pagina de `https://technodomus.odoo.com/cotiza`

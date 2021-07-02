@@ -169,9 +169,7 @@ img {
 
 .botones{
   margin-top: 5px;
-  display: inline-block;
   &.boton-flotante {
-    display: flex;
     position: fixed;
     right: 1%;
     top: 90%;
@@ -183,6 +181,9 @@ img {
     transition: all .3s;
     overflow: hidden;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .boton-avanza {
