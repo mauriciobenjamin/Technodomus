@@ -2,9 +2,13 @@
 
 ## Pendientes
 - [ ] Agregar datos estructurados a los productos
-## 1 de junio de 2021
+## 15 de julio de 2021
 
-Se elimino el chat de drift del sitio, el cual estaba asociado a Google Tag Manager, y no lo recordaba, por lo que estuve buscando bastante tiempo el código de inserción del chat, que no existía ya que todo se incertaba desde GTM. Ademas de eso se eliminaron los archivos de scripts de Drift que ya no se usaban, de paginas de suscripción de mailchimp, botones de google+ y se recentraron los iconos en los botones.
+Se comenzaron a migrar contenidos del blog a Odoo, no he encontrado una forma eficaz de agregar los markdown en Odoo ya que siempre se insertan con formatos diferentes al default del tema. Se estan agregando redireccionamientos a cada página modificada y se hará una tabla de redireccionamientos ya que los blogs de odoo tienen una forma ideosicratica de nombrar las URL
+
+## 1 de julio de 2021
+
+Se elimino el chat de drift del sitio, el cual estaba asociado a Google Tag Manager, y no lo recordaba, por lo que estuve buscando bastante tiempo el código de inserción del chat, que no existía ya que todo se incertaba desde GTM. Ademas de eso se eliminaron los archivos de scripts de Drift que ya no se usaban, de paginas de suscripción de mailchimp, botones de google+ y se recentraron los iconos en los botones. Al final se agrego el chat de Odoo en la página mediante el script en el head, ya que en GTM parece no funcionar en tiempo real.
 
 ## 29 de junio de 2021
 Comenzamos a redireccionar las solicitudes de cotización con `window.location.replace` a la pagina de `https://technodomus.odoo.com/cotiza`

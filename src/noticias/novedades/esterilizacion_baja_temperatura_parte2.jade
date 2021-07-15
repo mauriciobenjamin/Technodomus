@@ -16,6 +16,9 @@ block append config
   - var tambien = {"Esterilizacion de baja temperatura III": "./esterilizacion_baja_temperatura_parte3.html","Esterilización de baja temperatura I": "./esterilizacion_baja_temperatura_parte1.html","¿Puedo ahorrar con la esterilización con plasma?": "./costos-plasma.html", "Mejora tus empaques 'puch'": "./sellado.html", "Procesamiento de endoscopios": "./procesamiento-endoscopios.html"}
   - var imagen = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Plasma_lamp_touching.jpg/256px-Plasma_lamp_touching.jpg"
 
+block append structured-data
+  script. 
+    window.location.replace('https://technodomus.odoo.com/blog/esterilizacion-2/esterilizacion-con-peroxido-de-hidrogeno-3')
 block articulo
   include:marked metodos_bajatemperatura_II.md
   
