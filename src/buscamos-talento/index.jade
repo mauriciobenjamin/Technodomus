@@ -1,0 +1,10 @@
+extends ../_layouts/base 
+
+block append structured-data
+  script. 
+    window.location.replace("https://technodomus.odoo.com/buscamos-talento")
+
+block append content
+  h1 Buscamos talento 
+  h2 Ve al siguiente enlace para dejarnos tus datos 
+    a(href="https://technodomus.odoo.com/buscamos-talento") aquí.
