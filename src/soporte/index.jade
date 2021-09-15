@@ -6,6 +6,10 @@ block append config
   - var tituloPagina = "Soporte y servicio a socios de negocios"
   - var descripcion = "Te apoyamos en todo momento, si tienes problemas con alguno de tus equipos, necesitas asesoría sobre el uso de los consumibles o tienes alguna duda de facturación, envianos un mensaje y en breve nos pondremos en contacto para apoyarte"
 
+block append structured-data
+  script. 
+    window.location.replace("https://technodomus.odoo.com/servicio-tecnico")
+
 block content
   .jumbotron
     h1.producto Soporte a socios de negocios
